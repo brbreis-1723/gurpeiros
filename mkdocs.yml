@@ -1,8 +1,11 @@
 site_name: Gurpeiros
+site_url: https://gurpeiros.com.br/
 
 theme:
   name: material
   language: pt-BR
+
+use_directory_urls: true
 
 nav:
   - Início: index.md
