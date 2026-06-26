@@ -2,7 +2,7 @@ site_name: Gurpeiros
 
 theme:
   name: material
-  language: PT-BR
+  language: pt-BR
 
 nav:
   - Início: index.md
