@@ -1,0 +1,14 @@
+site_name: Gurpeiros
+
+theme:
+  name: material
+  language: PT-BR
+
+nav:
+  - Início: index.md
+  - Campanhas:
+      - Visão Geral: campanhas/index.md
+  - Regras da Casa:
+      - Visão Geral: regras/index.md
+  - Artigos:
+      - Visão Geral: artigos/index.md
