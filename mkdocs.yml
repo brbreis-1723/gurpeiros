@@ -4,6 +4,8 @@ site_url: https://gurpeiros.com.br/
 theme:
   name: material
   language: pt-BR
+  logo: assets/imagens/PoweredByGURPS.png
+  custom_dir: overrides
   palette:
     scheme: slate # dark mode
     primary: black
