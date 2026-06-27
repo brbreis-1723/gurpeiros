@@ -190,6 +190,6 @@ ________________________________________
 
 #### **Download do modelo racial (Arquivo .GDF):**
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/werejackal.zip" download> 📥 Clique Aqui </a>
+Para baixar os arquivos de templates do GCS <a href="/assets/templates/werejackal.zip" download> 📥 Clique Aqui </a>
 
 ________________________________________

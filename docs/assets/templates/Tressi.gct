@@ -1,0 +1,851 @@
+{
+	"version": 5,
+	"id": "B10z1d6wDcx5dTmd9",
+	"traits": [
+		{
+			"id": "TzCn2hzRoR9jl-aO-",
+			"name": "Tressi",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TtQnCIisOsevpgTww",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "tPQERqHE4hDfGH-2Y",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t9JmDbmYS-RXMN3vt"
+							},
+							"name": "Decreased Size Modifier",
+							"reference": "B19",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "sm",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 0,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "txttyUwdnukJDqvrm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": -30,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "trXZzk1_005p4sd7R",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tGWOSEE6SmBHACE6Y"
+							},
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mCUVGZndck_9D0Nw0",
+									"name": "No Fine Manipulators",
+									"cost_adj": "-40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tZulCScs62IYHi1hv",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tmpxhXmSORakqvrbn"
+							},
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 10,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tL6_lagVkRg_WUlpj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tVt3SvdGWNchJ8z4o"
+							},
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 10,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TfgplQ8qOvYJ94YNV",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "t6v7Wj05Dn5OEOGVN",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t6XtSYhM7yan5_B73"
+							},
+							"name": "Acute Hearing",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hearing",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tEgms_mvSTfN_kORG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tAZ31tXG_HzDmVCRp"
+							},
+							"name": "Acute Taste \u0026 Smell",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "taste_smell",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "texWJ8WedFYCjqn5P",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t5LlXpm2lmMK5KcVN"
+							},
+							"name": "Blunt Claws",
+							"reference": "B42,MA42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 3,
+							"weapons": [
+								{
+									"id": "wK0Qn9WeVOKNQzoKx",
+									"sv": 1,
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"base": "-1",
+										"modifier_per_die": 1
+									},
+									"usage": "Punch",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "skill",
+											"name": "Karate"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 (+1 per die) cr"
+									}
+								},
+								{
+									"id": "wX_Hc3tTyU2OmQ4_q",
+									"sv": 1,
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"usage": "Kick",
+									"reach": "C,1",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "tMmb8eJiJ0dywVRfX",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tHd6RZWGO9p5R91Vo"
+							},
+							"name": "Rapier Wit",
+							"reference": "B79,P70",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mVj0SXKdYEVDz3XZv",
+									"name": "Words of Power",
+									"reference": "P70",
+									"cost_adj": "100%",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t7egmD2vzXOc3MeoV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t7wwouLr2lKkU9N_5"
+							},
+							"name": "Parabolic Hearing",
+							"reference": "B72,P51",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 4,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 4,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "t6ATih5Jy51mZmHt9",
+							"name": "Talent (Desert  Sneak)",
+							"local_notes": "Racial Talent: +1 per level in Survival (Desert), Stealth, Camouflage, Observation, Tracking and Navigation",
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Camouflage"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Observation"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Tracking"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Land"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Survival"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Desert"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Stealth"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "t8uPvP2rewT8QsywF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tk0ZKpvgqpE35AZcM"
+							},
+							"name": "Night Vision",
+							"reference": "B71,P87",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 5,
+								"current_level": 5
+							}
+						},
+						{
+							"id": "tjW6XFP4IBt-u8UYx",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tQa3EUrs4Hjt9gxK6"
+							},
+							"name": "Fearlessness",
+							"reference": "B55,MA44",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Fearfulness"
+										}
+									}
+								]
+							},
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "fright_check",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 10,
+								"current_level": 5
+							}
+						},
+						{
+							"id": "t0e0DnUIpIq56BCVA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tK9Ov0WtlrhnJFy5n"
+							},
+							"name": "Sharp Teeth",
+							"reference": "B91",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mzFhCSWPGdlYvuGKJ",
+									"name": "Provided by Vampiric Bite",
+									"reference": "B96",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"weapons": [
+								{
+									"id": "wWuaa_q7NRwepsoY1",
+									"sv": 1,
+									"damage": {
+										"type": "cut",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Bite",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "dx"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 cut"
+									}
+								}
+							],
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t6Gm0dPJuW6fJhQ5g",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tsPqY8NyZ8sJbkdS-"
+							},
+							"name": "Fur",
+							"reference": "B101",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tfln0Ek9R2kh01qz4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tTghMwO98dqct8Ckq"
+							},
+							"name": "Limited Camouflage (@Environment@)",
+							"reference": "PU2:11",
+							"local_notes": "Your fur blends in with desert sands, giving +2 to Camouflage and Stealth when posed still and unclad against a suitable backdrop. ",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"replacements": {
+								"Environment": "Desert Sand"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tpN0yHqlRlAo4qP7o",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "touwUIFalnae02BUl"
+							},
+							"name": "Temperature Tolerance",
+							"reference": "B93",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 2,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tNv2LSilHGk30D1PZ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tZw_ze3n_bPxiK86s"
+							},
+							"name": "Terrain Adaptation (@Terrain Type@)",
+							"reference": "B93,P83",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"replacements": {
+								"Terrain Type": "Desert"
+							},
+							"modifiers": [
+								{
+									"id": "mkVRIGv4TVRgIRUop",
+									"name": "Unstable on solid ground",
+									"reference": "B93",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mPvm49mePSEj8Z-L_",
+									"name": "Active",
+									"reference": "P84",
+									"cost_adj": "300%",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 52
+					}
+				},
+				{
+					"id": "T3-LY1XCXVMqzM8mG",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "tiHDLnxgr-vR1INC9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t2O8gMxbRPpAWLej9"
+							},
+							"name": "Curious",
+							"reference": "B129",
+							"local_notes": "Make a self-control roll when presented with an interesting item or situation",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "thLHPjYbsQYTl_JOn",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tV06LED8bg9xJGF3c"
+							},
+							"name": "Impulsiveness",
+							"reference": "B139",
+							"local_notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tSxfFeKN-L5xvaeUv",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tG1q2hcai2DaeRlhm"
+							},
+							"name": "Kleptomania",
+							"reference": "B141",
+							"local_notes": "Make a self-control roll whenever you are presented with a chance to steal, at up to -3 if the item is especially interesting to you (not necessarily valuable, unless you are poor or have Greed). If you fail, you must try to steal it. You may keep or sell stolen items, but you may not return or discard them.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "t4xEuRV-gdUjfEshF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tqyAIJKZUTPhxkhbU"
+							},
+							"name": "Truthfulness",
+							"reference": "B159",
+							"local_notes": "Make a self-control roll whenever you must keep silent about an uncomfortable truth (lying by omission). Roll at -5 if you actually have to tell a falsehood! If you fail, you blurt out the truth, or stumble so much that your lie is obvious.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fast-talk"
+									},
+									"amount": -5
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "twRwTDbodBjEQ7ow8",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tCidFlSADk-zraK1o"
+							},
+							"name": "Social Stigma (Minority Group)",
+							"reference": "B155",
+							"local_notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except your own kind",
+									"amount": -2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tt25lGlg0EIdUZzJs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tI7ocw1G_DM95SNAN"
+							},
+							"name": "Distractible",
+							"reference": "PU6:18",
+							"tags": [
+								"Mental",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "twx1FvuwJ8Ohnib_c",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tThVqSvRHjWhOVGgG"
+							},
+							"name": "Credulous",
+							"reference": "PU6:18",
+							"tags": [
+								"Mental",
+								"Quirk",
+								"Social"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": -47
+					}
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		}
+	]
+}

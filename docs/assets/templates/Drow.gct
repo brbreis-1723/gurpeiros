@@ -1,0 +1,542 @@
+{
+	"version": 5,
+	"id": "BrDDB9J4PJLNVZY0v",
+	"traits": [
+		{
+			"id": "TRRYgdW-QhPbuyTS8",
+			"name": "Drow",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TXb8m4L8R6m8GoLs3",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "tBoEZioVu2YKcCkvx",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": -20,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "trpwXsrR-VsPisJpI",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tGWOSEE6SmBHACE6Y"
+							},
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mG4425q0rPzLxUBbb",
+									"name": "No Fine Manipulators",
+									"cost_adj": "-40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tKoTlR09-C3jpChFE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tmpxhXmSORakqvrbn"
+							},
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TzsmPlAARoeGBcdi6",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "t0All90ccWr-QUEsU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "twUwPs1rB7kQ3oEOO"
+							},
+							"name": "Brotherhood (Spiders)",
+							"reference": "PU2:17",
+							"tags": [
+								"Perk",
+								"Social"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tT-BaG4boTTPRVxnR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tIrb6FsJzGGWGnrHt"
+							},
+							"name": "Charm (@Spell@)",
+							"reference": "PU2:19",
+							"tags": [
+								"Perk",
+								"Supernatural"
+							],
+							"replacements": {
+								"Spell": "Darkness"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t0M4xgwC_fz_jTpY2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tIrb6FsJzGGWGnrHt"
+							},
+							"name": "Charm (@Spell@)",
+							"reference": "PU2:19",
+							"tags": [
+								"Perk",
+								"Supernatural"
+							],
+							"replacements": {
+								"Spell": "Perfect Illusion"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tPdOtxcYD91F5BCfM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tEFtRoCNBxTe9vjsG"
+							},
+							"name": "Dark Vision",
+							"reference": "B47,P46",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m1aVI0Rls4yXKAsLq",
+									"name": "Can see colors in the dark",
+									"cost_adj": "20%",
+									"disabled": true
+								},
+								{
+									"id": "mCzzQOcTgT24lXTdk",
+									"name": "Hypersensory",
+									"reference": "P46",
+									"cost_adj": "40%",
+									"disabled": true
+								}
+							],
+							"base_points": 25,
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "tVXnk3jMXkOjFdFl_",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tUJz4wvVveMiGDX0R"
+							},
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tU-CP49hcpje9hZcK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tHCxNp51lRlY8AGDq"
+							},
+							"name": "Resistant to Spider Venom",
+							"reference": "PU2:14",
+							"local_notes": "+3 to resist",
+							"tags": [
+								"Mental",
+								"Perk"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tIace6qOYP0zufwA0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tM2ajBpyA-CX7akLc"
+							},
+							"name": "Good with Spiders",
+							"reference": "PU2:13",
+							"tags": [
+								"Mental",
+								"Perk"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tS_Eh-KUx3BDY4cFz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tpnv8EEpAS6Er2pwK"
+							},
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "mEpivPDjIWjwBv7l1",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mFBBMJsdloeO4TVjf",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mh9ghcMP_37bLC0ji",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mWUJ-Kg1hxpT3rz90",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mJfsUjOPJoRn99lRl",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mZec-JKo7ukrH9C1Q",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mBpwaKu6o2zoa34WU",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mUSYEdpDFgIU1km2U",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						},
+						{
+							"id": "t703iAJuMo1rX-gG-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "ti8Mwn5KC8w-uyGTH"
+							},
+							"name": "Social Regard",
+							"reference": "B87",
+							"local_notes": "Feared: Powerful Imperialists",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who hold you in high regard for being a @Reason@, in a @Type: Feared, Respected or Venerated@ way.",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 46
+					}
+				},
+				{
+					"id": "TA8uJgT8Hw24LpxAF",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "tvjIFzD1k9yGRgdf3",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tNe543pbMl1IkZxSo"
+							},
+							"name": "Callous",
+							"reference": "B125",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "psychology"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "teaching"
+									},
+									"amount": -3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from past victims and anyone with Empathy",
+									"amount": -1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "ti-PJcZMyR0lBWIyi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "ttHkLI9zwzfeOIEZc"
+							},
+							"name": "Intolerance (@Class, Ethnicity, Nationality, Religion, Sex, or Species@)",
+							"reference": "B140",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"replacements": {
+								"Class, Ethnicity, Nationality, Religion, Sex, or Species": "All"
+							},
+							"modifiers": [
+								{
+									"id": "mEhxZY2tenD-wcSG-",
+									"name": "Scope: Common",
+									"reference": "B140",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mtr4bC77jtfvzf_NF",
+									"name": "Scope: Occasional",
+									"reference": "B140",
+									"cost_adj": "-2",
+									"disabled": true
+								},
+								{
+									"id": "meShIZnI_s7KXVjuJ",
+									"name": "Scope: Rare",
+									"reference": "B140",
+									"cost_adj": "-1",
+									"disabled": true
+								},
+								{
+									"id": "mGqexZPzrW6ETKdEy",
+									"name": "Scope: Anyone unlike you",
+									"reference": "B140",
+									"cost_adj": "-10"
+								}
+							],
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from victims of your intolerance (may be as much as -5, at GM's discretion)",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t79X07HGsWuEPTZI6",
+							"name": "Photosensitivity",
+							"reference": "PU6:24",
+							"tags": [
+								"Physical",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": -16
+					}
+				}
+			],
+			"calc": {
+				"points": 35
+			}
+		}
+	]
+}

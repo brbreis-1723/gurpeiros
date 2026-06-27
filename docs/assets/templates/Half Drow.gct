@@ -1,0 +1,307 @@
+{
+	"version": 5,
+	"id": "BrDDB9J4PJLNVZY0v",
+	"traits": [
+		{
+			"id": "TRRYgdW-QhPbuyTS8",
+			"name": "Half Drow",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TXb8m4L8R6m8GoLs3",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "tKoTlR09-C3jpChFE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tmpxhXmSORakqvrbn"
+							},
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TzsmPlAARoeGBcdi6",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "tS_Eh-KUx3BDY4cFz",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tpnv8EEpAS6Er2pwK"
+							},
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "mEpivPDjIWjwBv7l1",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mFBBMJsdloeO4TVjf",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mh9ghcMP_37bLC0ji",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mWUJ-Kg1hxpT3rz90",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mJfsUjOPJoRn99lRl",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mZec-JKo7ukrH9C1Q",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mBpwaKu6o2zoa34WU",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mUSYEdpDFgIU1km2U",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						},
+						{
+							"id": "txoOq3dWabLXfDGRj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tUJz4wvVveMiGDX0R"
+							},
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "taXiRxzoy_zkyB4tG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tk0ZKpvgqpE35AZcM"
+							},
+							"name": "Night Vision",
+							"reference": "B71,P87",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 5,
+								"current_level": 5
+							}
+						},
+						{
+							"id": "tHgAWkVgyPcs3PmPS",
+							"name": "Fast Learning",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 17
+					}
+				},
+				{
+					"id": "TA8uJgT8Hw24LpxAF",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "t_jeNRMgbriOgoQO6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tSSmnBdJ1f7mFMRL5"
+							},
+							"name": "Social Stigma (@Stigma@)",
+							"reference": "B155",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"replacements": {
+								"Stigma": "Half Breed"
+							},
+							"modifiers": [
+								{
+									"id": "m0ARuU-OehDaL86Y9",
+									"name": "Obvious from your appearance, dress or manner",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who sees you",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mXm1BZx_GcnmYwWnS",
+									"name": "Obvious from your speech",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who hears you speak",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m7OoQpRxIX3N7blMi",
+									"name": "Easily learned by anyone who cares to check up on you",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who cares to check up on you",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m53SPOohlbQmsLdUn",
+									"name": "Public Denouncement",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from everryone you meet",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								}
+							],
+							"points_per_level": -5,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": 17
+			}
+		}
+	]
+}

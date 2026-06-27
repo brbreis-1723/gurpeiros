@@ -1,0 +1,520 @@
+{
+	"version": 5,
+	"id": "BPjdQ4Pqb7r2GdHUd",
+	"traits": [
+		{
+			"id": "Tio5M77CCUz69YAri",
+			"name": "Goblin",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "T-1r2OQYsR4_c24Gt",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "trJHKktBdERvij7fh",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": -20,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tzxOtQd-2GdZvhTX-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tGWOSEE6SmBHACE6Y"
+							},
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m32U0JWPbhFdrOAf_",
+									"name": "No Fine Manipulators",
+									"cost_adj": "-40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tyxwQQ6kn18KeIn0N",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t1w1RFcFceKR2T9_e"
+							},
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TRVnt2Z5Kmdqpm_wY",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "tnfPHhmf_3y_JeGoP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t59wSfU9kpC1rus5P"
+							},
+							"name": "Alcohol Tolerance",
+							"reference": "B100",
+							"tags": [
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on all HT rolls related to drinking",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tbGCRsCoSPJVUVF1E",
+							"name": "Drunken Balance",
+							"local_notes": "Cada nível remove −1 da penalidade de DX causada por álcool (Tipsy/Drunk, p. B428) apenas para testes cujo objetivo seja manter equilíbrio ou deslocar-se cuidadosamente. Não afeta testes dentro de combate!",
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 1,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "TFkYtSxCUtm68f-CM",
+							"name": "Goblin Resilience",
+							"local_notes": "+3 para testes de HT contra venenos, inconsciência ou morte",
+							"children": [
+								{
+									"id": "txwSUI_K8TZ5-dNeO",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Traits.adq",
+										"id": "tJTfFdHM7YI5IZR7I"
+									},
+									"name": "Resistant",
+									"reference": "B81,P71,MA47",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "m89B9uyClduzgjefb",
+											"name": "@Very Common: Metabolic Hazards, etc.@",
+											"reference": "B80",
+											"cost_adj": "30",
+											"disabled": true
+										},
+										{
+											"id": "mAGH-tYfqvt8SymZj",
+											"name": "Poison",
+											"reference": "B81",
+											"cost_adj": "15"
+										},
+										{
+											"id": "mV_yJPlX9zBZmQuMn",
+											"name": "@Occasional: Disease, Ingested Poison, etc.@",
+											"reference": "B81",
+											"cost_adj": "10",
+											"disabled": true
+										},
+										{
+											"id": "m-XowurdSvr7oSDBw",
+											"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+											"reference": "B81",
+											"cost_adj": "5",
+											"disabled": true
+										},
+										{
+											"id": "mb3yqlW7v24NAZOR9",
+											"name": "Immunity",
+											"reference": "B81",
+											"cost_adj": "x1",
+											"disabled": true
+										},
+										{
+											"id": "mnsjC5LM7TdyhuKEV",
+											"name": "+8 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_adj": "x0.5",
+											"disabled": true
+										},
+										{
+											"id": "m8_C-WreiwY-IyLDW",
+											"name": "+3 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_adj": "x1/3"
+										}
+									],
+									"round_down": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "tectTQhVhMJ3VrwMH",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Traits.adq",
+										"id": "txSLRSX9nxLwQkE2n"
+									},
+									"name": "Hard to Kill",
+									"reference": "B58",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"points_per_level": 2,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"levels": 3,
+									"calc": {
+										"points": 6,
+										"current_level": 3
+									}
+								},
+								{
+									"id": "tN8hX_O14mcCzTQ04",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Traits.adq",
+										"id": "t5K9V7-_MYD_0BOQ8"
+									},
+									"name": "Hard to Subdue",
+									"reference": "B59",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"points_per_level": 2,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to any HT roll to avoid unconsciousness",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"levels": 3,
+									"calc": {
+										"points": 6,
+										"current_level": 3
+									}
+								}
+							],
+							"calc": {
+								"points": 17
+							}
+						},
+						{
+							"id": "t85fK44UXPNiN3ata",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tQZWdHP1qlzOpcZpI"
+							},
+							"name": "No Hangover",
+							"reference": "B101",
+							"tags": [
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tq6EJWCIlSl7edOjQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t2uxXuNNQjGUAFAd0"
+							},
+							"name": "Perfect Balance",
+							"reference": "B74",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 15,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on DX and DX-based skill rolls to keep your feet or avoid being knocked down in combat",
+									"amount": 4
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "on all rolls to keep your feet if the surface is wet, slippery or unstable",
+									"amount": 6
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "acrobatics"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aquabatics"
+									},
+									"amount": 1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "climbing"
+									},
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "t5Hm-SEp2wd6Fy2R5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "txsoBf4CKtgpHPkPK"
+							},
+							"name": "Silence",
+							"reference": "B85,P76",
+							"local_notes": "Bonuses help only when hearing is the only sense that can be used to detect you.",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mY3HiJVuec4sY-Ylx",
+									"name": "Dynamic",
+									"reference": "P76",
+									"cost_adj": "40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to Stealth when you are perfectly motionless",
+									"amount": 2,
+									"per_level": true
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to Stealth if moving (even in armor, etc.)",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 10,
+								"current_level": 2
+							}
+						}
+					],
+					"calc": {
+						"points": 45
+					}
+				},
+				{
+					"id": "TAvv1N7QIxh4IirxU",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "tn1yoJqBGaB9YmXqF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tCkS7354KTh2G6WfI"
+							},
+							"name": "Alcoholism",
+							"reference": "B122",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mTGduSb1MlFLkSWr5",
+									"name": "Illegal",
+									"reference": "B122",
+									"cost_adj": "-5",
+									"disabled": true
+								}
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tELIJUNLRDPXRqFd_",
+							"name": "Escolher -20 pontos de desvantagens mentais",
+							"local_notes": "aplicar a limitação: only when drunk -25%",
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tJMiiUJALGYTgs_Xo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tCidFlSADk-zraK1o"
+							},
+							"name": "Social Stigma (Minority Group)",
+							"reference": "B155",
+							"local_notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except your own kind",
+									"amount": -2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -40
+					}
+				}
+			],
+			"calc": {
+				"points": 25
+			}
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"version": 5,
+	"id": "BlcE5VHmWEs-JkR3k",
+	"traits": [
+		{
+			"id": "Th4K_4HQtzDTbPOY9",
+			"name": "Human (Comum)",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TfoWydnN9f84g2DaG",
+					"name": "Racial Advantage",
+					"children": [
+						{
+							"id": "tJIXXYg68CyowjDNu",
+							"name": "Fast Learning",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TT4-Pr9JRYR9BCmVq",
+					"name": "Racial Disadvantage",
+					"children": [
+						{
+							"id": "tFbIG-MhfuS9VvD3l",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tn-kBo-qGnIc4wYlI"
+							},
+							"name": "Low Status ",
+							"reference": "B28",
+							"local_notes": "Commoner",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"points_per_level": -5,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -5,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tcCaOg2k-5qO548wo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tkchRxKpwct0fHH7U"
+							},
+							"name": "Social Stigma (Second-Class Citizen)",
+							"reference": "B155",
+							"local_notes": "You belong to a group that receives fewer rights and privileges than “full citizens.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except those of your own kind",
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				}
+			],
+			"calc": {
+				"points": -5
+			}
+		}
+	]
+}

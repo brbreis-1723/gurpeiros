@@ -1,0 +1,128 @@
+{
+	"version": 5,
+	"id": "BlcE5VHmWEs-JkR3k",
+	"traits": [
+		{
+			"id": "Th4K_4HQtzDTbPOY9",
+			"name": "Human (Mage)",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "Tvp1-OAxuFiUzx70b",
+					"name": "Racial Advantage",
+					"children": [
+						{
+							"id": "tOL6lq63_dgIMG0cH",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "m4toZlgHwWKH4kEFw",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mQ22qvR2m4JICB63o",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m2Dc4U09BpfKg8vrz",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mdG6RCjX2kdZnruYR",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGJO15T6a9yyrzLxC",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGoOFFIFYV3w8hid5",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m3ar1BX_kLFBKPCh_",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mpiYOBjNrSdk5ezBt",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						},
+						{
+							"id": "tJIXXYg68CyowjDNu",
+							"name": "Fast Learning",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		}
+	]
+}

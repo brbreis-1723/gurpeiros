@@ -124,7 +124,7 @@ Nulos são párias entre magos e comuns. Muitos vivem isolados fora das cidades.
 
 Embora eles percam a capacidade de conjurar magia, mantém o conhecimento teórico. Há uma pequena parcela de nulos que decide permanecer de alguma forma envolvido com a magia, trabalhando por exemplo como escolásticos, bibliotecários ou trabalhando em livrarias. Para alguns essa é uma maneira de superar o trauma da perda e ainda se sentirem úteis à sociedade.
 
-Um efeito colateral peculiar do ritual é que nulos perdem a capacidade de sentir emoções. Eles tornam-se frios, racionais e apáticos. Alguns afirmam que isso pode ser decorrente da experiência traumática do ritual. Outros consideram que a perda da aptidão para magia também leva a perda da propria consciência do individo, sendo sua personalidade parte de sua essência como mago. 
+Um efeito colateral peculiar do ritual é que nulos perdem a capacidade de sentir emoções. Eles tornam-se frios, racionais e apáticos. Alguns afirmam que isso pode ser decorrente da experiência traumática do ritual. Outros consideram que a perda da aptidão para magia também leva a perda da própria consciência do indivíduo, sendo sua personalidade parte de sua essência como mago. 
 
 De qualquer modo, o Ritual da Anulação é uma punição cruel e temida por todos os magos. É de consenso geral que ela somente deve ser aplicada em último caso e reservada apenas aos piores criminosos.
 

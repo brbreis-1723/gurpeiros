@@ -204,4 +204,4 @@ ________________________________________
 
 ________________________________________
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/armadilho.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/armadilho.gct" download> 📥 Clique Aqui </a>

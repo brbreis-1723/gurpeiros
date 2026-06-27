@@ -1,0 +1,492 @@
+{
+	"version": 5,
+	"id": "BlcE5VHmWEs-JkR3k",
+	"traits": [
+		{
+			"id": "Th4K_4HQtzDTbPOY9",
+			"name": "Half Elf",
+			"local_notes": "Feature: ao cobrar o Favor de Sylthara , o GM pode fazer um teste de reação com a Patrona dos Elfos. Em caso de uma reação favorável, ela pode se tornar patrona permanente do meio-elfo (desde que ele tenha xp não gasto para  adquirir a vantagem Patrono!).",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "T3NOKgluNhiwfL17w",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "tSnDa6CX1Sj7Cd1k4",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tmpxhXmSORakqvrbn"
+							},
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "Tvp1-OAxuFiUzx70b",
+					"name": "Racial Advantage",
+					"children": [
+						{
+							"id": "tJIXXYg68CyowjDNu",
+							"name": "Fast Learning",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tDcxmygg_GB03wvS9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tUJz4wvVveMiGDX0R"
+							},
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 2,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tc9nGg37NSXwgAkCs",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tIrb6FsJzGGWGnrHt"
+							},
+							"name": "Charm (@Spell@)",
+							"reference": "PU2:19",
+							"local_notes": "Escolha uma magia ligada a natureza: limitado a escolas de plantas, animais ou elemental (água, terra ou ar). A skill da magia não está contemplada no modelo racial, devendo ser adquirida à parte.",
+							"tags": [
+								"Perk",
+								"Supernatural"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tGd-Yfk5Cx3IJsnWK",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t6Nq6oInwkU1qbAP1"
+							},
+							"name": "Favor of Sylthara (Patron)",
+							"reference": "B72,P65",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"replacements": {
+								"Who: An ultra-powerful individual": "Sylthara, Senhora dos Elfos"
+							},
+							"modifiers": [
+								{
+									"id": "MiZBkd132w6Lk6Vzo",
+									"name": "Power",
+									"children": [
+										{
+											"id": "mN736bdm_VF_WjlqC",
+											"name": "@Who: Individual with 150% of PC's starting points@",
+											"reference": "B72",
+											"cost_adj": "10",
+											"disabled": true
+										},
+										{
+											"id": "mqCPAX38dYFDxhTMa",
+											"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "10",
+											"disabled": true
+										},
+										{
+											"id": "mJ0LpZfcpGf5DWc4s",
+											"name": "@Who: Individual with twice the PC's starting points@",
+											"reference": "B72",
+											"cost_adj": "15",
+											"disabled": true
+										},
+										{
+											"id": "mblkZvj2LqoDSk1KR",
+											"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "15",
+											"disabled": true
+										},
+										{
+											"id": "mXjqgkZLfa_1J4OSL",
+											"name": "Sylthara, Senhora dos Elfos",
+											"reference": "B72",
+											"cost_adj": "20"
+										},
+										{
+											"id": "mnQsS_vWgiTc_ww4A",
+											"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "20",
+											"disabled": true
+										},
+										{
+											"id": "m7OHyOpCbR9qeuUp4",
+											"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "25",
+											"disabled": true
+										},
+										{
+											"id": "mVt7udsOZ_3vrkiQf",
+											"name": "@Who: A national government or giant multi-national organization@",
+											"reference": "B72",
+											"cost_adj": "30",
+											"disabled": true
+										},
+										{
+											"id": "moMByJ-YBo4C3Z-ec",
+											"name": "@Who: A deity@",
+											"reference": "B72",
+											"cost_adj": "30",
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "MhFNQdSYeKxkXueZp",
+									"name": "Frequency of Appearance",
+									"children": [
+										{
+											"id": "meTAb9zIUJSM5WTLU",
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"local_notes": "6-",
+											"cost_adj": "x0.5",
+											"disabled": true
+										},
+										{
+											"id": "mLb2iI7ceGYRkeQzW",
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"local_notes": "9-",
+											"cost_adj": "x1"
+										},
+										{
+											"id": "mhqQH4MKQBoHHMuK5",
+											"name": "Appears quite often",
+											"reference": "B36",
+											"local_notes": "12-",
+											"cost_adj": "x2",
+											"disabled": true
+										},
+										{
+											"id": "mWKcspvPggizYA-Q2",
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"local_notes": "15-",
+											"cost_adj": "x3",
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mCo-quBGsHGIs23EH",
+									"name": "Equipment",
+									"reference": "B73",
+									"local_notes": "@Equipment worth no more than average starting wealth@",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "mi4200V0eKqEWJ9xT",
+									"name": "Equipment",
+									"reference": "B73",
+									"local_notes": "@Equipment worth more than average starting wealth@",
+									"cost_adj": "100%",
+									"disabled": true
+								},
+								{
+									"id": "mK4VRiJIP83atht6n",
+									"name": "Highly Accessible",
+									"reference": "B73",
+									"cost_adj": "50%"
+								},
+								{
+									"id": "mga1gI4rXAHKENQAm",
+									"name": "Special Abilities",
+									"reference": "B73",
+									"local_notes": "@Extensive social or political power@",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "m5A1sj2So_7GuAYbz",
+									"name": "Special Abilities",
+									"reference": "B73",
+									"local_notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@",
+									"cost_adj": "100%",
+									"disabled": true
+								},
+								{
+									"id": "mVu873OQZK1syJE9M",
+									"name": "Minimal Interventions",
+									"reference": "B73",
+									"cost_adj": "-50%"
+								},
+								{
+									"id": "mg9_JAFdzJ8iLT5Mi",
+									"name": "Secret",
+									"reference": "B73",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mxlN-cf4nfzXZaQUG",
+									"name": "Unwilling",
+									"reference": "B74",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mJzPSF4Wr7W1Y5U4Q",
+									"name": "Favor",
+									"reference": "B55",
+									"cost_adj": "x0.2"
+								}
+							],
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "tOL6lq63_dgIMG0cH",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "m4toZlgHwWKH4kEFw",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mQ22qvR2m4JICB63o",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m2Dc4U09BpfKg8vrz",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mdG6RCjX2kdZnruYR",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGJO15T6a9yyrzLxC",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGoOFFIFYV3w8hid5",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m3ar1BX_kLFBKPCh_",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mpiYOBjNrSdk5ezBt",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 17
+					}
+				},
+				{
+					"id": "TT4-Pr9JRYR9BCmVq",
+					"name": "Racial Disadvantage",
+					"children": [
+						{
+							"id": "txtuWsxJE7U1fidI6",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tSSmnBdJ1f7mFMRL5"
+							},
+							"name": "Social Stigma (@Stigma@)",
+							"reference": "B155",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"replacements": {
+								"Stigma": "Half-Breed"
+							},
+							"modifiers": [
+								{
+									"id": "mcBsZ6ByNk5FukYx6",
+									"name": "Obvious from your appearance, dress or manner",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who sees you",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mhTvsykSb-1h8uD9r",
+									"name": "Obvious from your speech",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who hears you speak",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mddrBfMYCi8lQBa32",
+									"name": "Easily learned by anyone who cares to check up on you",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from anyone who cares to check up on you",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mUQV4dETezehx84D9",
+									"name": "Public Denouncement",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from everryone you meet",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"disabled": true
+								}
+							],
+							"points_per_level": -5,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": 17
+			}
+		}
+	]
+}
