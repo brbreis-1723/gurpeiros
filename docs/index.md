@@ -1,11 +1,11 @@
-# Gurpeiros
+# 🎲 GURPEIROS: Central de RPG
 
-Bem-vindo ao Gurpeiros.
+Bem-vindo ao repositório de RPG de GURPS.
 
-Este site reúne campanhas, cenários, aventuras e material para GURPS.
+## 📚 Conteúdo
 
-## Conteúdo
+- Regras
+- Cenários
+- Material de apoio
 
-- Campanhas
-- Regras da Casa
-- Artigos
+> Este site está em construção contínua.

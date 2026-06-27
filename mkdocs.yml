@@ -4,14 +4,54 @@ site_url: https://gurpeiros.com.br/
 theme:
   name: material
   language: pt-BR
+  palette:
+    scheme: slate # dark mode
+    primary: black
+    accent: amber
 
 use_directory_urls: true
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Início: index.md
-  - Campanhas:
-      - Visão Geral: campanhas/index.md
-  - Regras da Casa:
-      - Visão Geral: regras/index.md
-  - Artigos:
-      - Visão Geral: artigos/index.md
+
+  - Regras:
+      - Resumo: regras/index.md
+      - Magia: regras/magia.md
+
+  - Cenários:
+      - Sobre Cenários: cenarios/index.md
+      - Zandia:
+          - Sobre Zandia: cenarios/zandia/index.md
+          - Origem: cenarios/zandia/origem.md
+          - História: cenarios/zandia/historia.md
+          - Ideias: cenarios/zandia/ideias.md
+          - Magia:
+            - Introdução: cenarios/zandia/magia/index.md
+            - Metafísica da magia: cenarios/zandia/magia/metafisica_magia.md
+            - Magia do Limiar: cenarios/zandia/magia/magia_limiar.md
+            - Magia e Magos: cenarios/zandia/magia/magia_magos.md
+          - Raças:
+            - As Raças de Zandia: cenarios/zandia/racas/index.md
+            - Anões: cenarios/zandia/racas/dwarfs.md
+            - Armadilhos: cenarios/zandia/racas/armadilhos.md
+            - Clopas: cenarios/zandia/racas/clopas.md
+            - Drows: cenarios/zandia/racas/drows.md
+            - Homens-Chacal: cenarios/zandia/racas/werejackal.md
+            - Krin: cenarios/zandia/racas/krin.md
+            - Ratinos: cenarios/zandia/racas/ratinos.md
+            - Syridianos: cenarios/zandia/racas/syridianos.md
+            - Tressi: cenarios/zandia/racas/tressi.md
+
+  - Material de Apoio:
+      - Resumo: material/index.md
+      - Artigos do Blog: material/artigos.md
+      - Tabelas: 
+        - Relaçao de tabelas:  material/tabelas.md
