@@ -155,7 +155,7 @@ ________________________________________
 
 #### **Download do modelo racial (Arquivo .GDF):**
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/ratino.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/ratino.gct" download> 📥 Clique Aqui </a>
 
 ________________________________________
 

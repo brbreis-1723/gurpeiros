@@ -88,3 +88,11 @@ Alguns veem os Arquitetos como tiranos.
 Outros como deuses falsos.
 Outros como salvadores que perderam o caminho.
 ________________________________________
+Relação com as cidades
+Os Arquitetos classificam todos como:
+TRAIDORES
+Mas a realidade é mais complexa:
+•	cidades do Véu toleram infiltrações discretas 
+•	cidades do Domínio caçam rebeldes implacavelmente 
+•	alguns Conselheiros secretamente financiam facções rebeldes 
+Uma guerra invisível acontece nas areias.

@@ -165,6 +165,6 @@ ________________________________________
 
 #### **Download do modelo racial (Arquivo .GDF):**
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/tressi.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/tressi.gct" download> 📥 Clique Aqui </a>
 
 ________________________________________

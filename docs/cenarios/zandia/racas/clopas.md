@@ -140,4 +140,4 @@ ________________________________________
 
 ________________________________________
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/clopas.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/clopas.gct" download> 📥 Clique Aqui </a>

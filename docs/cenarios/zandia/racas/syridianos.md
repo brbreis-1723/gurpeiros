@@ -141,6 +141,6 @@ ________________________________________
 
 #### **Download do modelo racial (Arquivo .GDF):**
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/syridianos.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/syridian.gct" download> 📥 Clique Aqui </a>
 
 ________________________________________

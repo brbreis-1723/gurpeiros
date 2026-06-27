@@ -217,4 +217,4 @@ ________________________________________
 
 ________________________________________
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/dwarf.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/dwarf.gct" download> 📥 Clique Aqui </a>

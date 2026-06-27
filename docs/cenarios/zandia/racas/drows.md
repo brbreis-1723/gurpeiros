@@ -118,4 +118,4 @@ ________________________________________
 
 ________________________________________
 
-Para baixar o arquivo de template do GCS <a href="/assets/gdf/drow.gdf" download> 📥 Clique Aqui </a>
+Para baixar o arquivo de template do GCS <a href="/assets/templates/drow.gct" download> 📥 Clique Aqui </a>
