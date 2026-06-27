@@ -105,121 +105,28 @@ De outro modo, arquitetos da Facção **Equilibrium** são mais tolerantes com o
 No entanto, mesmo entre a facção Equilibrium, o preconceito ainda está presente, porém mais brando.
 
 
+## **Magias Proibidas x Magias Restritas:**
+
+Magias de viagem no tempo ou manipulação temporal são consideradas perigosas, tabus e **proibidas**, afinal elas manipulam o próprio tecido da realidade! Um cataclisma decorrente de uma magia temporal, mesmo que pequeno, pode ter consequencias desastrosas. Por isso toda tentativa de estudo não é permitida, e se descoberta, punida com o ***Ritual de Anulação***. Grimórios ou qualquer material de estudo é imediatamente confiscado e destruído. Assim, podemos considerar que essas magias são Consideradas perdidas ou impossíveis de serem conhecidas pelos magos.
+
+Magias de água, plantas e animais são **restritas** pelos Arquitetos, em especial dentro das cidades. Fora das cidades, onde os Arquitetos não têm um controle, o seu uso é menos restrito. No entanto, sua eficiência também é reduzida devido ao mana no deserto ser baixo esse tipo de magia.
+
+Demais magias são relativamente livres (aquelas consideradas ofensivas podem exigir uma certa supervisão). Normalmente para poder conjurar magias de combate ou de manipulação é requerido licenças, um emprego coerente (um guarda por exemplo poderia aprender magias de projétil) ou uma certa posição social.
+
 ________________________________________
-O Ritual da Anulação
-A pior punição arcana.
-O Arquiteto e seus magos drenam permanentemente a mana de um traidor ou irresponsável.
-O condenado torna-se um Nulo:
-•	perde a capacidade de conjurar magia 
-•	mantém conhecimento teórico 
-•	perde a capacidade de sentir emoções 
-•	torna-se frio, racional e apático 
-Nulos são párias entre magos e comuns.
-Muitos vivem isolados fora das cidades.
-________________________________________
-ORGANIZAÇÕES MÁGICAS
-O Governo Arcano das Cidades
-Cada cidade-estado é governada por:
-O Arquiteto
-Governante absoluto, legislador, juiz e líder religioso.
-O Conselho Arcano
-Alta aristocracia mágica (Aptidão 9–11).
-Funções:
-•	administração da cidade 
-•	planejamento mágico urbano 
-•	controle populacional 
-•	diplomacia inter-cidades 
-•	supervisão das escolas 
-Ministérios Arcanos
-Burocracia mágica especializada:
-•	Defesa Arcana 
-•	Infraestrutura Mágica 
-•	Recursos e Mana 
-•	Vigilância Interna 
-•	Educação Arcana 
-________________________________________
-Academias e Universidades
-Cada cidade possui Grandes Academias Arcanas focadas em suas escolas principais.
-Educação mágica possui três níveis:
-1 — Educação Básica Arcana
-Para todo mago.
-Ensina:
-•	teoria mágica 
-•	segurança 
-•	feitiços utilitários simples 
-2 — Academias Especializadas
-Treinamento profissional por escola.
-3 — Grandes Universidades Arcanas
-Elite política e científica.
-________________________________________
-Intercâmbio entre cidades
-Magos podem estudar em outras cidades através de:
-•	tratados acadêmicos 
-•	bolsas diplomáticas 
-•	missões oficiais 
-Esses intercâmbios são:
-•	politicamente sensíveis 
-•	altamente monitorados 
-•	fonte constante de espionagem 
-________________________________________
-Recrutamento de Novos Magos
-Existe uma ordem oficial de recrutadores:
-Os Perscrutadores
-(Inspirado no latim Perscrutatores)
-Função:
-•	viajar por vilas e assentamentos 
-•	identificar crianças com aptidão mágica 
-•	levá-las às academias 
-Para muitas famílias, é uma honra.
-Para outras, um sequestro institucional.
-________________________________________
-Polícia Arcana
-Crimes mágicos são tratados pela:
-Inquisição Arcana
-Funções:
-•	investigar abuso de magia 
-•	capturar rebeldes mágicos 
-•	prevenir calamidades 
-•	aplicar o Ritual da Anulação 
-Temida em todas as cidades.
-________________________________________
-MAGIA PROIBIDA E RESTRITA
-Proibida
-•	viagem no tempo 
-•	manipulação temporal 
-Consideradas perdidas ou impossíveis.
-Fortemente Controlada
-•	água 
-•	plantas 
-•	animais 
-Livre (com supervisão)
-Todas as demais escolas.
-________________________________________
-REBELDES E DISSIDÊNCIA
-Fora das cidades vivem milhões de pessoas.
-E onde há opressão, há resistência.
-A Resistência do Deserto
-Não é uma organização única.
-É uma rede descentralizada de células.
-Composição:
-•	comuns fugitivos 
-•	magos dissidentes 
-•	nulos exilados 
-•	tribos nômades 
-Objetivos variam:
-•	igualdade entre magos e comuns 
-•	derrubar Arquitetos 
-•	destruir o sistema arcano 
-•	recuperar magia natural perdida 
-Alguns veem os Arquitetos como tiranos.
-Outros como deuses falsos.
-Outros como salvadores que perderam o caminho.
-________________________________________
-Relação com as cidades
-Os Arquitetos classificam todos como:
-TRAIDORES
-Mas a realidade é mais complexa:
-•	cidades do Véu toleram infiltrações discretas 
-•	cidades do Domínio caçam rebeldes implacavelmente 
-•	alguns Conselheiros secretamente financiam facções rebeldes 
-Uma guerra invisível acontece nas areias.
+## **O Ritual da Anulação**
+
+Quando um mago comete crimes de traição a Ordem Arcana (como se aliar à comuns terroristas) ou atos irresponsáveis na conjuração de magia (se enveredar por uma magia proibida ou abusar do Limiar), a ele é reservada a pior punição arcana: O **Ritual de Anulação**.
+
+Nesse ritual, o Arquiteto e seus magos drenam permanentemente a mana do condenado a ponto dele perder permanentemente a capacidade de sentir e operar magias. O ritual é doloroso, havendo sempre uma pequena possibilidade do mago não sobreviver. Aqueles condenados que passam pelo ritual da anulação e sobrevivem são chamados de **Nulos**.
+
+Nulos são párias entre magos e comuns. Muitos vivem isolados fora das cidades.
+
+Embora eles percam a capacidade de conjurar magia, mantém o conhecimento teórico. Há uma pequena parcela de nulos que decide permanecer de alguma forma envolvido com a magia, trabalhando por exemplo como escolásticos, bibliotecários ou trabalhando em livrarias. Para alguns essa é uma maneira de superar o trauma da perda e ainda se sentirem úteis à sociedade.
+
+Um efeito colateral peculiar do ritual é que nulos perdem a capacidade de sentir emoções. Eles tornam-se frios, racionais e apáticos. Alguns afirmam que isso pode ser decorrente da experiência traumática do ritual. Outros consideram que a perda da aptidão para magia também leva a perda da propria consciência do individo, sendo sua personalidade parte de sua essência como mago. 
+
+De qualquer modo, o Ritual da Anulação é uma punição cruel e temida por todos os magos. É de consenso geral que ela somente deve ser aplicada em último caso e reservada apenas aos piores criminosos.
+
+
+
