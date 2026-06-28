@@ -1,6 +1,6 @@
 # Kaleef, o guerreiro syridiano
 
-<img src="../../../../../assets/imagens/kaleef.png" style="width:50%;">
+<img src="../../../../../assets/imagens/Kaleef.png" style="width:50%;">
 
 ## <u>Background</u> 
 
@@ -20,7 +20,6 @@ Nascido entre as tribos nômades dos Syridianos, Kaleef cresceu aprendendo que o
 Durante um ritual sagrado, Kaleef recebeu uma visão de uma tempestade colossal engolindo Zandia, seguida pelo rugido de uma criatura cuja sombra cobria o horizonte. Convencido de que essa era a prova destinada a ele, abandonou sua tribo e partiu pelo continente em busca dos inimigos mais formidáveis, acreditando que apenas um guerreiro forjado pelas maiores batalhas seria capaz de enfrentar o destino que o aguardava.
 
 Hoje, Kaleef atravessa desertos, ruínas esquecidas e cidades-estado em busca de desafios dignos de seu nome. Embora muitos o vejam apenas como um brutamontes impiedoso, ele acredita estar seguindo a vontade dos espíritos do deserto. Cada vitória o aproxima da lenda que deseja se tornar — e da batalha final que, cedo ou tarde, decidirá o futuro de Zandia.
-
 ______________________________
 
 ## <u>Assinatura</u>
@@ -29,7 +28,6 @@ ______________________________
 
 - **falha:** Kaleef sofre 1 ponto de dano em um dos braços.
 - **falha critica**: Kaleef sofre 1d de dano em um dos braços e este fica incapacitado.
-
 ______________________________
 
 ## <u>Ficha Completa</u>
@@ -40,7 +38,7 @@ ______________________________
 <div class="sheet-container">
     <iframe
         id="ficha"
-        src="../../../../../assets/fichas/pj/kaleef.html"
+        src="../../../../../assets/fichas/pj/Kaleef.html"
         width="100%"
         height="1800"
         style="border:none;">
