@@ -40,7 +40,7 @@ ______________________________
 <div class="sheet-container">
     <iframe
         id="ficha"
-        src="../../../../../assets/fichas/pj/kaleef.html"
+        src="assets/fichas/pj/kaleef.html"
         width="100%"
         height="1800"
         style="border:none;">
