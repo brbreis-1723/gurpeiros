@@ -4,8 +4,8 @@ Bem-vindo ao repositório de RPG de GURPS.
 
 ## 📚 Conteúdo
 
-- Regras
-- Cenários
-- Material de apoio
+- [Regras da Casa](regras/index.md)
+- [Cenários](cenarios/index.md)
+- [Material de apoio](material/index.md)
 
 > Este site está em construção contínua.
