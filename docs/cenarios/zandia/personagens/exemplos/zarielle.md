@@ -1,6 +1,6 @@
 # Zarielle, a Caolha
 
-<img src="../../../../assets/imagens/zarielle.png" style="width:50%;">
+<img src="../../../../../assets/imagens/zarielle.png" style="width:50%;">
 
 ## Background
 
@@ -43,7 +43,7 @@ Para mais detalhes ver **GURPS Horror (pp. 146-148)**.
 <div class="sheet-container">
     <iframe
         id="ficha"
-        src="../../../../assets/fichas/pj/Zarielle.html"
+        src="../../../../../assets/fichas/pj/Zarielle.html"
         width="100%"
         max-width: 12000px;
         height="1800"
