@@ -1,7 +1,5 @@
 # **Magia em Zandia**
 
-## **Introdução**
-
 !!! quote "Relato de um sábio"
 
     “A Magia é uma das forças mais poderosas da natureza. A mana está presente em todos os seres vivos e não vivos — no ar, na terra, na água e no fogo. Ela permeia a matéria, o espírito, tudo ao nosso redor.
@@ -19,15 +17,10 @@
     — **Mestre Delain**, o Sábio  
     *Primeira Aula*
 
+## **Introdução**
 
 Em Zandia a magia pode operar maravilhas mas tem um custo muito alto. Magos podem operar feitiços capazes de derrubar castelos ou destruir exércitos inteiros, sem se sentirem cansados. Contudo, as consequências de se abusar da magia são sentidas não apenas por eles, mas por todos ao redor. 
 
 Cataclismos e tragédias podem acontecer quando um mago negligencia seus limites. A própria origem de Zandia é um exemplo de como o ato inconsequente de um aprendiz pôde mudar a vida de um planeta inteiro! Por isso, magos são ensinados desde que são aprendizes a controlar suas ambições, buscando sempre agir com moderação. 
 
-Isso não significa que em determinados momentos, quando sua vida estiver em risco, em uma eventual emergência, os limites não devam ser ultrapassados. Afinal, é para momentos críticos como esse, em que a sua vida e a de seus companheiros estão em risco, que um mago se torna mais do que necessário! Essa forma de magia é conhecida como **Magia do Limiar**.
-
-Para saber mais:
-
-- Magia do Limiar
- 
-
+Isso não significa que em determinados momentos, quando sua vida estiver em risco, em uma eventual emergência, os limites não devam ser ultrapassados. Afinal, é para momentos críticos como esse, em que a sua vida e a de seus companheiros estão em risco, que um mago se torna mais do que necessário! Essa forma de magia é conhecida como **[Magia do Limiar](../magia/magia_limiar.md)**.

@@ -13,7 +13,25 @@
   hyphens: auto;
 }
 
+.tabela thead th {
+    background: linear-gradient(180deg, #5E35B1, #4527A0);
+    color: #fff;
+    border-bottom: 2px solid #7E57C2;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ 
+  }
+.tabela td ul {
+    margin: 0;
+    padding-left: 0.1em;
+}
 
+.tabela td li {
+    margin: 0;
+    line-height: 1.25;
+}
 
 @media (max-width: 768px) {
   .md-typeset {

@@ -5,6 +5,7 @@ theme:
   name: material
   language: pt-BR
   logo: assets/imagens/PoweredByGURPS.png
+  favicon: assets/imagens/dice.png
   custom_dir: overrides
   palette:
     scheme: slate # dark mode
@@ -39,6 +40,11 @@ nav:
             - Introdução: cenarios/zandia/magia/index.md
             - Metafísica da magia: cenarios/zandia/magia/metafisica_magia.md
             - Magia do Limiar: cenarios/zandia/magia/magia_limiar.md
+            - Tabela de Calamidades: cenarios/zandia/magia/calamidades.md
+            - Efeitos adicionais: cenarios/zandia/magia/efeitos_adicionais.md
+            - Limiar e Mana: cenarios/zandia/magia/limiar_mana.md
+            - Limiar e Energia: cenarios/zandia/magia/magias_energia.md
+            - Limiar e Magia Cerimonial: cenarios/zandia/magia/magia_cerimonial.md
             - Magia e Magos: cenarios/zandia/magia/magia_magos.md
           - Personagens:
             - Fichas: cenarios/zandia/personagens/index.md
