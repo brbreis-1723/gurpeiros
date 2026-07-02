@@ -1,5 +1,8 @@
 # Categorias de Complicações
 
+!!! quote " "
+        Nenhuma grande marca é feita sem cicatrizes. A Complicação é o preço de ser extraordinário.
+
 ### 🏛️ 1. Sociais
 
 Reputação, política, obrigações e relações.  

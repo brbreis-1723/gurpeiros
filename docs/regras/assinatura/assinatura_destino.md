@@ -1,5 +1,8 @@
 # Assinaturas - Destino e Complicações
 
+!!! quote " "
+        Todo herói deixa uma marca no mundo. A Assinatura é a marca que o mundo jamais esquecerá.
+
 ## Assinatura e Destino
 
 Toda Assinatura gera um **Destino Temático**. O Destino gera pontos <u>para o mestre e não para o jogador</u>! Ele serve para **mover a história** e representa as consequências inevitáveis ligadas à Assinatura.

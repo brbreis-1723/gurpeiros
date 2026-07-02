@@ -2,9 +2,13 @@
 
 ## Visão Geral
 
-Cada aventureiro é o herói de sua própria estória. Ele é único e possui uma habilidade capaz de o diferenciar dos meros mortais. Ela é sua assinatura: uma característica singular que o ajuda a atingir seus objetivos. Essa capacidade única pode se qualquer coisa: uma extensa rede de contatos, um poder concedido pelos deuses ou entidades sobrenaturais, uma espada mágica herdada de seus ancestrais. 
 
-No entanto, todo poder tem suas consequências, obrigações, responsabilidades. Sempre há uma complicação. Assinaturas não são diferentes: seus contatos podem precisar de sua ajuda, pactos podem exigir favores e aquela espada mágica sempre atrai ladrões ou a insistência de mercadores querendo comprá-la... 
+!!! quote " "
+        Toda marca aponta para um caminho. O Destino é a jornada que ela revela.
+
+Cada aventureiro é o herói de sua própria história. Ele é único e possui uma habilidade capaz de diferenciá-lo dos meros mortais. Essa é sua Assinatura: uma característica marcante que o ajuda a alcançar seus objetivos. Ela pode ser qualquer coisa: uma extensa rede de contatos, um poder concedido pelos deuses ou por entidades sobrenaturais, ou uma espada mágica herdada de seus ancestrais.
+
+No entanto, todo poder traz consequências, obrigações e responsabilidades. Sempre existe uma complicação. As Assinaturas não são diferentes: seus contatos podem precisar de sua ajuda, pactos podem exigir favores, e aquela espada mágica pode atrair ladrões ou despertar o interesse insistente de mercadores dispostos a comprá-la...
 
 ---
 
