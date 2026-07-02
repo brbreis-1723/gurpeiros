@@ -18,7 +18,7 @@ O Mestre pode usar estes pontos de destino para gerar **[Complicações](../assi
 
 Essa mecânica garante que:
 
-- o abuso das assinaturas não seja ignorada
+- o uso das assinaturas não seja ignorada
 - poderes tenham impacto narrativo
 - o mundo responda aos personagens
 - existam histórias pessoais recorrentes e interessantes.
