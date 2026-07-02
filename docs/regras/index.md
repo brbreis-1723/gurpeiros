@@ -1,5 +1,8 @@
 # 🔧 Regras da Casa
 
-Regras estruturadas do RPG.
+## Tópicos
+
+- [Assinaturas](../regras/assinatura/index.md)
+- Magias
 
 Conteúdo em construção.

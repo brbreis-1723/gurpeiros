@@ -27,7 +27,12 @@ nav:
 
   - Regras:
       - Resumo: regras/index.md
-      - Magia: regras/magia.md
+      - Assinatura: 
+          - Visão Geral: regras/assinatura/index.md
+          - Como Construir: regras/assinatura/assinatura_construcao.md
+          - Tipos de Assinatura: regras/assinatura/assinatura_tipo.md
+          - Destino e Complicações: regras/assinatura/assinatura_destino.md
+          - Categorias de Complicações: regras/assinatura/assinatura_complicacao.md
 
   - Cenários:
       - Sobre Cenários: cenarios/index.md
