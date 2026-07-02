@@ -17,7 +17,7 @@ O Mestre ganha **+1 ponto* sempre que a Assinatura:
 - Se a Assinatura ajudou muito, ela **alimenta o Destino**.
 
 !!! note "Importante:"
-  Não necessariamente pontos de destino precisam ser utilizados pelo Mestre na mesma sessão que tenha ganho. Ele deve ter a opção de planejar o melhor momento de aplicar a complicação de acordo com a narrativa.
+    Não necessariamente pontos de destino precisam ser utilizados pelo Mestre na mesma sessão que tenham sido ganhos. O GM deve ter a opção de planejar o melhor momento de aplicar a complicação de acordo com a narrativa.
 
 ---
 
