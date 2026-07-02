@@ -6,7 +6,7 @@ Toda Assinatura gera um **Destino Temático**. O Destino gera pontos <u>para o m
 
 ### Pontos de Destino (Mestre)
 
-- O Mestre ganha **+1 ponto* sempre que a Assinatura:
+O Mestre ganha **+1 ponto* sempre que a Assinatura:
   - resolve um problema importante
   - evita um perigo relevante
   - concede uma vantagem decisiva
@@ -15,6 +15,9 @@ Toda Assinatura gera um **Destino Temático**. O Destino gera pontos <u>para o m
 
 **Regra simples:**  
 - Se a Assinatura ajudou muito, ela **alimenta o Destino**.
+
+!!! note "Importante:"
+  Não necessariamente pontos de destino precisam ser utilizados pelo Mestre na mesma sessão que tenha ganho. Ele deve ter a opção de planejar o melhor momento de aplicar a complicação de acordo com a narrativa.
 
 ---
 
