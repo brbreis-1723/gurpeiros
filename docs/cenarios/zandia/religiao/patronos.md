@@ -4,7 +4,7 @@
 
 Em Zandia não existem deuses ativos. A Humanidade e demais raças acham que têm patronos divinos, mas na verdade servem a forças e espíritos da natureza, inteligências antigas do deserto, resquícios da civilização tecnológica destruída ou entidades cósmicas que tratam mortais como ferramentas.
 
-Os patronos requerem um pacto para selar o relacionamento com seus seguidos. São úteis, porém perigosos, muitas veze egoístas e em grande parte pouco (ou nunca confiaveis) confiáveis. A relação abaixo contempla 12 patronos, detalhando o seu Domínio, Suas exigências, Complicações por servi-lo e ideias para o Pacto;
+Os patronos requerem um pacto para selar o relacionamento com seus seguidos. São úteis, porém perigosos, muitas veze egoístas e em grande parte pouco (ou nunca confiaveis) confiáveis. A relação abaixo contempla 12 patronos, detalhando o seu Domínio, Suas exigências, Complicações por servi-lo e ideias para o Pacto.
 
 ________________________________________
 

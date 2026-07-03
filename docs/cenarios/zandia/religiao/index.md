@@ -1,6 +1,6 @@
 # A Religião em Zandia
 
-Os deuses estão mortos.
+Os deuses estão mortos...
 
 Ninguém sabe ao certo quando morreram, como morreram ou mesmo se algum dia existiram. As antigas escrituras narram uma era em que divindades caminhavam entre os mortais, moldavam montanhas, criavam mares e realizavam milagres. Hoje, porém, restam apenas templos antigos, tradições centenárias e interpretações conflitantes sobre um passado envolto em lendas.
 

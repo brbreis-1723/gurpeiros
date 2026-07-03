@@ -1,3 +1,3 @@
 # A Igreja dos Novos Deuses
 
-Em construção
+Em construção - AGUARDE
