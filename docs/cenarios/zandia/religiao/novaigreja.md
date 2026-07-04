@@ -15,9 +15,9 @@ Sua influência política é igualmente profunda. A Igreja proclama a legitimida
 
 A estrutura da Igreja é altamente organizada e hierárquica. No topo encontra-se o **Hierarca Supremo**, a maior autoridade da Igreja dos Novos Deuses e guardião de sua doutrina. Cabe a ele preservar a unidade da fé, interpretar os textos sagrados, conduzir as cerimônias de maior importância e reconhecer oficialmente a **Apoteose** de um Arquiteto.
 
-Embora ocupe o posto mais elevado da Igreja, o Alto Pontífice não está acima dos Novos Deuses. Segundo a doutrina, ele é o primeiro entre seus servos, responsável por conduzir os fiéis e zelar para que a vontade dos Arquitetos seja corretamente interpretada e preservada.
+Embora ocupe o posto mais elevado da Igreja, o Hierarca Supremo não está acima dos Novos Deuses. Segundo a doutrina, ele é o primeiro entre seus servos, responsável por conduzir os fiéis e zelar para que a vontade dos Arquitetos seja corretamente interpretada e preservada.
 
-Abaixo do Alto Pontífice encontram-se arcebispos, bispos, sacerdotes, inquisidores, escribas e missionários, formando uma organização presente em praticamente todas as cidades-estado humanas. Muito além de suas funções religiosas, a Igreja participa da administração pública, da educação, dos registros civis e da preservação da ordem social, tornando-se uma das instituições mais influentes de toda Zandia.
+Abaixo do Hierarca Supremo encontram-se arcebispos, bispos, sacerdotes, inquisidores, escribas e missionários, formando uma organização presente em praticamente todas as cidades-estado humanas. Muito além de suas funções religiosas, a Igreja participa da administração pública, da educação, dos registros civis e da preservação da ordem social, tornando-se uma das instituições mais influentes de toda Zandia.
 
 Entre seus diversos órgãos destacam-se o **Ministério da Pureza**, responsável por investigar heresias, cultos proibidos e práticas mágicas consideradas perigosas; o **Ministério dos Registros Eternos**, encarregado dos registros civis e religiosos; e o **Ministério da Providência**, que supervisiona a administração de celeiros, reservatórios, hospitais, obras de caridade e a distribuição de recursos em tempos de crise.
 

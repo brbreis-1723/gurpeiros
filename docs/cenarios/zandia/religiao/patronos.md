@@ -382,6 +382,55 @@ Os Arquitetos classificam Sarrak-Salt como um fenômeno caótico urbano perigoso
 **Invocação:** Deixar alimento apodrecer deliberadamente em um ponto de passagem urbano enquanto se recita o nome de Sarrak-Salt no silêncio do subsolo.
 ________________________________________
 
+### **Serynna, Senhora dos Elfos Cinzentos**
+
+Muito antes de Zandia tornar-se um mundo de areia e pedra, extensas florestas cobriam o continente. Os elfos afirmam que, naquela época, Serynna caminhava livremente entre seu povo, protegendo bosques, rios e toda forma de vida. O Cataclisma transformou esse mundo para sempre, e a floresta quase desapareceu.
+
+Serynna, porém, não morreu.
+
+Enfraquecida pela devastação, a antiga Senhora da Floresta adaptou-se ao novo mundo. Sua essência passou a habitar as plantas resistentes do deserto, as raízes ocultas sob a areia, os líquens que crescem sobre as rochas e toda vida que insiste em florescer onde nada deveria sobreviver.
+
+Os Elfos Cinzentos continuam venerando Serynna como sua grande Patrona. Embora seu povo tenha perdido cidades, reinos e grande parte de seu conhecimento, jamais abandonou o antigo juramento de proteger a vida e preservar o equilíbrio da natureza. Hoje vivem como nômades, percorrendo desertos, montanhas e ruínas, guiados pela crença de que cada pequeno refúgio de vida representa um fragmento do corpo de sua Senhora.
+
+Seus seguidores recebem dela acesso à magia, especialmente aquela voltada à preservação, à cura e à comunhão com o mundo natural. A Igreja dos Novos Deuses tolera seu culto nas comunidades élficas e em algumas cidades humanas, considerando-o uma antiga tradição racial. Ainda assim, seus sacerdotes jamais reconhecem os devotos de Vael como verdadeiros magos.
+
+Para os Elfos Cinzentos, enquanto uma única semente conseguir romper a areia estéril, Vael continuará viva.
+
+---
+
+**Tema:** Vida, memória, esperança e adaptação.
+
+**Domínio:** Natureza e Vida.
+
+**Concede:**
+
+* Magias de cura e restauração.
+* Comunicação com plantas e animais.
+* Acelerar o crescimento da vegetação.
+* Purificação de água e alimentos.
+* Localização de fontes de vida e refúgios naturais.
+
+**Exige:**
+
+* Proteger toda forma de vida sempre que possível.
+* Jamais destruir a natureza sem necessidade.
+* Plantar ou restaurar a vida por onde passar.
+* Preservar o conhecimento e as tradições élficas.
+
+**Corrupção:**
+
+* A pele adquire discretos padrões semelhantes a folhas, galhos ou raízes.
+* O corpo torna-se cada vez mais sensível ao sofrimento da natureza ao redor.
+* O seguidor desenvolve dificuldade em permanecer por longos períodos em ambientes totalmente estéreis ou devastados.
+* Com o tempo, passa a sentir um forte impulso de proteger qualquer forma de vida, mesmo colocando a própria existência em risco.
+
+**Culto:** Predominantemente entre os Elfos Cinzentos, embora alguns druidas, eremitas e guardiões da natureza também prestem reverência à Senhora dos Elfos.
+
+**Símbolo:** Uma folha prateada brotando sobre uma duna.
+
+**Invocação:** O fiel enterra uma semente na areia ou toca uma planta viva enquanto oferece uma breve prece em élfico antigo.
+
+________________________________________
 ### **Sheol-Vael, o Eremitão Sem Sombra**
 
 No deserto de Zandia existem fenômenos que desafiam qualquer lógica conhecida. Entre eles, um dos mais perturbadores é a aparição de uma cabana solitária em locais onde nenhuma estrutura poderia existir.
@@ -480,55 +529,6 @@ Os que o veneram são, em sua maioria, engenheiros arcanos, construtores, burocr
 **Invocação:** Traçar um padrão geométrico perfeito sobre solo sólido e infundi-lo com mana durante a construção ou reparo de uma estrutura.
 ________________________________________
 
-### **Serynna, Senhora dos Elfos Cinzentos**
-
-Muito antes de Zandia tornar-se um mundo de areia e pedra, extensas florestas cobriam o continente. Os elfos afirmam que, naquela época, Serynna caminhava livremente entre seu povo, protegendo bosques, rios e toda forma de vida. O Cataclisma transformou esse mundo para sempre, e a floresta quase desapareceu.
-
-Serynna, porém, não morreu.
-
-Enfraquecida pela devastação, a antiga Senhora da Floresta adaptou-se ao novo mundo. Sua essência passou a habitar as plantas resistentes do deserto, as raízes ocultas sob a areia, os líquens que crescem sobre as rochas e toda vida que insiste em florescer onde nada deveria sobreviver.
-
-Os Elfos Cinzentos continuam venerando Serynna como sua grande Patrona. Embora seu povo tenha perdido cidades, reinos e grande parte de seu conhecimento, jamais abandonou o antigo juramento de proteger a vida e preservar o equilíbrio da natureza. Hoje vivem como nômades, percorrendo desertos, montanhas e ruínas, guiados pela crença de que cada pequeno refúgio de vida representa um fragmento do corpo de sua Senhora.
-
-Seus seguidores recebem dela acesso à magia, especialmente aquela voltada à preservação, à cura e à comunhão com o mundo natural. A Igreja dos Novos Deuses tolera seu culto nas comunidades élficas e em algumas cidades humanas, considerando-o uma antiga tradição racial. Ainda assim, seus sacerdotes jamais reconhecem os devotos de Vael como verdadeiros magos.
-
-Para os Elfos Cinzentos, enquanto uma única semente conseguir romper a areia estéril, Vael continuará viva.
-
----
-
-**Tema:** Vida, memória, esperança e adaptação.
-
-**Domínio:** Natureza e Vida.
-
-**Concede:**
-
-* Magias de cura e restauração.
-* Comunicação com plantas e animais.
-* Acelerar o crescimento da vegetação.
-* Purificação de água e alimentos.
-* Localização de fontes de vida e refúgios naturais.
-
-**Exige:**
-
-* Proteger toda forma de vida sempre que possível.
-* Jamais destruir a natureza sem necessidade.
-* Plantar ou restaurar a vida por onde passar.
-* Preservar o conhecimento e as tradições élficas.
-
-**Corrupção:**
-
-* A pele adquire discretos padrões semelhantes a folhas, galhos ou raízes.
-* O corpo torna-se cada vez mais sensível ao sofrimento da natureza ao redor.
-* O seguidor desenvolve dificuldade em permanecer por longos períodos em ambientes totalmente estéreis ou devastados.
-* Com o tempo, passa a sentir um forte impulso de proteger qualquer forma de vida, mesmo colocando a própria existência em risco.
-
-**Culto:** Predominantemente entre os Elfos Cinzentos, embora alguns druidas, eremitas e guardiões da natureza também prestem reverência à Senhora dos Elfos.
-
-**Símbolo:** Uma folha prateada brotando sobre uma duna.
-
-**Invocação:** O fiel enterra uma semente na areia ou toca uma planta viva enquanto oferece uma breve prece em élfico antigo.
-
-________________________________________
 
 ### **Valakar, o Banqueiro das Almas**
 
