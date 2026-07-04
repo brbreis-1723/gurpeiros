@@ -384,6 +384,8 @@ ________________________________________
 
 ### **Serynna, Senhora dos Elfos Cinzentos**
 
+![Serynna_symbol](../../../assets/imagens/serynna_simbol.png)
+
 Muito antes de Zandia tornar-se um mundo de areia e pedra, extensas florestas cobriam o continente. Os elfos afirmam que, naquela época, Serynna caminhava livremente entre seu povo, protegendo bosques, rios e toda forma de vida. O Cataclisma transformou esse mundo para sempre, e a floresta quase desapareceu.
 
 Serynna, porém, não morreu.
@@ -578,6 +580,8 @@ Valakar não exige adoração. Ele exige equilíbrio.
 ________________________________________
 
 ### **Xilthara, a Rainha Aranha das Dunas**
+
+![Xilthara_symbol](../../../assets/imagens/xilthara_simbol.png)
 
 Nas profundezas de Zandia, além das ruínas esquecidas e dos abismos ocultos sob as dunas, estende-se um vasto reino subterrâneo onde a luz do sol jamais chegou. É ali que repousa **Xilthara**, a Rainha Aranha das Dunas, uma das mais antigas e temidas Patronas conhecidas.
 
