@@ -1,28 +1,36 @@
 # A Religião em Zandia
 
-Os deuses estão mortos...
+## **Visão Geral**
 
-Ninguém sabe ao certo quando morreram, como morreram ou mesmo se algum dia existiram. As antigas escrituras narram uma era em que divindades caminhavam entre os mortais, moldavam montanhas, criavam mares e realizavam milagres. Hoje, porém, restam apenas templos antigos, tradições centenárias e interpretações conflitantes sobre um passado envolto em lendas.
+Os deuses estão mortos.
 
-Apesar disso, a religião continua sendo um dos pilares da civilização. As igrejas preservam a história, celebram os ritos da vida e da morte, orientam a moral, educam a população e legitimam a ordem estabelecida. Sua autoridade não provém de milagres, mas da tradição, da filosofia e do poder político que exercem sobre as cidades-estado.
+Ninguém sabe ao certo quando pereceram, como pereceram ou mesmo se algum dia realmente existiram. As antigas escrituras descrevem uma era em que divindades caminhavam entre os mortais, moldavam montanhas e realizavam milagres. Hoje, porém, restam apenas templos em ruínas, tradições seculares e incontáveis interpretações sobre um passado que jamais poderá ser comprovado.
 
-A principal delas é a Igreja dos Novos Deuses, religião oficial da maior parte de Zandia. Segundo sua doutrina, os antigos deuses pereceram durante o Cataclisma, deixando a humanidade sem guias. Para preservar a civilização, novos deuses ergueram-se entre os homens: os Arquitetos.
+Apesar da ausência dos deuses, a religião continua sendo um dos pilares da civilização. Em Zandia, as igrejas preservam a história, celebram os ritos da vida e da morte, educam a população e legitimam a ordem política. Sua autoridade não deriva de milagres, mas da tradição, da filosofia e do poder que exercem sobre a sociedade.
 
-Cada Arquiteto representa um aspecto do divino. Em Heliópolis, por exemplo, o Arquiteto é venerado como o Deus Sol, símbolo da luz, da ordem e da própria civilização. Outras cidades cultuam seus governantes como divindades da guerra, da sabedoria, da justiça ou da prosperidade. A Igreja ensina que servir aos Arquitetos é servir aos Novos Deuses, tornando sua autoridade não apenas política, mas sagrada.
+A principal delas é a **[Igreja dos Novos Deuses](../religiao/novaigreja.md)**, religião oficial da maioria das cidades-estado humanas.
 
-Nem todos, porém, compartilham dessa crença.
+Segundo sua doutrina, os antigos deuses pereceram durante o Cataclisma. Para que a humanidade não fosse abandonada, novos deuses surgiram entre os homens: os **Arquitetos**. Cada um representa um aspecto do divino e governa sua cidade como uma divindade viva. Em **Heliópolis**, por exemplo, o Arquiteto é venerado como o **Deus Sol**, patrono da luz, da ordem e da civilização. Outras cidades reverenciam seus Arquitetos como deuses da guerra, da justiça, da sabedoria, da prosperidade e de inúmeros outros domínios.
 
-Muito antes da ascensão dos Arquitetos, inúmeros povos mantinham vínculos com entidades conhecidas como Patronos. Diferentemente dos deuses das antigas lendas, os Patronos não são criadores do mundo nem exigem adoração universal. São espíritos ancestrais, inteligências antigas, manifestações da natureza ou seres cuja verdadeira origem permanece desconhecida.
+Embora sejam adorados como deuses, os Arquitetos permanecem ligados ao mundo material. Os mais poderosos são capazes de compartilhar uma pequena parcela de sua magia com sacerdotes, campeões e servos escolhidos, permitindo-lhes conjurar feitiços enquanto permanecem sob sua influência. Essa ligação enfraquece conforme se afastam da cidade-estado e raramente ultrapassa algumas centenas de quilômetros.
 
-Cada cultura compreende os Patronos à sua maneira. Os anões reverenciam seus Ancestrais, acreditando que os maiores mestres, reis e heróis continuam protegendo seus descendentes após a morte. Os elfos preservam antigos pactos com espíritos ligados às florestas e às ruínas de sua antiga civilização. Povos nômades prestam homenagens às tempestades, às dunas e aos raros oásis, enquanto outras culturas reconhecem Patronos associados a montanhas, rios, animais sagrados ou lugares de grande poder.
+> *"A verdadeira magia nasce do conhecimento e da disciplina. Todo poder concedido por entidades externas é mera dependência, jamais domínio. Aqueles que recebem magia de Patronos não são magos, mas servos de uma vontade alheia."*
+> — *Tratado sobre a Pureza da Magia*, Igreja dos Novos Deuses.
 
-Mas nem todos os Patronos são benevolentes — e nem todos os seus seguidores são inocentes.
+Muito antes da ascensão da humanidade, diferentes povos estabeleceram vínculos com entidades conhecidas como **Patronos**. Diferentemente dos antigos deuses, os Patronos não são considerados criadores do mundo. São espíritos ancestrais, demônios, inteligências de outras dimensões, manifestações das forças da natureza ou seres tão antigos que sua verdadeira origem permanece desconhecida.
 
-Nas sombras das cidades prosperam seitas proibidas que veneram entidades esquecidas, cujos nomes sequer são pronunciados fora de seus círculos iniciáticos. Esses cultos buscam conhecimento proibido, poder arcano e segredos capazes de desafiar os próprios Arquitetos. Seus membros realizam pactos, oferecem sacrifícios e acreditam que os Novos Deuses são apenas usurpadores, incapazes de compreender as forças verdadeiramente antigas que ainda habitam o mundo.
+Os Patronos também concedem magia aos seus seguidores. Esses poderes utilizam mana e obedecem às mesmas leis que qualquer outra forma de magia. A diferença está em sua origem: enquanto os magos aprendem a manipular a mana por meio do estudo e da disciplina, os seguidores dos Patronos recebem esse conhecimento ou essa capacidade por intermédio da entidade que veneram. Por esse motivo, a Igreja e a magocracia recusam-se a reconhecê-los como verdadeiros magos.
 
-A Igreja condena tais cultos como heresia e corrupção, perseguindo-os sempre que possível. Ainda assim, rumores persistem. Há quem afirme que alguns Arquitetos alcançaram seu poder graças a um Patrono. Outros juram que certas ruínas permanecem protegidas por entidades muito mais antigas do que qualquer civilização conhecida.
+Cada povo mantém seus próprios Patronos e tradições. Os **Anões** reverenciam seus **Ancestrais**, espíritos dos grandes reis, artesãos e heróis do passado. Os **Elfos Cinzentos** prestam culto a **Sylthara**, Senhora dos Elfos, um antigo espírito da floresta que sobreviveu ao desaparecimento do mundo verde ao adaptar-se à vegetação resistente, ao solo e à vida do deserto. Os **Syridianos**, povos reptilianos nômades, veneram espíritos ligados às dunas, aos ventos, às tempestades de areia e aos raros oásis ocultos sob o deserto. Os **Krins** cultuam sua **Rainha da Colmeia**, origem e protetora de sua espécie, embora ela não lhes conceda magia. Já os **Drows** reverenciam **Xilthara**, a Rainha Aranha das Dunas, uma entidade colossal e feroz, temida como uma força primordial do deserto.
 
-Em Zandia, ninguém pode provar qual fé está correta. Os antigos deuses permaneceram em silêncio. Os Novos Deuses governam o mundo dos homens. E, nas profundezas das ruínas, nos desertos sem fim e nos sonhos daqueles que ousam escutar, algo ainda parece responder.
+A relação da Igreja com essas crenças varia conforme a cidade e a facção que a governa. Em razão da diplomacia, do comércio e da convivência entre povos, os cultos tradicionais costumam ser tolerados dentro de limites bem definidos. Comunidades anãs, élficas, krins, syridianas e até mesmo drows podem manter seus templos e tradições, desde que respeitem as leis locais e a autoridade dos Arquitetos.
+
+Nas cidades controladas pela facção do **Domínio**, essa tolerância costuma ser bastante restrita. Já nas cidades alinhadas ao **Equilíbrio**, as religiões estrangeiras desfrutam de maior liberdade. Em qualquer caso, permanecem sob constante vigilância da Igreja dos Novos Deuses.
+
+Além dos cultos tradicionais, existem seitas clandestinas dedicadas a Patronos esquecidos ou proibidos. Pouco se sabe sobre essas entidades, mas seus seguidores realizam pactos, buscam conhecimentos ocultos e frequentemente entram em conflito tanto com a Igreja quanto com os Arquitetos. A simples suspeita de envolvimento com um desses cultos costuma ser suficiente para despertar a atenção das autoridades.
+
+Em Zandia, ninguém pode afirmar qual fé está correta. Os antigos deuses permaneceram em silêncio. Os Novos Deuses governam as cidades dos homens. Os Patronos continuam respondendo àqueles que os procuram. E toda magia, independentemente de sua origem, continua cobrando um preço.
+
 
 !!! info "Para saber mais:"
 
