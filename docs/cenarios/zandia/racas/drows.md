@@ -1,6 +1,6 @@
 # **Drows, os conquistadores das profundezas:**
 
-<img src="/assets/imagens/drow.png" style="width:50%;">
+<img src="/assets/imagens/Drow.png" style="width:50%;">
 
 Os <span title="Elfos do subterrâneo, conhecidos por sua cultura cruel">**drows**</span> são uma raça aparentada aos elfos que abandonou a superfície há incontáveis eras para conquistar o mundo subterrâneo de Zandia. Temidos, supremacistas e profundamente cruéis, eles construíram uma civilização baseada na escravidão e na dominação absoluta. No coração de sua fé está **Xilthara**, a Rainha Aranha das Dunas, uma divindade que representa astúcia, veneno, paciência e poder implacável. A sociedade drow é rigidamente matriarcal, e seu nome é sussurrado com medo entre os povos da superfície.
 
