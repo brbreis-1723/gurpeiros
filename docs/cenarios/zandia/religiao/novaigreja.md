@@ -35,6 +35,8 @@ Alguns sacerdotes dedicam a vida tentando compreender o silêncio dos Antigos De
 
 Independentemente da verdade, uma certeza permanece: enquanto existirem cidades humanas, existirão Novos Deuses para governá-las — e uma Igreja para lembrar ao mundo que sua autoridade é sagrada.
 
+---
+
 ## A Apoteose
 
 Segundo a doutrina da Igreja dos Novos Deuses, um Arquiteto não nasce divino: ele torna-se um deus.
