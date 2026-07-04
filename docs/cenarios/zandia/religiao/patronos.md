@@ -480,15 +480,15 @@ Os que o veneram são, em sua maioria, engenheiros arcanos, construtores, burocr
 **Invocação:** Traçar um padrão geométrico perfeito sobre solo sólido e infundi-lo com mana durante a construção ou reparo de uma estrutura.
 ________________________________________
 
-### **Vael, Senhora dos Elfos Cinzentos**
+### **Serynna, Senhora dos Elfos Cinzentos**
 
-Muito antes de Zandia tornar-se um mundo de areia e pedra, extensas florestas cobriam o continente. Os elfos afirmam que, naquela época, Vael caminhava livremente entre seu povo, protegendo bosques, rios e toda forma de vida. O Cataclisma transformou esse mundo para sempre, e a floresta quase desapareceu.
+Muito antes de Zandia tornar-se um mundo de areia e pedra, extensas florestas cobriam o continente. Os elfos afirmam que, naquela época, Serynna caminhava livremente entre seu povo, protegendo bosques, rios e toda forma de vida. O Cataclisma transformou esse mundo para sempre, e a floresta quase desapareceu.
 
-Vael, porém, não morreu.
+Serynna, porém, não morreu.
 
 Enfraquecida pela devastação, a antiga Senhora da Floresta adaptou-se ao novo mundo. Sua essência passou a habitar as plantas resistentes do deserto, as raízes ocultas sob a areia, os líquens que crescem sobre as rochas e toda vida que insiste em florescer onde nada deveria sobreviver.
 
-Os Elfos Cinzentos continuam venerando Vael como sua grande Patrona. Embora seu povo tenha perdido cidades, reinos e grande parte de seu conhecimento, jamais abandonou o antigo juramento de proteger a vida e preservar o equilíbrio da natureza. Hoje vivem como nômades, percorrendo desertos, montanhas e ruínas, guiados pela crença de que cada pequeno refúgio de vida representa um fragmento do corpo de sua Senhora.
+Os Elfos Cinzentos continuam venerando Serynna como sua grande Patrona. Embora seu povo tenha perdido cidades, reinos e grande parte de seu conhecimento, jamais abandonou o antigo juramento de proteger a vida e preservar o equilíbrio da natureza. Hoje vivem como nômades, percorrendo desertos, montanhas e ruínas, guiados pela crença de que cada pequeno refúgio de vida representa um fragmento do corpo de sua Senhora.
 
 Seus seguidores recebem dela acesso à magia, especialmente aquela voltada à preservação, à cura e à comunhão com o mundo natural. A Igreja dos Novos Deuses tolera seu culto nas comunidades élficas e em algumas cidades humanas, considerando-o uma antiga tradição racial. Ainda assim, seus sacerdotes jamais reconhecem os devotos de Vael como verdadeiros magos.
 

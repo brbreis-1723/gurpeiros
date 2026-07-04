@@ -13,7 +13,7 @@ A Igreja não governa as cidades, mas nenhuma cidade humana permanece estável s
 
 Sua influência política é igualmente profunda. A Igreja proclama a legitimidade dos Arquitetos, conduz a cerimônia da Apoteose e reconhece oficialmente a sucessão de um Novo Deus quando um Arquiteto assume o governo de uma cidade-estado. Sem esse reconhecimento, poucos governantes conseguiriam manter sua autoridade por muito tempo.
 
-A estrutura da Igreja é altamente organizada e hierárquica. No topo encontra-se o **Alto Pontífice**, a maior autoridade da Igreja dos Novos Deuses e guardião de sua doutrina. Cabe a ele preservar a unidade da fé, interpretar os textos sagrados, conduzir as cerimônias de maior importância e reconhecer oficialmente a **Apoteose** de um Arquiteto.
+A estrutura da Igreja é altamente organizada e hierárquica. No topo encontra-se o **Hierarca Supremo**, a maior autoridade da Igreja dos Novos Deuses e guardião de sua doutrina. Cabe a ele preservar a unidade da fé, interpretar os textos sagrados, conduzir as cerimônias de maior importância e reconhecer oficialmente a **Apoteose** de um Arquiteto.
 
 Embora ocupe o posto mais elevado da Igreja, o Alto Pontífice não está acima dos Novos Deuses. Segundo a doutrina, ele é o primeiro entre seus servos, responsável por conduzir os fiéis e zelar para que a vontade dos Arquitetos seja corretamente interpretada e preservada.
 
