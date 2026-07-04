@@ -583,15 +583,15 @@ Nas profundezas de Zandia, além das ruínas esquecidas e dos abismos ocultos so
 
 Para os drows, ela é a **Mãe da Teia**, soberana das profundezas e guardiã de seu povo desde tempos imemoriais. Para a Igreja dos Novos Deuses, trata-se de uma entidade profana cuja influência deve ser combatida. Já os Arquitetos raramente comentam sua existência. Embora dificilmente o admitam, sabem que há poderes no mundo que escapam ao domínio da magocracia.
 
-A influência de Xilthara estende-se por todo o subterrâneo. Seu culto sustenta a civilização drow, uma sociedade guerreira, expansionista e profundamente hierarquizada, onde disciplina, força e lealdade são virtudes absolutas. Seus sacerdotes ensinam que toda criatura está presa à Grande Teia e que nenhum destino escapa ao olhar da Rainha Aranha.
+A influência de Xilthara estende-se por todo o subterrâneo. Seu culto sustenta a civilização drow, uma sociedade matriarcal guerreira, expansionista e profundamente hierarquizada, onde disciplina, força e lealdade são virtudes absolutas. Suas sacerdotisas ensinam que toda criatura está presa à Grande Teia e que nenhum destino escapa ao olhar da Rainha Aranha.
 
 Embora seus seguidores sejam quase exclusivamente drows, ocasionalmente outras raças são encontradas entre suas fileiras. Em sua maioria, são escravos capturados na superfície durante incursões drows e, após anos de doutrinação, rituais e completa submissão à Teia, tornam-se devotos fanáticos de Xilthara, rompendo qualquer vínculo com sua antiga vida.
 
-Diferentemente da maioria dos Patronos, venerados apenas por pequenos cultos ou povos isolados, Xylthara é o centro espiritual de uma civilização inteira. Seus seguidores recebem dela acesso à magia e, por meio de antigos pactos, manipulam a mesma mana conhecida pelos magos. Ainda assim, a Igreja dos Novos Deuses recusa-se a reconhecê-los como verdadeiros magos, considerando-os apenas servos de uma entidade cuja natureza permanece desconhecida.
+Diferentemente da maioria dos Patronos, venerados apenas por pequenos cultos ou povos isolados, Xilthara é o centro espiritual de uma civilização inteira. Seus seguidores recebem dela acesso à magia e, por meio de antigos pactos, manipulam a mesma mana conhecida pelos magos. Ainda assim, a Igreja dos Novos Deuses recusa-se a reconhecê-los como verdadeiros magos, considerando-os apenas servos de uma entidade cuja natureza permanece desconhecida.
 
 Poucos ousam pronunciar seu nome na superfície. Entre caravaneiros, exploradores e mercadores circula um antigo ditado:
 
-*"Sob a luz do sol, o homem teme a areia. Sob a areia, teme a Rainha."*
+*"Sob a luz do sol, o homem teme a areia. Sob a areia, teme a Rainha das aranhas."*
 
 ---
 
