@@ -40,7 +40,11 @@ nav:
           - Sobre Zandia: cenarios/zandia/index.md
           - Origem: cenarios/zandia/origem.md
           - História: cenarios/zandia/historia.md
-          - Ideias: cenarios/zandia/ideias.md
+          - Ideias: 
+            - Resumo: cenarios/zandia/ideias/index.md
+            - Mar Morto: cenarios/zandia/ideias/mar_morto.md
+            - Arquitetos: cenarios/zandia/ideias/arquitetos.md
+
           - Magia:
             - Introdução: cenarios/zandia/magia/index.md
             - Metafísica da magia: cenarios/zandia/magia/metafisica_magia.md
