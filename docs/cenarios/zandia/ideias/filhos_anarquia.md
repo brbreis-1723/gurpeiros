@@ -13,49 +13,6 @@ São responsáveis por ataques contra destacamentos da Guarda de Cidades-Estado,
 
 Embora sejam classificados como terroristas pela Magocracia, para muitos Comuns representam a única esperança de um futuro livre.
 
----
-
-## Organização
-
-Os Filhos da Anarquia não possuem uma estrutura militar rígida. Sua força reside justamente na descentralização.
-
-A organização é formada por inúmeras **células independentes**, espalhadas pelas cidades-estado, desertos e regiões esquecidas de Zandia. Cada célula possui autonomia para conduzir suas operações conforme as necessidades locais, desde que respeite os princípios gerais da facção.
-
-Isso torna praticamente impossível destruir toda a organização de uma única vez. Caso uma célula seja eliminada, as demais continuam operando normalmente.
-
-## Os Incomuns
-
-Cada célula é liderada por um comandante conhecido como **Incomum**. O título não está ligado à posição hierárquica, mas ao mérito. 
-
-Um Incomum é alguém cuja habilidade extraordinária o torna indispensável à resistência. Alguns são estrategistas brilhantes. Outros, mestres da infiltração. Há duelistas lendários, inventores, espiões, rastreadores, médicos, exploradores das Brumas e até antigos magos que encontraram novas formas de lutar após perderem seus poderes. Nenhum Incomum é igual ao outro.
-
-É justamente essa diversidade que faz da organização algo imprevisível.
-
-## O Círculo dos Incomuns
-
-Periodicamente, os líderes das diversas células reúnem-se em segredo em um encontro conhecido como **Círculo dos Incomuns**. O local jamais permanece o mesmo por duas reuniões consecutivas, e poucos conhecem a identidade de todos os participantes. Nesses encontros são tomadas as decisões que moldam o futuro da organização.
-
-Entre suas responsabilidades estão:
-
-* definir os grandes objetivos da resistência;
-* coordenar operações envolvendo múltiplas células;
-* compartilhar informações e estratégias;
-* julgar crimes considerados imperdoáveis, como traição ou colaboração voluntária com os Arquitetos;
-* conceder reconhecimento e recompensas àqueles que realizaram feitos extraordinários;
-* decidir quais novos membros serão elevados ao posto de Incomum.
-
-Embora não exista um líder supremo entre os Filhos da Anarquia, as decisões do Círculo costumam ser respeitadas por toda a organização.
-
----
-
-# Os Caçadores
-
-Entre os Incomuns existe um grupo ainda mais raro. São conhecidos como **Caçadores**. Sua missão não é eliminar inimigos, mas encontrar aliados.
-
-Os Caçadores percorrem Zandia observando mercenários, aventureiros, soldados, estudiosos e pessoas comuns em busca de indivíduos dotados de talentos excepcionais. Eles procuram pessoas que demonstrem coragem, engenhosidade, liderança ou habilidades incomuns capazes de fortalecer a resistência.
-
-Quando encontram alguém promissor, iniciam um longo processo de observação. Poucos recebem um convite. Menos ainda sobrevivem tempo suficiente para aceitá-lo.
-
 ## Métodos de Operação
 
 Os Filhos da Anarquia evitam confrontos diretos contra os grandes exércitos dos Arquitetos. Em vez disso, atacam onde o inimigo é mais vulnerável. Entre suas operações mais comuns estão:
@@ -71,9 +28,50 @@ Os Filhos da Anarquia evitam confrontos diretos contra os grandes exércitos dos
 * extração de agentes infiltrados;
 * resgate de rebeldes, prisioneiros políticos e vítimas da Inquisição.
 
-Sua especialidade, porém, tornou-se uma verdadeira lenda. São os **Grandes Resgates**. Os Filhos da Anarquia são conhecidos por realizar operações que muitos consideram impossíveis. Existem relatos de prisões invadidas em plena luz do dia, condenados retirados das mãos da Inquisição momentos antes de suas execuções e até mesmo fugitivos libertados de dentro dos muros de cidades-estados, até mesmo em Heliopolis!
+Sua especialidade, porém, tornou-se uma verdadeira lenda. São os **Grandes Resgates**. 
+
+Os Filhos da Anarquia são conhecidos por realizar operações que muitos consideram impossíveis. Existem relatos de prisões invadidas em plena luz do dia, condenados retirados das mãos da Inquisição momentos antes de suas execuções e até mesmo fugitivos libertados de dentro dos muros de cidades-estados, até mesmo em Heliopolis!
 
 Cada sucesso desses representa um golpe devastador na imagem de invencibilidade da Magocracia.
+
+## Organização e sua estrutura
+
+Os Filhos da Anarquia não possuem uma estrutura militar rígida. Sua força reside justamente na descentralização.
+
+A organização é formada por inúmeras **células independentes**, espalhadas pelas cidades-estado, desertos e regiões esquecidas de Zandia. Cada célula possui autonomia para conduzir suas operações conforme as necessidades locais, desde que respeite os princípios gerais da facção.
+
+Isso torna praticamente impossível destruir toda a organização de uma única vez. Caso uma célula seja eliminada, as demais continuam operando normalmente.
+
+### Os Incomuns
+
+Cada célula é liderada por um comandante conhecido como **Incomum**. O título não está ligado à posição hierárquica, mas ao mérito. 
+
+Um Incomum é alguém cuja habilidade extraordinária o torna indispensável à resistência. Alguns são estrategistas brilhantes. Outros, mestres da infiltração. Há duelistas lendários, inventores, espiões, rastreadores, médicos, exploradores das Brumas e até antigos magos que encontraram novas formas de lutar após perderem seus poderes. Nenhum Incomum é igual ao outro.
+
+É justamente essa diversidade que faz da organização algo imprevisível.
+
+### O Círculo dos Incomuns
+
+Periodicamente, os líderes das diversas células reúnem-se em segredo em um encontro conhecido como **Círculo dos Incomuns**. O local jamais permanece o mesmo por duas reuniões consecutivas, e poucos conhecem a identidade de todos os participantes. Nesses encontros são tomadas as decisões que moldam o futuro da organização.
+
+Entre suas responsabilidades estão:
+
+* definir os grandes objetivos da resistência;
+* coordenar operações envolvendo múltiplas células;
+* compartilhar informações e estratégias;
+* julgar crimes considerados imperdoáveis, como traição ou colaboração voluntária com os Arquitetos;
+* conceder reconhecimento e recompensas àqueles que realizaram feitos extraordinários;
+* decidir quais novos membros serão elevados ao posto de Incomum.
+
+Embora não exista um líder supremo entre os Filhos da Anarquia, as decisões do Círculo costumam ser respeitadas por toda a organização.
+
+### Os Caçadores
+
+Entre os Incomuns existe um grupo ainda mais raro. São conhecidos como **Caçadores**. Sua missão não é eliminar inimigos, mas encontrar aliados.
+
+Os Caçadores percorrem Zandia observando mercenários, aventureiros, soldados, estudiosos e pessoas comuns em busca de indivíduos dotados de talentos excepcionais. Eles procuram pessoas que demonstrem coragem, engenhosidade, liderança ou habilidades incomuns capazes de fortalecer a resistência.
+
+Quando encontram alguém promissor, iniciam um longo processo de observação. Poucos recebem um convite. Menos ainda sobrevivem tempo suficiente para aceitá-lo.
 
 ---
 
@@ -105,15 +103,11 @@ Os Anarquistas passaram a chamar-se **Filhos da Anarquia**, jurando continuar a 
 
 ---
 
-## A Visão da Magocracia e outras facções rebeldes
+## Como os outros a enxergam
 
 Para os Arquitetos, os Filhos da Anarquia são criminosos, terroristas e inimigos da ordem. Segundo eles, seus ataques apenas espalham o caos, atrasam o progresso e colocam vidas inocentes em risco. A Inquisição utiliza sua existência como justificativa para ampliar a vigilância, endurecer as leis e perseguir qualquer pessoa suspeita de simpatizar com a resistência.
 
 Mesmo entre os rebeldes, os Filhos da Anarquia não encontram apoio unânime. Integrantes de facções menos radicais, especialmente aqueles cujas ideias se aproximam das defendidas pelos Arquitetos da Facção Equilibrium, acreditam que suas ações fazem um desserviço à causa.
-
----
-
-## A Visão dos Comuns
 
 Entre o povo, entretanto, a história é diferente. Em tavernas, caravanas e vilarejos distantes, contam-se histórias sobre prisioneiros libertados, crianças resgatadas da Inquisição e aldeias salvas por combatentes que desapareceram antes mesmo de receber agradecimentos.
 
