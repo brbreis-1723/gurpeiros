@@ -34,7 +34,7 @@ A Grande Ferida tornou-se o maior sumidouro arcano conhecido. Toda instabilidade
 
 As Brumas são a manifestação mais visível desse processo. Uma névoa negra que cobre toda a superfície antes ocupada pelas águas marinhas. A maioria dos estudiosos acredita que elas sejam uma condensação da enorme quantidade de energia arcana acumulada na Grande Ferida. As Brumas cobrem quase toda a extensão do Mar Morto, movendo-se lentamente, como se respirassem.
 
-Em um movimento que parece imitar as marés, alguns dias tornam-se finas e deixam entrever navios antigos, cidades em ruínas e recifes fossilizados. Em outros, tornam-se tão densas que engolem completamente o horizonte. Nenhum mapa do Mar Morto permanece preciso por muito tempo. As Brumas mudam, abrem caminhos, fecham passagens, escondem e revelam ruínas.
+Em um movimento que parece imitar as marés, as brumas mudam, abrem caminhos, fecham passagens, escondem e revelam segredos. Alguns dias elas se tornam finas e deixam entrever navios antigos, cidades em ruínas e recifes fossilizados. Em outros, tornam-se tão densas que engolem completamente o horizonte e bloqueiam o céu. Embora existam mapas, a incapacidade de usar magia e a impossibilidade de se orientar pelo sol e pelas estrelas tornam a navegação pelas brumas extremamente difícil.
 
 Muitos exploradores afirmam que elas parecem possuir vontade própria. Os estudiosos discordam afirmando que deve existir alguma explicação lógica, ainda desconhecida. Talvez relacionada aos astros e influência das duas luas? Ou simplesmente seria a vontade dos antigos deuses e espiritos que habitavam as antigas profundezas? Até o momento, ninguém conseguiu explicá-las completamente.
 
@@ -44,7 +44,9 @@ Muitos exploradores afirmam que elas parecem possuir vontade própria. Os estudi
 
 No centro do Mar Morto, escondido sob as Brumas, encontra-se o antigo ponto mais profundo dos oceanos. Hoje, ali existe um abismo colossal conhecido como **A Grande Ferida**. Alguns preferem chamá-la de **A Cicatriz de Zandia**, pois acreditam que ela representa a marca permanente deixada pelo Cataclismo sobre o mundo.
 
-Quanto mais próximo da Ferida, mais instável torna-se a realidade. A luz comporta-se de maneira estranha e os sons chegam antes de sua origem. Distâncias parecem mudar constantemente. A magia torna-se imprevisível.
+Enquanto o Mar Morto é um grande bolsão de mana nulo, ironicamente, a Grande Ferida é o único lugar onde a magia volta a funcionar. Em uma analogia, a Grande Ferida é como um imenso sorvedouro de mana, um "buraco negro" que atrai toda a energia mágica ao seu redor. Quanto mais próximo da Ferida, mais instável se torna a própria realidade.
+
+Praticar magia dentro da Ferida é extremamente arriscado, pois seus efeitos são imprevisíveis. Até mesmo a pouca luz que resta comporta-se de maneira estranha, e os sons parecem chegar antes de sua origem. O tempo perde seu significado, enquanto as distâncias parecem mudar constantemente.
 
 Nenhuma expedição confirmou ter alcançado seu fundo. Ou, ao menos, nenhuma retornou para descrevê-lo.
 
