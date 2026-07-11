@@ -7,7 +7,7 @@
 
 Antes do Cataclismo, havia oceanos. Mares que ligavam continentes, alimentavam florestas e sustentavam incontáveis formas de vida. Durante eras, eles moldaram o clima de Zandia e sustentaram civilizações inteiras.
 
-Hoje, restam apenas lembranças. No lugar onde existiam os antigos mares estende-se o **Mar Morto**, uma vasta extensão permanentemente coberta por densas **Brumas**. De longe, elas lembram um oceano silencioso. Um mar branco e imóvel que se estende até onde a vista alcança. Sob essa névoa repousa o antigo leito oceânico: recifes fossilizados, navios eternamente encalhados, cidades costeiras esquecidas e ruínas de uma era em que a água ainda dominava o mundo. Nenhum outro lugar simboliza tão bem o preço do Cataclismo.
+Hoje, restam apenas lembranças. No lugar onde existiam os antigos mares estende-se o **Mar Morto**, uma vasta extensão permanentemente coberta por densas **Brumas**. De longe, elas lembram um oceano silencioso. Um mar negro e imóvel que se estende até onde a vista alcança. Sob essa névoa repousa o antigo leito oceânico: recifes fossilizados, navios eternamente encalhados, cidades costeiras esquecidas e ruínas de uma era em que a água ainda dominava o mundo. Nenhum outro lugar simboliza tão bem o preço do Cataclismo.
 
 ---
 
