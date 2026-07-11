@@ -14,9 +14,10 @@ Hoje, restam apenas lembranças. O **Mar Morto** ocupa o lugar dos antigos ocean
 
 Os registros históricos concordam sobre um fato: quando o jovem mago tentou tocar a Essência do Sol, o equilíbrio do mundo foi rompido.
 
-O calor aumentou continuamente. Rios diminuíram, lagos desapareceram e mares evaporaram. O planeta inteiro transformou-se em um deserto.
+O calor aumentou continuamente. Rios diminuíram, lagos desapareceram e mares evaporaram. O planeta inteiro transformou-se em um deserto
 
 Entretanto, muitos estudiosos acreditam que a evaporação dos oceanos foi apenas o início. A perda de uma massa de água tão colossal alterou profundamente o equilíbrio do planeta. As antigas fossas oceânicas romperam-se e enormes abismos abriram-se no fundo dos mares agora secos. O maior deles tornou-se conhecido como **A Grande Ferida**. Mas essa não foi sua única consequência.
+
 ---
 
 ## A Lei do Equilíbrio Arcano
