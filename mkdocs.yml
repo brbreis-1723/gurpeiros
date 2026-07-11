@@ -37,13 +37,10 @@ nav:
   - Cenários:
       - Sobre Cenários: cenarios/index.md
       - Zandia:
-          - Sobre Zandia: cenarios/zandia/index.md
-          - Origem: cenarios/zandia/origem.md
-          - História: cenarios/zandia/historia.md
-          - Ideias: 
-            - Resumo: cenarios/zandia/ideias/index.md
-            - Mar Morto: cenarios/zandia/ideias/mar_morto.md
-            - Arquitetos: cenarios/zandia/ideias/arquitetos.md
+          - Introdução:
+            - Sobre Zandia: cenarios/zandia/index.md
+            - Origem: cenarios/zandia/origem.md
+            - História e Cronologia: cenarios/zandia/historia.md
 
           - Magia:
             - Introdução: cenarios/zandia/magia/index.md
@@ -69,10 +66,16 @@ nav:
             - Ratinos: cenarios/zandia/racas/ratinos.md
             - Syridianos: cenarios/zandia/racas/syridianos.md
             - Tressi: cenarios/zandia/racas/tressi.md
+
           - Religião:
             - Religião em Zandia: cenarios/zandia/religiao/index.md
             - Igreja dos Novos Deuses: cenarios/zandia/religiao/novaigreja.md
             - Patronos: cenarios/zandia/religiao/patronos.md
+
+          - Ideias: 
+            - Resumo: cenarios/zandia/ideias/index.md
+            - Mar Morto: cenarios/zandia/ideias/mar_morto.md
+            - Arquitetos: cenarios/zandia/ideias/arquitetos.md            
 
   - Material de Apoio:
       - Resumo: material/index.md
