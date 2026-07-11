@@ -9,7 +9,7 @@ Os **Filhos da Anarquia** são a maior e mais influente organização de resist�
 
 Para isso, travam uma guerra de desgaste, baseada em sabotagem, inteligência, infiltração e guerrilha.
 
-São responsáveis por ataques contra destacamentos da Guarda de Heliopolis, destruição de laboratórios de pesquisa, interrupção de linhas de suprimentos, emboscadas contra caravanas militares, sabotagem de minas e resgates considerados impossíveis.
+São responsáveis por ataques contra destacamentos da Guarda de Cidades-Estado, destruição de laboratórios de pesquisa, interrupção de linhas de suprimentos, emboscadas contra caravanas militares, sabotagem de minas e resgates considerados impossíveis.
 
 Embora sejam classificados como terroristas pela Magocracia, para muitos Comuns representam a única esperança de um futuro livre.
 
