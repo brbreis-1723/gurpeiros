@@ -8,7 +8,7 @@ Antes do Cataclismo, havia oceanos. Mares que ligavam continentes, alimentavam f
 
 Hoje, restam apenas lembranças. O **Mar Morto** ocupa o lugar dos antigos oceanos: uma vasta extensão permanentemente coberta por densas **Brumas**. De longe, elas lembram um oceano silencioso, um mar negro e imóvel que se estende até onde a vista alcança. Nenhum outro lugar simboliza tão bem o preço do Cataclismo.
 
----
+<img src="/assets/imagens/marmortocena2.png" style="width:100%;">
 
 ## A Herança do Cataclismo
 
@@ -35,6 +35,8 @@ A Grande Ferida tornou-se o maior sumidouro arcano conhecido. Toda instabilidade
 As Brumas são a manifestação mais visível desse processo: uma névoa negra que cobre toda a superfície antes ocupada pelas águas marinhas. A maioria dos estudiosos acredita que elas sejam uma condensação da enorme quantidade de energia arcana acumulada na Grande Ferida. Essa névoa cobre quase toda a extensão do Mar Morto, movendo-se lentamente, como se respirasse.
 
 Em um movimento que parece imitar as marés, as Brumas mudam, abrem caminhos, fecham passagens e escondem ou revelam segredos. Alguns dias tornam-se finas e deixam entrever navios antigos, cidades em ruínas e recifes fossilizados. Em outros, tornam-se tão densas que engolem completamente o horizonte e bloqueiam o céu. Embora existam mapas, a incapacidade de usar magia e a impossibilidade de se orientar pelo sol e pelas estrelas tornam a navegação pelas Brumas extremamente difícil.
+
+<img src="/assets/imagens/marmortocena.png" style="width:100%;">
 
 Muitos exploradores afirmam que elas parecem possuir vontade própria. Os estudiosos discordam e afirmam que deve existir alguma explicação lógica, ainda desconhecida. Talvez esteja relacionada aos astros e à influência das duas luas. Ou talvez seja a vontade dos antigos deuses e espíritos que habitavam as antigas profundezas. Até o momento, ninguém conseguiu explicá-las completamente.
 
@@ -68,9 +70,12 @@ Independentemente da explicação, uma verdade permanece incontestável: quanto 
 
 Entre todas as histórias contadas sobre o Mar Morto, poucas são tão antigas quanto aquelas que falam dos **Espíritos Perdidos**.
 
+<img src="/assets/imagens/marmortoleviata.png" style="width:100%;">
+
 Segundo antigas tradições, os mares eram habitados por espíritos ligados às correntes, às tempestades e às grandes criaturas marinhas. Quando os oceanos desapareceram, esses seres perderam sua razão de existir. Muitos acreditam que permaneceram presos ao antigo leito oceânico, lentamente deformados pela influência da Grande Ferida.
 
 Se isso é verdade, talvez os monstros encontrados nas profundezas do Mar Morto não tenham nascido da Corrupção. Talvez sejam apenas os últimos ecos de um oceano que jamais aceitou desaparecer.
+
 
 ---
 
