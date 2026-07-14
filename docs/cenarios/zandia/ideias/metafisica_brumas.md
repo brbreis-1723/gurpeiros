@@ -1,4 +1,7 @@
-# A Metafisica das Brumas: Mana Negativa, a Grande Ferida e as Brumas do Mar Morto
+# A Metafisica das Brumas: Mana Negativa, a Grande Ferida e as Brumas do Mar Morto 
+
+!!! note "Nota do GM:"
+        Esta informações são de conhecimento do Mestre e de alguns jogadores curiosos...
 
 ## Mana e Anti-Mana
 
@@ -83,3 +86,29 @@ As brumas são o maior sinal visível da Grande Ferida. Elas cobrem o antigo lei
 As brumas carregam a corrupção da Grande Ferida para o mundo. Elas representam a lembrança constante de que o cataclismo não terminou.
 
 O oceano morreu lentamente durante dois anos. Mas a ferida que nasceu de sua morte continua aberta. E enquanto ela permanecer, Zandia continuará perdendo lentamente sua própria essência mágica para o coração das brumas.
+
+---
+
+## E o que os povos de Zandia sabem?
+
+Poucos compreendem a verdadeira natureza da Grande Ferida. Para a maioria das pessoas, o Mar Morto é simplesmente uma região amaldiçoada onde o mundo morreu:
+
+* o antigo oceano desapareceu durante o grande cataclismo;
+* as brumas surgiram posteriormente;
+* magia é impossível ou extremamente difícil perto delas;
+* criaturas estranhas habitam as regiões profundas;
+* aqueles que viajam para o coração das brumas raramente retornam.
+
+Mas o motivo real permanece desconhecido.
+
+### As Teorias dos Estudiosos
+
+Os povos de Zandia vivem sobre as consequências de um evento que aconteceu milhares de anos atrás. Muitos sabios estudaram seus efeitos e mediram seus sinais, criando as mais diversas teorias. Porém falta a eles a visão do todo e a percepção dos efeitos no planeta inteiro. No fundo a origem da Grande Ferida é um grande mistério e nenhuma civilização atual conhece toda a verdade.
+
+Mesmo os maiores estudiosos de Zandia possuem apenas fragmentos da verdade. Alguns acreditam que A Grande Ferida é uma cicatriz deixada pela morte de uma divindade: Zandia sangra porque uma entidade superior morreu durante o cataclismo.
+
+Alguns Arquitetos defendem que a Grande Ferida já existia antes do cataclisma e era um fenômeno natural da magia. Eles acreditam que o Cataclisma apenas potencializou os seus efeitos. Eles estudam a drenagem de mana e tentam compreender como impedir que o mundo continue perdendo sua energia arcana.
+
+Há também aqueles que acreditam que as brumas possuem vontade própria. Segundo esses relatos, elas não seriam apenas um fenômeno, mas uma presença que cresce lentamente e aguarda algo.
+
+Enquanto os sábios debatem, o mana continua fluindo lentamente para o coração das brumas. E a ferida do mundo permanece aberta.
