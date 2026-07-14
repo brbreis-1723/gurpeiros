@@ -41,6 +41,12 @@ nav:
             - Sobre Zandia: cenarios/zandia/index.md
             - Origem: cenarios/zandia/origem.md
             - História e Cronologia: cenarios/zandia/historia.md
+          - Mundo:
+            - Sobre o Planeta: cenarios/zandia/mundo/index.md
+            - Astronomia: cenarios/zandia/mundo/astronomia.md
+            - O Cataclismo:  cenarios/zandia/mundo/cosmologia_cataclismo.md
+            - Mar Morto:  cenarios/zandia/mundo/mar_morto.md
+            - Metafísica das Brumas:  cenarios/zandia/mundo/metafisica_brumas.md
 
           - Magia:
             - Introdução: cenarios/zandia/magia/index.md
@@ -74,13 +80,9 @@ nav:
 
           - Ideias: 
             - Resumo: cenarios/zandia/ideias/index.md
-            - Astronomia: cenarios/zandia/ideias/astronomia.md
-            - Explicações sobre o Cataclismo: cenarios/zandia/ideias/cosmologia_cataclismo.md
-            - Mar Morto: cenarios/zandia/ideias/mar_morto.md
             - Arquitetos: cenarios/zandia/ideias/arquitetos.md            
             - Filhos da Anarquia: cenarios/zandia/ideias/filhos_anarquia.md
-            - Metafísica das Brumas: cenarios/zandia/ideias/metafisica_brumas.md
-
+            
   - Material de Apoio:
       - Resumo: material/index.md
       - Artigos do Blog: material/artigos.md

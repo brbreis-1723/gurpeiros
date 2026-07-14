@@ -12,10 +12,9 @@ Em Zandia, a magia move a civilização, ergue muralhas, alimenta máquinas e tr
 
 - [Origem de Zandia](../zandia/origem.md)
 - [História e Cronologia](../zandia/historia.md)
-- Geopolítica
-- [Fichas de Personagens](../zandia/personagens/index.md)
+- [O Mundo](../zandia/mundo/index.md)
+- [Personagens](../zandia/personagens/index.md)
 - [Raças](../zandia/racas/index.md)
 - [Magia](../zandia/magia/index.md)
 - [Religião](../zandia/religiao/index.md)
-- Sociedades e Culturas
 - [Ideias e Conceitos](../zandia/ideias/index.md) 

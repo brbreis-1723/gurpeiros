@@ -1,8 +1,5 @@
 # A Metafisica das Brumas: Mana Negativa, a Grande Ferida e as Brumas do Mar Morto 
 
-!!! note "Nota do GM:"
-        Esta informações são de conhecimento do Mestre e de alguns jogadores curiosos...
-
 ## Mana e Anti-Mana
 
 O mana é uma das forças fundamentais da realidade de Zandia. Ele permeia o mundo, flui através da matéria viva e sustenta a capacidade de transformação da magia. Assim como a matéria compõe o universo físico, o mana é uma energia essencial para a existência e para a manifestação dos poderes arcanos.
@@ -89,19 +86,19 @@ O oceano morreu lentamente durante dois anos. Mas a ferida que nasceu de sua mor
 
 ---
 
-## E o que os povos de Zandia sabem?
+!!! question "E o que os povos de Zandia sabem?"
 
-Poucos compreendem a verdadeira natureza da Grande Ferida. Para a maioria das pessoas, o Mar Morto é simplesmente uma região amaldiçoada onde o mundo morreu:
+    Poucos compreendem a verdadeira natureza da Grande Ferida. Para a maioria das pessoas, o Mar Morto é simplesmente uma região amaldiçoada onde o mundo morreu:
 
-* o antigo oceano desapareceu durante o grande cataclismo;
-* as brumas surgiram posteriormente;
-* magia é impossível ou extremamente difícil perto delas;
-* criaturas estranhas habitam as regiões profundas;
-* aqueles que viajam para o coração das brumas raramente retornam.
+    * o antigo oceano desapareceu durante o grande cataclismo;
+    * as brumas surgiram posteriormente;
+    * magia é impossível ou extremamente difícil perto delas;
+    * criaturas estranhas habitam as regiões profundas;
+    * aqueles que viajam para o coração das brumas raramente retornam.
 
-Mas o motivo real permanece desconhecido.
+    Mas o motivo real permanece desconhecido.
 
-### As Teorias dos Estudiosos
+## As Teorias dos Estudiosos
 
 Os povos de Zandia vivem sobre as consequências de um evento que aconteceu milhares de anos atrás. Muitos sabios estudaram seus efeitos e mediram seus sinais, criando as mais diversas teorias. Porém falta a eles a visão do todo e a percepção dos efeitos no planeta inteiro. No fundo a origem da Grande Ferida é um grande mistério e nenhuma civilização atual conhece toda a verdade.
 

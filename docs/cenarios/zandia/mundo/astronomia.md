@@ -1,5 +1,7 @@
 # Astronomia de Zandria
 
+<img src="/assets/imagens/planeta_zandia.png" style="width:100%;">
+
 ## A Realidade
 
 Zandria orbita uma estrela do tipo G, uma anã amarela semelhante ao antigo Sol da Terra. O planeta é ligeiramente menor que a Terra, porém mais denso, possuindo um núcleo metálico proporcionalmente maior. Essa composição resulta em uma gravidade superficial muito próxima da terrestre, permitindo que a vida tenha evoluído de forma semelhante antes do Cataclismo.
@@ -99,6 +101,8 @@ As lendas oferecem inúmeras respostas. Algumas afirmam que Elaris e Vaelith era
 ---
 
 ### A Noite de Sangue
+
+<img src="/assets/imagens/olho_sangue.png" style="width:100%;">
 
 Entre todos os fenômenos celestes, nenhum é tão temido quanto a **Noite de Sangue**. 
 
