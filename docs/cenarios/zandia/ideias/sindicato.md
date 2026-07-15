@@ -1,6 +1,10 @@
 # O Sindicato
 
-<img src="/assets/imagens/brasao_sindicato.png" style="width:50%;">
+<div style="text-align:center;">
+    <img src="/assets/imagens/brasao_sindicato.png"
+         style="width:50%;"
+         alt="Brasão do Sindicato">
+</div>
 
 > *"As cidades pertencem aos Arquitetos. As estradas pertencem ao Sindicato."*
 
