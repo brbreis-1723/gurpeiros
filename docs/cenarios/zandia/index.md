@@ -11,6 +11,7 @@ Em Zandia, a magia move a civilização, ergue muralhas, alimenta máquinas e tr
 ## **Tópicos do cenário:**
 
 - [Origem de Zandia](../zandia/origem.md)
+- [O Cataclismo](../zandia/cataclismo.md)
 - [História e Cronologia](../zandia/historia.md)
 - [O Mundo](../zandia/mundo/index.md)
 - [Personagens](../zandia/personagens/index.md)

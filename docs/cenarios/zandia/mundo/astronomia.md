@@ -2,6 +2,34 @@
 
 <img src="/assets/imagens/planeta_zandia.png" style="width:100%;">
 
+## O Céu Segundo os Povos de Zandria
+
+Os habitantes de Zandria desconhecem a verdadeira natureza dos corpos celestes. Sabem apenas que o Sol percorre os céus, que o ano possui doze meses e que duas luas acompanham as noites desde tempos imemoriais.
+
+A maior delas é chamada de **Lua Prateada**. Entre os antigos elfos, seu nome era **Elaris**, uma das Duas Irmãs Celestes. A menor é conhecida por praticamente todos os povos como **Lua de Sangue**. Os registros élficos mais antigos preservam seu verdadeiro nome: **Vaelith**, a segunda das Irmãs Celestes.
+
+Os sábios conhecem seus ciclos, registram suas fases e conseguem prever eclipses e conjunções, mas ninguém sabe explicar por que uma lua é prateada enquanto a outra possui a cor do sangue. Essa verdade perdeu-se com o fim da Era Antiga.
+
+As lendas oferecem inúmeras respostas. Algumas afirmam que Elaris e Vaelith eram duas deusas irmãs que caminhavam pelos céus antes da morte dos Deuses Antigos. Outras dizem que Vaelith foi manchada pelo sangue divino derramado durante o Cataclismo. Há ainda aqueles que acreditam que sua coloração reflete, noite após noite, as chamas da Besta aprisionada no Sol. Nenhuma dessas histórias pode ser provada.
+
+---
+
+### A Noite de Sangue
+
+<img src="/assets/imagens/olho_sangue.png" style="width:100%;">
+
+Entre todos os fenômenos celestes, nenhum é tão temido quanto a **Noite de Sangue**. 
+
+Em ocasiões raras, durante uma Grande Conjunção, Vaelith atravessa exatamente diante de Elaris enquanto ambas iluminam o céu noturno. Por alguns instantes, o disco vermelho da Lua de Sangue cobre o centro da Lua Prateada, formando um enorme círculo luminoso envolvendo um núcleo escarlate. Esse fenômeno é conhecido em praticamente todas as culturas como o **Olho de Sangue**.
+
+Quando o Olho de Sangue se abre nos céus, o mundo inteiro parece prender a respiração. Mesmo os povos que desprezam antigas superstições evitam viajar nessa noite. Dizem que os animais tornam-se violentos e inquietos. Criaturas das Brumas surgem em maior número. Espíritos caminham mais livremente entre os vivos. Muitos juram que antigos selos enfraquecem e que forças esquecidas respondem ao chamado das luas.
+
+Os **Homens-Chacal** vivem seu momento mais perigoso. Segundo antigas tradições, nenhuma vontade mortal é capaz de conter completamente a maldição quando o Olho de Sangue observa o mundo. Mesmo aqueles que aprenderam a dominar sua natureza precisam lutar contra o impulso da transformação, enquanto os mais fracos entregam-se por completo à fera interior.
+
+Ninguém sabe quantas dessas histórias são verdadeiras.
+
+Mas há um fato que atravessa os séculos: toda vez que o Olho de Sangue surge no firmamento, reis fecham os portões de suas cidades, caravanas interrompem suas viagens, templos permanecem em vigília durante toda a noite e poucos ousam permanecer ao relento até o amanhecer. Em Zandria, existem presságios que nenhum homem sensato desafia.
+
 ## A Realidade
 
 Zandria orbita uma estrela do tipo G, uma anã amarela semelhante ao antigo Sol da Terra. O planeta é ligeiramente menor que a Terra, porém mais denso, possuindo um núcleo metálico proporcionalmente maior. Essa composição resulta em uma gravidade superficial muito próxima da terrestre, permitindo que a vida tenha evoluído de forma semelhante antes do Cataclismo.
@@ -30,7 +58,7 @@ Embora o planeta continue obedecendo aos mesmos movimentos astronômicos, o mund
 
 ---
 
-### Dados Astronômicos:
+### Estatísticas:
 
 <table class="tabela" border="1">
 <thead>
@@ -85,33 +113,3 @@ Embora o planeta continue obedecendo aos mesmos movimentos astronômicos, o mund
     </tr>
 </tbody>
 </table>
-
----
-
-## O Céu Segundo os Povos de Zandria
-
-Os habitantes de Zandria desconhecem a verdadeira natureza dos corpos celestes. Sabem apenas que o Sol percorre os céus, que o ano possui doze meses e que duas luas acompanham as noites desde tempos imemoriais.
-
-A maior delas é chamada de **Lua Prateada**. Entre os antigos elfos, seu nome era **Elaris**, uma das Duas Irmãs Celestes. A menor é conhecida por praticamente todos os povos como **Lua de Sangue**. Os registros élficos mais antigos preservam seu verdadeiro nome: **Vaelith**, a segunda das Irmãs Celestes.
-
-Os sábios conhecem seus ciclos, registram suas fases e conseguem prever eclipses e conjunções, mas ninguém sabe explicar por que uma lua é prateada enquanto a outra possui a cor do sangue. Essa verdade perdeu-se com o fim da Era Antiga.
-
-As lendas oferecem inúmeras respostas. Algumas afirmam que Elaris e Vaelith eram duas deusas irmãs que caminhavam pelos céus antes da morte dos Deuses Antigos. Outras dizem que Vaelith foi manchada pelo sangue divino derramado durante o Cataclismo. Há ainda aqueles que acreditam que sua coloração reflete, noite após noite, as chamas da Besta aprisionada no Sol. Nenhuma dessas histórias pode ser provada.
-
----
-
-### A Noite de Sangue
-
-<img src="/assets/imagens/olho_sangue.png" style="width:100%;">
-
-Entre todos os fenômenos celestes, nenhum é tão temido quanto a **Noite de Sangue**. 
-
-Em ocasiões raras, durante uma Grande Conjunção, Vaelith atravessa exatamente diante de Elaris enquanto ambas iluminam o céu noturno. Por alguns instantes, o disco vermelho da Lua de Sangue cobre o centro da Lua Prateada, formando um enorme círculo luminoso envolvendo um núcleo escarlate. Esse fenômeno é conhecido em praticamente todas as culturas como o **Olho de Sangue**.
-
-Quando o Olho de Sangue se abre nos céus, o mundo inteiro parece prender a respiração. Mesmo os povos que desprezam antigas superstições evitam viajar nessa noite. Dizem que os animais tornam-se violentos e inquietos. Criaturas das Brumas surgem em maior número. Espíritos caminham mais livremente entre os vivos. Muitos juram que antigos selos enfraquecem e que forças esquecidas respondem ao chamado das luas.
-
-Os **Homens-Chacal** vivem seu momento mais perigoso. Segundo antigas tradições, nenhuma vontade mortal é capaz de conter completamente a maldição quando o Olho de Sangue observa o mundo. Mesmo aqueles que aprenderam a dominar sua natureza precisam lutar contra o impulso da transformação, enquanto os mais fracos entregam-se por completo à fera interior.
-
-Ninguém sabe quantas dessas histórias são verdadeiras.
-
-Mas há um fato que atravessa os séculos: toda vez que o Olho de Sangue surge no firmamento, reis fecham os portões de suas cidades, caravanas interrompem suas viagens, templos permanecem em vigília durante toda a noite e poucos ousam permanecer ao relento até o amanhecer. Em Zandria, existem presságios que nenhum homem sensato desafia.

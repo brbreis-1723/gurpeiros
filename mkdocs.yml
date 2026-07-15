@@ -40,11 +40,11 @@ nav:
           - Introdução:
             - Sobre Zandia: cenarios/zandia/index.md
             - Origem: cenarios/zandia/origem.md
+            - O Cataclismo:  cenarios/zandia/cataclismo.md            
             - História e Cronologia: cenarios/zandia/historia.md
           - Mundo:
             - Sobre o Mundo: cenarios/zandia/mundo/index.md
             - Astronomia: cenarios/zandia/mundo/astronomia.md
-            - O Cataclismo:  cenarios/zandia/mundo/cosmologia_cataclismo.md
             - Mar Morto:  cenarios/zandia/mundo/mar_morto.md
             - Metafísica das Brumas:  cenarios/zandia/mundo/metafisica_brumas.md
 
