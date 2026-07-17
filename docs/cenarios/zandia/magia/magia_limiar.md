@@ -63,4 +63,5 @@ __________________________________________
     - [Limiar e Conjurações Cerimoniais](../magia/magia_cerimonial.md)
     - [Limiar e níveis de mana](../magia/limiar_mana.md)
     - [Limiar e magias de "Energia"](../magia/magias_energia.md)
+    - [Limiar e Itens de Poder](../magia/limiar_itens_de_poder.md)
 
