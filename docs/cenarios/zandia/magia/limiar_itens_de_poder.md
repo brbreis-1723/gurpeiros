@@ -30,6 +30,7 @@ A qualidade determina três características fundamentais:
 - Limiar do Item;
 - Resistência à Sobrecarga (HT).
 
+
 <table>
 <thead>
 <tr><th>Qualidade</th><th>Multiplicador de Custo</th><th>Limiar do Item</th><th>HT</th></tr>
@@ -43,6 +44,7 @@ A qualidade determina três características fundamentais:
 <tr><td>Lendário</td><td>Inestimável</td><td>+100</td><td>15</td></tr>
 </tbody>
 </table>
+
 
 O Limiar do Item é somado ao Limiar do mago enquanto ambos permanecerem sintonizados.
 
@@ -106,6 +108,7 @@ O Item sofre dano estrutural igual a:
 </tbody>
 </table>
 
+
 **Esse dano representa a ruptura da matriz arcana e é aplicado diretamente aos Pontos de Vida (PV) do Item de Poder, ignorando completamente sua Resistência a Dano (RD).**
 
 A RD protege o item contra impactos físicos, fogo, cortes e outros danos convencionais, mas não contra o colapso interno provocado pela energia mágica.
@@ -118,7 +121,7 @@ Após aplicar o dano por Sobrecarga, role **3d**.
 
 <table>
 <thead>
-<tr><th>3d</th><th>Resultado</th><th>Consequência</th></tr>
+<tr><b><th>3d</th><th>Resultado</th><th>Consequência</th></b></tr>
 </thead>
 <tbody>
 <tr><td>3</td><td>Aniquilação Arcana</td><td>A matriz arcana entra em colapso absoluto. O Item perde permanentemente todas as propriedades mágicas e torna-se um objeto mundano, caso sua estrutura física sobreviva.</td></tr>
@@ -130,6 +133,7 @@ Após aplicar o dano por Sobrecarga, role **3d**.
 <tr><td>18</td><td>Ressonância Descontrolada</td><td>A matriz arcana sofre uma mutação imprevisível. O Item adquire imediatamente uma Cicatriz Arcana e o Mestre pode acrescentar um pequeno efeito narrativo permanente (luz constante, sussurros, calor, frio, alteração de cor, etc.).</td></tr>
 </tbody>
 </table>
+
 
 ---
 
