@@ -46,6 +46,9 @@ A qualidade determina três características fundamentais:
 
 O Limiar do Item é somado ao Limiar do mago enquanto ambos permanecerem sintonizados.
 
+!!! info "Itens Lendários"
+     **Itens Lendários** jamais podem ser comprados. Eles são relíquias da Era Anterior, armas dos Arquitetos, presentes "divinos" ou artefatos perdidos. Mesmo um governante não poderia simplesmente pagar por um deles; sua obtenção exige descobri-los, herdá-los, conquistá-los ou recebê-los como recompensa por feitos extraordinários.
+
 ---
 
 ## Acúmulo de Tensão
