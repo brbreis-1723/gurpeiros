@@ -160,8 +160,6 @@ Um Item pode acumular diversas Cicatrizes Arcanas ao longo de sua existência, t
 
 Os Itens de Poder não tornam um mago mais poderoso; eles tornam possível que ele **ouse mais**.
 
-Os Itens de Poder não tornam um mago mais poderoso; eles tornam possível que ele ouse mais.
-
 Enquanto um conjurador comum deve administrar cuidadosamente sua própria Tensão Mágica, um grande artefato funciona como um reservatório que absorve esse fardo, permitindo feitos extraordinários. Contudo, nenhum recipiente é infinito. Todo Item de Poder possui um ponto de ruptura, e cada vez que um mago decide ultrapassá-lo, coloca em risco um tesouro que talvez jamais possa ser substituído.
 
 As **Cicatrizes Arcanas** representam essa história. Cada rachadura, runa apagada ou cristal partido é a lembrança de um momento em que um mago escolheu desafiar os limites da própria magia. Assim, os maiores artefatos de Zandia não são apenas ferramentas de poder: são relíquias vivas, marcadas pelos séculos e pelos sacrifícios de todos aqueles que as empunharam antes.
