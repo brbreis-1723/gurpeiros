@@ -159,13 +159,13 @@ Role 1d6:
 
 ---
 
-## Recuperação do Limiar nos itens de Poder
+## Dissipação da Tensão nos itens de Poder
 
-Ao amanhecer, o Limiar de um Item de Poder é restaurado em um valor aleatório que pode ser de 10% até integral, independentemente da recuperação do mago. O Limiar do mago continua recuperando-se normalmente pelas regras de Recuperação de Tensão Mágica.
+Ao amanhecer, um Item de Poder dissipa parte da Tensão Mágica acumulada em sua matriz arcana. Diferentemente do Limiar do mago, cuja recuperação é gradual e previsível, os artefatos dependem de um processo espontâneo de estabilização da energia mágica.
 
-Essa diferença representa a capacidade do artefato de dissipar naturalmente a energia arcana enquanto o corpo do conjurador necessita de repouso para recuperar-se. A dissipação de energia é algo imprevisível e ca[otica.
+Na maioria das vezes, apenas uma pequena fração da energia acumulada consegue ser dissipada naturalmente. Recuperações mais expressivas são incomuns e representam momentos em que a matriz arcana encontra, por breve período, um raro estado de equilíbrio.
 
-Assim, no amanhecer, para cada item de poder, role 3d6 para saber quanto do limiar será recuperado:
+Assim, ao amanhecer, para cada Item de Poder, role 3d6 para determinar quanto de seu Limiar será recuperado.
 <table>
     <thead>
         <tr>
@@ -186,8 +186,19 @@ Assim, no amanhecer, para cada item de poder, role 3d6 para saber quanto do limi
     </tbody>
 </table>
 
-!!! note "Probabilidade dos resultados:"
-     São cinco resultados possíveis de recuperação (10%, 20%, 30%, 50% e 100%) sendo que quanto maior o percentual, menor a chance dele sair (a probabilidade diminui exponencialmente): 
+!!! note "Nota sobre a Recuperação:"
+     A recuperação de um Item de Poder não representa sua capacidade máxima, mas sim a eficiência com que sua matriz arcana conseguiu dissipar a energia acumulada durante a noite.
+     
+     Na maioria dos dias, essa dissipação é limitada, resultando na recuperação de apenas 10% do Limiar. Em raras ocasiões, entretanto, a estrutura arcana entra em perfeita ressonância com o fluxo natural da magia, permitindo recuperações muito superiores.
+     
+     Essa distribuição é propositalmente assimétrica:
+     <ul>
+     <li><strong>10%</strong> representa o comportamento esperado da maioria dos artefatos.</li>
+     <li><strong>20% e 30%</strong> representam recuperações acima da média.</li>
+     <li><strong>50%</strong> é um evento raro.</li>
+     <li><strong>100%</strong> representa uma recuperação extraordinária, ocorrendo em menos de <strong>1%</strong> dos amanheceres.</li>
+     </ul>
+
      <div style="max-height:600px; overflow-y:auto;" align="center">
      <table>
     <thead>
@@ -199,19 +210,9 @@ Assim, no amanhecer, para cada item de poder, role 3d6 para saber quanto do limi
     </thead>
     <tbody>
         <tr>
-            <td><strong>Recupera 100% do Limiar</strong></td>
-            <td>3 ou 18</td>
-            <td>0,93%</td>
-        </tr>
-        <tr>
-            <td><strong>Recupera 50% do Limiar</strong></td>
-            <td>4 ou 17</td>
-            <td>2,78%</td>
-        </tr>
-        <tr>
-            <td><strong>Recupera 30% do Limiar</strong></td>
-            <td>5–6 ou 15–16</td>
-            <td>7,41%</td>
+            <td><strong>Recupera 10% do Limiar</strong></td>
+            <td>9–12</td>
+            <td>70,37%</td>
         </tr>
         <tr>
             <td><strong>Recupera 20% do Limiar</strong></td>
@@ -219,9 +220,19 @@ Assim, no amanhecer, para cada item de poder, role 3d6 para saber quanto do limi
             <td>18,52%</td>
         </tr>
         <tr>
-            <td><strong>Recupera 10% do Limiar</strong></td>
-            <td>9–12</td>
-            <td>70,37%</td>
+            <td><strong>Recupera 30% do Limiar</strong></td>
+            <td>5–6 ou 15–16</td>
+            <td>7,41%</td>
+        </tr>
+        <tr>
+            <td><strong>Recupera 50% do Limiar</strong></td>
+            <td>4 ou 17</td>
+            <td>2,78%</td>
+        </tr>
+        <tr>
+            <td><strong>Recupera 100% do Limiar</strong></td>
+            <td>3 ou 18</td>
+            <td>0,93%</td>
         </tr>
      </tbody>
      </table></div>
