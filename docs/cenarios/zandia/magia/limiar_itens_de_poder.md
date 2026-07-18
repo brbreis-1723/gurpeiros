@@ -36,12 +36,11 @@ A qualidade determina três características fundamentais:
 <tr><th>Qualidade</th><th>Multiplicador de Custo</th><th>Limiar do Item</th><th>HT</th></tr>
 </thead>
 <tbody>
-<tr><td>Comum</td><td>×1</td><td>+0</td><td>10</td></tr>
-<tr><td>Superior</td><td>×2</td><td>+5</td><td>11</td></tr>
-<tr><td>Excepcional</td><td>×5</td><td>+12</td><td>12</td></tr>
-<tr><td>Magistral</td><td>×10</td><td>+25</td><td>13</td></tr>
-<tr><td>Obra-Prima</td><td>×25</td><td>+50</td><td>14</td></tr>
-<tr><td>Lendário</td><td>Inestimável</td><td>+100</td><td>15</td></tr>
+<tr><td>Superior</td><td>×5</td><td>+5</td><td>12</td></tr>
+<tr><td>Excepcional</td><td>×10</td><td>+12</td><td>13</td></tr>
+<tr><td>Magistral</td><td>×25</td><td>+25</td><td>14</td></tr>
+<tr><td>Obra-Prima</td><td>×100</td><td>+50</td><td>15</td></tr>
+<tr><td>Lendário</td><td>Inestimável</td><td>+100</td><td>16</td></tr>
 </tbody>
 </table>
 
