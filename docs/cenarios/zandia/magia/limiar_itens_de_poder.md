@@ -59,7 +59,7 @@ A qualidade determina três características fundamentais:
 
 
 !!! info "Itens Lendários"
-     **Itens Lendários** jamais podem ser comprados. Eles são relíquias da Era Anterior, armas dos Arquitetos, presentes "divinos" ou artefatos perdidos. Mesmo um governante não poderia simplesmente pagar por um deles; sua obtenção exige descobri-los, herdá-los, conquistá-los ou recebê-los como recompensa por feitos extraordinários.
+     **Itens Lendários** jamais podem ser confeccionados ou comprados. Eles são relíquias da Era Anterior, armas dos Arquitetos, presentes "divinos" ou artefatos perdidos. Mesmo um governante não poderia simplesmente pagar por um deles; sua obtenção exige descobri-los, herdá-los, conquistá-los ou recebê-los como recompensa por feitos extraordinários.
 
 ---
 
