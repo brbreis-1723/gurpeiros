@@ -12,7 +12,7 @@ Um Item de Poder é um objeto especialmente preparado para servir como um **rese
 
 Em Zandia, os maiores tesouros não são aqueles capazes de destruir cidades, mas aqueles capazes de suportar o peso da magia sem se despedaçar.
 
-!!! info "O que pode se considerado um **Itens de Poder**?"
+!!! info "O que pode se considerado um **Item de Poder**?"
     Itens de Poder são objetos especialmente preparados para armazenar e canalizar energia arcana. Apenas determinados tipos de objetos podem receber esse encantamento, como cajados, cetros, varinhas, joias (anéis, amuletos, broches, brincos, braceletes, tiaras e adornos semelhantes).
     
     Além da forma, a matéria-prima do objeto é essencial. Um Item de Poder deve ser confeccionado a partir de materiais orgânicos, como madeira, osso, marfim e outros materiais naturais equivalentes, ou de pedras preciosas. Quando possuir partes metálicas, estas devem ser feitas exclusivamente de ouro, prata ou platina. Esses materiais possuem as propriedades necessárias para conduzir e estabilizar as energias arcanas.
