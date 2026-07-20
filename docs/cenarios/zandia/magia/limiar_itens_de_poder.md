@@ -12,6 +12,14 @@ Um Item de Poder é um objeto especialmente preparado para servir como um **rese
 
 Em Zandia, os maiores tesouros não são aqueles capazes de destruir cidades, mas aqueles capazes de suportar o peso da magia sem se despedaçar.
 
+!!! info "O que pode se considerado um **Itens de Poder**?"
+    Itens de Poder são objetos especialmente preparados para armazenar e canalizar energia arcana. Apenas determinados tipos de objetos podem receber esse encantamento, como cajados, cetros, varinhas, joias (anéis, amuletos, broches, brincos, braceletes, tiaras e adornos semelhantes).
+    
+    Além da forma, a matéria-prima do objeto é essencial. Um Item de Poder deve ser confeccionado a partir de materiais orgânicos, como madeira, osso, marfim e outros materiais naturais equivalentes, ou de pedras preciosas. Quando possuir partes metálicas, estas devem ser feitas exclusivamente de ouro, prata ou platina. Esses materiais possuem as propriedades necessárias para conduzir e estabilizar as energias arcanas.
+    
+    Objetos destinados principalmente ao combate ou à proteção, como armas, armaduras, escudos e vestimentas, não possuem as propriedades necessárias para desempenhar essa função e, portanto, não podem ser transformados em Itens de Poder.
+
+
 ---
 
 ## Sintonia
@@ -26,20 +34,25 @@ Em Zandia, os maiores tesouros não são aqueles capazes de destruir cidades, ma
 
 A qualidade determina três características fundamentais:
 
-- Valor de mercado;
+- Valor intrínseco do objeto;
 - Limiar do Item;
 - Resistência à Sobrecarga (HT).
 
+!!!info "**Valor Intrinseco do item**:"
+    Representa o valor mundano do item, desconsiderando quaisquer encantamentos ou propriedades mágicas. O primeiro valor corresponde ao custo mínimo dos materiais e componentes necessários para sua confecção, enquanto o segundo representa o valor de mercado do item acabado.
+
+    O custo mínimo aplica-se exclusivamente quando o próprio personagem confecciona o item. Em qualquer outra situação — como a contratação parcial de artesãos, a aquisição de componentes prontos ou outras circunstâncias intermediárias — caberá ao Mestre determinar um custo apropriado entre o valor mínimo e o valor de mercado, de acordo com as circunstâncias.
 
 <table>
 <thead>
-<tr><th>Qualidade</th><th>Multiplicador de Custo</th><th>Limiar do Item</th><th>HT</th></tr>
+<tr><th>Qualidade</th><th>Valor intrínseco</th><th>Limiar do Item</th><th>HT</th></tr>
 </thead>
 <tbody>
-<tr><td>Superior</td><td>×5</td><td>+5</td><td>12</td></tr>
-<tr><td>Excepcional</td><td>×10</td><td>+12</td><td>13</td></tr>
-<tr><td>Magistral</td><td>×25</td><td>+25</td><td>14</td></tr>
-<tr><td>Obra-Prima</td><td>×100</td><td>+50</td><td>15</td></tr>
+<tr><td>Boa Qualidade</td><td>$500-$750</td><td>+5</td><td>12</td></tr>
+<tr><td>Superior</td><td>$2000-$3000</td><td>+10</td><td>12</td></tr>
+<tr><td>Excepcional</td><td>$5000-$7500</td><td>+15</td><td>13</td></tr>
+<tr><td>Magistral</td><td>$15000-$22500</td><td>+25</td><td>14</td></tr>
+<tr><td>Obra-Prima</td><td>$50000-$75000</td><td>+50</td><td>15</td></tr>
 <tr><td>Lendário</td><td>Inestimável</td><td>+100</td><td>16</td></tr>
 </tbody>
 </table>
