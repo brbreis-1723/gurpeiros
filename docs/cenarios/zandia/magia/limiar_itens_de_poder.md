@@ -22,37 +22,41 @@ Em Zandia, os maiores tesouros não são aqueles capazes de destruir cidades, ma
 
 ---
 
-## Sintonia
+## **O Ritual de Sintonia**
+
+Todo mago tem os conhecimentos necessários para realizar o ritual:
 
 - Um personagem pode estar sintonizado com **apenas um Item de Poder** por vez.
-- A sintonia exige um ritual contínuo de aproximadamente **24 horas**, durante o qual o objeto é impregnado pela essência mágica de seu portador.
+- O ritual exige 10 minutos preparando um circulo mágico e, ao final dele, um teste contra a skill **Ritual Magic**.
+- Ele requer o gasto de **$100** em ingredientes e componentes como velas, incensos, etc.
+- O Ritual de Sintonia ocupa um dia inteiro (aproximadamente **12 horas** de concentração, podendo parar apenas para comer, fazer as necessidades básicas e dormir). Durante esse ritual, o objeto é impregnado pela essência mágica de seu portador.
+- Se o mago for interrompido em sua concentração, precisará iniciar novamente o ritual, sem prejuizo para o circulo preparado ou para os ingredientes utilizados. Ainda assim, precisará fazer novamente um teste contra **Ritual Magic**.
 - Ao concluir uma nova sintonia, qualquer vínculo anterior é imediatamente encerrado.
 
 ---
 
 ## Qualidade dos Itens de Poder
 
-A qualidade determina três características fundamentais:
+Todo item de poder possui um **Nivel de Qualidade** determinado por seu **Valor Intrinseco**. Deve-se contabilizar apenas o valor mundano do item, sem considerar encantamentos e propriedades mágicas.  Ele representa o mínimo de investimento necessário para obter o item já pronto ou, alternativamente, o custo dos materiais e componentes necessários para que o próprio personagem o confeccione. 
 
-- Valor intrínseco do objeto;
+Se o valor de mercado de objeto estiver entre dois níveis de qualidade, classifique-o como o menor nivel. Exemplo: o personagem compra um anel de ouro mundano pagando $1000. Ele se encontra entre $750 (Boa Qualidade) e $3000 (Superior), assim deve ser considerado como de Boa Qualidade.
+
+O nível de qualidade determina duas características fundamentais:
+
 - Limiar do Item;
 - Resistência à Sobrecarga (HT).
 
-!!!info "**Valor Intrinseco do item**:"
-    Representa o valor mundano do item, desconsiderando quaisquer encantamentos ou propriedades mágicas. O primeiro valor corresponde ao custo mínimo dos materiais e componentes necessários para sua confecção, enquanto o segundo representa o valor de mercado do item acabado.
-
-    O custo mínimo aplica-se exclusivamente quando o próprio personagem confecciona o item. Em qualquer outra situação — como a contratação parcial de artesãos, a aquisição de componentes prontos ou outras circunstâncias intermediárias — caberá ao Mestre determinar um custo apropriado entre o valor mínimo e o valor de mercado, de acordo com as circunstâncias.
 
 <table>
 <thead>
 <tr><th>Qualidade</th><th>Valor intrínseco</th><th>Limiar do Item</th><th>HT</th></tr>
 </thead>
 <tbody>
-<tr><td>Boa Qualidade</td><td>$500-$750</td><td>+5</td><td>12</td></tr>
-<tr><td>Superior</td><td>$2000-$3000</td><td>+10</td><td>12</td></tr>
-<tr><td>Excepcional</td><td>$5000-$7500</td><td>+15</td><td>13</td></tr>
-<tr><td>Magistral</td><td>$15000-$22500</td><td>+25</td><td>14</td></tr>
-<tr><td>Obra-Prima</td><td>$50000-$75000</td><td>+50</td><td>15</td></tr>
+<tr><td>Boa Qualidade</td><td>$750</td><td>+5</td><td>12</td></tr>
+<tr><td>Superior</td><td>$3.000</td><td>+10</td><td>12</td></tr>
+<tr><td>Excepcional</td><td>$7.500</td><td>+15</td><td>13</td></tr>
+<tr><td>Magistral</td><td>$22.500</td><td>+25</td><td>14</td></tr>
+<tr><td>Obra-Prima</td><td>$75.000</td><td>+50</td><td>15</td></tr>
 <tr><td>Lendário</td><td>Inestimável</td><td>+100</td><td>16</td></tr>
 </tbody>
 </table>
@@ -97,50 +101,29 @@ Se o item passar no teste de HT:
 Se o item falhar no teste de HT:
 
 !!! failure "Falha (Normal)!"
-     O Item sofre dano estrutural igual a **1d +1 para cada 5 pontos (ou fração) de Tensão acima de seu Limiar.**
+     O Item sofre a perda de 1 PV por dano estrutural na sua matriz arcana (ignorando qualquer RD). Além disso, deve rolar 3d6 verificando o resultado na **Tabela de Sobrecarga** a seguir:<br><br>
+     **Tabela de Efeitos de Sobrecarga (role 3d6):**
      <table>
      <thead>
-     <tr><th>Excesso de Tensão</th><th>Dano</th></tr>
+     <tr><b><th>3d6</th><th>Resultado</th><th>Consequência</th></b></tr>
      </thead>
      <tbody>
-     <tr><td>1–5</td><td>1d</td></tr>
-     <tr><td>6–10</td><td>1d+1</td></tr>
-     <tr><td>11–15</td><td>1d+2</td></tr>
-     <tr><td>16–20</td><td>1d+3</td></tr>
-     <tr><td>21–25</td><td>1d+4</td></tr>
-     <tr><td>26–30</td><td>1d+5</td></tr>
-     <tr><td>...</td><td>+1 para cada 5 pontos adicionais</td></tr>
+     <tr><td>3</td><td>**Aniquilação Arcana**</td><td>A matriz arcana entra em colapso absoluto. O Item perde permanentemente a capacidade de funcionar como item de poder além de todas as propriedades mágicas que tenha tornando-se um objeto mundano. Ele não pode mais ser sintonizado!</td></tr>
+     <tr><td>4–5</td><td>**Ressonância Descontrolada**</td><td>A matriz arcana sofre uma mutação imprevisível. Enquanto estiver sintonizado com o item, o mago sofre uma penalidade  de **-3 em todas as magias que realizar**. Essa penalidade somente é removida  quado o mago realizar novamente o **Ritual de Sintonia**, seja com o mesmo objeto ou com outro diferente. Além disso o Mestre pode acrescentar um pequeno efeito narrativo permanente (luz constante, sussurros, calor, frio, alteração de cor, etc.).</td></tr>
+     <tr><td>6–8</td><td>**Instabilidade Arcana**</td><td>Até o próximo amanhecer, o Limiar máximo do Item é reduzido pela metade (arredondando para baixo) e todos os Testes de HT realizados por ele sofrem penalidade de -2. Se esse resultado se repetir no mesmo dia, acumule +1 dia de **Instabilidade Arcana**.</td></tr>
+     <tr><td>9–11</td><td>**Fissuras Rúnicas**</td><td>As inscrições mágicas são parcialmente destruídas. O Item não recupera seu Limiar no próximo amanhecer. A recuperação automática retorna normalmente no amanhecer seguinte. Se esse resultado sair novamente no mesmo dia, acumule +1 dia sem recuperar seu limiar. </td></tr>
+     <tr><td>12–14</td><td>**Quebra de sintonia**</td><td>A matriz arcana do item é abalada e a sintonia com o mago é quebrada. O mago precisará fazer novamente um **Ritual de Sintonia** para que o item funcione novamente.</td></tr>
+     <tr><td>15–17</td><td>**Cicatriz Arcana**</td><td>O Item desenvolve uma Cicatriz Arcana permanente. Role na **Tabela de Cicatrizes Arcanas**.</td></tr>
+     <tr><td>18</td><td>**Explosão de Mana**</td><td>Toda a Tensão armazenada é liberada instantaneamente. O portador recebe 4d6 de dano pela explosão (a RD protege normalmente) e sofre imediatamente uma Calamidade como se toda essa Tensão estivesse acumulada em seu próprio Limiar. Como consequência positiva, o item fica completamente descarregado: deixa de estar em Sobrecarga e sua Tensão é reduzida a zero.</td></tr>
      </tbody>
      </table>
-
-
-Esse dano representa a ruptura da matriz arcana e é aplicado <u>diretamente aos Pontos de Vida (PV) do Item de Poder</u>, **ignorando completamente sua Resistência a Dano (RD).**
-
 
 ---
 
 Se for uma **Falha Crítica**...
 
 !!! danger "Falha Crítica!"
-     Indica um colapso violento da matriz arcana do Item de Poder. Nessa situação, o item sofre dano estrutural **em dobro** em relação a uma falha comum (lembre-se que a RD do item é ignorada!). <br><br>
-     Se ainda permanecer intacto após sofrer o dano estrutural, role 3d6 na Tabela abaixo para determinar os efeitos complementares da **Sobrecarga**:
-
-     **Tabela de Efeitos de Sobrecarga (role 3d6):**
-     <table>
-     <thead>
-     <tr><b><th>3d</th><th>Resultado</th><th>Consequência</th></b></tr>
-     </thead>
-     <tbody>
-     <tr><td>3</td><td>Aniquilação Arcana</td><td>A matriz arcana entra em colapso absoluto. O Item perde permanentemente todas as propriedades mágicas e torna-se um objeto mundano.</td></tr>
-     <tr><td>4–5</td><td>Ruptura da Matriz</td><td>O Item perde definitivamente sua capacidade de funcionar como Item de Poder (Limiar 0). Poderá ser reconstruído apenas por um ritual extraordinário, a critério do Mestre.</td></tr>
-     <tr><td>6–8</td><td>Explosão de Mana</td><td>Toda a Tensão armazenada é liberada instantaneamente. O portador sofre imediatamente uma Calamidade como se toda essa Tensão estivesse acumulada em seu próprio Limiar. O Item fica completamente descarregado.</td></tr>
-     <tr><td>9–11</td><td>Instabilidade Arcana</td><td>Até o próximo amanhecer, o Limiar máximo do Item é reduzido pela metade (arredondando para baixo) e todos os Testes de HT realizados por ele sofrem penalidade de -2.</td></tr>
-     <tr><td>12–14</td><td>Cicatriz Arcana</td><td>O Item desenvolve uma **Cicatriz Arcana** permanente. Role na **Tabela de Cicatrizes Arcanas**.</td></tr>
-     <tr><td>15–17</td><td>Fissuras Rúnicas</td><td>As inscrições mágicas são parcialmente destruídas. O Item não recupera seu Limiar no próximo amanhecer. A recuperação automática retorna normalmente no amanhecer seguinte</td></tr>
-     <tr><td>18</td><td>Ressonância Descontrolada</td><td>A matriz arcana sofre uma mutação imprevisível. O Item adquire imediatamente uma **Cicatriz Arcana** e o Mestre pode acrescentar um pequeno efeito narrativo permanente (luz constante, sussurros, calor, frio, alteração de cor, etc.).</td></tr>
-     </tbody>
-     </table>
-    
+     Indica um colapso violento da matriz arcana do Item de Poder. Nessa situação, o item sofre dano massivo estrutural e é destruído!
 
 ---
 
@@ -157,15 +140,15 @@ Um Item pode acumular diversas Cicatrizes Arcanas ao longo de sua existência, t
 Role 1d6:
 <table>
 <thead>
-<tr><th>d6</th><th>Cicatriz</th><th>Efeito</th></tr>
+<tr><th>1d6</th><th>Cicatriz</th><th>Efeito</th></tr>
 </thead>
 <tbody>
-<tr><td>1</td><td>Matriz Fragilizada</td><td>O HT do Item é reduzido permanentemente em 1. Se esse resultado for acumulado ao ponto da HT dele chegar a zero o item é destruido!</td></tr>
-<tr><td>2</td><td>Capacidade Comprometida</td><td>O Limiar máximo do Item é reduzido **permanentemente** em 5 pontos. Se o Limiar chegar a zero ele deixa de ser um item de poder!</td></tr>
-<tr><td>3</td><td>Fluxo Instável</td><td>A primeira magia canalizada através do Item a cada amanhecer exige imediatamente um Teste de HT, mesmo que o Item esteja abaixo de seu Limiar.</td></tr>
-<tr><td>4</td><td>Ressonância Arcana</td><td>-1 adicional nos Testes de HT quando acima do Limiar.</td></tr>
-<tr><td>5</td><td>Marca dos Excessos</td><td>O Item adquire uma alteração permanente visível (runa apagada, cristal rachado, metal escurecido, murmúrios, brilho irregular, calor constante etc.). Não produz efeito mecânico, mas revela sua história e pode influenciar interações narrativas.</td></tr>
-<tr><td>6</td><td>Ferida Profunda</td><td>Role duas vezes nesta tabela, ignorando novos resultados 6. Ambos os efeitos são cumulativos.</td></tr>
+<tr><td>1</td><td><b>Matriz Fragilizada</b></td><td>O HT do Item é reduzido permanentemente em 1. Se esse resultado for acumulado ao ponto da HT dele chegar a zero o item é destruido!</td></tr>
+<tr><td>2</td><td><b>Capacidade Comprometida</b></td><td>O Limiar máximo do Item é reduzido **permanentemente** em 5 pontos. Se o Limiar chegar a zero ele deixa de ser um item de poder!</td></tr>
+<tr><td>3</td><td><b>Fluxo Instável</b></td><td>A primeira magia canalizada através do Item a cada amanhecer exige imediatamente um Teste de HT, mesmo que o Item esteja abaixo de seu Limiar.</td></tr>
+<tr><td>4</td><td><b>Ressonância Arcana</b></td><td>-1 adicional nos Testes de HT quando acima do Limiar.</td></tr>
+<tr><td>5</td><td><b>Marca dos Excessos</b></td><td>O Item adquire uma alteração permanente visível (runa apagada, cristal rachado, metal escurecido, murmúrios, brilho irregular, calor constante etc.). Não produz efeito mecânico, mas revela sua história e pode influenciar interações narrativas.</td></tr>
+<tr><td>6</td><td><b>Ferida Profunda</b></td><td>Role duas vezes nesta tabela, ignorando novos resultados 6. Ambos os efeitos são cumulativos.</td></tr>
 </tbody>
 </table>
 
@@ -255,7 +238,7 @@ Assim, ao amanhecer, para cada Item de Poder, role 3d6 para determinar quanto de
 
 ## Filosofia da Regra
 
-Os Itens de Poder não tornam um mago mais poderoso; eles tornam possível que ele **ouse mais**.
+Os Itens de Poder não tornam um mago apenas mais poderoso; eles tornam possível que ele **ouse mais**.
 
 Enquanto um conjurador comum deve administrar cuidadosamente sua própria Tensão Mágica, um grande artefato funciona como um reservatório que absorve esse fardo, permitindo feitos extraordinários. Contudo, nenhum recipiente é infinito. Todo Item de Poder possui um ponto de ruptura, e cada vez que um mago decide ultrapassá-lo, coloca em risco um tesouro que talvez jamais possa ser substituído.
 
