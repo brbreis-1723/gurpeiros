@@ -33,6 +33,7 @@ nav:
           - Tipos de Assinatura: regras/assinatura/assinatura_tipo.md
           - Destino e Complicações: regras/assinatura/assinatura_destino.md
           - Categorias de Complicações: regras/assinatura/assinatura_complicacao.md
+      - Magias Épicas: regras/decisivo_magia.md
 
   - Cenários:
       - Sobre Cenários: cenarios/index.md
