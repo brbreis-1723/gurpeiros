@@ -25,7 +25,7 @@ extra_css:
 nav:
   - Início: index.md
 
-  - Regras:
+  - Regras e Tabelas:
       - Resumo: regras/index.md
       - Assinatura: 
           - Visão Geral: regras/assinatura/index.md
@@ -33,7 +33,10 @@ nav:
           - Tipos de Assinatura: regras/assinatura/assinatura_tipo.md
           - Destino e Complicações: regras/assinatura/assinatura_destino.md
           - Categorias de Complicações: regras/assinatura/assinatura_complicacao.md
-      - Magias Épicas: regras/decisivo_magia.md
+      - Tabelas:
+          - Golpes Épicos e devastadores: regras/tabelas/golpes_epicos.md
+          - Efeitos Épicos em Magias: regras/tabelas/magia_epica.md
+          
 
   - Cenários:
       - Sobre Cenários: cenarios/index.md

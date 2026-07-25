@@ -1,8 +1,19 @@
 # Efeitos épicos em magias
 
+## Regras Gerais
+
 Essa é uma tabela alternativa que criei para substituir a tabela de sucesso decisivo do Magic. O objetivo é que os resultados de um decisivo realmente sejam épicos, afinal a magia deveria ser EPICA!
 
-**Tabela de Sucesso Decisivo em Magia (1d20):**
+!!! info "**Reduções em custo de energia**"
+    Todas as reduções no custo de energia são aplicadas <strong>após</strong> aquelas decorrentes de um nível de habilidade elevado. Por exemplo: uma magia que normalmente custa 5 pontos de energia, lançada por um personagem com NH 15, custa 4 pontos. Se ele obtiver um resultado decisivo que reduza o custo em 50%, a magia custará apenas 2 pontos de energia..
+
+---
+
+## Tabelas
+
+### Efeitos Épicos em Magias
+
+**Tabela de Efeitos Épicos em Magias (1d20):**
 <div style="max-height:600px; overflow-y:auto;" align="center">
     <table class="tabela" border="1">
         <thead>    
@@ -14,11 +25,11 @@ Essa é uma tabela alternativa que criei para substituir a tabela de sucesso dec
         <tbody>
             <tr>
                 <td>1</td>
-                <td>O custo de energia, fadiga ou tensão é reduzido em <b>50%</b>.</td>
+                <td>O custo de energia, fadiga ou tensão é reduzido em <b>50%</b>, arredondado para baixo.</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>O custo de energia, fadiga ou tensão é reduzido em <b>75%</b>.</td>
+                <td>O custo de energia, fadiga ou tensão é reduzido em <b>75%</b>, arredondado para baixo.</td>
             </tr>
             <tr>
                 <td>3</td>
@@ -35,7 +46,7 @@ Essa é uma tabela alternativa que criei para substituir a tabela de sucesso dec
                 <td>5</td>
                 <td>
                     A magia não possui custo de energia, fadiga ou tensão. A próxima magia que lançar terá seu
-                    custo de energia, fadiga ou tensão reduzido em 50%.
+                    custo de energia, fadiga ou tensão reduzido em 50%, arredondado para baixo.
                     <br><br>
                     <strong>Atenção:</strong> o conjurador precisa lançar uma magia em até 1d6 turnos seguintes
                     ou perderá este benefício. O jogador/personagem não sabe quanto tempo vai durar, apenas que
@@ -239,6 +250,10 @@ Essa é uma tabela alternativa que criei para substituir a tabela de sucesso dec
     </table>
 </div>
 <br>
+
+---
+
+### Sintonia Arcana
 
 !!! info "**Sintonia Arcana**"
     A Sintonia Arcana ocorre quando um conjurador alcança uma sintonia excepcional com os fluxos de mana durante a conjuração de uma magia. Em vez de apenas moldar a energia mágica conforme sua vontade, ele passa a atuar como um canal através do qual a própria mana flui de maneira mais livre e intensa.
