@@ -12,7 +12,7 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
 
 !!! note "**Notas**:"
       1. As penalidades descritas nas tabelas abaixo são cumulativas com relação as de choque e nocaute que eventualmente sejam aplicadas;
-      2. **Dano mínimo no cérebro:** em todos os casos de avaliação de dano decorrente de golpe épico na cabeça, se o resultado afetar o cérebro e não ultrapassar a sua RD, aplica-se o dano mínimo ou seja 4 pontos de dano (1x4).
+      2. Dano Mínimo: Em todos os casos de avaliação de dano decorrente de Golpes Épicos e Golpes Épicos na Cabeça, quando o dano não for suficiente para ultrapassar a RD, aplica-se o dano mínimo de 1 ponto, antes dos modificadores de dano apropriados. Assim, se o resultado atingir um órgão vital ou o cérebro e o dano não ultrapassar a respectiva RD, serão aplicados, respectivamente, 3 pontos de dano (1×3) ou 4 pontos de dano (1×4).
 
 ## Tabelas
 
@@ -82,14 +82,14 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
             <tr>
                 <td>9</td>
                 <td>
-                    <strong>Ferimento Grave:</strong> se qualquer dano penetrar a RD, trate o ferimento como um
+                    <strong>Ferimento Grave:</strong> Trate o ferimento como um
                     Ferimento Grave, independentemente do dano causado.
                 </td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>
-                    <strong>Atordoamento:</strong> se qualquer dano penetrar a RD, o alvo deve realizar um teste
+                    <strong>Atordoamento:</strong> O alvo deve realizar um teste
                     de HT (-1 para cada 2 pontos de dano que penetrar, máximo -4) ou ficará Atordoado.
                 </td>
             </tr>
@@ -128,7 +128,7 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
             <tr>
                 <td>16</td>
                 <td>
-                    <strong>Golpe Debilitante:</strong> se qualquer dano penetrar a RD, o GM escolhe um membro
+                    <strong>Golpe Debilitante:</strong> O GM escolhe um membro
                     ou sentido apropriado afetado pelo golpe. A parte afetada fica temporariamente incapacitada até o final do próximo turno do alvo.
                 </td>
             </tr>
@@ -142,7 +142,7 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
             <tr>
                 <td>18</td>
                 <td>
-                    <strong>Golpe Vital:</strong> se qualquer dano penetrar a RD, aplique os modificadores de
+                    <strong>Golpe Vital:</strong> Aplique os modificadores de
                     ferimento de um acerto nos Órgãos Vitais. Em ataques contra membros ou extremidades, considere que o golpe atingiu uma estrutura crítica — como artéria, tendão, cartilagem etc. — aplicando o mesmo modificador.
                 </td>
             </tr>
