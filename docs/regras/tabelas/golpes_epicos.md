@@ -8,7 +8,7 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
 
 1. **A tabela de Golpes Épicos** substitui a tabela de Golpe Fulminante geral. Além dos efeitos relacionados ao dano, ela inclui opções de controle e mobilidade. O resultado 20 combina dois efeitos, criando uma ação particularmente cinematográfica.
 2. **A tabela de Golpes Épicos na Cabeça** substitui a tabela de Golpe Fulminante na Cabeça. Seu foco está em efeitos letais e incapacitantes que afetam a consciência, os sentidos, a coordenação motora e a sobrevivência. Nela, o resultado 20 representa o pior desfecho possível: morte instantânea, que pode (ou não) ter um teste de HT. 
-3. A princípio, optei por incluir um teste de HT. No entanto, após conversar com os jogadores da mesa, decidimos retirar o teste. A ideia original era evitar que os jogadores perdessem seus personagens. Ainda assim, eles preferiram correr o risco.
+3. A princípio, optei por incluir um teste de HT. No entanto, após conversar com os jogadores da mesa, decidimos retirar o teste. A ideia original era evitar que os jogadores perdessem seus personagens. Ainda assim, eles preferiram correr o risco. De qualquer modo, mantive no resultado 20, "Morte Instantânea", a possibilidade de o mestre escolher.
 
 !!! note "**Notas**:"
       1. As penalidades descritas nas tabelas abaixo são cumulativas com relação as de choque e nocaute que eventualmente sejam aplicadas;
