@@ -1,3 +1,0 @@
-# Regras
-
-Página em construção...

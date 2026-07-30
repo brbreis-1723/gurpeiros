@@ -19,8 +19,10 @@
 
 ## **Introdução**
 
-Em Zandia a magia pode operar maravilhas mas tem um custo muito alto. Magos podem operar feitiços capazes de derrubar castelos ou destruir exércitos inteiros, sem se sentirem cansados. Contudo, as consequências de se abusar da magia são sentidas não apenas por eles, mas por todos ao redor. 
+Em Zandia, a magia é uma força que permeia o mundo e influencia profundamente sua história, suas civilizações e a própria organização da sociedade. A forma como ela funciona, o papel dos magos e sua relação com os povos do cenário são abordados em detalhes na seção [Natureza da Magia e Sociedade](../magia/magia_natureza.md).
 
-Cataclismos e tragédias podem acontecer quando um mago negligencia seus limites. A própria origem de Zandia é um exemplo de como o ato inconsequente de um aprendiz pôde mudar a vida de um planeta inteiro! Por isso, magos são ensinados desde que são aprendizes a controlar suas ambições, buscando sempre agir com moderação. 
+A magia é capaz de realizar feitos extraordinários, mas sempre cobra um preço elevado. Magos podem lançar feitiços capazes de derrubar castelos ou destruir exércitos inteiros sem demonstrar qualquer sinal de fadiga. No entanto, as consequências do abuso da magia recaem não apenas sobre o conjurador, mas também sobre todos ao seu redor.
 
-Isso não significa que em determinados momentos, quando sua vida estiver em risco, em uma eventual emergência, os limites não devam ser ultrapassados. Afinal, é para momentos críticos como esse, em que a sua vida e a de seus companheiros estão em risco, que um mago se torna mais do que necessário! Essa forma de magia é conhecida como **[Magia do Limiar](../magia/magia_limiar.md)**.
+Cataclismos e tragédias podem ocorrer quando um mago ignora seus próprios limites. A própria origem de Zandia é um exemplo de como a imprudência de um aprendiz foi capaz de transformar para sempre o destino de um planeta inteiro. Por isso, desde o início de seu treinamento, todo mago é ensinado a controlar suas ambições e a recorrer à magia com responsabilidade e moderação.
+
+Isso não significa que esses limites jamais devam ser ultrapassados. Em situações extremas, quando a vida do mago ou de seus companheiros está em risco, recorrer a um poder além do seguro pode ser a única alternativa. É para esses momentos desesperadores que existe a **[Magia do Limiar](../../../regras/magia/magia_limiar.md)**: uma forma de conjuração que permite ultrapassar os limites naturais da magia, assumindo conscientemente os riscos e as consequências desse poder. 

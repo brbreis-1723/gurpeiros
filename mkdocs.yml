@@ -25,46 +25,48 @@ extra_css:
 nav:
   - Início: index.md
 
-  - Regras e Tabelas:
+  - Regras da Casa:
       - Resumo: regras/index.md
-      - Assinatura: 
-          - Visão Geral: regras/assinatura/index.md
-          - Como Construir: regras/assinatura/assinatura_construcao.md
-          - Tipos de Assinatura: regras/assinatura/assinatura_tipo.md
-          - Destino e Complicações: regras/assinatura/assinatura_destino.md
-          - Categorias de Complicações: regras/assinatura/assinatura_complicacao.md
+      - Assinaturas: 
+         - Visão Geral: regras/assinatura/index.md
+         - Como construir: regras/assinatura/assinatura_construcao.md
+         - Tipos de assinatura: regras/assinatura/assinatura_tipo.md            
+         - Destino e complicações: regras/assinatura/assinatura_destino.md                     
+         - Categorias de complicações: regras/assinatura/assinatura_complicacao.md                              
+      - Magia do Limiar:
+         - Regras gerais: regras/magia/magia_limiar.md
+         - Efeitos adicionais: regras/magia/efeitos_adicionais.md
+         - Limiar e mana: regras/magia/limiar_mana.md
+         - Limiar e magia cerimonial: regras/magia/magia_cerimonial.md
+         - Limiar e magias de energia: regras/magia/magias_energia.md
+         - Limiar e os Itens de Poder: regras/magia/limiar_itens_de_poder.md
       - Tabelas:
-          - Golpes Épicos e devastadores: regras/tabelas/golpes_epicos.md
-          - Efeitos Épicos em Magias: regras/tabelas/magia_epica.md
-          
-
+         - Calamidades (Magia do Limiar): regras/tabelas/calamidades.md
+         - Golpes Épicos: regras/tabelas/golpes_epicos.md
+         - Efeitos Épicos em magias: regras/tabelas/magia_epica.md
   - Cenários:
       - Sobre Cenários: cenarios/index.md
       - Zandia:
-          - Introdução:
-            - Sobre Zandia: cenarios/zandia/index.md
-            - Origem: cenarios/zandia/origem.md
-            - O Cataclismo:  cenarios/zandia/cataclismo.md            
-            - História e Cronologia: cenarios/zandia/historia.md
+          - Sobre Zandia: cenarios/zandia/index.md
+          - Origem: cenarios/zandia/origem.md
+          - Cataclismo: cenarios/zandia/cataclismo.md
+          - História: cenarios/zandia/historia.md
           - Mundo:
-            - Sobre o Mundo: cenarios/zandia/mundo/index.md
-            - Astronomia: cenarios/zandia/mundo/astronomia.md
-            - Mar Morto:  cenarios/zandia/mundo/mar_morto.md
-            - Metafísica das Brumas:  cenarios/zandia/mundo/metafisica_brumas.md
-
+            - Introdução: cenarios\zandia\mundo\index.md
+            - Astronomia: cenarios\zandia\mundo\astronomia.md
+            - Mar morto: cenarios\zandia\mundo\mar_morto.md
+            - Metafísica das Brumas: cenarios\zandia\mundo\metafisica_brumas.md
+            - Cidades-Estado: cenarios/zandia/mundo/cidades_estado.md
+            - Heliópolis:
+              - A Cidade: cenarios/zandia/mundo/heliopolis/index.md            
+              - Distritos: cenarios/zandia/mundo/heliopolis/heliopolis_distritos.md            
+              - Facções: cenarios/zandia/mundo/heliopolis/heliopolis_faccoes.md            
+              - Governo:  cenarios/zandia/mundo/heliopolis/heliopolis_governo.md            
           - Magia:
             - Introdução: cenarios/zandia/magia/index.md
-            - Metafísica da magia: cenarios/zandia/magia/metafisica_magia.md
-            - Magia do Limiar: cenarios/zandia/magia/magia_limiar.md
-            - Tabela de Calamidades: cenarios/zandia/magia/calamidades.md
-            - Efeitos adicionais: cenarios/zandia/magia/efeitos_adicionais.md
-            - Limiar e Mana: cenarios/zandia/magia/limiar_mana.md
-            - Limiar e Energia: cenarios/zandia/magia/magias_energia.md
-            - Limiar e Magia Cerimonial: cenarios/zandia/magia/magia_cerimonial.md
-            - Limiar e Itens de Poder: cenarios/zandia/magia/limiar_itens_de_poder.md
-            - Magia e Magos: cenarios/zandia/magia/magia_magos.md
+            - Natureza da Magia e Sociedade: cenarios/zandia/magia/magia_natureza.md
           - Personagens:
-            - Fichas: cenarios/zandia/personagens/index.md
+            - Lista de Personagens: cenarios/zandia/personagens/index.md
           - Raças:
             - As Raças de Zandia: cenarios/zandia/racas/index.md
             - Humanos: cenarios/zandia/racas/humanos.md
@@ -77,20 +79,23 @@ nav:
             - Ratinos: cenarios/zandia/racas/ratinos.md
             - Syridianos: cenarios/zandia/racas/syridianos.md
             - Tressi: cenarios/zandia/racas/tressi.md
-
           - Religião:
-            - Religião em Zandia: cenarios/zandia/religiao/index.md
+            - Visão Geral: cenarios/zandia/religiao/index.md
             - Igreja dos Novos Deuses: cenarios/zandia/religiao/novaigreja.md
             - Patronos: cenarios/zandia/religiao/patronos.md
-
-          - Ideias: 
+          - Ideias e conceitos: 
             - Resumo: cenarios/zandia/ideias/index.md
-            - Arquitetos: cenarios/zandia/ideias/arquitetos.md            
+            - Arquitetos: cenarios/zandia/ideias/arquitetos.md
+            - Calendario: cenarios/zandia/ideias/calendario.md
             - Filhos da Anarquia: cenarios/zandia/ideias/filhos_anarquia.md
+            - Organizações mágicas: cenarios/zandia/ideias/organizacoes_magicas.md
             - Sindicato: cenarios/zandia/ideias/sindicato.md
-            
   - Material de Apoio:
       - Resumo: material/index.md
       - Artigos do Blog: material/artigos.md
-      - Tabelas: 
-        - Relaçao de tabelas:  material/tabelas.md
+        
+
+
+
+
+        

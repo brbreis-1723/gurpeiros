@@ -9,4 +9,5 @@ Aqui estao conceitos e ideias soltas ainda nao catalogadas.
 - [Sindicato](../ideias/sindicato.md)
 
 
+
 Em construção...

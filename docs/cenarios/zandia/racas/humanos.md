@@ -76,7 +76,7 @@ ________________________________________
 Para baixar o arquivo de template do GCS <a href="/assets/templates/Human (Comum).gct" download> 📥 Clique Aqui </a>
 _______________________________________
 
-Para mais detalhes consulte também **[Magos e Magia](../magia/magia_magos.md)**.
+Para mais detalhes consulte também **[Natureza da Magia e Sociedade](../magia/magia_natureza.md)**.
 
 
 
