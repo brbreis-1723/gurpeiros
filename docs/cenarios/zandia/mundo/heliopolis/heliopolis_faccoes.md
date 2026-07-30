@@ -62,7 +62,7 @@ Ainda assim, poucos conseguem ignorar o fato de que o primeiro Cataclismo també
 
 ### 🐍 O Sindicato
 
-Em Heliópolis, entretanto, a presença do **[Sindicato](../../ideias/sindicato.md)** é uma realidade impossível de eliminar.
+Em Heliópolis, entretanto, a presença do **[Sindicato](../../faccoes/sindicato.md)** é uma realidade impossível de eliminar.
 
 Suas caravanas chegam diariamente carregando metais, componentes arcanos, animais, escravos, mercadorias exóticas e informações vindas de todo o continente. Em troca, partem levando o bem mais precioso de Zandia: alimento.
 

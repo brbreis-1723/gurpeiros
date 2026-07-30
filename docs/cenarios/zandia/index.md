@@ -18,4 +18,5 @@ Em Zandia, a magia move a civilização, ergue muralhas, alimenta máquinas e tr
 - [Raças](../zandia/racas/index.md)
 - [Magia](../zandia/magia/index.md)
 - [Religião](../zandia/religiao/index.md)
+- [Facções e organizações](../zandia/faccoes/index.md)
 - [Ideias e Conceitos](../zandia/ideias/index.md) 

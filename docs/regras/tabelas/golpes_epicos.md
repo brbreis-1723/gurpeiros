@@ -115,7 +115,8 @@ Diferentemente das tabelas originais de GURPS, elas utilizam um d20, garantindo 
             <tr>
                 <td>14</td>
                 <td>
-                    <strong>Brecha na Armadura:</strong> A armadura do alvo fica temporariamente exposta. O próximo ataque realizado pelo personagem contra esse alvo deverá considerar apenas metade de sua RD, arredondada para baixo, após a aplicação de quaisquer divisores de armadura.
+                    <strong>Brecha na Armadura:</strong> A armadura do alvo fica temporariamente exposta. O próximo ataque realizado pelo personagem contra esse alvo deverá considerar apenas metade de sua RD, arredondada para baixo, após a aplicação de quaisquer divisores de armadura
+                    .
                 </td>
             </tr>
             <tr>

@@ -52,10 +52,10 @@ nav:
           - Cataclismo: cenarios/zandia/cataclismo.md
           - História: cenarios/zandia/historia.md
           - Mundo:
-            - Introdução: cenarios/zandia/mundo/index.md
-            - Astronomia: cenarios/zandia/mundo/astronomia.md
-            - Mar morto: cenarios/zandia/mundo/mar_morto.md
-            - Metafísica das Brumas: cenarios/zandia/mundo/metafisica_brumas.md
+            - Introdução: cenarios\zandia\mundo\index.md
+            - Astronomia: cenarios\zandia\mundo\astronomia.md
+            - Mar morto: cenarios\zandia\mundo\mar_morto.md
+            - Metafísica das Brumas: cenarios\zandia\mundo\metafisica_brumas.md
             - Cidades-Estado: cenarios/zandia/mundo/cidades_estado.md
             - Heliópolis:
               - A Cidade: cenarios/zandia/mundo/heliopolis/index.md            
@@ -83,19 +83,26 @@ nav:
             - Visão Geral: cenarios/zandia/religiao/index.md
             - Igreja dos Novos Deuses: cenarios/zandia/religiao/novaigreja.md
             - Patronos: cenarios/zandia/religiao/patronos.md
+          - Facções e Organizações: 
+            - Facções em Zandia: cenarios/zandia/faccoes/index.md
+            - Filhos da Anarquia: cenarios/zandia/faccoes/filhos_anarquia.md
+            - Inquisição: cenarios/zandia/faccoes/inquisicao.md
+            - Sindicato: cenarios/zandia/faccoes/sindicato.md
+            - Nascidos das Brumas: 
+              - Sobre os nascidos: cenarios/zandia/faccoes/nascidos_brumas/index.md
+              - Origem: cenarios/zandia/faccoes/nascidos_brumas/nascidos_origem.md
+              - Sociedade: cenarios/zandia/faccoes/nascidos_brumas/nascidos_sociedade.md
+              - A Guerra: cenarios/zandia/faccoes/nascidos_brumas/nascidos_guerra.md
+              - Segredos: cenarios/zandia/faccoes/nascidos_brumas/nascidos_segredos.md
           - Ideias e conceitos: 
             - Resumo: cenarios/zandia/ideias/index.md
             - Arquitetos: cenarios/zandia/ideias/arquitetos.md
             - Calendario: cenarios/zandia/ideias/calendario.md
-            - Filhos da Anarquia: cenarios/zandia/ideias/filhos_anarquia.md
             - Organizações mágicas: cenarios/zandia/ideias/organizacoes_magicas.md
-            - Sindicato: cenarios/zandia/ideias/sindicato.md
+            
   - Material de Apoio:
       - Resumo: material/index.md
       - Artigos do Blog: material/artigos.md
         
 
 
-
-
-        
