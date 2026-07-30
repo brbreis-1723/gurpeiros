@@ -52,10 +52,10 @@ nav:
           - Cataclismo: cenarios/zandia/cataclismo.md
           - História: cenarios/zandia/historia.md
           - Mundo:
-            - Introdução: cenarios\zandia\mundo\index.md
-            - Astronomia: cenarios\zandia\mundo\astronomia.md
-            - Mar morto: cenarios\zandia\mundo\mar_morto.md
-            - Metafísica das Brumas: cenarios\zandia\mundo\metafisica_brumas.md
+            - Introdução: cenarios/zandia/mundo/index.md
+            - Astronomia: cenarios/zandia/mundo/astronomia.md
+            - Mar morto: cenarios/zandia/mundo/mar_morto.md
+            - Metafísica das Brumas: cenarios/zandia/mundo/metafisica_brumas.md
             - Cidades-Estado: cenarios/zandia/mundo/cidades_estado.md
             - Heliópolis:
               - A Cidade: cenarios/zandia/mundo/heliopolis/index.md            
