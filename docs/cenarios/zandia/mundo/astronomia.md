@@ -58,7 +58,7 @@ Embora o planeta continue obedecendo aos mesmos movimentos astronômicos, o mund
 
 ---
 
-### Estatísticas:
+### Estatísticas
 
 <table class="tabela" border="1">
 <thead>
