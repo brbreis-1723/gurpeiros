@@ -76,11 +76,13 @@ Enquanto as caravanas continuarem cruzando o deserto e a estabilidade de Helióp
 
 **"Todos vivem sob o mesmo Sol."**
 
-A Frente dos Comuns nasceu nas ruas estreitas do Gueto dos Comuns. Formada por trabalhadores, intelectuais, artesãos, ex-soldados e até alguns magos dissidentes, a organização luta contra a segregação imposta aos cidadãos sem aptidão mágica.
+A Frente dos Comuns nasceu nas ruas estreitas do Gueto dos Comuns. Formada por trabalhadores, intelectuais, artesãos, ex-soldados e até alguns magos dissidentes, tornou-se o maior movimento político em defesa dos direitos dos cidadãos sem aptidão mágica.
 
-Seus integrantes denunciam o sistema de castas que domina Heliópolis e defendem igualdade jurídica, acesso às academias, participação na administração pública e o fim das restrições impostas aos Comuns. Nem todos compartilham os mesmos métodos.
+Seus integrantes denunciam o sistema de castas que domina Heliópolis e defendem igualdade jurídica, acesso às academias, participação na administração pública e o fim das restrições impostas aos Comuns. Embora compartilhem o objetivo de pôr fim à supremacia dos Arquitetos, seus membros divergem profundamente sobre o caminho para alcançá-lo.
 
-Algumas células buscam reformas graduais por meio da política e da mobilização popular. Outras acreditam que apenas uma revolução poderá derrubar séculos de discriminação. A Regência considera a Frente uma organização potencialmente subversiva. Para muitos habitantes do Gueto, entretanto, ela representa a primeira esperança de mudança em gerações.
+A ala moderada acredita que a Magocracia pode ser transformada por meio de reformas, pressão popular e organização política. Já os setores mais radicais consideram a revolução inevitável e enxergam os **[Filhos da Anarquia](../../faccoes/filhos_anarquia.md)** como aliados naturais na luta contra o regime. Oficialmente, porém, a Frente não mantém qualquer vínculo com a organização armada, preservando sua independência e evitando fornecer à Inquisição um pretexto para sua completa ilegalização.
+
+A Regência considera a Frente uma organização potencialmente subversiva e mantém seus líderes sob constante vigilância. Para muitos habitantes do Gueto, entretanto, ela representa a primeira esperança de mudança em gerações.
 
 ### O Equilíbrio das Facções
 

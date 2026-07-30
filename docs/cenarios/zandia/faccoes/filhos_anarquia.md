@@ -13,6 +13,14 @@ São responsáveis por ataques contra destacamentos da Guarda de Cidades-Estado,
 
 Embora sejam classificados como terroristas pela Magocracia, para muitos Comuns representam a única esperança de um futuro livre.
 
+## Objetivos
+
+Os Filhos da Anarquia lutam por um objetivo simples de descrever, mas quase impossível de alcançar: derrubar os Arquitetos e pôr fim à Magocracia.
+
+A organização acredita que nenhum indivíduo deve governar apenas por possuir o dom da magia. Para seus membros, o poder político deve deixar de ser um privilégio hereditário ou arcano e passar a pertencer a todos os cidadãos, magos e Comuns em condições de igualdade perante a lei.
+
+Apesar desse ideal comum, os Filhos da Anarquia não apresentam um projeto único para o futuro de Zandia. Algumas células defendem a criação de uma república; outras preferem uma confederação de cidades autônomas; há ainda quem acredite que a forma de governo deva ser decidida apenas após a queda da Magocracia. Essa divergência raramente provoca conflitos internos, pois todos compartilham a mesma prioridade: destruir o regime dos Arquitetos.
+
 ## Métodos de Operação
 
 Os Filhos da Anarquia evitam confrontos diretos contra os grandes exércitos dos Arquitetos. Em vez disso, atacam onde o inimigo é mais vulnerável. Entre suas operações mais comuns estão:
@@ -28,7 +36,7 @@ Os Filhos da Anarquia evitam confrontos diretos contra os grandes exércitos dos
 * extração de agentes infiltrados;
 * resgate de rebeldes, prisioneiros políticos e vítimas da Inquisição.
 
-Sua especialidade, porém, tornou-se uma verdadeira lenda. São os **Grandes Resgates**. 
+Nenhuma operação, porém, tornou os Filhos da Anarquia tão famosos quanto os chamados **Grandes Resgates**.
 
 Os Filhos da Anarquia são conhecidos por realizar operações que muitos consideram impossíveis. Existem relatos de prisões invadidas em plena luz do dia, condenados retirados das mãos da Inquisição momentos antes de suas execuções e até mesmo fugitivos libertados de dentro dos muros de cidades-estados, até mesmo em Heliopolis!
 
@@ -73,6 +81,8 @@ Os Caçadores percorrem Zandia observando mercenários, aventureiros, soldados, 
 
 Quando encontram alguém promissor, iniciam um longo processo de observação. Poucos recebem um convite. Menos ainda sobrevivem tempo suficiente para aceitá-lo.
 
+Não existe juramento formal nem cerimônia de iniciação. Um indivíduo passa a ser considerado um Filho da Anarquia quando uma célula decide aceitá-lo e ele escolhe dedicar sua vida à resistência. A lealdade é construída por ações, não por palavras
+
 ---
 
 ## Origem
@@ -81,13 +91,13 @@ A organização recebeu seu nome em homenagem a um homem cuja verdadeira identid
 
 ### O General Anarquia
 
-As lendas afirmam que, antes da rebelião, ele serviu como capitão da guarda de uma importante cidade-estado, sendo também um poderoso mago de combate. Por razões desconhecidas, voltou-se contra os Arquitetos.
+As lendas afirmam que, antes da rebelião, ele serviu como capitão da guarda de uma importante cidade-estado, sendo também um poderoso mago de combate. Ninguém sabe ao certo o motivo de sua traição. Alguns afirmam que presenciou atrocidades cometidas pela Magocracia; outros dizem que descobriu um segredo capaz de destruir todo o regime. O próprio General jamais revelou a verdade.
 
 Após sua captura, foi condenado ao **Ritual da Anulação**, perdendo completamente sua capacidade de manipular magia e tornando-se um Nulo. Como continuava sendo um guerreiro excepcional mesmo sem seus poderes, os Arquitetos recusaram-se a executá-lo. Preferiram condená-lo à prisão perpétua. 
 
-Claro que isso foi um erro fatal, pois com a ajuda de companheiros, conseguiu escapar. Privado da magia, reinventou completamente sua forma de lutar. Reuniu outros condenados, ex-soldados, desertores e rebeldes, formando um pequeno grupo que ficou conhecido como **os Anarquistas**.
+A decisão revelou-se um erro fatal. com a ajuda de companheiros, conseguiu escapar. Privado da magia, reinventou completamente sua forma de lutar. Reuniu outros condenados, ex-soldados, desertores e rebeldes, formando um pequeno grupo que ficou conhecido como **os Anarquistas**.
 
-Conhecendo profundamente a organização militar da Magocracia, o antigo capitão transformou esse conhecimento em sua maior arma. Afinal ela sabia como a Guarda pensava, como patrulhava e quais eram seus pontos fracos.
+Conhecendo profundamente a organização militar da Magocracia, o antigo capitão transformou esse conhecimento em sua maior arma. Afinal ele sabia como a Guarda pensava, como patrulhava e quais eram seus pontos fracos.
 
 Sob sua liderança, os Anarquistas passaram a atacar postos avançados, depósitos militares, caravanas e instalações estratégicas. Com o tempo, chegaram ao impensável. Realizaram resgates dentro da própria Heliopolis, escapando repetidas vezes antes que a Guarda pudesse reagir. E seu nome tornou-se um símbolo de desafio à autoridade dos Arquitetos.
 
@@ -111,4 +121,4 @@ Mesmo entre os rebeldes, os Filhos da Anarquia não encontram apoio unânime. In
 
 Entre o povo, entretanto, a história é diferente. Em tavernas, caravanas e vilarejos distantes, contam-se histórias sobre prisioneiros libertados, crianças resgatadas da Inquisição e aldeias salvas por combatentes que desapareceram antes mesmo de receber agradecimentos.
 
-Para muitos Comuns, os Filhos da Anarquia não são apenas rebeldes. São a prova de que os Arquitetos podem sangrar. E, talvez, um dia, cair.
+Para muitos Comuns, os Filhos da Anarquia são a prova de que os Arquitetos não são deuses. Eles podem sangrar, podem falhar e, um dia, podem cair.
