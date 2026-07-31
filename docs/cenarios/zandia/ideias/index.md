@@ -4,8 +4,6 @@ Aqui estao conceitos e ideias soltas ainda nao catalogadas.
 
 ## Tópicos:
 
-- [Sobre Arquitetos](../ideias/arquitetos.md)
-
 
 
 

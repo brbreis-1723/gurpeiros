@@ -95,3 +95,8 @@ Primeiro surge uma tênue auréola dourada no horizonte. Depois, uma mancha verd
 
 É Heliópolis. A Cidade do Sol Eterno.
 
+!!! info "Para saber mais:"
+
+    - [Distritos da cidade](../heliopolis/heliopolis_distritos.md)
+    - [Faccções e organizações de Heliópolis](../heliopolis/heliopolis_faccoes.md)
+    - [O Governo](../heliopolis/heliopolis_governo.md)

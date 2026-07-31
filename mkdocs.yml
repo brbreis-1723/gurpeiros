@@ -54,8 +54,10 @@ nav:
           - Mundo:
             - Introdução: cenarios/zandia/mundo/index.md
             - Astronomia: cenarios/zandia/mundo/astronomia.md
+            - Calendario: cenarios/zandia/mundo/calendario.md
             - Mar morto: cenarios/zandia/mundo/mar_morto.md
             - Metafísica das Brumas: cenarios/zandia/mundo/metafisica_brumas.md
+            - Arquitetos: cenarios/zandia/mundo/arquitetos.md
             - Cidades-Estado: cenarios/zandia/mundo/cidades_estado.md
             - Heliópolis:
               - A Cidade: cenarios/zandia/mundo/heliopolis/index.md            
@@ -96,8 +98,6 @@ nav:
               - Segredos: cenarios/zandia/faccoes/nascidos_brumas/nascidos_segredos.md
           - Ideias e conceitos: 
             - Resumo: cenarios/zandia/ideias/index.md
-            - Arquitetos: cenarios/zandia/ideias/arquitetos.md
-            - Calendario: cenarios/zandia/ideias/calendario.md
             - Organizações mágicas: cenarios/zandia/ideias/organizacoes_magicas.md
             
   - Material de Apoio:
