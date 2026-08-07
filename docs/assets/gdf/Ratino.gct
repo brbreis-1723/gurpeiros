@@ -1,0 +1,1266 @@
+{
+	"version": 5,
+	"id": "B10z1d6wDcx5dTmd9",
+	"traits": [
+		{
+			"id": "TzCn2hzRoR9jl-aO-",
+			"name": "Ratino",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TtQnCIisOsevpgTww",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "t6P-hzXkZWd0xK7Wh",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t9JmDbmYS-RXMN3vt"
+							},
+							"name": "Decreased Size Modifier",
+							"reference": "B19",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "sm",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 0,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "txttyUwdnukJDqvrm",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thI3hK3riuknUwkHF"
+							},
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": -20,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tkQgObGMIDJOZ7JHI",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tMA9_2yoV8Czd7arj"
+							},
+							"name": "Decreased Will",
+							"reference": "B16",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Mental"
+							],
+							"points_per_level": -5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "will",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -5,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "trXZzk1_005p4sd7R",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tGWOSEE6SmBHACE6Y"
+							},
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mCUVGZndck_9D0Nw0",
+									"name": "No Fine Manipulators",
+									"cost_adj": "-40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tL6_lagVkRg_WUlpj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tVt3SvdGWNchJ8z4o"
+							},
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 10,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TfgplQ8qOvYJ94YNV",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "tPnDhaW7XcEKiu_H0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tM6z7Mx6e2V4VvUR4"
+							},
+							"name": "Absolute Direction",
+							"reference": "B34",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mnsQK7l6Z2y16lo4O",
+									"name": "Requires signal",
+									"reference": "B34",
+									"cost_adj": "-20%",
+									"disabled": true
+								},
+								{
+									"id": "m8DRjnPW_qmmvqVpk",
+									"name": "3D Spatial Sense",
+									"reference": "B34",
+									"cost_adj": "5",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "starts_with",
+												"qualifier": "piloting"
+											},
+											"amount": 1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "aerobatics"
+											},
+											"amount": 2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "free fall"
+											},
+											"amount": 2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "hyperspace"
+											},
+											"amount": 2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "navigation"
+											},
+											"specialization": {
+												"compare": "is",
+												"qualifier": "space"
+											},
+											"amount": 2
+										}
+									],
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "body sense"
+									},
+									"amount": 3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "air"
+									},
+									"amount": 3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "land"
+									},
+									"amount": 3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "sea"
+									},
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tEgms_mvSTfN_kORG",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tAZ31tXG_HzDmVCRp"
+							},
+							"name": "Acute Taste \u0026 Smell",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "taste_smell",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tychiwrK1DgGfYuQB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tjKuFiuy3Fs6rm69e"
+							},
+							"name": "Discriminatory Smell",
+							"reference": "B49,P47",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mfDkmb_DNunoMwWmW",
+									"name": "Emotion Sense",
+									"reference": "B49",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "mM8LEFGoAUgGatrlc",
+									"name": "Profiling",
+									"reference": "P47",
+									"cost_adj": "50%",
+									"disabled": true
+								}
+							],
+							"base_points": 15,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Tracking"
+									},
+									"amount": 4
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "on any task that utilizes sense of smell",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tk5CnUMssacRkOlsA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tkVnKZcuYZ4Hth4v7"
+							},
+							"name": "Discriminatory Taste",
+							"reference": "B49,P47",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mryu3IoxcZkWibNgv",
+									"name": "Profiling",
+									"reference": "P47",
+									"cost_adj": "50%",
+									"disabled": true
+								}
+							],
+							"base_points": 10,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on any task that utilizes the sense of taste",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t6Gm0dPJuW6fJhQ5g",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tsPqY8NyZ8sJbkdS-"
+							},
+							"name": "Fur",
+							"reference": "B101",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t5hhgrSukdonGlhdP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tM2ajBpyA-CX7akLc"
+							},
+							"name": "Good with @Animal@",
+							"reference": "PU2:13",
+							"tags": [
+								"Mental",
+								"Perk"
+							],
+							"replacements": {
+								"Animal": "Rats"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tvuDpOOUx4f4SVlIj",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tk0ZKpvgqpE35AZcM"
+							},
+							"name": "Night Vision",
+							"reference": "B71,P87",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 3,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tsgWMBHh5CB9Ux0-V",
+							"name": "Pestilent",
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tr6OSBCYpmqLhRKXT",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tynHtgvWZmmNOL97D"
+							},
+							"name": "Reduced Consumption",
+							"reference": "B80",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m0GOCZMHoBRYuyzc9",
+									"name": "Cast-Iron Stomach",
+									"reference": "B80",
+									"cost_adj": "-50%"
+								},
+								{
+									"id": "mk6MxAJa2DBR-ZQMu",
+									"name": "Food Only",
+									"reference": "B80",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mZ0OMZxaaPEYm4GEf",
+									"name": "Water Only",
+									"reference": "B80",
+									"cost_adj": "-50%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 3,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tF4WVuJfArMDmas8o",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tJTfFdHM7YI5IZR7I"
+							},
+							"name": "Resistant",
+							"reference": "B81,P71,MA47",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"replacements": {
+								"Occasional: Disease, Ingested Poison, etc.": "Disease"
+							},
+							"modifiers": [
+								{
+									"id": "mZnuG7ObxG4wqEjl0",
+									"name": "@Very Common: Metabolic Hazards, etc.@",
+									"reference": "B80",
+									"cost_adj": "30",
+									"disabled": true
+								},
+								{
+									"id": "mjVs8SCB8WBi1Zi-4",
+									"name": "@Common: Poison, Sickness, etc.@",
+									"reference": "B81",
+									"cost_adj": "15",
+									"disabled": true
+								},
+								{
+									"id": "m9YdCp0hMFClffcXO",
+									"name": "@Occasional: Disease, Ingested Poison, etc.@",
+									"reference": "B81",
+									"cost_adj": "10"
+								},
+								{
+									"id": "mCzII-jMPqaDKnSp0",
+									"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+									"reference": "B81",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mQUI8yy3_JBb2ja8u",
+									"name": "Immunity",
+									"reference": "B81",
+									"cost_adj": "x1",
+									"disabled": true
+								},
+								{
+									"id": "mBLBvq20dBjyDQ5b7",
+									"name": "+8 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.5",
+									"disabled": true
+								},
+								{
+									"id": "m1ncAWbwWkl8HKN4z",
+									"name": "+3 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.33"
+								}
+							],
+							"round_down": true,
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "t1ECYv7OXfphar19a",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tCZxZZAMet8dNIhNS"
+							},
+							"name": "Robust (@Sense@)",
+							"reference": "PU2:14",
+							"local_notes": "You get a +1 to HT rolls to resist effects that cause nausea or vomiting from inhaled agents, overpowering stenches, noxious gases, or nauseating fumes.  (e.g., tear gas, Stench spell, Cloud of Doom)",
+							"tags": [
+								"Mental",
+								"Perk"
+							],
+							"replacements": {
+								"Sense": "Smell"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tVaAX6qdGZR0o9QMR",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tj66NHKyO_GObgGsj"
+							},
+							"name": "Sharp Claws",
+							"reference": "B42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 5,
+							"weapons": [
+								{
+									"id": "w1pu0YM5tNh_xYr31",
+									"sv": 1,
+									"damage": {
+										"type": "cut",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Slash",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "skill",
+											"name": "Karate"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 cut"
+									}
+								},
+								{
+									"id": "wDv8R6UIBfqTwoUtG",
+									"sv": 1,
+									"damage": {
+										"type": "cut",
+										"st": "thr"
+									},
+									"usage": "Kick",
+									"reach": "C,1",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"damage": "thr cut"
+									}
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t0e0DnUIpIq56BCVA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tK9Ov0WtlrhnJFy5n"
+							},
+							"name": "Sharp Teeth",
+							"reference": "B91",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mzFhCSWPGdlYvuGKJ",
+									"name": "Provided by Vampiric Bite",
+									"reference": "B96",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"weapons": [
+								{
+									"id": "wWuaa_q7NRwepsoY1",
+									"sv": 1,
+									"damage": {
+										"type": "cut",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Bite",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "dx"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 cut"
+									}
+								}
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 55
+					}
+				},
+				{
+					"id": "T3-LY1XCXVMqzM8mG",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "tR-NqKUX20DYGyD1h",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tFHuERzaUyJb5catX"
+							},
+							"name": "Ailurophobia (Cats)",
+							"reference": "B149",
+							"local_notes": "This includes all felines: lions, tigers, panthers, etc.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr_adj": "action_penalty",
+							"cr": 12,
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "teW8nUPuvJLW6Huk3",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tdlCZw4YB4T7QkOnj"
+							},
+							"name": "Appearance",
+							"reference": "B21",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mt68NE-rMqfuwG-0E",
+									"name": "Attractive",
+									"reference": "B21",
+									"cost_adj": "4",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 1
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mScgG46MwNxNeTqss",
+									"name": "Average",
+									"reference": "B21",
+									"disabled": true
+								},
+								{
+									"id": "mcogFCey8YXeQrnmR",
+									"name": "Beautiful",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from those attracted to members of your sex, +2 from everyone else",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mXoNCjh9GfDSyCKMu",
+									"name": "Beautiful (Androgynous)",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 3
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mXM1U-QRTaLBRUb12",
+									"name": "Beautiful (Impressive)",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 3
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "meWjAXwacAq5jw1qc",
+									"name": "Handsome",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from those attracted to members of your sex, +2 from everyone else",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mRxPKrcjWi8bQuZCx",
+									"name": "Handsome (Androgynous)",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 3
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mKaLOFjp0xCerYaJF",
+									"name": "Handsome (Impressive)",
+									"reference": "B21",
+									"cost_adj": "12",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 3
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m_tbBppZChSN2eV50",
+									"name": "Hideous",
+									"reference": "B21,B202",
+									"cost_adj": "-16",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Intimidation"
+											},
+											"amount": 2
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mNl8XIZ52pjYdQzI2",
+									"name": "Horrific",
+									"reference": "B21,B202",
+									"cost_adj": "-24",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Intimidation"
+											},
+											"amount": 4
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -6
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m6mZApK5RNurUGlVM",
+									"name": "Impressive",
+									"reference": "B21",
+									"disabled": true
+								},
+								{
+									"id": "mqhgeVEzO7g_iUJKB",
+									"name": "Monstrous",
+									"reference": "B21,B202",
+									"cost_adj": "-20",
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Intimidation"
+											},
+											"amount": 3
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -5
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mw5lTpGx3CPhn-yc3",
+									"name": "Off-the-Shelf Looks",
+									"reference": "B21",
+									"local_notes": "Halves the usual reaction bonus - adjust manually",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mv_7-GK1FNpFAmsvK",
+									"name": "Transcendent",
+									"reference": "B21",
+									"cost_adj": "20",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+											"amount": 8
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mwMLq-CG-c8mfUXpc",
+									"name": "Transcendent (Androgynous)",
+									"reference": "B21",
+									"cost_adj": "20",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 5
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "m9ae29sm2ED1WcO7r",
+									"name": "Transcendent (Impressive)",
+									"reference": "B21",
+									"cost_adj": "20",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 5
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mp8RQzrgJu9tyOjhi",
+									"name": "Ugly",
+									"reference": "B21",
+									"cost_adj": "-8",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -2
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mV8dL8EF2wQ5g2glg",
+									"name": "Unattractive",
+									"reference": "B21",
+									"cost_adj": "-4",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -1
+										}
+									]
+								},
+								{
+									"id": "mN1WO7D1y55VPVosW",
+									"name": "Universal",
+									"reference": "B21",
+									"cost_adj": "25%",
+									"disabled": true
+								},
+								{
+									"id": "m6kgGXdSfLSWG_pf5",
+									"name": "Very Beautiful",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+											"amount": 6
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mc9y_58HW956OlPu1",
+									"name": "Very Beautiful (Androgynous)",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "macSw1-nUea4arpPE",
+									"name": "Very Beautiful (Impressive)",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "muPc7zAnpNfQWR66B",
+									"name": "Very Handsome",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+											"amount": 6
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mwMc5l6BTJpOpv4uR",
+									"name": "Very Handsome (Androgynous)",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								},
+								{
+									"id": "mEvDHzRsE-xnbxujg",
+									"name": "Very Handsome (Impressive)",
+									"reference": "B21",
+									"cost_adj": "16",
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": 4
+										}
+									],
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -4
+							}
+						},
+						{
+							"id": "tGEuDVq3N3Xj-JYCA",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "ttwfuD5y7jvTNPd7f"
+							},
+							"name": "Bad Smell",
+							"reference": "B124",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from most people and animals (although pests or carrion-eating scavengers might be attracted to you!)",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tM0iLGWwPC6OJbJCi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tsHSzoJhgVSPSXqNY"
+							},
+							"name": "Cowardice",
+							"reference": "B129",
+							"local_notes": "Make a self-control roll any time you are called on to risk physical danger. Roll at -5 if you must risk death.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr_adj": "fright_check_penalty",
+							"cr": 12,
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tzN2WZuL9_M8rJjaT",
+							"name": "Dislike cleanliness and bathing",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tTgJazMFFFJEx03XV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tCidFlSADk-zraK1o"
+							},
+							"name": "Social Stigma (Minority Group)",
+							"reference": "B155",
+							"local_notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except your own kind",
+									"amount": -2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -40
+					}
+				}
+			],
+			"calc": {
+				"points": 20
+			}
+		}
+	]
+}

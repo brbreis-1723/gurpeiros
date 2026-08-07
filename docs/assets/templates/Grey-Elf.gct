@@ -1,0 +1,1015 @@
+{
+	"version": 5,
+	"id": "BlcE5VHmWEs-JkR3k",
+	"traits": [
+		{
+			"id": "Th4K_4HQtzDTbPOY9",
+			"name": "Gray Elf",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "T3NOKgluNhiwfL17w",
+					"name": "Attribute",
+					"children": [
+						{
+							"id": "tL_rnum6xvgNxlMlQ",
+							"name": "Decreased Strength",
+							"reference": "B14",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Physical"
+							],
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -10,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tyGd6k68lUQy6kNLx",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mwi_2WUd6rD3yuRIp",
+									"name": "No Fine Manipulators",
+									"cost_adj": "-40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 20,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tWkvkcDXX9QodYnS9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tmpxhXmSORakqvrbn"
+							},
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "Tvp1-OAxuFiUzx70b",
+					"name": "Racial Advantage",
+					"children": [
+						{
+							"id": "t1iUoLTX2rRH6T8sa",
+							"name": "Desert Instincts",
+							"local_notes": "Sexto sentido para perigos naturais do deserto. Funciona como Noção de Perigo, mas apenas contra predadores do deserto, terreno instável (dunas/desmoronamentos) e tempestades de areia. Não detecta humanoides, armadilhas, magia ou perigos urbanos/subterrâneos.",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tbJ2YQ6Xcr-4w5pQ5",
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "tOL6lq63_dgIMG0cH",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "m4toZlgHwWKH4kEFw",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mQ22qvR2m4JICB63o",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m2Dc4U09BpfKg8vrz",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mdG6RCjX2kdZnruYR",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGJO15T6a9yyrzLxC",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mGoOFFIFYV3w8hid5",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m3ar1BX_kLFBKPCh_",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mpiYOBjNrSdk5ezBt",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						},
+						{
+							"id": "tBg_hj-sU273PiYqt",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tg6F-Wf29f6BFE1oD"
+							},
+							"name": "Nature Wild Caster (Wild Talent)",
+							"reference": "B99,P89,MA49",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"replacements": {
+								"Type: Mental, Physical, Magical or Chi": "Magical"
+							},
+							"modifiers": [
+								{
+									"id": "m6MCPgNq_zaGDc0I4",
+									"name": "Retention",
+									"reference": "B99",
+									"cost_adj": "25%",
+									"disabled": true
+								},
+								{
+									"id": "mJhIO31-ZnCF2Sksy",
+									"name": "Emergencies Only",
+									"reference": "B100",
+									"cost_adj": "-30%",
+									"disabled": true
+								},
+								{
+									"id": "m4WTVfVzpualFA-pf",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Limitation Modifiers.adm",
+										"id": "mFPcNXwjyvWcTU10n"
+									},
+									"name": "Pact",
+									"reference": "B113,P104",
+									"local_notes": "Serynna: Sense of Duty (Nature); Fanaticism",
+									"cost_adj": "-30%"
+								},
+								{
+									"id": "mMhcYWUE40mmB4hro",
+									"name": "Focused",
+									"reference": "B99",
+									"local_notes": "@Type: Mental, Physical, Magical or Chi@",
+									"cost_adj": "-20%",
+									"calc": {
+										"resolved_notes": "Magical"
+									}
+								},
+								{
+									"id": "mdjwtOLkTAZt5pBbO",
+									"name": "Only nature spells (plant, animal, earth, air, water)",
+									"cost_adj": "-20%"
+								},
+								{
+									"id": "mt2-_-bV9hQ9zTxJS",
+									"name": "Wild Ability",
+									"reference": "P90",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "mgIaPsy0IF4lupz6b",
+									"name": "External",
+									"reference": "P90",
+									"cost_adj": "-20%",
+									"disabled": true
+								},
+								{
+									"id": "mgpymkNKZlIH6B-1D",
+									"name": "No Advantage Requirements",
+									"reference": "DF4:8",
+									"cost_adj": "50%"
+								},
+								{
+									"id": "muVKerJHittYBpn-V",
+									"name": "Game Time",
+									"reference": "P108",
+									"local_notes": "Uses per game week equal to its maximum possible uses per session",
+									"disabled": true
+								},
+								{
+									"id": "m8Nzlm9ntlJAWO_8z",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Power Ups/Power Ups 4 Enhancements Enhancement Modifiers.adm",
+										"id": "mEPw3arucLNUneQGC"
+									},
+									"name": "Reliable",
+									"reference": "PU4:16",
+									"cost_adj": "5%",
+									"affects": "levels_only",
+									"levels": 5
+								}
+							],
+							"points_per_level": 20,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 21,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tVRR3tOmyI6At3yoS",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t6Nq6oInwkU1qbAP1"
+							},
+							"name": "Patron",
+							"reference": "B72,P65",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"replacements": {
+								"Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural": "grants special powers",
+								"Who: An ultra-powerful individual": "Serynna, Senhora dos Elfos Cinzentos"
+							},
+							"modifiers": [
+								{
+									"id": "MWiAD27r8lVlXrEgs",
+									"name": "Power",
+									"children": [
+										{
+											"id": "mfdUIX8y_k9x7TlQO",
+											"name": "@Who: Individual with 150% of PC's starting points@",
+											"reference": "B72",
+											"cost_adj": "10",
+											"disabled": true
+										},
+										{
+											"id": "mSJ414sifmbMPVZnQ",
+											"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "10",
+											"disabled": true
+										},
+										{
+											"id": "mBJNCp3_ZD2WqTAd-",
+											"name": "@Who: Individual with twice the PC's starting points@",
+											"reference": "B72",
+											"cost_adj": "15",
+											"disabled": true
+										},
+										{
+											"id": "m5hlPZdqT0wr1P0MG",
+											"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "15",
+											"disabled": true
+										},
+										{
+											"id": "mIUcpSm-sYJPplUbY",
+											"name": "@Who: An ultra-powerful individual@",
+											"reference": "B72",
+											"cost_adj": "20"
+										},
+										{
+											"id": "mUX02zExK3SVlhpt2",
+											"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "20",
+											"disabled": true
+										},
+										{
+											"id": "mvNOx2iIIMss0k5Xv",
+											"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
+											"reference": "B72",
+											"cost_adj": "25",
+											"disabled": true
+										},
+										{
+											"id": "mLHtKwewqltMcUwUw",
+											"name": "@Who: A national government or giant multi-national organization@",
+											"reference": "B72",
+											"cost_adj": "30",
+											"disabled": true
+										},
+										{
+											"id": "mp_XX5Mjer_KBclBr",
+											"name": "@Who: A deity@",
+											"reference": "B72",
+											"cost_adj": "30",
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "M97xJ0donNz7NGh7i",
+									"name": "Frequency of Appearance",
+									"children": [
+										{
+											"id": "m7FY39cVkVNtpyDo5",
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"local_notes": "6-",
+											"cost_adj": "x0.5"
+										},
+										{
+											"id": "mc7zCyck2oyRSIe2P",
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"local_notes": "9-",
+											"cost_adj": "x1",
+											"disabled": true
+										},
+										{
+											"id": "mjtKvARNKrdgK9beh",
+											"name": "Appears quite often",
+											"reference": "B36",
+											"local_notes": "12-",
+											"cost_adj": "x2",
+											"disabled": true
+										},
+										{
+											"id": "mTX-bSEnRqBEwdf6D",
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"local_notes": "15-",
+											"cost_adj": "x3",
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mH6ct0zqyFtRgZeDV",
+									"name": "Equipment",
+									"reference": "B73",
+									"local_notes": "@Equipment worth no more than average starting wealth@",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "m8xtMKYgCQwxMeJMv",
+									"name": "Equipment",
+									"reference": "B73",
+									"local_notes": "@Equipment worth more than average starting wealth@",
+									"cost_adj": "100%",
+									"disabled": true
+								},
+								{
+									"id": "mhY9eAYE4TU8VnYBC",
+									"name": "Highly Accessible",
+									"reference": "B73",
+									"cost_adj": "50%"
+								},
+								{
+									"id": "mOVFtC-HoC34318HS",
+									"name": "Special Abilities",
+									"reference": "B73",
+									"local_notes": "@Extensive social or political power@",
+									"cost_adj": "50%",
+									"disabled": true
+								},
+								{
+									"id": "mO8K0bPwhetKGhWaz",
+									"name": "Special Abilities",
+									"reference": "B73",
+									"local_notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@",
+									"cost_adj": "100%",
+									"calc": {
+										"resolved_notes": "grants special powers"
+									}
+								},
+								{
+									"id": "mUziYK7WN_nL2gdMM",
+									"name": "Minimal Interventions",
+									"reference": "B73",
+									"cost_adj": "-50%"
+								},
+								{
+									"id": "mTaFdcwXOsPyN3X_V",
+									"name": "Secret",
+									"reference": "B73",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mUd-Z6SNEJLwYHnyn",
+									"name": "Unwilling",
+									"reference": "B74",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mk64exWXyqB5o3coF",
+									"name": "Favor",
+									"reference": "B55",
+									"cost_adj": "x0.2",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "tMyU8Dib8XMg_hjWY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tynHtgvWZmmNOL97D"
+							},
+							"name": "Reduced Consumption",
+							"reference": "B80",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mCrySirCtPQgemjD6",
+									"name": "Cast-Iron Stomach",
+									"reference": "B80",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mJ4MK68BfGRI74-yk",
+									"name": "Food Only",
+									"reference": "B80",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mK0BMU_cKvVbmwMwX",
+									"name": "Water Only",
+									"reference": "B80",
+									"cost_adj": "-50%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 2,
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 4,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tpQLB2Kn8N6lxrZzn",
+							"name": "Talent (Survivor)",
+							"reference": "PU3:16",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Talent"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "First Aid"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Knot-Tying"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Naturalist"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Scrounging"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Survival"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "From scouts, campers, and survivalists.",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "Success with Scrounging improvises simple equipment for other skills that removes -1/level from the penalty for being improvised (p. B345).",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tbw29Z1S5-gURHsl6",
+							"name": "Temperature Tolerance",
+							"reference": "B93",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 3,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "t0_qD98y9XxJY8-J_",
+							"name": "Terrain Adaptation (Desert)",
+							"reference": "B93,P83",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mN2sfKS07Cje3lu6R",
+									"name": "Unstable on solid ground",
+									"reference": "B93",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mhiI6qwrJbn40THJk",
+									"name": "Active",
+									"reference": "P84",
+									"cost_adj": "300%",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 79
+					}
+				},
+				{
+					"id": "TT4-Pr9JRYR9BCmVq",
+					"name": "Racial Disadvantage",
+					"children": [
+						{
+							"id": "tZQ8YPWk-3SWc_eTu",
+							"name": "Bad Reputation",
+							"reference": "B26,MA54",
+							"local_notes": "untrustworthy cheaters, ecoterrorists, bandits, all the time",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"replacements": {
+								"large class of people": "desert people"
+							},
+							"modifiers": [
+								{
+									"id": "mMZrcHbKdy-mK7Jao",
+									"name": "People Affected",
+									"reference": "B27",
+									"local_notes": "Almost everyone",
+									"cost_adj": "x1",
+									"disabled": true
+								},
+								{
+									"id": "mVxYM65Sbq9irs4tC",
+									"name": "People Affected",
+									"reference": "B27",
+									"local_notes": "Almost everyone except @large class of people@",
+									"cost_adj": "x0.67",
+									"calc": {
+										"resolved_notes": "Almost everyone except desert people"
+									}
+								},
+								{
+									"id": "mefq4VTCsUVFKuh7g",
+									"name": "People Affected",
+									"reference": "B27",
+									"local_notes": "@Large class of people@",
+									"cost_adj": "x0.5",
+									"disabled": true
+								},
+								{
+									"id": "mFG7p9Rw2xoscT6bN",
+									"name": "People Affected",
+									"reference": "B27",
+									"local_notes": "@Small class of people@",
+									"cost_adj": "x0.33",
+									"disabled": true
+								},
+								{
+									"id": "m-jXFwLh8uwFU-dNI",
+									"name": "Recognized all the time",
+									"reference": "B28",
+									"cost_adj": "x1"
+								},
+								{
+									"id": "mCxQwHA9i8twMyDHw",
+									"name": "Recognized sometimes",
+									"reference": "B28",
+									"local_notes": "10-",
+									"cost_adj": "x0.5",
+									"disabled": true
+								},
+								{
+									"id": "muMNCJTWtzwi7hzZL",
+									"name": "Recognized occasionally",
+									"reference": "B28",
+									"local_notes": "7-",
+									"cost_adj": "x0.33",
+									"disabled": true
+								}
+							],
+							"points_per_level": -5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others aware of your reputation",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": -3,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "t03jv0KDjq6ghss64",
+							"name": "Code of Honor (Eldain)",
+							"reference": "BS185",
+							"local_notes": "Viva o momento; não se prenda a um lugar e rejeite todo tipo de confinamento; proteja e respeite os membros da sua tribo (e os raros outros que você considera amigos); forasteiros são inimigos em potencial que podem enganar, trapacear ou ferir você e, portanto, podem ser enganados e receber mentiras em troca.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t7BHpK2k7AS5vRUfR",
+							"name": "Dislike closed spaces",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "t1DAlr6oDlxQXsRPI",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tLDRbhXFP-3CeGka-"
+							},
+							"name": "Fanaticism (Serynna, Senhora dos Elfos)",
+							"reference": "B136",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"replacements": {
+								"Group or ideal": "Spirit of Nature"
+							},
+							"modifiers": [
+								{
+									"id": "m51QJaOIw97Xu2qHx",
+									"name": "Extreme",
+									"reference": "B136",
+									"disabled": true
+								}
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tECLNT7BQF3iPiQVI",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t04cLZ44QvEYdsP3F"
+							},
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "meZFhWPQ7WGCotE7K",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mkbF-qGvhANoTh-Qj",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mvWqWpdXyIxoUmgyE",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost_adj": "-10",
+									"disabled": true
+								},
+								{
+									"id": "mD3nJR8Gxgurs20VE",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost_adj": "-2",
+									"disabled": true
+								},
+								{
+									"id": "mf3W_Ln5N0cb5xlVx",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost_adj": "-15",
+									"disabled": true
+								},
+								{
+									"id": "m3I1XOh_8H4tzRlHO",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost_adj": "-20",
+									"disabled": true
+								},
+								{
+									"id": "m-dXRz-jLZfE-GUIU",
+									"name": "Nature",
+									"reference": "B153",
+									"cost_adj": "-15"
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tO5TXJ7pWXLu2m7KE",
+							"name": "Skinny",
+							"reference": "B18",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_most",
+											"qualifier": 14
+										},
+										"which": "ht"
+									}
+								]
+							},
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "disguise"
+									},
+									"amount": -2
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "shadowing"
+									},
+									"amount": -2
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to ST vs. knockback",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tB0nqYv_zXSBsxsCc",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tCidFlSADk-zraK1o"
+							},
+							"name": "Social Stigma (Minority Group)",
+							"reference": "B155",
+							"local_notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except your own kind",
+									"amount": -2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -59
+					}
+				}
+			],
+			"calc": {
+				"points": 35
+			}
+		}
+	]
+}

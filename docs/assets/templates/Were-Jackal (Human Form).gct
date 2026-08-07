@@ -1,0 +1,423 @@
+{
+	"version": 5,
+	"id": "B10z1d6wDcx5dTmd9",
+	"traits": [
+		{
+			"id": "TzCn2hzRoR9jl-aO-",
+			"name": "Were-Jackal (Humanoid form)",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TfgplQ8qOvYJ94YNV",
+					"name": "Racial Advantages",
+					"children": [
+						{
+							"id": "tjg9V0LUsxv2YSxx0",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tqyRvrXKWtUMlIEQe"
+							},
+							"name": "Alternate Form",
+							"reference": "B83",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"replacements": {
+								"Rare": "Red Moon"
+							},
+							"modifiers": [
+								{
+									"id": "mpOMoEGT5Otz-iyNA",
+									"name": "Absorptive Change",
+									"reference": "P75",
+									"local_notes": "@Level of Absorptive Change. 1 None, 2, Light, 3, Medium, 4, Heavy, 5, Extra Heavy@",
+									"cost_adj": "5%",
+									"affects": "base_only",
+									"levels": 4,
+									"disabled": true
+								},
+								{
+									"id": "mlGAAlZaZ-Bv8leLi",
+									"name": "Cosmetic",
+									"reference": "B84",
+									"cost_adj": "-50%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "msaMD9RIbwplzxmPZ",
+									"name": "Active Change",
+									"reference": "P75",
+									"cost_adj": "20%",
+									"affects": "base_only"
+								},
+								{
+									"id": "mxEz2-wBGpBe76ItV",
+									"name": "Form: Jackal",
+									"cost_adj": "+0"
+								},
+								{
+									"id": "mVlYChj9PI4qX5XSX",
+									"name": "Non-Reciprocal Damage",
+									"reference": "P75",
+									"cost_adj": "50%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "md3DzKtO-pWqjmPFu",
+									"name": "Once On, Stays On",
+									"reference": "P75",
+									"cost_adj": "50%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "mOZlp4XydA9U5HzoM",
+									"name": "Reciprocal Rest",
+									"reference": "P75",
+									"cost_adj": "30%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "mm7gS2SJeFp6ZNYOZ",
+									"name": "Projected Form",
+									"reference": "P75",
+									"cost_adj": "-50%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "m3X_hfTrhoz7e4dmm",
+									"name": "Takes Extra Time",
+									"reference": "B115",
+									"cost_adj": "-10%",
+									"affects": "base_only",
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "m4xB0SL3nO0oyA3co",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Limitation Modifiers.adm",
+										"id": "mzpUgBlF3kdVzpSTC"
+									},
+									"name": "Trigger",
+									"reference": "B115,P106",
+									"local_notes": "@occasional trigger@",
+									"cost_adj": "-30%",
+									"affects": "base_only",
+									"disabled": true
+								},
+								{
+									"id": "m_vcFrS7CmafDrDNa",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Power Ups/Power Ups 8 Limitations Limitation Modifiers.adm",
+										"id": "mx5IZjxSbLWQpRhqk"
+									},
+									"name": "Uncontrollable Trigger (@Rare@)",
+									"reference": "PU8:19",
+									"cost_adj": "-5%",
+									"affects": "base_only"
+								},
+								{
+									"id": "mutYVjoDffCuJIRZJ",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Enhancement Modifiers.adm",
+										"id": "mdF_YOT8TLBmhnsO-"
+									},
+									"name": "Reduced Time",
+									"reference": "B108",
+									"cost_adj": "20%",
+									"levels": 4
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 30
+							}
+						},
+						{
+							"id": "t7x4z8SyMpvSOvaQd",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "twUwPs1rB7kQ3oEOO"
+							},
+							"name": "Brotherhood (@Group@)",
+							"reference": "PU2:17",
+							"tags": [
+								"Perk",
+								"Social"
+							],
+							"replacements": {
+								"Group": "Jackals"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tVncKg2HTIRHeXPEU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tM2ajBpyA-CX7akLc"
+							},
+							"name": "Good with @Animal@",
+							"reference": "PU2:13",
+							"tags": [
+								"Mental",
+								"Perk"
+							],
+							"replacements": {
+								"Animal": "Jackal"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tiKzwhmGNGZraV2Mg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tPT1TvF2mncxtM_6W"
+							},
+							"name": "Racial Memory",
+							"reference": "B78,P70",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mSKqn1FWbWNXjQnoM",
+									"name": "Passive",
+									"reference": "B78",
+									"cost_adj": "15"
+								},
+								{
+									"id": "mOMWEQS32ikr8hZbK",
+									"name": "Active",
+									"reference": "B78",
+									"cost_adj": "40",
+									"disabled": true
+								},
+								{
+									"id": "mgzx-iLph9jcXPjEh",
+									"name": "Immersive",
+									"reference": "P70",
+									"cost_adj": "50%",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tzuHRIr0wxZzCnlQa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thR91RlonCb2vGKR4"
+							},
+							"name": "Speak With Animals",
+							"reference": "B87,P77",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental"
+							],
+							"replacements": {
+								"One species: House Cats, Macaws, etc.": "Jackals"
+							},
+							"modifiers": [
+								{
+									"id": "msIfp8Bffyw26s2GS",
+									"name": "Specialized",
+									"reference": "B87",
+									"local_notes": "All aquatic animals",
+									"cost_adj": "-40%",
+									"disabled": true
+								},
+								{
+									"id": "mdU7QZBHtyQ-iPbFF",
+									"name": "Specialized",
+									"reference": "B87",
+									"local_notes": "All land animals",
+									"cost_adj": "-40%",
+									"disabled": true
+								},
+								{
+									"id": "mOAXXkuawD0kj_-z0",
+									"name": "Specialized",
+									"reference": "B87",
+									"local_notes": "@One class: Mammals, Birds, etc.@",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mJecc-iN7waoKfTby",
+									"name": "Specialized",
+									"reference": "B87",
+									"local_notes": "@One family: Felines, Parrots, etc.@",
+									"cost_adj": "-60%",
+									"disabled": true
+								},
+								{
+									"id": "mAMafKPaJqRmTKE6O",
+									"name": "Specialized",
+									"reference": "B87",
+									"local_notes": "@One species: House Cats, Macaws, etc.@",
+									"cost_adj": "-80%",
+									"calc": {
+										"resolved_notes": "Jackals"
+									}
+								},
+								{
+									"id": "mRyjl1yJNkJF9g1dN",
+									"name": "Sapience",
+									"reference": "P77",
+									"cost_adj": "40%",
+									"disabled": true
+								},
+								{
+									"id": "mQciayfYIkeYJHrEs",
+									"name": "Universal",
+									"reference": "P77",
+									"cost_adj": "20%",
+									"disabled": true
+								}
+							],
+							"base_points": 25,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t0oqvTMnxVmVwOKbL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tVS-zD5rFs5yhsJnJ"
+							},
+							"name": "Zeroed",
+							"reference": "B100",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"calc": {
+						"points": 62
+					}
+				},
+				{
+					"id": "T3-LY1XCXVMqzM8mG",
+					"name": "Racial Disadvantages",
+					"children": [
+						{
+							"id": "tWcf5vMwp7eU9RRu_",
+							"name": "Bad Dreams",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tx8Q3A1gmCH5U5d9l",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tKnTO9tRIpKGTxa_9"
+							},
+							"name": "Glimpses of Clarity",
+							"reference": "PU6:19",
+							"tags": [
+								"Mental",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "t2Yb-F8D_Ul5-pBdl",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "thFGMVGT0QnExHCMW"
+							},
+							"name": "Secret (@Secret@)",
+							"reference": "B152",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"replacements": {
+								"Secret": "Were-Jackal"
+							},
+							"modifiers": [
+								{
+									"id": "mGZ03ineJFhTZgs9G",
+									"name": "Serious Embarrassment",
+									"reference": "B152",
+									"cost_adj": "-5",
+									"disabled": true
+								},
+								{
+									"id": "mj3PMDm-6Zrj_d9jT",
+									"name": "Utter Rejection",
+									"reference": "B152",
+									"cost_adj": "-10",
+									"disabled": true
+								},
+								{
+									"id": "mjfMPKnvtBgQ50QYA",
+									"name": "Imprisonment",
+									"reference": "B152",
+									"cost_adj": "-20",
+									"disabled": true
+								},
+								{
+									"id": "mswuFtZT6WC8z-Lor",
+									"name": "Possible Death",
+									"reference": "B152",
+									"cost_adj": "-30"
+								}
+							],
+							"calc": {
+								"points": -30
+							}
+						}
+					],
+					"calc": {
+						"points": -32
+					}
+				}
+			],
+			"calc": {
+				"points": 30
+			}
+		}
+	]
+}

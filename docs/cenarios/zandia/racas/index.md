@@ -27,7 +27,7 @@ Anões ainda habitam fortalezas escavadas nas montanhas, preservando seus ofíci
 - [Armadilhos (30 pontos)](../racas/armadilhos.md)
 - [Clopas(30 pontos)](../racas/clopas.md)
 - [Drows (35 pontos)](../racas/drows.md)
-- Elfos Cinzentos (35 pontos)
+- [Elfos Cinzentos (35 pontos)](../racas/elfos_cinzentos.md) 
 - Goblins (25 pontos)
 - [Homem-Chacal (30 pontos)](../racas/werejackal.md)
 - [Krin (39 pontos)](../racas/krin.md)

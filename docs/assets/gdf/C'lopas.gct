@@ -1,0 +1,538 @@
+{
+	"version": 5,
+	"id": "BuvrTYi_XgwFycGYy",
+	"traits": [
+		{
+			"id": "Tyu5i78cVsu4qM2W5",
+			"name": "C'lopas",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"children": [
+				{
+					"id": "TBYgpuO1Y6ra1TnTJ",
+					"name": "Atributes",
+					"children": [
+						{
+							"id": "tMfhYzC5V8KBRG4Ab",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TRlIN0XHtg7yF-3xb",
+					"name": "Racial Advantage",
+					"children": [
+						{
+							"id": "tIcI7u9pW2qm5DtGB",
+							"name": "Acute Vision",
+							"reference": "B35",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "vision",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 3,
+							"calc": {
+								"points": 6,
+								"current_level": 3
+							}
+						},
+						{
+							"id": "t0SPHsWUt_uHOwYDe",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tIrb6FsJzGGWGnrHt"
+							},
+							"name": "Charm (@Spell@)",
+							"reference": "PU2:19",
+							"tags": [
+								"Perk",
+								"Supernatural"
+							],
+							"replacements": {
+								"Spell": "Divination: Oneiromancy"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tx83V7xT6Xq01-tvk",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tgjE-yMzESTjq695x"
+							},
+							"name": "Danger Sense",
+							"reference": "B47,P46",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "tyNwnbWfrxnskJ-ec",
+							"name": "Increased Basic Speed",
+							"reference": "B17",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "basic_speed",
+									"amount": 0.25,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "to_wTFFDDOnXrEdkP",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "toj1k8SehpW9YMKN7"
+							},
+							"name": "Infravision",
+							"reference": "B60,P87",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m14ZkwQIE1Ui9HiaS",
+									"name": "No normal vision",
+									"reference": "B60",
+									"cost_adj": "-10",
+									"disabled": true
+								}
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t93mobCPf33kuw-xy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tpnv8EEpAS6Er2pwK"
+							},
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "md5ulEACzUIr89gvN",
+									"name": "Dance",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mHu1wBxZfGmqUopVQ",
+									"name": "Dark-Aspected",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mC7f9qNlgxklh4Cyq",
+									"name": "Day-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mLwXRN7bs_o0XibF0",
+									"name": "Musical",
+									"cost_adj": "-50%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mRL8lLqQnJDJfS4si",
+									"name": "Night-Aspected",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mOHX2GxQQxzgnkg9R",
+									"name": "One College",
+									"local_notes": "@College@",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "mfbyyO3xkf9sdeL-r",
+									"name": "Solitary",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "m4T6h6_nlO_x1twey",
+									"name": "Song",
+									"cost_adj": "-40%",
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 0
+							}
+						},
+						{
+							"id": "tTM-WgfVRtk-YbQ7A",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "ti8Mwn5KC8w-uyGTH"
+							},
+							"name": "Social Regard",
+							"reference": "B87",
+							"local_notes": "Venerated: Oracles",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those who hold you in high regard for being a @Reason@, in a @Type: Feared, Respected or Venerated@ way.",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 47
+					}
+				},
+				{
+					"id": "TJUW9P7lzY5NU6RDs",
+					"name": "Racial Disadvantage",
+					"children": [
+						{
+							"id": "tiU1dSehduvK2MJir",
+							"name": "Bad Dreams",
+							"local_notes": "in case of a critical failure on the Oneiromancy roll, the caster has nightmares of their own death!",
+							"tags": [
+								"quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tEVx7zLPyKVq9or3w",
+							"name": "Disciplined",
+							"reference": "B165",
+							"local_notes": "You won’t ever start a fight, but that’s it. If someone else picks a fight with you or your\nallies, or your legitimate leader orders you into battle, none of Pacifism’s drawbacks apply – you have no penalties, may take the offensive and use deadly force against anyone on the other side, and suffer no regrets afterward.",
+							"tags": [
+								"Physical",
+								"Quirk"
+							],
+							"base_points": -1,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on all HT rolls related to drinking",
+									"amount": -2
+								}
+							],
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tPzqaqKe0Rref1Jij",
+							"name": "Mild Shyness",
+							"reference": "B154",
+							"local_notes": "You are uneasy with strangers, especially assertive or attractive ones.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Acting"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Carousing"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Diplomacy"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fast-Talk"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Leadership"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Merchant"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Panhandling"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Performance"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Politics"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Public Speaking"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Savoir-Faire"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sex Appeal"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Streetwise"
+									},
+									"amount": -1
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Teaching"
+									},
+									"amount": -1
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "to_-RcmGn8Cy0w0E8",
+							"name": "One Eye",
+							"reference": "B147",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "No Depth Perception"
+										}
+									}
+								]
+							},
+							"base_points": -15,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to DX in combat and on any task involving hand-eye coordination",
+									"amount": -1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "on ranged attacks (unless you Aim first) and on rolls to operate any vehicle faster than a horse and buggy",
+									"amount": -3
+								}
+							],
+							"calc": {
+								"points": -15
+							}
+						}
+					],
+					"calc": {
+						"points": -22
+					}
+				}
+			],
+			"calc": {
+				"points": 30
+			}
+		}
+	]
+}

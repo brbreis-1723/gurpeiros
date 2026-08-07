@@ -76,6 +76,7 @@ nav:
             - Armadilhos: cenarios/zandia/racas/armadilhos.md
             - Clopas: cenarios/zandia/racas/clopas.md
             - Drows: cenarios/zandia/racas/drows.md
+            - Elfos Cinzentos: cenarios/zandia/racas/elfos_cinzentos.md
             - Homens-Chacal: cenarios/zandia/racas/werejackal.md
             - Krin: cenarios/zandia/racas/krin.md
             - Ratinos: cenarios/zandia/racas/ratinos.md
@@ -99,7 +100,6 @@ nav:
           - Ideias e conceitos: 
             - Resumo: cenarios/zandia/ideias/index.md
             - Organizações mágicas: cenarios/zandia/ideias/organizacoes_magicas.md
-            
   - Material de Apoio:
       - Resumo: material/index.md
       - Artigos do Blog: material/artigos.md
