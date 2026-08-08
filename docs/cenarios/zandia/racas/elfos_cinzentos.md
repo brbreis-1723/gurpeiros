@@ -192,12 +192,13 @@ Independentemente do motivo, um Elfo Cinzento nunca deixa de carregar consigo su
 
 - <span title="Reputação ruim: trapaceiros nenhum pouco confiáveis, ecoterroristas, bandidos">Bad Reputation (untrustworthy cheaters, ecoterrorists, bandits, all the time)</span>-1
 - <span title="Código de honra dos Eldain">Code of Honor (Eldain)</span>
-- <span title="Fanatismo">Fanaticism</span> (Serynna, Senhora dos Elfos)
 - <span title="Senso do Dever com a Natureza">Sense of Duty: Nature</span>
 - <span title="Magreza">Skinny</span>
 - <span title="Estigma Social (Grupo Minoritário)">Social Stigma: Minority Group</span>
+- <span title="Trapaceiro">Trickster</span>
 
 !!! info "Code of Honor (Eldain) ou Código de honra dos Eldain"
+    * Venere Serynna, a Senhora dos Elfos;
     * Viva o momento;
     * Não se prenda a um lugar e rejeite todo tipo de confinamento;
     * Proteja e respeite os membros da sua tribo (e os raros outros que você considera amigos);

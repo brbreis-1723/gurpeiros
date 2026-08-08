@@ -4,7 +4,7 @@
 	"traits": [
 		{
 			"id": "Th4K_4HQtzDTbPOY9",
-			"name": "Gray Elf",
+			"name": "Grey Elf",
 			"ancestry": "Human",
 			"container_type": "ancestry",
 			"children": [
@@ -249,21 +249,21 @@
 							},
 							"modifiers": [
 								{
-									"id": "m6MCPgNq_zaGDc0I4",
+									"id": "mFG4rOucTM2ankUoQ",
 									"name": "Retention",
 									"reference": "B99",
 									"cost_adj": "25%",
 									"disabled": true
 								},
 								{
-									"id": "mJhIO31-ZnCF2Sksy",
+									"id": "mcsgqWP9FfleDsgY_",
 									"name": "Emergencies Only",
 									"reference": "B100",
 									"cost_adj": "-30%",
 									"disabled": true
 								},
 								{
-									"id": "m4WTVfVzpualFA-pf",
+									"id": "m4H0MMZ94ATP2477l",
 									"source": {
 										"library": "richardwilkes/gcs_master_library",
 										"path": "Basic Set/Basic Set Limitation Modifiers.adm",
@@ -271,11 +271,11 @@
 									},
 									"name": "Pact",
 									"reference": "B113,P104",
-									"local_notes": "Serynna: Sense of Duty (Nature); Fanaticism",
-									"cost_adj": "-30%"
+									"local_notes": "Serynna: Sense of Duty (Nature); Code of honor (Eldar)",
+									"cost_adj": "-25%"
 								},
 								{
-									"id": "mMhcYWUE40mmB4hro",
+									"id": "m2Lnl_KWiloa1XTBB",
 									"name": "Focused",
 									"reference": "B99",
 									"local_notes": "@Type: Mental, Physical, Magical or Chi@",
@@ -285,39 +285,39 @@
 									}
 								},
 								{
-									"id": "mdjwtOLkTAZt5pBbO",
+									"id": "mvNRnyngHQUF05mLV",
 									"name": "Only nature spells (plant, animal, earth, air, water)",
 									"cost_adj": "-20%"
 								},
 								{
-									"id": "mt2-_-bV9hQ9zTxJS",
+									"id": "mFfH-6j84iEk1I4j-",
 									"name": "Wild Ability",
 									"reference": "P90",
 									"cost_adj": "50%",
 									"disabled": true
 								},
 								{
-									"id": "mgIaPsy0IF4lupz6b",
+									"id": "mrZ51zU01UL5DhkCT",
 									"name": "External",
 									"reference": "P90",
 									"cost_adj": "-20%",
 									"disabled": true
 								},
 								{
-									"id": "mgpymkNKZlIH6B-1D",
+									"id": "mnVuveTgA7MeHTOEX",
 									"name": "No Advantage Requirements",
 									"reference": "DF4:8",
 									"cost_adj": "50%"
 								},
 								{
-									"id": "muVKerJHittYBpn-V",
+									"id": "m-UI17Ss_YxWOfG6k",
 									"name": "Game Time",
 									"reference": "P108",
 									"local_notes": "Uses per game week equal to its maximum possible uses per session",
 									"disabled": true
 								},
 								{
-									"id": "m8Nzlm9ntlJAWO_8z",
+									"id": "msZ9SxSPuXbswG4l2",
 									"source": {
 										"library": "richardwilkes/gcs_master_library",
 										"path": "Power Ups/Power Ups 4 Enhancements Enhancement Modifiers.adm",
@@ -334,7 +334,7 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 21,
+								"points": 22,
 								"current_level": 1
 							}
 						},
@@ -668,10 +668,10 @@
 							],
 							"points_per_level": 1,
 							"can_level": true,
-							"levels": 3,
+							"levels": 2,
 							"calc": {
-								"points": 3,
-								"current_level": 3
+								"points": 2,
+								"current_level": 2
 							}
 						},
 						{
@@ -814,37 +814,20 @@
 							}
 						},
 						{
-							"id": "t7BHpK2k7AS5vRUfR",
-							"name": "Dislike closed spaces",
-							"base_points": -1,
-							"calc": {
-								"points": -1
-							}
-						},
-						{
-							"id": "t1DAlr6oDlxQXsRPI",
+							"id": "tGPXlINwjhxD_WbWd",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
 								"path": "Basic Set/Basic Set Traits.adq",
-								"id": "tLDRbhXFP-3CeGka-"
+								"id": "tu0KYjUBLw84B4gKc"
 							},
-							"name": "Fanaticism (Serynna, Senhora dos Elfos)",
-							"reference": "B136",
+							"name": "Trickster",
+							"reference": "B159",
+							"local_notes": "Make a self-control roll each day. If you fail, you must try to trick a dangerous subject: a skilled warrior, a dangerous monster, a whole group of reasonably competent opponents, etc. If you resist, you get a cumulative -1 per day to your self-control roll until you finally fail a roll!",
 							"tags": [
 								"Disadvantage",
 								"Mental"
 							],
-							"replacements": {
-								"Group or ideal": "Spirit of Nature"
-							},
-							"modifiers": [
-								{
-									"id": "m51QJaOIw97Xu2qHx",
-									"name": "Extreme",
-									"reference": "B136",
-									"disabled": true
-								}
-							],
+							"cr": 12,
 							"base_points": -15,
 							"calc": {
 								"points": -15
@@ -1003,12 +986,12 @@
 						}
 					],
 					"calc": {
-						"points": -59
+						"points": -58
 					}
 				}
 			],
 			"calc": {
-				"points": 35
+				"points": 36
 			}
 		}
 	]
