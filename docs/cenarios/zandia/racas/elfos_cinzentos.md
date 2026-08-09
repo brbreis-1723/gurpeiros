@@ -164,7 +164,7 @@ Independentemente do motivo, um Elfo Cinzento nunca deixa de carregar consigo su
 
 ### **Modelo Racial**: Elfo Cinzento
 
-**Pontuação total**: 35 pontos
+**Pontuação total**: 36 pontos
 
 **Modificadores de atributos**: ST-1, DX+1, PER+1 
 
@@ -204,9 +204,6 @@ Independentemente do motivo, um Elfo Cinzento nunca deixa de carregar consigo su
     * Proteja e respeite os membros da sua tribo (e os raros outros que você considera amigos);
     * Forasteiros são inimigos em potencial que podem enganar, trapacear ou ferir você e, portanto, podem ser enganados e receber mentiras em troca.
 
-**Pecurialidades raciais:**
-
-- <span title="Aversão a espaços fechados">Dislike closed spaces</span>
 
 #### **Print do GCS:**
 
