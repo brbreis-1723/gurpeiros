@@ -33,7 +33,7 @@ Anões ainda habitam fortalezas escavadas nas montanhas, preservando seus ofíci
 - [Krin (39 pontos)](../racas/krin.md)
 - Meio-Elfos (17 pontos)
 - Meio-Drows (17 pontos)
-- [Nephalin (45 pontos)](../racas/nephalin.md)
+- [Nephalin (56 pontos)](../racas/nephalin.md)
 - [Ratinos (20 pontos)](../racas/ratinos.md)
 - [Syridianos (32 pontos)](../racas/syridianos.md)
 - [Tressi (10 pontos)](../racas/tressi.md)

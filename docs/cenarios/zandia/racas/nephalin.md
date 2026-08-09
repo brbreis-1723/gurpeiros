@@ -146,67 +146,83 @@ Os Nephalin encontram-se atualmente em extinção. Não existem crianças Nephal
 
 ## Psicologia
 
-Os Nefalim possuem personalidades tão diversas quanto qualquer outra raça, e sua origem artificial não os impede de desenvolver emoções, vínculos, ambições e crenças próprias. Entretanto, sua história como uma raça criada para a guerra e sua atual condição de espécie em extinção deixaram marcas profundas em sua psicologia e em sua cultura.
+Os Nephalin possuem personalidades tão diversas quanto qualquer outra raça, e sua origem artificial não os impede de desenvolver emoções, vínculos, ambições e crenças próprias. Entretanto, sua história como uma raça criada para a guerra e sua atual condição de espécie em extinção deixaram marcas profundas em sua psicologia e em sua cultura.
 
 Eles tendem a valorizar resistência, disciplina, competência, lealdade e autocontrole. A capacidade de suportar dor e continuar funcionando sob pressão é considerada uma virtude importante, especialmente entre comunidades que preservaram tradições militares de sua antiga existência.
 
-Entretanto, existe uma diferença fundamental entre a maneira como os Nefalim encaram a morte e a maneira como outras raças podem encará-la.
+Entretanto, existe uma diferença fundamental entre a maneira como os Nephalin encaram a morte e a maneira como outras raças podem encará-la.
 
-Para a maioria dos povos, a morte de um indivíduo representa uma perda pessoal, familiar ou comunitária. Entre os Nefalim, ela representa também uma **perda irreparável para toda a espécie**. Um humano que morre pode deixar filhos que continuarão sua linhagem. Uma família é capaz de crescer novamente ao longo das gerações. Entre os Nefalim, isso não existe.
+Para a maioria dos povos, a morte de um indivíduo representa uma perda pessoal, familiar ou comunitária. Entre os Nephalin, ela representa também uma **perda irreparável para toda a espécie**. Um humano que morre pode deixar filhos que continuarão sua linhagem. Uma família é capaz de crescer novamente ao longo das gerações. Entre os Nephalin, isso não existe.
 
-Um Nefalim morto não será substituído.
+Um Nephalin morto não será substituído.
 
 Não haverá uma criança para ocupar seu lugar, nem uma nova geração para preservar aquilo que ele sabia. Cada indivíduo representa uma parcela da população que não pode ser recuperada.
 
-Por isso, a sobrevivência individual adquiriu uma importância cultural muito maior entre os Nefalim. Não se trata simplesmente de medo da morte. Um Nefalim pode ser extremamente corajoso e aceitar riscos que outras raças considerariam absurdos. O que muda é a consciência de que sua vida possui um valor que ultrapassa sua própria existência.
+Por isso, a sobrevivência individual adquiriu uma importância cultural muito maior entre os Nephalin. Não se trata simplesmente de medo da morte. Um Nephalin pode ser extremamente corajoso e aceitar riscos que outras raças considerariam absurdos. O que muda é a consciência de que sua vida possui um valor que ultrapassa sua própria existência.
 
 ### O Peso da Morte
 
-A morte de um Nefalim costuma provocar sentimentos complexos. Existe o luto pela perda do indivíduo, mas também a consciência de que a própria raça ficou menor. Essa percepção pode produzir comportamentos que parecem contraditórios para outras culturas. Um Nefalim pode ser capaz de enfrentar sozinho um inimigo extremamente perigoso, mas considerar irresponsável colocar sua vida em risco sem uma razão realmente importante.
+A morte de um Nephalin costuma provocar sentimentos complexos. Existe o luto pela perda do indivíduo, mas também a consciência de que a própria raça ficou menor. Essa percepção pode produzir comportamentos que parecem contraditórios para outras culturas. Um Nephalin pode ser capaz de enfrentar sozinho um inimigo extremamente perigoso, mas considerar irresponsável colocar sua vida em risco sem uma razão realmente importante.
 
-Atos de sacrifício podem ser particularmente controversos. Em determinadas circunstâncias, um Nefalim pode decidir conscientemente sacrificar sua vida para salvar seus companheiros. Entretanto, outros Nefalim podem considerar esse ato uma tragédia evitável. Salvar cinco indivíduos sacrificando um sexto pode ser racional em uma situação extrema, mas não deixa de significar que a raça perdeu permanentemente um de seus poucos membros.
+Atos de sacrifício podem ser particularmente controversos. Em determinadas circunstâncias, um Nephalin pode decidir conscientemente sacrificar sua vida para salvar seus companheiros. Entretanto, outros Nephalin podem considerar esse ato uma tragédia evitável. Salvar cinco indivíduos sacrificando um sexto pode ser racional em uma situação extrema, mas não deixa de significar que a raça perdeu permanentemente um de seus poucos membros.
 
-Essa questão pode gerar debates profundos entre os próprios Nefalim. Alguns acreditam que uma vida deve ser sacrificada quando isso garante a sobrevivência de muitos outros. Outros consideram que cada indivíduo possui um valor tão grande que sua morte só pode ser aceita quando absolutamente inevitável. 
+Essa questão pode gerar debates profundos entre os próprios Nephalin. Alguns acreditam que uma vida deve ser sacrificada quando isso garante a sobrevivência de muitos outros. Outros consideram que cada indivíduo possui um valor tão grande que sua morte só pode ser aceita quando absolutamente inevitável. 
 
-Não existe uma resposta universal. Essa tensão é especialmente importante para Nefalim aventureiros, pois a própria natureza de suas atividades frequentemente exige assumir riscos.
+Não existe uma resposta universal. Essa tensão é especialmente importante para Nephalin aventureiros, pois a própria natureza de suas atividades frequentemente exige assumir riscos.
 
 ### A Fúria da Pedra
 
-Essa realidade torna a **Fúria da Pedra** uma das maiores contradições da cultura Nefalim.
+Essa realidade torna a **Fúria da Pedra** uma das maiores contradições da cultura Nephalin.
 
-Os Nefalim foram originalmente criados como soldados. Seus corpos foram projetados para suportar ferimentos e continuar lutando, e sua psicologia pode favorecer respostas agressivas diante de ameaças. Em situações extremas, alguns indivíduos entram em um estado de fúria no qual o instinto de combate supera temporariamente o julgamento racional.
+Os Nephalin foram originalmente criados como soldados. Seus corpos foram projetados para suportar ferimentos e continuar lutando, e sua psicologia pode favorecer respostas agressivas diante de ameaças. Em situações extremas, alguns indivíduos entram em um estado de fúria no qual o instinto de combate supera temporariamente o julgamento racional.
 
-Para um indivíduo de outra raça, entrar em uma fúria pode ser visto como uma característica perigosa, mas compreensível de um guerreiro. Para os Nefalim, o problema é muito maior.
+Para um indivíduo de outra raça, entrar em uma fúria pode ser visto como uma característica perigosa, mas compreensível de um guerreiro. Para os Nephalin, o problema é muito maior.
 
-Um Nefalim tomado pela Fúria da Pedra pode ignorar ferimentos, avançar contra inimigos muito superiores e continuar lutando mesmo quando uma retirada seria a escolha racional. Sua própria fisiologia torna esse comportamento ainda mais perigoso, pois a resistência extraordinária de seu corpo pode fazer com que ele demore muito mais para perceber o quanto sua situação se tornou perigosa.
+Um Nephalin tomado pela Fúria da Pedra pode ignorar ferimentos, avançar contra inimigos muito superiores e continuar lutando mesmo quando uma retirada seria a escolha racional. Sua própria fisiologia torna esse comportamento ainda mais perigoso, pois a resistência extraordinária de seu corpo pode fazer com que ele demore muito mais para perceber o quanto sua situação se tornou perigosa.
 
-Assim, a Fúria da Pedra representa uma contradição fundamental: **a mesma característica que fez dos Nefalim excelentes armas de guerra pode contribuir para a destruição de uma raça que já não pode substituir seus mortos.** 
+Assim, a Fúria da Pedra representa uma contradição fundamental: **a mesma característica que fez dos Nephalin excelentes armas de guerra pode contribuir para a destruição de uma raça que já não pode substituir seus mortos.** 
 
-Por isso, o autocontrole possui um valor especial entre eles. Um Nefalim que aprende a controlar sua fúria não está apenas protegendo a si mesmo. Está preservando um dos poucos indivíduos que ainda existem.
+Por isso, o autocontrole possui um valor especial entre eles. Um Nephalin que aprende a controlar sua fúria não está apenas protegendo a si mesmo. Está preservando um dos poucos indivíduos que ainda existem.
 
 ### A Culpa do Sobrevivente
 
-A condição dos Nefalim também pode produzir um sentimento conhecido entre eles como **Culpa do Sobrevivente**. Quando um grupo perde um Nefalim, aqueles que permanecem podem questionar se a morte poderia ter sido evitada. Essa sensação é especialmente forte quando o indivíduo morreu por uma decisão considerada imprudente ou desnecessariamente heroica.
+A condição dos Nephalin também pode produzir um sentimento conhecido entre eles como **Culpa do Sobrevivente**. Quando um grupo perde um Nephalin, aqueles que permanecem podem questionar se a morte poderia ter sido evitada. Essa sensação é especialmente forte quando o indivíduo morreu por uma decisão considerada imprudente ou desnecessariamente heroica.
 
-Um Nefalim pode carregar durante décadas a lembrança de um companheiro que morreu para salvá-lo. A pergunta não é apenas "por que ele morreu?", mas também:
+Um Nephalin pode carregar durante décadas a lembrança de um companheiro que morreu para salvá-lo. A pergunta não é apenas "por que ele morreu?", mas também:
 
 **"Por que ele morreu e eu continuei vivo?"**
 
-Em uma raça numerosa, esse tipo de sentimento pode diminuir ao longo das gerações. Entre os Nefalim, ele pode permanecer durante muito tempo, especialmente entre indivíduos que vivem por séculos ou que preservam memórias detalhadas de seus mortos.
+Em uma raça numerosa, esse tipo de sentimento pode diminuir ao longo das gerações. Entre os Nephalin, ele pode permanecer durante muito tempo, especialmente entre indivíduos que vivem por séculos ou que preservam memórias detalhadas de seus mortos.
 
-Isso também faz com que os Nefalim tenham uma relação muito forte com nomes e memória. Alguns mantêm registros dos mortos, preservam seus objetos pessoais ou contam suas histórias para que a existência daquele indivíduo não desapareça completamente.
+Isso também faz com que os Nephalin tenham uma relação muito forte com nomes e memória. Alguns mantêm registros dos mortos, preservam seus objetos pessoais ou contam suas histórias para que a existência daquele indivíduo não desapareça completamente.
 
 ### O Valor de uma Vida
 
-A consequência mais profunda de sua esterilidade é que os Nefalim desenvolveram uma noção de **continuidade coletiva** muito mais forte do que a maioria das raças. Um Nefalim não é apenas um indivíduo. Ele também é um dos poucos sobreviventes de uma linhagem que não pode mais crescer naturalmente.
+A consequência mais profunda de sua esterilidade é que os Nephalin desenvolveram uma noção de **continuidade coletiva** muito mais forte do que a maioria das raças. Um Nephalin não é apenas um indivíduo. Ele também é um dos poucos sobreviventes de uma linhagem que não pode mais crescer naturalmente.
 
-Isso não significa que todos os Nefalim sejam altruístas ou que coloquem a raça acima de si mesmos. Existem egoístas, criminosos, covardes e indivíduos que simplesmente não se importam com o destino de seu povo. Mas mesmo aqueles que rejeitam qualquer responsabilidade coletiva sabem, em algum nível, que sua morte é permanente.
+Isso não significa que todos os Nephalin sejam altruístas ou que coloquem a raça acima de si mesmos. Existem egoístas, criminosos, covardes e indivíduos que simplesmente não se importam com o destino de seu povo. Mas mesmo aqueles que rejeitam qualquer responsabilidade coletiva sabem, em algum nível, que sua morte é permanente.
 
-Essa consciência pode produzir tanto coragem quanto cautela. Alguns Nefalim se tornam extremamente protetores de seus companheiros. Outros desenvolvem uma necessidade quase obsessiva de preservar a própria vida. Alguns evitam riscos completamente, enquanto outros acreditam que, justamente porque possuem poucas vidas disponíveis, cada uma delas deve ser utilizada para garantir a sobrevivência das demais.
+Essa consciência pode produzir tanto coragem quanto cautela. Alguns Nephalin se tornam extremamente protetores de seus companheiros. Outros desenvolvem uma necessidade quase obsessiva de preservar a própria vida. Alguns evitam riscos completamente, enquanto outros acreditam que, justamente porque possuem poucas vidas disponíveis, cada uma delas deve ser utilizada para garantir a sobrevivência das demais.
 
-Essa diferença de visão pode criar conflitos dentro da própria raça. Para alguns, **viver é uma responsabilidade**. Para outros, **viver sem liberdade não é realmente viver**. E para os Nefalim que ainda carregam os instintos de seus antigos criadores, existe uma terceira possibilidade: simplesmente ignorar tudo isso e lutar.
+Essa diferença de visão pode criar conflitos dentro da própria raça. Para alguns, **viver é uma responsabilidade**. Para outros, **viver sem liberdade não é realmente viver**. E para os Nephalin que ainda carregam os instintos de seus antigos criadores, existe uma terceira possibilidade: simplesmente ignorar tudo isso e lutar.
 
-É justamente dessa contradição que nasce uma das maiores dificuldades da cultura Nefalim: eles foram criados para não temer a morte, mas sobreviveram tempo suficiente para descobrir que **a morte de cada um deles importa mais do que jamais deveria ter importado para uma arma de guerra**.
+É justamente dessa contradição que nasce uma das maiores dificuldades da cultura Nephalin: eles foram criados para não temer a morte, mas sobreviveram tempo suficiente para descobrir que **a morte de cada um deles importa mais do que jamais deveria ter importado para uma arma de guerra**.
+
+---
+
+### Memória e Continuidade
+
+A longevidade dos Nephalin não significa que cada indivíduo acumule milhares de anos de conhecimento. Sua fisiologia alquímica possui uma característica conhecida como **Memória Volúvel**: conhecimentos e lembranças que deixam de ser utilizados por longos períodos podem desaparecer gradualmente. Habilidades praticadas com frequência e experiências emocionalmente marcantes tendem a permanecer, enquanto outras podem se transformar em fragmentos ou simples sensações de familiaridade. Assim, um Nephalin pode ter milhares de anos de existência e ainda possuir apenas uma parcela de suas antigas experiências acessível à sua mente.
+
+Os Nephalin também são capazes de entrar em **Períodos de Dormência**, reduzindo drasticamente seu metabolismo e permanecendo inconscientes durante anos ou até décadas. Essa capacidade provavelmente fazia parte de seu projeto original como armas de guerra, permitindo que fossem preservados e despertados quando necessários. A dormência, porém, acelera a erosão das memórias, e alguns dos Nephalin mais antigos despertaram após séculos em um mundo completamente diferente daquele que conheciam. Alguns podem ter atravessado o próprio Cataclismo dessa maneira.
+
+Por causa disso, a existência de um Nephalin é frequentemente dividida em diferentes **Vidas**. Um indivíduo pode ter sido soldado durante séculos, depois ferreiro, mercador ou explorador, antes de entrar em dormência e despertar para iniciar uma nova fase de sua existência. Essas Vidas não são identidades completamente diferentes, mas períodos distintos de uma mesma existência, separados por mudanças profundas de interesses, relações e conhecimentos. Para um Nephalin, começar uma nova Vida pode significar abandonar uma antiga profissão, reconstruir sua identidade ou simplesmente descobrir quem deseja ser agora.
+
+A perda gradual de memória também tornou a preservação do conhecimento uma questão de sobrevivência para a raça. Por isso existem os **Guardiões Mnemônicos**, responsáveis por registrar nomes, acontecimentos, técnicas, tradições, histórias e as diferentes Vidas dos Nephalin. Seus arquivos funcionam como uma extensão da memória coletiva da raça, preservando aquilo que inevitavelmente pode desaparecer das mentes individuais.
+
+> **Para um Nephalin, sobreviver não significa apenas manter o corpo vivo. Significa também impedir que aquilo que ele foi desapareça completamente.**
+
+Para uma descrição detalhada da **Memória Volúvel**, dos **Períodos de Dormência**, das **Vidas** e dos **Guardiões Mnemônicos**, consulte o artigo [**Memória e Continuidade dos Nephalin**](../racas/nephalin_memoria.md).
 
 ---
 
@@ -292,7 +308,7 @@ Finalmente, existe uma motivação mais pessoal. Alguns Nephalin simplesmente qu
 
 ### **Modelo Racial**: Nephalin
 
-**Pontuação total**: 45 pontos
+**Pontuação total**: 56 pontos
 
 **Modificadores de atributos**: ST+4, HT+1, <span title="PV: Pontos de Vida">HP</span>+2,  <span title="Velocidade básica">Basic Speed</span>-0.25, <span title="MT: Modificador de tamanho">SM</span>-1
 
@@ -300,11 +316,14 @@ Finalmente, existe uma motivação mais pessoal. Alguns Nephalin simplesmente qu
 
 - <span title="Resistência a dano limitada ao crânio ">Damage Resistance (skull only)</span>+1
 - <span title="Resistência a dano (pele rígida)">Damage Resistance (Tough skin)</span>+4
+- <span title="Não come ou dorme (apenas quando hiberna)">Doesnt eat or drink (only in hibernation)</span>
 - <span title="Boa Forma">Fit</span>
 - <span title="Difícil de matar">Hard to Kill</span>+3
 - <span title="Hight Pain Threshold">Hipoalgia</span>
-- <span title="Tolerancia a ferimentos: Ossos inquebráveis, sem cerebro e sem orgaos vitais (requer o uso frequente do elixir para funcionar)">Injure Tolerance: Unbreakble Bones, No Brain, No Vitals (acessibility: requer o uso frequente do elixir)</span>
-- <span title="Regeneração lenta (1 PV/12h)">Regeneration (Slow; acessibility: requer o uso frequente do elixir)</span>
+- <span title="Tolerancia a ferimentos: Ossos inquebráveis, sem cerebro e sem orgaos vitais (requer o uso frequente do elixir para funcionar)">Injure Tolerance: Unbreakable Bones, No Brain, No Vitals (acessibility: requer o uso frequente do elixir)</span>
+- <span title="Controle do Metabolismo (Hibernação)">Metabolism Control (Hibernation)</span>+10
+- <span title="Redespertar">Reawakened</span>
+- <span title="Regeneração lenta (1 PV/12h)">Regeneration (Slow)</span>
 - <span title="Imunidade a doenças">Resistant (Imunity, Disease; acessibility: requer o uso frequente do elixir)</span>
 - <span title="Não envelhece">Unaging (acessibility: requer o uso frequente do elixir)</span>
 
@@ -316,12 +335,15 @@ Finalmente, existe uma motivação mais pessoal. Alguns Nephalin simplesmente qu
 - <span title="Irritadiço">Bad Temper</span>(CR 12)
 - <span title="Fúria de batalha">Berseker (Battle Fury)</span>(CR12)
 - <span title="Dependência ao elixir de Calcita Negra">Dependency (Elixir de Calcita Negra, comum, ilegal, diário, perda de 1 Pv/hora</span>
+- <span title="Drenagem">Draining</span>: Calcita Negra (Rare, Ilegal) 
 - <span title="Estigma Social (Selvagem)">Social Stigma: savage</span>
 - <span title="Bioquímica incomum">Unusual Biochemistry</span>
 
 **Pecurialidades raciais:**
 
-- <span title="Assexuado, não possue orgão sexual">Sexless</span>
+- <span title="Relances de clareza">Glimpses of clarity</span>
+- Memória volúvel
+- <span title="Assexuado, não possui orgão sexual">Sexless</span>
 
 #### **Print do GCS:**
 

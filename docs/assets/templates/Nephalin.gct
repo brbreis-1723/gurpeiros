@@ -745,6 +745,41 @@
 							}
 						},
 						{
+							"id": "tjv1nnQwrMxO7AOSC",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tn9VjEGfaGTl2Mwyz"
+							},
+							"name": "Doesn't Eat or Drink",
+							"reference": "B50",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"replacements": {
+								"Condition": "apenas quando estiver hibernando"
+							},
+							"modifiers": [
+								{
+									"id": "m3-YHAb-6MsnITwZS",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set/Basic Set Limitation Modifiers.adm",
+										"id": "m2IwCpU9KwYmjiSSA"
+									},
+									"name": "Accessibility (@Condition@)",
+									"reference": "B110,P99",
+									"cost_adj": "-30%"
+								}
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 7
+							}
+						},
+						{
 							"id": "t3YaBXdLC0DEOqtB1",
 							"name": "Fit",
 							"reference": "B55",
@@ -818,28 +853,6 @@
 							],
 							"calc": {
 								"points": 10
-							}
-						},
-						{
-							"id": "tSa-5llSra9zv0S-b",
-							"source": {
-								"library": "richardwilkes/gcs_master_library",
-								"path": "Power Ups/Power Ups Traits.adq",
-								"id": "t0OS-mApplO_mSvFN"
-							},
-							"name": "Immunity to (@Specific Hazard/Poison/Disease@)",
-							"reference": "PU2:11",
-							"tags": [
-								"Exotic",
-								"Perk",
-								"Physical"
-							],
-							"replacements": {
-								"Specific Hazard/Poison/Disease": "toxinas da Calcita Negra"
-							},
-							"base_points": 1,
-							"calc": {
-								"points": 1
 							}
 						},
 						{
@@ -976,6 +989,61 @@
 							}
 						},
 						{
+							"id": "tLiK6-GxLMna7wuPa",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t6p_KdmzfBCpkYoyn"
+							},
+							"name": "Metabolism Control",
+							"reference": "B68,P60",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mh2GM2gbMWP1BrZj1",
+									"name": "Hibernation",
+									"reference": "B68",
+									"cost_adj": "-60%"
+								},
+								{
+									"id": "msK1AUzYrP0vrEafc",
+									"name": "Maestry",
+									"reference": "P60",
+									"cost_adj": "40%",
+									"disabled": true
+								}
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"levels": 10,
+							"calc": {
+								"points": 20,
+								"current_level": 10
+							}
+						},
+						{
+							"id": "tYaorgeJOt2A9A305",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tnyT6i4xpc-zi5-m8"
+							},
+							"name": "Reawakened",
+							"reference": "B80",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
 							"id": "tlRT1skJWpqTJgvcC",
 							"name": "Regeneration",
 							"reference": "B80,P70,MA47",
@@ -986,14 +1054,14 @@
 							],
 							"modifiers": [
 								{
-									"id": "meyrP1Xd6L8d5bVXv",
+									"id": "mEQc5kD3RvGYH0qll",
 									"name": "Slow",
 									"reference": "B80",
 									"local_notes": "You recover 1 HP per 12 hours",
 									"cost_adj": "10"
 								},
 								{
-									"id": "m_mjYPvx61aNC5klb",
+									"id": "mMHybN79prvHSl0fK",
 									"name": "Regular",
 									"reference": "B80",
 									"local_notes": "You recover 1 HP per hour",
@@ -1001,7 +1069,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mAGgyHHNOyncT0JdF",
+									"id": "mO3dCKUgQR-YpgRx3",
 									"name": "Fast",
 									"reference": "B80",
 									"local_notes": "You recover 1 HP per minute",
@@ -1009,7 +1077,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mKe3RDb5-HuOskI0G",
+									"id": "m59QEFGbFRR-waf1d",
 									"name": "Very Fast",
 									"reference": "B80",
 									"local_notes": "You recover 1 HP per second",
@@ -1017,7 +1085,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mXuj39VQF98JpgKtZ",
+									"id": "mmsBaqES82mMK4MNb",
 									"name": "Extreme",
 									"reference": "B80",
 									"local_notes": "You recover 10 HP per second",
@@ -1025,41 +1093,41 @@
 									"disabled": true
 								},
 								{
-									"id": "mEwzaDHzmAO1TRwHa",
+									"id": "m7v3MS0VQ3_THSI1V",
 									"name": "Heals Radiation",
 									"reference": "B80",
 									"cost_adj": "40%",
 									"disabled": true
 								},
 								{
-									"id": "msm2gG5vUKOAb8BKE",
+									"id": "mT_bmBAUpdMSnj7I-",
 									"name": "Radiation Only",
 									"reference": "B80",
 									"cost_adj": "-60%",
 									"disabled": true
 								},
 								{
-									"id": "miDjcajwX9kKC-Pzc",
+									"id": "mYeg-0K5AiE45YoU_",
 									"name": "Fatigue Recovery",
 									"reference": "P70",
 									"cost_adj": "100%",
 									"disabled": true
 								},
 								{
-									"id": "mDZ8oBzIyXkKX3I61",
+									"id": "mq3F0Kiv2X-VVWVpG",
 									"name": "Fatigue Only",
 									"reference": "P70",
 									"disabled": true
 								},
 								{
-									"id": "mkcbJdH7W0NHRn8mF",
+									"id": "mNEV6DO0m0UTUMlLU",
 									"name": "Limited: @Advantage@ Only",
 									"reference": "P70",
 									"cost_adj": "-40%",
 									"disabled": true
 								},
 								{
-									"id": "m389tQ0OLhawkpjQ7",
+									"id": "mpWVRfnuLUXBj7NWz",
 									"name": "Bane",
 									"reference": "H18",
 									"local_notes": "@Common or Very Common@",
@@ -1067,7 +1135,7 @@
 									"disabled": true
 								},
 								{
-									"id": "m47vEHuAdurrTg6Kq",
+									"id": "msGKuetGd5G7EHZaH",
 									"name": "Bane",
 									"reference": "H18",
 									"local_notes": "@Occasional@",
@@ -1075,7 +1143,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mNeUPc9bynOKbIAn3",
+									"id": "mebHC1xOx2bHVVCDd",
 									"name": "Bane",
 									"reference": "H18",
 									"local_notes": "@Rare@",
@@ -1083,7 +1151,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mAoxreCUNrkKF-chB",
+									"id": "mfWhDbXg-A7U_pM10",
 									"source": {
 										"library": "richardwilkes/gcs_master_library",
 										"path": "Powers/Powers Modifiers.adm",
@@ -1096,13 +1164,14 @@
 									"disabled": true
 								},
 								{
-									"id": "mFY_QkdqLul0aiQV-",
+									"id": "mx1O1PA3UP7CSrnPW",
 									"name": "Acessibility: requer a dose frequente do elixir",
-									"cost_adj": "-10%"
+									"cost_adj": "-10%",
+									"disabled": true
 								}
 							],
 							"calc": {
-								"points": 9
+								"points": 10
 							}
 						},
 						{
@@ -1250,7 +1319,7 @@
 						}
 					],
 					"calc": {
-						"points": 86
+						"points": 123
 					}
 				},
 				{
@@ -1314,40 +1383,40 @@
 							],
 							"modifiers": [
 								{
-									"id": "mj3_BdVqxhpzfXSb_",
+									"id": "m-kLsYIWr1BEt_HtL",
 									"name": "Rarity: Rare",
 									"reference": "B130",
 									"cost_adj": "-30",
 									"disabled": true
 								},
 								{
-									"id": "mdjdakGXak5j9f8nT",
+									"id": "mOIPyox90MPLg7BXm",
 									"name": "Rarity: Occasional",
 									"reference": "B130",
-									"cost_adj": "-20",
+									"cost_adj": "-20"
+								},
+								{
+									"id": "mRoDBR7eJbF6xIjOv",
+									"name": "Rarity: Common",
+									"reference": "B130",
+									"cost_adj": "-10",
 									"disabled": true
 								},
 								{
-									"id": "mNFb6qBGGlrZ71jGS",
-									"name": "Rarity: Common",
-									"reference": "B130",
-									"cost_adj": "-10"
-								},
-								{
-									"id": "mq5NrSk_Th1CIH_hU",
+									"id": "m031R7P1vJvh5eRVx",
 									"name": "Rarity: Very Common",
 									"reference": "B130",
 									"cost_adj": "-5",
 									"disabled": true
 								},
 								{
-									"id": "mAAjhmjvhvZUVHRHt",
+									"id": "m_boaFSIzPiHP-c7s",
 									"name": "Illegal",
 									"reference": "B130",
 									"cost_adj": "-5"
 								},
 								{
-									"id": "mnisMLsNAOcbnfKUm",
+									"id": "m21Qbb6FkzY5qnRRr",
 									"name": "Frequency: Constantly",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per minute without it",
@@ -1355,7 +1424,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mNfHYexA9LjmGQU7Q",
+									"id": "mULPSTOZfp7RSud8c",
 									"name": "Frequency: Hourly",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per 10 minutes after missing a hourly dose",
@@ -1363,22 +1432,22 @@
 									"disabled": true
 								},
 								{
-									"id": "mwnAI-8JJyQMvSmpp",
+									"id": "mlTEzald2xpxzims1",
 									"name": "Frequency: Daily",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per hour after missing a daily dose",
-									"cost_adj": "x3"
-								},
-								{
-									"id": "mccUhb5pL_paVHouH",
-									"name": "Frequency: Weekly",
-									"reference": "B130",
-									"local_notes": "Lose 1 HP per six hours after missing a weekly dose",
-									"cost_adj": "x2",
+									"cost_adj": "x3",
 									"disabled": true
 								},
 								{
-									"id": "mv0kolWRobdr2CZCH",
+									"id": "mZOy8ZCqblDDB39n6",
+									"name": "Frequency: Weekly",
+									"reference": "B130",
+									"local_notes": "Lose 1 HP per six hours after missing a weekly dose",
+									"cost_adj": "x2"
+								},
+								{
+									"id": "mp3TGBzbon1yVDTmD",
 									"name": "Frequency: Monthly",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per day after missing a monthly dose",
@@ -1386,7 +1455,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mR-osIms4CjbpZR-V",
+									"id": "m4FZdOAk6K-1rHTzU",
 									"name": "Frequency: Seasonally",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per 3 days after missing a seasonal dose",
@@ -1394,7 +1463,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mlUI8JRbi9LRlWLr9",
+									"id": "mLiXLeMc0aHzcImBS",
 									"name": "Frequency: Yearly",
 									"reference": "B130",
 									"local_notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
@@ -1402,7 +1471,7 @@
 									"disabled": true
 								},
 								{
-									"id": "mCQlAuw3ZYFSzwalL",
+									"id": "mDFtHcHwszeEizwyz",
 									"name": "Aging",
 									"reference": "B130",
 									"local_notes": "Age 2 years for each HP lost due to this dependency",
@@ -1411,25 +1480,64 @@
 								}
 							],
 							"calc": {
-								"points": -45
+								"points": -50
 							}
 						},
 						{
-							"id": "tW8rm3BqRMY2fiakV",
+							"id": "t8d4-VBTcHWYIG-QG",
 							"source": {
 								"library": "richardwilkes/gcs_master_library",
-								"path": "Power Ups/Power Ups Traits.adq",
-								"id": "tfwdr6A517jFob4en"
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tejcILTE2a599hIGr"
 							},
-							"name": "Sexless",
-							"reference": "PU6:23",
+							"name": "Draining",
+							"reference": "B132",
 							"tags": [
+								"Disadvantage",
 								"Physical",
-								"Quirk"
+								"Supernatural"
 							],
-							"base_points": -1,
+							"replacements": {
+								"Substance": "Elixir de Calcita Negra"
+							},
+							"modifiers": [
+								{
+									"id": "mOyMVN6skADOleMrL",
+									"name": "Common",
+									"local_notes": "@Substance@",
+									"cost_adj": "-5",
+									"disabled": true,
+									"calc": {
+										"resolved_notes": "Elixir de Calcita Negra"
+									}
+								},
+								{
+									"id": "mhrMoDUDibUF9F0JH",
+									"name": "Occasional",
+									"local_notes": "@Substance@",
+									"cost_adj": "-10",
+									"disabled": true,
+									"calc": {
+										"resolved_notes": "Elixir de Calcita Negra"
+									}
+								},
+								{
+									"id": "mKn62NG7fgyk8ZWI9",
+									"name": "Rare",
+									"local_notes": "@Substance@",
+									"cost_adj": "-15",
+									"calc": {
+										"resolved_notes": "Elixir de Calcita Negra"
+									}
+								},
+								{
+									"id": "mHPfOqTnQeszOzQww",
+									"name": "Illegal",
+									"cost_adj": "-5"
+								}
+							],
 							"calc": {
-								"points": -1
+								"points": -20
 							}
 						},
 						{
@@ -1478,12 +1586,99 @@
 						}
 					],
 					"calc": {
-						"points": -86
+						"points": -110
+					}
+				},
+				{
+					"id": "TQtlErmIMCc9zK9BF",
+					"name": "Racial Perks",
+					"children": [
+						{
+							"id": "tSa-5llSra9zv0S-b",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "t0OS-mApplO_mSvFN"
+							},
+							"name": "Immunity to (@Specific Hazard/Poison/Disease@)",
+							"reference": "PU2:11",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"replacements": {
+								"Specific Hazard/Poison/Disease": "toxinas da Calcita Negra"
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "TBgU-DyEgNXVJ6vKJ",
+					"name": "Racial Quirks",
+					"children": [
+						{
+							"id": "tmJ_eICVjj-yrz1nY",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tKnTO9tRIpKGTxa_9"
+							},
+							"name": "Glimpses of Clarity",
+							"reference": "PU6:19",
+							"tags": [
+								"Mental",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "t_ZVL_0LPwISBhWI7",
+							"name": "Memoria volúvel",
+							"tags": [
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tW8rm3BqRMY2fiakV",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Power Ups/Power Ups Traits.adq",
+								"id": "tfwdr6A517jFob4en"
+							},
+							"name": "Sexless",
+							"reference": "PU6:23",
+							"tags": [
+								"Physical",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": -3
 					}
 				}
 			],
 			"calc": {
-				"points": 45
+				"points": 56
 			}
 		}
 	]
