@@ -33,13 +33,16 @@ nav:
          - Tipos de assinatura: regras/assinatura/assinatura_tipo.md            
          - Destino e complicações: regras/assinatura/assinatura_destino.md                     
          - Categorias de complicações: regras/assinatura/assinatura_complicacao.md                              
-      - Magia do Limiar:
-         - Regras gerais: regras/magia/magia_limiar.md
-         - Efeitos adicionais: regras/magia/efeitos_adicionais.md
-         - Limiar e mana: regras/magia/limiar_mana.md
-         - Limiar e magia cerimonial: regras/magia/magia_cerimonial.md
-         - Limiar e magias de energia: regras/magia/magias_energia.md
-         - Limiar e os Itens de Poder: regras/magia/limiar_itens_de_poder.md
+      - Magias:
+          - Sobre Magia: regras/magia/index.md
+          - Magia de Domínio: regras/magia/magia_dominios.md
+          - Magia do Limiar:
+            - Regras gerais: regras/magia/magia_limiar.md
+            - Efeitos adicionais: regras/magia/efeitos_adicionais.md
+            - Limiar e mana: regras/magia/limiar_mana.md
+            - Limiar e magia cerimonial: regras/magia/magia_cerimonial.md
+            - Limiar e magias de energia: regras/magia/magias_energia.md
+            - Limiar e os Itens de Poder: regras/magia/limiar_itens_de_poder.md
       - Tabelas:
          - Calamidades (Magia do Limiar): regras/tabelas/calamidades.md
          - Golpes Épicos: regras/tabelas/golpes_epicos.md

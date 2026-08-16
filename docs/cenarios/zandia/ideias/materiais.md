@@ -310,6 +310,23 @@ Uma arma de Adamantita pode ser utilizada tanto em combate quanto para mineraç�
 
 ---
 
+### Oricalco
+
+**TL 3 — Metal**
+
+O Oricalco é um metal raro de aparência semelhante ao bronze, com tonalidades que variam entre o dourado e o avermelhado. Apesar de sua grande resistência, é relativamente leve, tornando-o um material excepcional para armas, escudos e armaduras.
+
+Armas de oricalco não se quebram em condições normais de combate, enquanto armas comuns têm maior chance de quebrar ao aparar golpes de armas pesadas feitas desse metal.
+
+Escudos de oricalco mantêm a mesma proteção de um escudo comum, mas pesam apenas dois terços do peso normal. Além disso, armas comuns têm maior chance de quebrar ao aparar um golpe de escudo de oricalco.
+
+Sua maior vantagem está nas armaduras: uma armadura de oricalco oferece a mesma proteção de uma armadura de bronze equivalente, mas com apenas um terço do peso.
+
+O oricalco é extremamente raro e valioso, sendo utilizado principalmente em equipamentos de elite e objetos de grande importância.
+
+CF: +29 CF (armas e armaduras); +149 CF (escudos).
+
+
 ## Materiais Orgânicos
 
 A fauna e a flora de Zandia também constituem importantes fontes de matérias-primas. Em um mundo onde madeira e metais de qualidade podem ser escassos, partes de criaturas adaptadas às condições extremas do planeta podem assumir grande valor.
