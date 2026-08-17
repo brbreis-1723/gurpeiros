@@ -276,7 +276,7 @@ Cada domínio possui cinco níveis de conhecimento. Quanto maior o nível, mais 
 
  Enquanto estiver sob a alcunha de aprendiz, um mago não é capaz de realizar mágicas sem o apoio de um mago mais experiente ou, na ausência dele, do uso de um grimório. Ou seja, o mago somente poderá conjurar magias por conta própria, sem auxilio externo, quando alcançar no mínimo NH 12 no domínio. 
 
-**Magos que alcançam o quinto e mais elevado nível de conhecimento tornam-se capazes de realizar feitos tão extraordinários que suas magias podem ser confundidas com milagres, fazendo-os parecer, aos olhos dos homens, verdadeiros deuses**.
+**Magos que alcançam o quinto e mais elevado nível de conhecimento atingem o domínio pleno de seu campo. Seus conhecimentos permitem realizar feitos extraordinários, levando a magia ao limite de suas possibilidades dentro daquele Domínio. Aos olhos de um leigo eles podem ser considerados heróis, ou até mesmo, lendas vivas...**.
 
 <div class="tabela-sticky-container">
 <table class="tabela-sticky">
