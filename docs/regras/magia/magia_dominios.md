@@ -31,7 +31,7 @@ Qualquer pessoa pode estudar Taumatologia, mesmo sem ser capaz de realizar magia
 
 ---
 
-### Magia Ritual
+## Magia Ritual
 
 **Magia Ritual** representa o conhecimento arcano fundamental necessário para compreender, preparar e executar rituais mágicos. Ela abrange os princípios, símbolos, procedimentos e técnicas que permitem ao mago manipular as forças sobrenaturais por meio de métodos ritualísticos.
 
