@@ -31,8 +31,6 @@ Qualquer pessoa pode estudar Taumatologia, mesmo sem ser capaz de realizar magia
 
 ---
 
-## Os Domínios Arcanos
-
 ### Magia Ritual
 
 **Magia Ritual** representa o conhecimento arcano fundamental necessário para compreender, preparar e executar rituais mágicos. Ela abrange os princípios, símbolos, procedimentos e técnicas que permitem ao mago manipular as forças sobrenaturais por meio de métodos ritualísticos.
@@ -43,9 +41,13 @@ Em mundos onde a magia ritualística é praticada, **Magia Ritual é a perícia-
 
 ---
 
+## Os Domínios Arcanos
+
+São 20 domínios de magia cada um representando um aspecto da realidade que é estudada e controlada pelo mago: **Água**, **Ar**, **Artefatos**, **Bestas**, **Conhecimento**, **Cura**, **Destino**, **Dimensão**, **Escuridão**, **Fartura**, **Fogo**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Proteção**, **Sangue**, **Som** e **Terra**.
+
 ### Magia de Domínios
 
-A operação das **Magias de Domínio** depende diretamente da perícia Magia Ritual. Cada Domínio representa uma área específica do conhecimento arcano, como Fogo, Água, Terra, Mente, Vida, Morte ou Espaço.
+A operação das **Magias de Domínio** depende diretamente da perícia Magia Ritual. Cada Domínio representa uma área específica do conhecimento arcano, como por exemplo: Fogo, Água, Terra, Mente, Sangue, Necromancia ou Dimensão.
 
 As perícias de Domínio são consideradas **perícias mentais muito difíceis** e não possuem valor pré-definido. Para aprendê-las, o mago deve possuir a perícia **Magia Ritual** como pré-requisito.
 
@@ -87,12 +89,6 @@ Use o Domínio quando o personagem efetivamente quiser manipular seu aspecto esp
 
 ---
 
-## Os Domínios Arcanos
-
-São 20 domínios de magia cada um representando um aspecto da realidade que é estudada e controlada pelo mago: **Água**, **Ar**, **Artífices**, **Bestas**, **Conhecimento**, **Cura**, **Destino**, **Dimensão**, **Escuridão**, **Fartura**, **Fogo**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Proteção**, **Sangue**, **Som** e **Terra**.
-
----
-
 ### Relação de Domínios
 
 <table style="width: 100%; border-collapse: collapse;">
@@ -119,7 +115,7 @@ São 20 domínios de magia cada um representando um aspecto da realidade que é 
     </tr>
     <tr>
       <td>3</td>
-      <td style="white-space: nowrap;"><strong>Artífices</strong></td>
+      <td style="white-space: nowrap;"><strong>Artefatos</strong></td>
       <td>O domínio da criação, transformação e aperfeiçoamento de objetos.</td>
       <td>Materiais trabalhados, armas, armaduras, ferramentas, mecanismos, construções e artefatos.</td>
     </tr>
