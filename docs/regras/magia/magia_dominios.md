@@ -91,137 +91,137 @@ Use o Domínio quando o personagem efetivamente quiser manipular seu aspecto esp
 
 ### Relação de Domínios
 
-<table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="width: 5%;">#</th>
-      <th style="width: 16%; white-space: nowrap;">Domínio</th>
-      <th style="width: 29%;">Breve descrição</th>
-      <th style="width: 50%;">O que controla</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td style="white-space: nowrap;"><strong>Água</strong></td>
-      <td>O domínio da água e dos líquidos, incluindo suas mudanças de estado.</td>
-      <td>Água, líquidos, gelo, vapor, pressão e correntes.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td style="white-space: nowrap;"><strong>Ar</strong></td>
-      <td>O domínio da atmosfera, dos gases e dos fenômenos elétricos atmosféricos.</td>
-      <td>Ar, gases, vento, pressão, vácuo, correntes atmosféricas, eletricidade, cargas elétricas, relâmpagos e raios.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td style="white-space: nowrap;"><strong>Artefatos</strong></td>
-      <td>O domínio da criação, transformação e aperfeiçoamento de objetos.</td>
-      <td>Materiais trabalhados, armas, armaduras, ferramentas, mecanismos, construções e artefatos.</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td style="white-space: nowrap;"><strong>Bestas</strong></td>
-      <td>O domínio da natureza animal, dos instintos e das criaturas bestiais.</td>
-      <td>Animais, monstros bestiais, instintos, sentidos e características animais.</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td style="white-space: nowrap;"><strong>Conhecimento</strong></td>
-      <td>O domínio da informação, compreensão e descoberta daquilo que está oculto.</td>
-      <td>Memórias, informações, idiomas, escrita, identificação, investigação, percepção e conhecimento.</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td style="white-space: nowrap;"><strong>Cura</strong></td>
-      <td>O domínio da restauração e recuperação dos seres vivos.</td>
-      <td>Ferimentos, doenças, venenos, regeneração, tecidos, órgãos e recuperação física.</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td style="white-space: nowrap;"><strong>Destino</strong></td>
-      <td>O domínio das possibilidades, probabilidades e caminhos dos acontecimentos.</td>
-      <td>Sorte, azar, probabilidade, presságios, futuros possíveis e causalidade.</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td style="white-space: nowrap;"><strong>Dimensão</strong></td>
-      <td>O domínio do espaço, da distância e da posição.</td>
-      <td>Espaço, distância, posição, teleporte, portais, dimensões e armazenamento extradimensional.</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td style="white-space: nowrap;"><strong>Escuridão</strong></td>
-      <td>O domínio da ausência de luz, das sombras e da ocultação.</td>
-      <td>Trevas, sombras, absorção de luz, ocultação, cegueira e camuflagem.</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td style="white-space: nowrap;"><strong>Fartura</strong></td>
-      <td>O domínio da produção, conservação e aproveitamento dos recursos alimentares.</td>
-      <td>Alimentos, nutrientes, cultivo, conservação, purificação, crescimento e multiplicação de recursos alimentares.</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td style="white-space: nowrap;"><strong>Fogo</strong></td>
-      <td>O domínio do calor, das chamas e da combustão.</td>
-      <td>Fogo, calor, combustão, fumaça, ignição e efeitos térmicos.</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td style="white-space: nowrap;"><strong>Ilusão</strong></td>
-      <td>O domínio da percepção e da criação de realidades sensoriais falsas.</td>
-      <td>Imagens, sons, cheiros, sensações, invisibilidade, disfarces e percepções.</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td style="white-space: nowrap;"><strong>Luz</strong></td>
-      <td>O domínio da luz, da iluminação e da radiação luminosa.</td>
-      <td>Luz, brilho, reflexão, refração, iluminação e radiação luminosa.</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td style="white-space: nowrap;"><strong>Magia</strong></td>
-      <td>O domínio da própria força mágica e das leis que governam a magia.</td>
-      <td>Mana, energia mágica, feitiços, encantamentos, anulação, amplificação e manipulação mágica.</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td style="white-space: nowrap;"><strong>Mente</strong></td>
-      <td>O domínio da consciência, dos pensamentos e dos processos psicológicos.</td>
-      <td>Pensamentos, emoções, memória, sonhos, telepatia, compulsões e controle mental.</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td style="white-space: nowrap;"><strong>Necromancia</strong></td>
-      <td>O domínio da morte, dos mortos e daquilo que permanece após a vida.</td>
-      <td>Cadáveres, mortos-vivos, espíritos dos mortos, decomposição e forças associadas à morte.</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td style="white-space: nowrap;"><strong>Proteção</strong></td>
-      <td>O domínio da defesa, preservação e resistência contra forças externas.</td>
-      <td>Barreiras, escudos, selamentos, resistência e proteção física ou mágica.</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td style="white-space: nowrap;"><strong>Sangue</strong></td>
-      <td>O domínio do sangue e do corpo vivo, permitindo controlar sua fisiologia.</td>
-      <td>Sangue, circulação, músculos, órgãos, metabolismo, dor, movimentos e vitalidade de seres com sangue ou fluido vital equivalente.</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td style="white-space: nowrap;"><strong>Som</strong></td>
-      <td>O domínio das ondas sonoras e das vibrações.</td>
-      <td>Som, silêncio, voz, música, vibração, ressonância, ultrassom e ondas de choque.</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td style="white-space: nowrap;"><strong>Terra</strong></td>
-      <td>O domínio da matéria mineral e da estrutura do mundo.</td>
-      <td>Solo, areia, argila, pedra, rocha, cristais e minerais.</td>
-    </tr>
-  </tbody>
+<table style="width: 100%; border-collapse: collapse;"> 
+  <thead> 
+    <tr> 
+      <th style="width: 5%;">#</th> 
+      <th style="width: 16%; white-space: nowrap;">Domínio</th> 
+      <th style="width: 29%;">Breve descrição</th> 
+      <th style="width: 50%;">O que controla</th> 
+    </tr> 
+  </thead> 
+  <tbody> 
+    <tr> 
+      <td>1</td> 
+      <td style="white-space: nowrap;"><strong>Água</strong></td> 
+      <td>O domínio da água e dos líquidos, incluindo suas mudanças de estado.</td> 
+      <td>Água, líquidos, gelo, vapor, pressão e correntes.</td> 
+    </tr> 
+    <tr> 
+      <td>2</td> 
+      <td style="white-space: nowrap;"><strong>Ar</strong></td> 
+      <td>O domínio da atmosfera, dos gases e dos fenômenos elétricos atmosféricos.</td> 
+      <td>Ar, gases, vento, pressão, vácuo, correntes atmosféricas, eletricidade, cargas elétricas, relâmpagos e raios.</td> 
+    </tr> 
+    <tr> 
+      <td>3</td> 
+      <td style="white-space: nowrap;"><strong>Artefatos</strong></td> 
+      <td>O domínio da criação, transformação e aperfeiçoamento de coisas e matérias trabalhadas.</td> 
+      <td>Materiais orgânicos ou inorgânicos processados, armas, armaduras, ferramentas, mecanismos, construções, artefatos e alimentos preparados ou transformados.</td> 
+    </tr> 
+    <tr> 
+      <td>4</td> 
+      <td style="white-space: nowrap;"><strong>Bestas</strong></td> 
+      <td>O domínio da natureza animal, dos instintos e das criaturas bestiais.</td> 
+      <td>Animais, monstros bestiais, instintos, sentidos e características animais.</td> 
+    </tr> 
+    <tr> 
+      <td>5</td> 
+      <td style="white-space: nowrap;"><strong>Conhecimento</strong></td> 
+      <td>O domínio da informação, compreensão e descoberta daquilo que está oculto.</td> 
+      <td>Memórias, informações, idiomas, escrita, identificação, investigação, percepção e conhecimento.</td> 
+    </tr> 
+    <tr> 
+      <td>6</td> 
+      <td style="white-space: nowrap;"><strong>Cura</strong></td> 
+      <td>O domínio da restauração e recuperação dos seres vivos.</td> 
+      <td>Ferimentos, doenças, venenos, regeneração, tecidos, órgãos e recuperação física.</td> 
+    </tr> 
+    <tr> 
+      <td>7</td> 
+      <td style="white-space: nowrap;"><strong>Destino</strong></td> 
+      <td>O domínio das possibilidades, probabilidades e caminhos dos acontecimentos.</td> 
+      <td>Sorte, azar, probabilidade, presságios, futuros possíveis e causalidade.</td> 
+    </tr> 
+    <tr> 
+      <td>8</td> 
+      <td style="white-space: nowrap;"><strong>Dimensão</strong></td> 
+      <td>O domínio do espaço, da distância e da posição.</td> 
+      <td>Espaço, distância, posição, teleporte, portais, dimensões e armazenamento extradimensional.</td> 
+    </tr> 
+    <tr> 
+      <td>9</td> 
+      <td style="white-space: nowrap;"><strong>Escuridão</strong></td> 
+      <td>O domínio da ausência de luz, das sombras e da ocultação.</td> 
+      <td>Trevas, sombras, absorção de luz, ocultação, cegueira e camuflagem.</td> 
+    </tr> 
+    <tr> 
+      <td>10</td> 
+      <td style="white-space: nowrap;"><strong>Flora</strong></td> 
+      <td>O domínio da vida vegetal, abrangendo as plantas, sua estrutura, crescimento, propriedades e formas de consciência vegetal</td> 
+      <td>Plantas, árvores, sementes, raízes, flores, frutos, folhas, madeira, seiva, vegetação, crescimento vegetal, reprodução das plantas, propriedades naturais e mágicas das plantas, plantas inteligentes, seres vegetais e comunicação com a vida vegetal.</td> 
+    </tr> 
+    <tr> 
+      <td>11</td> 
+      <td style="white-space: nowrap;"><strong>Fogo</strong></td> 
+      <td>O domínio do calor, das chamas e da combustão.</td> 
+      <td>Fogo, calor, combustão, fumaça, ignição e efeitos térmicos.</td> 
+    </tr> 
+    <tr> 
+      <td>12</td> 
+      <td style="white-space: nowrap;"><strong>Ilusão</strong></td> 
+      <td>O domínio da percepção e da criação de realidades sensoriais falsas.</td> 
+      <td>Imagens, sons, cheiros, sensações, invisibilidade, disfarces e percepções.</td> 
+    </tr> 
+    <tr> 
+      <td>13</td> 
+      <td style="white-space: nowrap;"><strong>Luz</strong></td> 
+      <td>O domínio da luz, da iluminação e da radiação luminosa.</td> 
+      <td>Luz, brilho, reflexão, refração, iluminação e radiação luminosa.</td> 
+    </tr> 
+    <tr> 
+      <td>14</td> 
+      <td style="white-space: nowrap;"><strong>Magia</strong></td> 
+      <td>O domínio da própria força mágica e das leis que governam a magia.</td> 
+      <td>Mana, energia mágica, feitiços, encantamentos, anulação, amplificação e manipulação mágica.</td> 
+    </tr> 
+    <tr> 
+      <td>15</td> 
+      <td style="white-space: nowrap;"><strong>Mente</strong></td> 
+      <td>O domínio da consciência, dos pensamentos e dos processos psicológicos.</td> 
+      <td>Pensamentos, emoções, memória, sonhos, telepatia, compulsões e controle mental.</td> 
+    </tr> 
+    <tr> 
+      <td>16</td> 
+      <td style="white-space: nowrap;"><strong>Necromancia</strong></td> 
+      <td>O domínio da morte, dos mortos e daquilo que permanece após a vida.</td> 
+      <td>Cadáveres, mortos-vivos, espíritos dos mortos, decomposição e forças associadas à morte.</td> 
+    </tr> 
+    <tr> 
+      <td>17</td> 
+      <td style="white-space: nowrap;"><strong>Proteção</strong></td> 
+      <td>O domínio da defesa, preservação e resistência contra forças externas.</td> 
+      <td>Barreiras, escudos, selamentos, resistência e proteção física ou mágica.</td> 
+    </tr> 
+    <tr> 
+      <td>18</td> 
+      <td style="white-space: nowrap;"><strong>Sangue</strong></td> 
+      <td>O domínio do sangue e do corpo vivo, permitindo controlar sua fisiologia.</td> 
+      <td>Sangue, circulação, músculos, órgãos, metabolismo, dor, movimentos e vitalidade de seres com sangue ou fluido vital equivalente.</td> 
+    </tr> 
+    <tr> 
+      <td>19</td> 
+      <td style="white-space: nowrap;"><strong>Som</strong></td> 
+      <td>O domínio das ondas sonoras e das vibrações.</td> 
+      <td>Som, silêncio, voz, música, vibração, ressonância, ultrassom e ondas de choque.</td> 
+    </tr> 
+    <tr> 
+      <td>20</td> 
+      <td style="white-space: nowrap;"><strong>Terra</strong></td> 
+      <td>O domínio da matéria mineral e da estrutura do mundo.</td> 
+      <td>Solo, areia, argila, pedra, rocha, cristais e minerais.</td> 
+    </tr> 
+  </tbody> 
 </table>
 
 ---
@@ -251,12 +251,12 @@ O **Nível do Domínio** é determinado pelo nível de habilidade do mago naquel
     </tr>
     <tr>
       <td>NH 15–17</td>
-      <td><strong>Experiente</strong></td>
+      <td><strong>Adepto</strong></td>
       <td>Nível 2</td>
     </tr>
     <tr>
       <td>NH 18–20</td>
-      <td><strong>Veterano</strong></td>
+      <td><strong>Especialista</strong></td>
       <td>Nível 3</td>
     </tr>
     <tr>
@@ -550,6 +550,116 @@ Toda magia possui um **tempo de conjuração**, que representa o período necess
 
 O tempo de conjuração representa, portanto, não apenas uma limitação, mas uma **escolha do mago**: executar a magia mais rapidamente e assumir maior risco, ou dedicar mais tempo à operação para aumentar suas chances de sucesso.
 
+---
+
+## Utilizando assistentes em Rituais
+
+Um mago pode contar com outros praticantes para auxiliá-lo na realização de um ritual. Para ser considerado um **assistente qualificado**, o personagem deve atender a **uma** das seguintes condições:
+
+* possuir **Magia Ritual 15+**; ou
+* possuir **NH 12+ no Domínio** utilizado no ritual.
+
+O NH de **Magia Ritual** e do **Domínio** deve ser considerado **sem qualquer bônus concedido por Aptidão Mágica (AM)**.
+
+O bônus concedido pelo assistente depende de seu conhecimento:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 38%;">Conhecimento do assistente</th>
+      <th style="width: 12%;">NH</th>
+      <th style="width: 10%;">Bônus</th>
+      <th style="width: 40%;">Tipo de contribuição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magia Ritual, sem conhecimento do Domínio</td>
+      <td>15+</td>
+      <td><strong>+1</strong></td>
+      <td><strong>Assistência ritualística:</strong> prepara materiais, mantém velas, incensos e componentes, acompanha cânticos e executa tarefas simples determinadas pelo conjurador.</td>
+    </tr>
+    <tr>
+      <td>Domínio</td>
+      <td>12–14</td>
+      <td><strong>+1</strong></td>
+      <td><strong>Assistência básica:</strong> compreende os fundamentos do Domínio e consegue participar diretamente de etapas simples da operação mágica.</td>
+    </tr>
+    <tr>
+      <td>Domínio</td>
+      <td>15–17</td>
+      <td><strong>+2</strong></td>
+      <td><strong>Assistência ativa:</strong> participa de forma mais efetiva da manipulação da magia e consegue executar partes do procedimento sob orientação.</td>
+    </tr>
+    <tr>
+      <td>Domínio</td>
+      <td>18–20</td>
+      <td><strong>+3</strong></td>
+      <td><strong>Assistência especializada:</strong> compreende aspectos complexos do ritual e consegue assumir etapas importantes da operação.</td>
+    </tr>
+    <tr>
+      <td>Domínio</td>
+      <td>21–24</td>
+      <td><strong>+4</strong></td>
+      <td><strong>Assistência avançada:</strong> pode coordenar partes significativas do ritual e auxiliar na resolução de procedimentos complexos.</td>
+    </tr>
+    <tr>
+      <td>Domínio</td>
+      <td>25+</td>
+      <td><strong>+5</strong></td>
+      <td><strong>Assistência excepcional:</strong> possui domínio suficiente para atuar praticamente como um especialista auxiliar na execução do ritual.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Assistentes ritualísticos** possuem **Magia Ritual 15+**, mas não possuem conhecimento suficiente do Domínio para manipular diretamente a magia. Sua contribuição é principalmente auxiliar na preparação e execução dos procedimentos do ritual, como organizar componentes, manter velas e incensos, acompanhar cânticos e executar instruções do conjurador.
+
+**Assistentes especializados** possuem **NH 12+ no Domínio** utilizado. Além das tarefas comuns de um ritual, conseguem participar diretamente da operação da magia, contribuindo de acordo com seu nível de conhecimento.
+
+
+Os bônus de todos os assistentes são somados, mas o bônus total é limitado pelo nível de Domínio do conjurador. O limite é igual ao dobro do nível de Domínio:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Nível de Domínio</th>
+      <th style="width: 35%;">Conhecimento</th>
+      <th style="width: 35%;">Bônus máximo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Iniciado</td>
+      <td><strong>+2</strong></td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Adepto</td>
+      <td><strong>+4</strong></td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Especialista</td>
+      <td><strong>+6</strong></td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Mestre</td>
+      <td><strong>+8</strong></td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Lenda</td>
+      <td><strong>+10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+O bônus obtido pelos assistentes é aplicado ao **teste do Feitiço** realizado pelo conjurador. O limite representa a capacidade do conjurador de coordenar outros praticantes durante a execução da magia.
+
+---
+
 ## Operação da Magia
 
 A execução de uma magia segue uma sequência de etapas que representa a preparação e a realização da operação arcana. Antes de iniciar a conjuração, o mago deve definir **o que deseja produzir e como esse efeito será realizado**. A partir dessas escolhas, são determinados o tempo necessário para a conjuração e as dificuldades da operação.
@@ -604,7 +714,7 @@ O **NH básico do Domínio** representa a capacidade real do mago de manipular a
 
 Primeiro, são aplicadas as **penalidades dos parâmetros da magia**, determinadas pelas tabelas específicas de cada parâmetro, como **duração, dano ou cura, alcance, área de efeito** e outros efeitos especiais.
 
-Em seguida, são aplicados os **bônus dos componentes de conjuração**, conforme a magia utilize palavras, gestos e ingredientes. Por fim, aplica-se o modificador correspondente ao **tempo de conjuração** escolhido.
+Em seguida, são aplicados os **bônus dos componentes de conjuração**, conforme a magia utilize palavras, gestos e ingredientes. No caso da magia ser operada por meio de Ritual, **o bônus do uso de assistentes**, se houver. Por fim, aplica-se o modificador correspondente ao **tempo de conjuração** escolhido.
 
 De forma simplificada:
 
@@ -637,6 +747,28 @@ Em caso de **falha crítica**, além da perda dos Pontos de Magia gastos, deve-s
 
 Em caso de **sucesso decisivo**, não há consumo dos Pontos de Magia gastos na operação, e o Mestre pode consultar uma tabela de **benefícios adicionais**, quando disponível.
 
+---
+
+## Tabelas de Penalidades:
+
+Os redutores do feitiço são aplicados consultando as **Tabelas de Penalidades**, abaixo, conforme o(s) efeito(s) e parâmetros do feitiço:
+
+* Alcance
+* Área
+* Atribulação
+* Características alteradas
+* Cura
+* Dano
+* Duração
+* Massa/Volume/Peso do alvo
+* Modificadores de ataque
+* Poder da invocação
+* Tamanho
+* Tempo de conjuração (para feitiços e rituais)
+* Velocidade
+
+---
+
 ## Facilitando a Operação das Magias
 
 As regras a seguir foram criadas para minimizar a burocracia na operação das magias em meio ao jogo. Entendo que o foco deve ser na narrativa e as regras servem apenas para facilitar a narrativa.
@@ -666,4 +798,38 @@ A Técnica representa, portanto, o domínio prático de uma operação específi
 Os três mecanismos possuem funções diferentes. O **Grimório** reduz a burocracia, permitindo que uma magia conhecida seja utilizada sem recalcular seus parâmetros. A **Técnica** representa especialização e reduz permanentemente parte da dificuldade de uma operação específica. Os **Pontos de Magia** permitem compensar temporariamente as dificuldades que permanecem.
 
 Assim, uma magia pode ser construída e registrada no Grimório, aprimorada por meio de uma Técnica e, durante sua execução, ainda exigir que o mago decida quanto tempo dedicar à conjuração e quantos Pontos de Magia está disposto a gastar.
+
+---
+
+## Aprendendo um Novo Domínio
+
+Um mago pode aprender um novo Domínio de duas maneiras: 
+
+* **participando de um ritual como assistente**, ou 
+* **estudando um Grimório** especializado naquele Domínio.
+
+Um **Grimório** é um livro de magia dedicado a um Domínio específico. Ele apresenta seus conceitos e princípios fundamentais, além de fórmulas e exemplos práticos, incluindo **truques, feitiços e rituais prontos**.
+
+Para começar a utilizar o conhecimento de um Grimório, o aprendiz deve estudá-lo por **pelo menos 8 horas**. **Aptidão Mágica** e **Leitura Dinâmica** podem reduzir esse tempo de estudo. Após concluir a leitura, o aprendiz pode realizar os truques, feitiços e rituais contidos no Grimório, mesmo sem possuir conhecimento daquele Domínio. Entretanto, como ainda não compreende plenamente os princípios envolvidos, o **tempo de conjuração dessas magias é dobrado**.
+
+Da mesma forma, um aprendiz pode adquirir conhecimento prático de um Domínio participando como **assistente em um ritual**. Para isso, deve participar do ritual completo, desde sua preparação até sua conclusão, e o ritual deve ser bem-sucedido.
+
+Enquanto ainda não possui pontos no Domínio, o personagem **não possui a perícia propriamente dita**. Ele apenas consegue utilizar os conhecimentos obtidos por meio dos rituais dos quais participou ou das magias estudadas em um Grimório.
+
+### Adquirindo o Primeiro Ponto
+
+A cada dia em que o aprendiz **participar de um ritual bem-sucedido** relacionado ao Domínio ou **realizar uma magia utilizando um Grimório**, ele poderá realizar uma tentativa de adquirir seu primeiro ponto naquele Domínio.
+
+Faça um teste de **Magia Ritual (Domínios) –10**, somando normalmente sua **Aptidão Mágica (AM)**. **Qualquer resultado de 13 ou mais na rolagem é considerado uma falha, independentemente do NH efetivo.**
+
+Sempre que o aprendiz **falhar em uma tentativa de adquirir o Domínio**, ele recebe **um bônus cumulativo de +1 nas tentativas futuras** para aquele Domínio. Esse bônus serve exclusivamente para reduzir a penalidade inicial de –10, representando o conhecimento adquirido a cada tentativa.
+
+Por exemplo, após uma primeira tentativa fracassada, a penalidade passa de **–10 para –9**. Após outra falha, passa para **–8**, e assim sucessivamente. 
+
+Se obtiver sucesso, o personagem pode gastar **1 ponto de experiência (XP)** para adquirir o NH mínimo da perícia no novo Domínio, calculado como **IQ – 3 + nível de Aptidão Mágica**.
+
+Se o NH mínimo obtido for **menor que 12**, o personagem ainda dependerá do **Grimório** para operar os feitiços nele contidos. Entretanto, ele poderá utilizar pontos de experiência disponíveis para elevar seu NH até **12**. A partir de **NH 12**, passa a possuir conhecimento próprio suficiente daquele Domínio para operar suas magias sem depender de Grimórios.
+
+O desenvolvimento posterior da perícia ocorre normalmente por meio de **experiência, treinamento e roleplaying**. 
+
 
