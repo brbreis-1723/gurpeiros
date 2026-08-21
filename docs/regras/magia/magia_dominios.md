@@ -11,9 +11,9 @@ Por fim, serão apresentadas as regras que determinam **como a magia é efetivam
 
 ---
 
-## Aptidão Mágica
+## Aptidão mágica (Sensibilidade a magia)
 
-A vantagem **Aptidão Mágica (Magery 0)** representa a sensibilidade à magia, a percepção de itens mágicos e a capacidade do mago em aprender e conjurar feitiços. Portanto ela é **obrigatória** para o mago aprender os domínios. Assim como na magia tradicional, cada nível de Aptidão Mágica confere um bônus de +1 nos testes de habilidade contra o domínio. Além disso ela também permite que o mago aprenda mais rápido os domínios. No entanto, como veremos mais a frente elas não são consideradas para o cálculo de **[nivel do dominio](../magia/magia_dominios.md#niveis-de-dominio)**.
+A vantagem **Aptidão Mágica ou Magery 0** representa a **sensibilidade à magia**, permitindo ao personagem perceber a presença e a natureza mágica de objetos encantados, além de proporcionar a capacidade de aprender e conjurar feitiços. Portanto, ela é **obrigatória para que um mago possa aprender os domínios da magia**.
 
 ---
 
@@ -41,9 +41,75 @@ Em mundos onde a magia ritualística é praticada, **Magia Ritual é a perícia-
 
 ---
 
-## Os Domínios Arcanos
+## Os Domínios Arcanos e suas esferas
 
-São 20 domínios de magia cada um representando um aspecto da realidade que é estudada e controlada pelo mago: **Água**, **Ar**, **Artefatos**, **Bestas**, **Conhecimento**, **Cura**, **Destino**, **Dimensão**, **Escuridão**, **Fartura**, **Fogo**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Proteção**, **Sangue**, **Som** e **Terra**.
+São 20 domínios de magia cada um representando um campo de estudo da magia que pode ser aprendida e controlada pelo mago: **Água**, **Ar**, **Artefatos**, **Bestas**, **Conhecimento**, **Cura**, **Destino**, **Dimensão**, **Escuridão**, **Fartura**, **Fogo**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Proteção**, **Sangue**, **Som** e **Terra**.
+
+Os dominios estão distribuídos em 5 esferas. Cada esfera representa um aspecto da realidade:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 15%; padding: 8px; border: 1px solid #ccc;">Esfera</th>
+      <th style="width: 45%; padding: 8px; border: 1px solid #ccc;">O que representa</th>
+      <th style="width: 40%; padding: 8px; border: 1px solid #ccc;">Domínios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc;"><strong>Vida</strong></td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Tudo aquilo que nasce, cresce, se reproduz, se regenera e possui vitalidade.</td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Bestas · Flora · Cura · Sangue</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc;"><strong>Matéria</strong></td>
+      <td style="padding: 8px; border: 1px solid #ccc;">A substância e a forma física que constituem o mundo material.</td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Água · Ar · Terra · Artefatos</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc;"><strong>Forças</strong></td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Aquilo que manifesta, transforma, afeta ou protege a realidade.</td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Fogo · Luz · Som · Escuridão · Proteção</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc;"><strong>Consciência</strong></td>
+      <td style="padding: 8px; border: 1px solid #ccc;">A capacidade de perceber, pensar, conhecer e interpretar a realidade.</td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Conhecimento · Ilusão · Mente</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #ccc;"><strong>Transcendência</strong></td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Aquilo que ultrapassa os limites da realidade física, da vida e das leis naturais.</td>
+      <td style="padding: 8px; border: 1px solid #ccc;">Dimensão · Magia · Necromancia · Destino</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### Vantagem: Afinidade com Esfera (8 pontos por nivel)
+
+**Afinidade com Esfera** representa a aptidão natural e o grau de familiaridade de um mago com uma determinada **Esfera da Magia**. Cada nível funciona como um nível de Aptidão Mágica, mas seus benefícios se aplicam exclusivamente aos Domínios pertencentes à Esfera escolhida.
+
+Cada nível de Afinidade com Esfera custa **8 pontos**, até o nível máximo de **12**.
+
+Cada nível concede **+1 de Aptidão Mágica efetiva** para todas as magias dos Domínios pertencentes à Esfera escolhida. Assim, Afinidade 3 equivale a Aptidão Mágica 3 para essas magias, mas não proporciona qualquer benefício às magias de outras Esferas.
+
+**Afinidade 1 é também um requisito para aprender magias de uma Esfera.** Uma vez adquirida, permite ao personagem aprender magias de qualquer Domínio pertencente àquela Esfera, sem necessidade de níveis adicionais de Afinidade para Domínios específicos.
+
+Por exemplo, um personagem com **Afinidade com Vida 3** pode aprender magias dos Domínios Bestas, Flora, Cura e Sangue, recebendo +3 de Aptidão Mágica efetiva nessas magias. Para aprender uma magia pertencente a outra Esfera, deverá primeiro adquirir **Afinidade 1** com aquela Esfera.
+
+**Magery 0** permanece como requisito geral e representa apenas a **sensibilidade mágica**, não possuindo níveis superiores. A Afinidade com Esfera representa a especialização do mago e pode ser adquirida separadamente para diferentes esferas. Logo, existem **cinco** afinidadec:
+
+* Afinidade com a **Vida**
+* Afinidade com a **Matéria**
+* Afinidade com as **Forças**
+* Afinidade com a **Consciência**
+* Afinidade com a **Transcendência**
+
+!!! note "Importante"
+    Para não engessar ou burocratizar a mesa, a aquisição de uma nova afinidade ocorrerá naturalmente desde que o personagem mago tenha acesso ao conhecimento de um novo domínio (por meio de grimorio ou instrutor) e xp disponivel para gastar.
+
+---
 
 ### Magia de Domínios
 
@@ -278,63 +344,56 @@ Cada domínio possui cinco níveis de conhecimento. Quanto maior o nível, mais 
 
 **Magos que alcançam o quinto e mais elevado nível de conhecimento atingem o domínio pleno de seu campo. Seus conhecimentos permitem realizar feitos extraordinários, levando a magia ao limite de suas possibilidades dentro daquele Domínio. Aos olhos de um leigo eles podem ser considerados heróis, ou até mesmo, lendas vivas...**.
 
-<div class="tabela-sticky-container">
-<table class="tabela-sticky">
-  <thead>
-    <tr>
-      <th>Nível</th>
-      <th>Nome</th>
-      <th>Palavra-chave</th>
-      <th>Ação</th>
-      <th>Descrição</th>
-      <th>Exemplos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td><strong>Percepção</strong></td>
-      <td>Sentir</td>
-      <td>Eu percebo</td>
-      <td>O mago consegue perceber, detectar e compreender manifestações do domínio, mas ainda não consegue alterá-las.</td>
-      <td>Detectar água subterrânea; sentir a presença de magia; perceber que uma criatura possui sangue; detectar uma corrente de ar invisível.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><strong>Influência</strong></td>
-      <td>Alterar</td>
-      <td>Eu altero</td>
-      <td>O mago consegue produzir pequenas alterações, simples e localizadas, nas manifestações do domínio.</td>
-      <td>Acender uma pequena chama; mover uma pequena quantidade de água; produzir uma rajada de vento; acelerar a coagulação de um ferimento.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><strong>Manipulação</strong></td>
-      <td>Controlar</td>
-      <td>Eu controlo</td>
-      <td>O mago consegue controlar manifestações significativas do domínio, afetando maiores quantidades, áreas, estruturas ou múltiplos alvos.</td>
-      <td>Erguer uma parede de água; controlar uma grande massa de terra; paralisar o braço de um inimigo através do sangue; criar um raio; abrir um pequeno portal.</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td><strong>Transformação</strong></td>
-      <td>Transformar</td>
-      <td>Eu transformo</td>
-      <td>O mago consegue alterar profundamente a natureza, forma ou estado das manifestações do domínio, realizando transformações completas e efeitos complexos.</td>
-      <td>Transformar pedra em metal; assumir completamente a forma de uma besta; transformar o próprio corpo; converter uma grande quantidade de água em gelo instantaneamente; criar uma ilusão indistinguível da realidade.</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td><strong>Domínio</strong></td>
-      <td>Criar/Destruir</td>
-      <td>Eu domino</td>
-      <td>O mago exerce domínio pleno sobre os princípios do domínio, podendo criar, destruir e transformar suas manifestações em sua expressão máxima. Quando aplicável, pode criar permanentemente aquilo que pertence ao domínio a partir do nada.</td>
-      <td>Criar água permanentemente do nada; criar uma montanha; criar sangue verdadeiro; estabelecer um portal permanente; apagar completamente uma manifestação mágica; criar permanentemente um alimento que não existia.</td>
-    </tr>
-  </tbody>
-</table>
+<div class="tabela-sticky-container"> 
+<table class="tabela-sticky"> 
+  <thead> 
+    <tr> 
+      <th>Nível</th> 
+      <th>Nome</th> 
+      <th>Ação</th> 
+      <th>Descrição</th> 
+      <th>Exemplos</th> 
+    </tr> 
+  </thead> 
+  <tbody> 
+    <tr> 
+      <td>1</td> 
+      <td><strong>Percepção</strong></td> 
+      <td>Sentir</td> 
+      <td>O mago consegue perceber, detectar e compreender manifestações do domínio, mas ainda não consegue alterá-las, criá-las ou destruí-las.</td> 
+      <td>Detectar água subterrânea; sentir a presença de magia; perceber que uma criatura possui sangue; detectar uma corrente de ar invisível.</td> 
+    </tr> 
+    <tr> 
+      <td>2</td> 
+      <td><strong>Influência</strong></td> 
+      <td>Alterar</td> 
+      <td>O mago consegue produzir pequenas alterações, simples e localizadas, nas manifestações do domínio. Nesse nível, também pode criar ou destruir manifestações simples e pequenas do domínio, desde que o efeito esteja dentro dessa escala.</td> 
+      <td>Acender ou apagar uma pequena chama; criar uma pequena quantidade de água; mover uma pequena quantidade de água; produzir ou dissipar uma pequena rajada de vento; acelerar ou interromper a coagulação de um pequeno ferimento.</td> 
+    </tr> 
+    <tr> 
+      <td>3</td> 
+      <td><strong>Manipulação</strong></td> 
+      <td>Controlar</td> 
+      <td>O mago consegue controlar manifestações significativas do domínio, afetando maiores quantidades, áreas, estruturas ou múltiplos alvos. A criação e a destruição também são possíveis em escala significativa, não estando mais limitadas a manifestações pequenas e simples.</td> 
+      <td>Erguer ou destruir uma parede de água; criar ou dissipar uma grande massa de fogo; controlar uma grande massa de terra; paralisar o braço de um inimigo através do sangue; criar ou destruir um raio; abrir ou fechar um pequeno portal.</td> 
+    </tr> 
+    <tr> 
+      <td>4</td> 
+      <td><strong>Transformação</strong></td> 
+      <td>Transformar</td> 
+      <td>O mago consegue alterar profundamente a natureza, forma ou estado das manifestações do domínio, realizando transformações completas e efeitos complexos. Pode também criar ou destruir manifestações complexas, estruturas ou fenômenos do domínio em escala compatível com este nível.</td> 
+      <td>Transformar pedra em metal; criar ou destruir uma estrutura complexa de terra; assumir completamente a forma de uma besta; transformar o próprio corpo; criar ou destruir uma grande quantidade de gelo instantaneamente; criar uma ilusão indistinguível da realidade ou desfazê-la completamente.</td> 
+    </tr> 
+    <tr> 
+      <td>5</td> 
+      <td><strong>Domínio</strong></td> 
+      <td>Dominar</td> 
+      <td>O mago exerce domínio pleno sobre os princípios do domínio, podendo criar, destruir, controlar e transformar suas manifestações em sua expressão máxima. A criação e a destruição não são exclusivas deste nível: aqui, porém, o mago pode realizá-las sem as limitações conceituais que restringem os níveis inferiores. Quando aplicável, pode criar permanentemente aquilo que pertence ao domínio a partir do nada ou destruir completamente uma manifestação.</td> 
+      <td>Criar água permanentemente do nada; destruir completamente uma grande manifestação de água; criar uma montanha; criar sangue verdadeiro; destruir uma manifestação mágica por completo; estabelecer um portal permanente; criar permanentemente um alimento que não existia ou eliminar completamente uma manifestação pertencente ao domínio.</td> 
+    </tr> 
+  </tbody> 
+</table> 
 </div>
-
 ---
 
 ## Categorias de Magia
@@ -542,9 +601,13 @@ Por outro lado, o mago poderá utilizar **ingredientes improvisados**. Eles pode
 
 Toda magia possui um **tempo de conjuração**, que representa o período necessário para executar sua operação mágica. O tempo varia de acordo com a categoria da magia e pode ser aumentado ou reduzido pelo mago, conforme as regras de aceleração e prolongamento da conjuração.
 
-**Truques são a exceção:** sua conjuração dura **sempre 1 segundo (1 turno)**. Esse tempo representa a simplicidade de sua estrutura mágica e não pode ser aumentado ou reduzido pelas regras normais de alteração do tempo de conjuração. Regras especiais poderão posteriormente permitir que determinados Truques sejam realizados como ações instantâneas, reações ou bloqueios.
+**Truques são a exceção:** sua conjuração dura **sempre 1 segundo (1 turno)**. Esse tempo representa a simplicidade de sua estrutura mágica e não pode ser aumentado ou reduzido.
 
-**Feitiços** possuem um tempo de conjuração variável, mas nunca inferior a **1 segundo (1 turno)**. Uma magia pode exigir, por exemplo, 3, 5, 10 ou 30 segundos para ser realizada. Esse tempo pode ser reduzido, impondo penalidades ao teste de **Domínio**, ou aumentado, concedendo bônus ao teste.
+**Feitiços** possuem um tempo de conjuração padrão de 2 segundos (turnos). Esse tempo pode ser reduzido, impondo penalidades ao teste de **Domínio**, ou aumentado, concedendo bônus ao teste:
+
+
+
+
 
 **Rituais** possuem um tempo de conjuração muito mais prolongado, medido em **minutos**, e nunca inferior a **1 minuto**. Um Ritual pode levar alguns minutos, várias horas ou até mais tempo, dependendo da complexidade da operação. Assim como os Feitiços, seu tempo pode ser reduzido com maior dificuldade ou aumentado para facilitar sua execução.
 
@@ -674,7 +737,7 @@ As tabelas de cada parâmetro devem ser consultadas para determinar as respectiv
 
 ### 2. Definir o tempo de conjuração
 
-Depois de definidos o efeito e seus parâmetros, determine o **tempo de conjuração**. Truques possuem tempo fixo de **1 segundo (1 turno)**, enquanto Feitiços e Rituais possuem tempos definidos individualmente, respeitando os limites mínimos de cada categoria.
+Depois de definidos o efeito e seus parâmetros, determine o **tempo de conjuração**. Truques possuem tempo fixo de **1 segundo (1 turno)**, enquanto Feitiços e Rituais possuem tempos flexíveis, respeitando os limites mínimos de cada categoria.
 
 O mago pode optar por reduzir ou aumentar o tempo de conjuração de Feitiços e Rituais. **Reduzir o tempo impõe uma penalidade ao teste de Domínio, enquanto aumentar o tempo concede um bônus**, representando a maior ou menor dificuldade de executar a operação dentro do período escolhido.
 
@@ -751,21 +814,21 @@ Em caso de **sucesso decisivo**, não há consumo dos Pontos de Magia gastos na 
 
 ## Tabelas de Penalidades:
 
-Os redutores do feitiço são aplicados consultando as **Tabelas de Penalidades**, abaixo, conforme o(s) efeito(s) e parâmetros do feitiço:
+Os redutores do feitiço são aplicados consultando as **[Tabelas de Penalidades](../tabelas/penalidades_dominio.md)**, abaixo, conforme o(s) efeito(s) e parâmetros do feitiço:
 
-* Alcance
-* Área
-* Atribulação
-* Características alteradas
-* Cura
-* Dano
-* Duração
-* Massa/Volume/Peso do alvo
-* Modificadores de ataque
-* Poder da invocação
-* Tamanho
-* Tempo de conjuração (para feitiços e rituais)
-* Velocidade
+* [Alcance](../tabelas/penalidades_dominio.md#alcance)
+* [Área de Efeito](../tabelas/penalidades_dominio.md#area-de-efeito)
+* [Atribulação](../tabelas/penalidades_dominio.md#atribulacao)
+* [Características alteradas](../tabelas/penalidades_dominio.md#caracteristicas-alteradas)
+* [Cura](../tabelas/penalidades_dominio.md#cura)
+* [Dano](../tabelas/penalidades_dominio.md#dano)
+* [Duração](../tabelas/penalidades_dominio.md#duracao)
+* [Invocação](../tabelas/penalidades_dominio.md#invocacao-direta)
+* [Massa/Volume do alvo](../tabelas/penalidades_dominio.md#massavolume-do-alvo)
+* [Metamorfose](../tabelas/penalidades_dominio.md#metamorfose)
+* [Modificadores de ataque](../tabelas/penalidades_dominio.md#modificadores-de-ataque)
+* [Tamanho](../tabelas/penalidades_dominio.md#tamanho)
+* [Velocidade](../tabelas/penalidades_dominio.md#velocidade)
 
 ---
 

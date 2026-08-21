@@ -210,9 +210,6 @@
 .tabela-sticky th:nth-child(3),
 .tabela-sticky td:nth-child(3),
 
-.tabela-sticky th:nth-child(4),
-.tabela-sticky td:nth-child(4),
-
 .tabela-sticky th:nth-child(7),
 .tabela-sticky td:nth-child(7) {
   white-space: nowrap;
@@ -220,7 +217,7 @@
 
 
 /* =========================================================
-   PALAVRA-CHAVE
+   AÇÃO
    ========================================================= */
 
 .tabela-sticky th:nth-child(3),
@@ -230,21 +227,11 @@
 
 
 /* =========================================================
-   AÇÃO
+   DESCRIÇÃO
    ========================================================= */
 
 .tabela-sticky th:nth-child(4),
 .tabela-sticky td:nth-child(4) {
-  min-width: 150px;
-}
-
-
-/* =========================================================
-   DESCRIÇÃO
-   ========================================================= */
-
-.tabela-sticky th:nth-child(5),
-.tabela-sticky td:nth-child(5) {
   width: 320px;
   min-width: 280px;
   max-width: 320px;
@@ -260,8 +247,8 @@
    EXEMPLOS
    ========================================================= */
 
-.tabela-sticky th:nth-child(6),
-.tabela-sticky td:nth-child(6) {
+.tabela-sticky th:nth-child(5),
+.tabela-sticky td:nth-child(5) {
   width: 360px;
   min-width: 320px;
   max-width: 360px;
@@ -270,18 +257,4 @@
 
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-
-/* =========================================================
-   NH MÍNIMO
-   ========================================================= */
-
-.tabela-sticky th:nth-child(7),
-.tabela-sticky td:nth-child(7) {
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
-
-  text-align: center;
 }
