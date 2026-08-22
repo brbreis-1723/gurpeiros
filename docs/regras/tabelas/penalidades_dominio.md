@@ -14,24 +14,27 @@ Corresponde à distância entre o conjurador e o alvo ou objetivo da magia. Apli
     </tr>
   </thead>
   <tbody>
-    <tr><td><strong>0</strong></td><td>0 m</td><td><strong>–10</strong></td><td>100 m</td></tr>
-    <tr><td><strong>–1</strong></td><td>3 m</td><td><strong>–11</strong></td><td>150 m</td></tr>
-    <tr><td><strong>–2</strong></td><td>5 m</td><td><strong>–12</strong></td><td>200 m</td></tr>
-    <tr><td><strong>–3</strong></td><td>7 m</td><td><strong>–13</strong></td><td>300 m</td></tr>
-    <tr><td><strong>–4</strong></td><td>10 m</td><td><strong>–14</strong></td><td>500 m</td></tr>
-    <tr><td><strong>–5</strong></td><td>15 m</td><td><strong>–15</strong></td><td>700 m</td></tr>
-    <tr><td><strong>–6</strong></td><td>20 m</td><td><strong>–16</strong></td><td>1 km</td></tr>
-    <tr><td><strong>–7</strong></td><td>30 m</td><td><strong>–17</strong></td><td>1,5 km</td></tr>
-    <tr><td><strong>–8</strong></td><td>50 m</td><td><strong>–18</strong></td><td>2 km</td></tr>
-    <tr><td><strong>–9</strong></td><td>70 m</td><td><strong>–19</strong></td><td>3 km</td></tr>
-    <tr><td></td><td></td><td><strong>–20</strong></td><td>5 km</td></tr>
+    <tr><td><strong>+2</strong></td><td>Toque</td><td><strong>–10</strong></td><td>100 m</td></tr>
+    <tr><td><strong>0</strong></td><td>< 3 m</td><td><strong>–11</strong></td><td>150 m</td></tr>
+    <tr><td><strong>–1</strong></td><td>3 m</td><td><strong>–12</strong></td><td>200 m</td></tr>
+    <tr><td><strong>–2</strong></td><td>5 m</td><td><strong>–13</strong></td><td>300 m</td></tr>
+    <tr><td><strong>–3</strong></td><td>7 m</td><td><strong>–14</strong></td><td>500 m</td></tr>
+    <tr><td><strong>–4</strong></td><td>10 m</td><td><strong>–15</strong></td><td>700 m</td></tr>
+    <tr><td><strong>–5</strong></td><td>15 m</td><td><strong>–16</strong></td><td>1 km</td></tr>
+    <tr><td><strong>–6</strong></td><td>20 m</td><td><strong>–17</strong></td><td>1,5 km</td></tr>
+    <tr><td><strong>–7</strong></td><td>30 m</td><td><strong>–18</strong></td><td>2 km</td></tr>
+    <tr><td><strong>–8</strong></td><td>50 m</td><td><strong>–19</strong></td><td>3 km</td></tr>
+    <tr><td><strong>–9</strong></td><td>70 m</td><td><strong>–20</strong></td><td>5 km</td></tr>
   </tbody>
 </table>
+
 
 !!! note "Observações sobre o alcance"
     <b>Progressão das distâncias:</b> a tabela segue uma progressão geométrica aproximada. A cada novo ponto de penalidade, a distância aumenta aproximadamente 1,5 vez, com os valores arredondados para números práticos. Por isso, após 5 km (–20), a progressão pode continuar seguindo a mesma lógica: 7 km, 10 km, 15 km, 20 km, 30 km, 50 km, e assim por diante.
 
     <b>A regra prática é:</b> para cada +1 de distância na tabela, aplique –1 adicional ao teste da magia.
+
+    <b>Magias feitas em si mesmo:</b> Magias operadas no próprio próprio conjurador considere como alcance = toque.
 
     **Magias de projétil:** não aplicam as penalidades de distância desta tabela. Utilize a distância padrão de 1/2D = 10 m e Max. = 100 m, podendo esses valores ser modificados por [modificadores de ataque](../tabelas/penalidades_dominio.md#modificadores-de-ataque).
 
@@ -598,6 +601,109 @@ A tabela abaixo serve apenas como referência intuitiva de escala. As dimensões
 
 ## Metamorfose
 
+
+Feitiços de **Metamorfose** permitem alterar as características inatas do alvo, substituindo seu **template racial** por outro. A dificuldade da magia não é determinada apenas pela aparência da nova forma, mas pela **magnitude da transformação** e pelas capacidades que o novo template representa.
+
+A categoria **Cosmético** é utilizada quando a transformação altera apenas a aparência, sem modificar características inatas ou conceder capacidades funcionais relevantes. Nesse caso, o feitiço sofre apenas **-0**.
+
+A partir de **Pet**, a transformação passa a representar uma mudança real no template do personagem. Quanto mais poderosa, extraordinária ou fundamentalmente diferente for a nova forma, maior será a penalidade.
+
+Algumas categorias representam **características especiais da forma**, como **Morto-vivo, Enxame, Difuso e Insubstancial**. Elas não significam necessariamente que toda criatura desse tipo tenha o mesmo nível de poder. As referências servem como orientação: uma criatura excepcionalmente poderosa pode pertencer a uma categoria superior, independentemente de sua natureza.
+
+A categoria deve ser escolhida de acordo com o **template efetivamente adquirido pela metamorfose**, e não simplesmente pelo tamanho, aparência ou nome da criatura. Assim, um elefante é uma forma **Grande**, enquanto um dragão jovem é um **Monstro** e um dragão adulto é **Lendário**.
+
+### Magnitude da Metamorfose
+
+<table>
+<thead>
+<tr>
+<th>Magnitude</th>
+<th>Modificador</th>
+<th>Descrição</th>
+<th>Referências</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cosmético</strong></td>
+<td><strong>0</strong></td>
+<td>Altera apenas a aparência, sem modificar características inatas ou conceder capacidades funcionais.</td>
+<td>Aparência de outra raça, mudança de idade, sexo aparente</td>
+</tr>
+<tr>
+<td><strong>Pet</strong></td>
+<td><strong>-1</strong></td>
+<td>Forma simples, com poucas capacidades relevantes e utilidade limitada.</td>
+<td>Gato, cachorro pequeno, coelho, papagaio, furão</td>
+</tr>
+<tr>
+<td><strong>Menor</strong></td>
+<td><strong>-2</strong></td>
+<td>Forma relativamente simples, com capacidades físicas ou naturais superiores às de um pet.</td>
+<td>Raposa, macaco, ave de rapina, goblin</td>
+</tr>
+<tr>
+<td><strong>Média</strong></td>
+<td><strong>-3</strong></td>
+<td>Forma completa, com capacidades físicas significativas, mas sem poderes sobrenaturais relevantes.</td>
+<td>Lobo, cão de guerra, humano, elfo, anão</td>
+</tr>
+<tr>
+<td><strong>Morto-vivo</strong></td>
+<td><strong>-4</strong></td>
+<td>Forma cuja natureza vital foi alterada pela morte ou por forças sobrenaturais, mas sem capacidades extraordinárias de alto nível.</td>
+<td>Esqueleto, zumbi, carniçal</td>
+</tr>
+<tr>
+<td><strong>Grande</strong></td>
+<td><strong>-5</strong></td>
+<td>Forma fisicamente poderosa ou de porte significativo, capaz de representar uma ameaça considerável.</td>
+<td>Urso, tigre, cavalo, gorila, crocodilo, elefante, lagarto do deserto, gigante (MT +1)</td>
+</tr>
+<tr>
+<td><strong>Atroz</strong></td>
+<td><strong>-6</strong></td>
+<td>Versão excepcional de uma criatura natural, significativamente mais poderosa, resistente ou especializada.</td>
+<td>Lobo atroz, urso atroz, tigre atroz</td>
+</tr>
+<tr>
+<td><strong>Enxame</strong></td>
+<td><strong>-7</strong></td>
+<td>Forma composta por numerosos indivíduos que funcionam como uma única entidade.</td>
+<td>Enxame de ratos, morcegos, insetos, vermes</td>
+</tr>
+<tr>
+<td><strong>Difuso</strong></td>
+<td><strong>-8</strong></td>
+<td>Forma cuja estrutura corporal é distribuída, amorfa ou incomum, dificultando tratá-la como um corpo convencional.</td>
+<td>Gelatina, massa amorfa, criatura líquida, espectro de caveira</td>
+</tr>
+<tr>
+<td><strong>Monstro</strong></td>
+<td><strong>-9</strong></td>
+<td>Criatura que ultrapassa claramente os limites mundanos, possuindo capacidades sobrenaturais ou uma combinação extraordinária de características.</td>
+<td>Grifo, mantícora, hidra, gigante da montanha, gigante da colina (MT +2), ent, planta gigante monstruosa, vampiro, dragão jovem</td>
+</tr>
+<tr>
+<td><strong>Insubstancial</strong></td>
+<td><strong>-10</strong></td>
+<td>Forma sem corpo físico convencional, capaz de atravessar matéria ou ignorar determinadas formas de interação física.</td>
+<td>Fantasma, aparição, espectro, espírito incorpóreo</td>
+</tr>
+<tr>
+<td><strong>Lendária</strong></td>
+<td><strong>-15</strong></td>
+<td>Criatura extraordinária, extremamente poderosa e associada a grandes lendas ou mitos.</td>
+<td>Dragão adulto, kraken, quimera poderosa, fênix, lich, ent ancestral</td>
+</tr>
+<tr>
+<td><strong>Mítica</strong></td>
+<td><strong>-20</strong></td>
+<td>Criatura de poder excepcional, ancestral ou quase única, representando o extremo da escala.</td>
+<td>Dragão ancestral, leviatã, criatura primordial</td>
+</tr>
+</tbody>
+</table>
 
 
 ---
