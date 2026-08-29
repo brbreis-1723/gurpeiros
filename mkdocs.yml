@@ -35,7 +35,13 @@ nav:
          - Categorias de complicações: regras/assinatura/assinatura_complicacao.md                              
       - Magias:
           - Sobre Magia: regras/magia/index.md
-          - Magia de Domínio: regras/magia/magia_dominios.md
+          - Magia de Domínio: 
+            - Introdução: regras/magia/magia_dominios.md
+            - Requisitos do Mago de Domínio: regras/magia/dominio_requisitos.md
+            - Lista de Domínios: regras/magia/dominio_lista.md
+            - Elementos da magia e como classificar: regras/magia/dominio_elementos.md
+            - Operação da magia: regras/magia/dominio_operacao.md
+            - Aprendendo um novo domínio: regras/magia/dominio_aprendizagem.md
           - Magia do Limiar:
             - Regras gerais: regras/magia/magia_limiar.md
             - Efeitos adicionais: regras/magia/efeitos_adicionais.md
