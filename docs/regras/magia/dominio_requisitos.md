@@ -145,12 +145,22 @@ No sistema de Magia de Domínios, a Taumatologia representa o conhecimento geral
 Um mago pode, portanto, estudar profundamente a Taumatologia para compreender as leis da magia, desenvolver sua Magia Ritual para aprender a aplicá-las e, posteriormente, especializar-se em determinados Domínios para exercer controle cada vez maior sobre aspectos específicos da realidade.
 
 !!! note "Uso Prático"
-    Em resumo, Taumatologia representa o conhecimento teórico da magia enquanto Magia Ritual representa o conhecimento prático dos métodos e procedimentos usados para estruturar e conduzir um ritual. Já os Domínios representam o conhecimento especializado necessário para manipular diretamente um determinado aspecto da realidade. Em termos simples: Taumatologia é entender a magia; Magia Ritual é saber conduzir o ritual; Domínio é saber manipular aquilo que a magia produz.
-
-    Use Taumatologia quando o personagem quiser compreender, identificar ou pesquisar magia, como analisar um artefato, identificar um efeito desconhecido, interpretar símbolos arcanos ou descobrir como determinado fenômeno mágico funciona. Use Magia Ritual quando precisar preparar, organizar ou conduzir o procedimento mágico, como estabelecer um círculo, executar corretamente uma sequência ritual, canalizar mana ou manter a estrutura de um ritual. Ela não determina qual aspecto da realidade o mago consegue manipular; isso pertence aos Domínios.
-
-    Use o Domínio quando o personagem efetivamente quiser manipular seu aspecto específico da realidade. Por exemplo, um mago pode usar Taumatologia para compreender teoricamente uma magia de fogo, Magia Ritual para preparar e conduzir o ritual necessário e, finalmente, seu Domínio Fogo para produzir e controlar as chamas. Dessa forma, Magia Ritual fornece a técnica para operar a estrutura mágica, enquanto o Domínio fornece o conhecimento especializado necessário para produzir o efeito.
-
+    Em resumo, Taumatologia representa o conhecimento teórico da magia enquanto Magia Ritual representa o conhecimento prático dos métodos e procedimentos usados para estruturar e conduzir um ritual. Já os Domínios representam o conhecimento especializado necessário para manipular diretamente um determinado aspecto da realidade. 
+    
+    Em termos simples: **Taumatologia** é entender a magia; **Magia Ritual** é saber conduzir o ritual; **Domínio** é saber manipular aquilo que a magia produz.  <br>
+    <ul>
+        <li>
+            Use <strong>Taumatologia</strong> quando o personagem quiser compreender, identificar ou pesquisar magia, como analisar um artefato, identificar um efeito desconhecido, interpretar símbolos arcanos ou descobrir como determinado fenômeno mágico funciona.
+        </li>
+        <li>
+            Use <strong>Magia Ritual</strong> quando precisar preparar, organizar ou conduzir o procedimento mágico, como estabelecer um círculo, executar corretamente uma sequência ritual, canalizar mana ou manter a estrutura de um ritual. Ela não determina qual aspecto da realidade o mago consegue manipular; isso pertence aos <strong>Domínios</strong>.
+        </li>
+        <li>
+            Use o <strong>Domínio</strong> quando o personagem efetivamente quiser manipular seu aspecto específico da realidade. 
+        </li>
+    </ul>
+    
+    Por exemplo, um mago pode usar Taumatologia para compreender teoricamente uma magia de fogo, Magia Ritual para preparar e conduzir o ritual necessário e, finalmente, seu Domínio Fogo para produzir e controlar as chamas. Dessa forma, Magia Ritual fornece a técnica para operar a estrutura mágica, enquanto o Domínio fornece o conhecimento especializado necessário para produzir o efeito.
 __________________________________________
 
 !!! info "Para saber mais"
