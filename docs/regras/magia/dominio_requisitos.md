@@ -1,4 +1,4 @@
-# Requiisitos do Mago de Domínio
+# Requisitos do Mago de Domínio
 
 O mago do domínio precisa de:
 
