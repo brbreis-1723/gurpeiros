@@ -174,32 +174,28 @@ Quando uma magia produzir mais de um efeito, as penalidades correspondentes são
 </thead>
 <tbody>
 
-<tr><td rowspan="1"><strong>Fadiga</strong></td><td>Recuperar PF</td><td>-1 para cada 1 PF</td></tr>
+<tr><td rowspan="1"><strong>Fadiga</strong></td><td>Recuperar PF</td><td>-1 para cada 2 PF</td></tr>
 
-<tr><td rowspan="4"><strong>Vitalidade</strong></td><td>Recuperar PV</td><td>-1 para cada 2 PV</td></tr>
+<tr><td rowspan="2"><strong>Vitalidade</strong></td><td>Recuperar PV</td><td>-1 para cada 1d6 PV</td></tr>
 <tr><td>Estancar sangramento, recuperando 1 PV</td><td>0</td></tr>
-<tr><td>Tratamento de choque, recuperando 1d6-3 PV (equivalente a NT2-3)</td><td>-1</td></tr>
-<tr><td>Tratamento de choque, recuperando 1d PV (equivalente a NT8)</td><td>-2</td></tr>
 
 <tr><td rowspan="3"><strong>Consciência</strong></td><td>Trauma leve: recuperar consciência com PV positivos. Também pode ser usado contra a atribulação <em>Inconsciência</em>.</td><td>-1</td></tr>
 <tr><td>Trauma moderado: recuperar consciência com PV entre 0 e -1×PV. Também pode ser usado contra a atribulação <em>Inconsciência</em>.</td><td>-2</td></tr>
 <tr><td>Trauma grave: recuperar consciência com PV menor que -1×PV. Também pode ser usado contra a atribulação <em>Inconsciência</em>.</td><td>-4</td></tr>
 
-<tr><td rowspan="9"><strong>Membros e Órgãos</strong></td><td>Curar incapacitação temporária — membros menores (pés, mãos, olhos), recuperando PV perdidos</td><td>-10</td></tr>
-<tr><td>Curar incapacitação temporária — membros maiores (braços, pernas), recuperando PV perdidos</td><td>-20</td></tr>
-<tr><td>Curar incapacitação duradoura — membros menores (pés, mãos, olhos), recuperando PV perdidos</td><td>-15</td></tr>
-<tr><td>Curar incapacitação duradoura — membros maiores (braços, pernas), recuperando PV perdidos</td><td>-25</td></tr>
-<tr><td>Regenerar membro perdido lentamente (30 dias)</td><td>-30</td></tr>
-<tr><td>Regenerar membro perdido em 24 horas</td><td>-35</td></tr>
-<tr><td>Regenerar membro perdido em 1 hora</td><td>-40</td></tr>
-<tr><td>Regenerar membro perdido em 10 minutos</td><td>-45</td></tr>
-<tr><td>Regenerar membro perdido instantaneamente</td><td>-50</td></tr>
+<tr><td rowspan="8"><strong>Membros e Órgãos</strong></td><td>Curar incapacitação temporária — membros menores (pés, mãos, olhos), recuperando PV perdidos</td><td>-5</td></tr>
+<tr><td>Curar incapacitação temporária — membros maiores (braços, pernas), recuperando PV perdidos</td><td>-10</td></tr>
+<tr><td>Curar incapacitação duradoura — membros menores (pés, mãos, olhos), recuperando PV perdidos</td><td>-8</td></tr>
+<tr><td>Curar incapacitação duradoura — membros maiores (braços, pernas), recuperando PV perdidos</td><td>-15</td></tr>
+<tr><td>Regenerar membro perdido lentamente (30 dias)</td><td>-20</td></tr>
+<tr><td>Regenerar membro perdido em 24 horas</td><td>-25</td></tr>
+<tr><td>Regenerar membro perdido em 1 hora</td><td>-30</td></tr>
+<tr><td>Regenerar membro perdido instantaneamente</td><td>-40</td></tr>
 
-<tr><td rowspan="5"><strong>Sentidos</strong></td><td>Restaurar instantaneamente, mas temporariamente, um sentido (órgão intacto)</td><td>-20</td></tr>
-<tr><td>Restaurar instantaneamente e permanentemente um sentido (órgão intacto)</td><td>-40</td></tr>
-<tr><td>Restaurar fala temporariamente</td><td>-15</td></tr>
-<tr><td>Restaurar fala permanentemente</td><td>-30</td></tr>
-<tr><td>Regenerar olhos ou estruturas sensoriais destruídas</td><td>-25</td></tr>
+<tr><td rowspan="4"><strong>Sentidos</strong></td><td>Restaurar instantaneamente, mas temporariamente, um sentido (órgão intacto)</td><td>-5</td></tr>
+<tr><td>Restaurar instantaneamente e permanentemente um sentido (órgão intacto)</td><td>-10</td></tr>
+<tr><td>Restaurar fala temporariamente</td><td>-10</td></tr>
+<tr><td>Restaurar fala permanentemente</td><td>-20</td></tr>
 
 <tr><td rowspan="13"><strong>Doenças</strong></td><td>Doença trivial</td><td>-1</td></tr>
 <tr><td>Doença leve</td><td>-3</td></tr>
@@ -251,11 +247,9 @@ Quando uma magia produzir mais de um efeito, as penalidades correspondentes são
 <tr><td>Veneno sobrenatural ou mágico</td><td>-30</td></tr>
 <tr><td>Veneno que altera permanentemente o corpo</td><td>-40</td></tr>
 
-<tr><td rowspan="5"><strong>Morte Iminente</strong></td><td>Estabilizar ferimento fatal (menos que -5×PV, com falha em Teste de Morte)</td><td>-5</td></tr>
+<tr><td rowspan="3"><strong>Morte Iminente</strong></td><td>Estabilizar ferimento fatal (menos que -5×PV, com falha em Teste de Morte)</td><td>-5</td></tr>
 <tr><td>Impedir morte iminente (-5×PV): alvo ganha PV suficiente para sair do risco de morte, no máximo 5 PV</td><td>-10</td></tr>
 <tr><td>Ressuscitação: reviver vítima de ataque cardíaco, asfixia ou afogamento</td><td>-15</td></tr>
-<tr><td>Restaurar corpo após destruição extensa</td><td>-40</td></tr>
-<tr><td>Restaurar corpo quase totalmente destruído</td><td>-60</td></tr>
 
 <tr><td rowspan="5"><strong>Ressurreição Imperfeita</strong></td><td>Morte recente (últimos 10 minutos). O alvo perde 25 XP.</td><td><strong>-50</strong></td></tr>
 <tr><td>Morte prolongada (últimas 24 horas). O alvo perde 25 XP.</td><td><strong>-60</strong></td></tr>
@@ -601,116 +595,109 @@ A tabela abaixo serve apenas como referência intuitiva de escala. As dimensões
 
 ## Metamorfose
 
+### Poder da Forma
 
-Feitiços de **Metamorfose** permitem alterar as características inatas do alvo, substituindo seu **template racial** por outro. A dificuldade da magia não é determinada apenas pela aparência da nova forma, mas pela **magnitude da transformação** e pelas capacidades que o novo template representa.
+A penalidade de **Metamorfose** é determinada pelo valor em pontos da forma assumida. A pontuação considera as características e capacidades concedidas pela nova forma, e não os pontos totais do personagem.
 
-A categoria **Cosmético** é utilizada quando a transformação altera apenas a aparência, sem modificar características inatas ou conceder capacidades funcionais relevantes. Nesse caso, o feitiço sofre apenas **-0**.
+Uma transformação **puramente cosmética**, que altera apenas a aparência e não modifica as capacidades físicas ou mentais do personagem, possui **modificador 0**.
 
-A partir de **Pet**, a transformação passa a representar uma mudança real no template do personagem. Quanto mais poderosa, extraordinária ou fundamentalmente diferente for a nova forma, maior será a penalidade.
+A partir daí, a cada **25 pontos de poder da forma**, aplica-se **–1** adicional ao teste de Metamorfose.
 
-Algumas categorias representam **características especiais da forma**, como **Morto-vivo, Enxame, Difuso e Insubstancial**. Elas não significam necessariamente que toda criatura desse tipo tenha o mesmo nível de poder. As referências servem como orientação: uma criatura excepcionalmente poderosa pode pertencer a uma categoria superior, independentemente de sua natureza.
-
-A categoria deve ser escolhida de acordo com o **template efetivamente adquirido pela metamorfose**, e não simplesmente pelo tamanho, aparência ou nome da criatura. Assim, um elefante é uma forma **Grande**, enquanto um dragão jovem é um **Monstro** e um dragão adulto é **Lendário**.
-
-### Magnitude da Metamorfose
-
-<table>
-<thead>
-<tr>
-<th>Magnitude</th>
-<th>Modificador</th>
-<th>Descrição</th>
-<th>Referências</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Cosmético</strong></td>
-<td><strong>0</strong></td>
-<td>Altera apenas a aparência, sem modificar características inatas ou conceder capacidades funcionais.</td>
-<td>Aparência de outra raça, mudança de idade, sexo aparente</td>
-</tr>
-<tr>
-<td><strong>Pet</strong></td>
-<td><strong>-1</strong></td>
-<td>Forma simples, com poucas capacidades relevantes e utilidade limitada.</td>
-<td>Gato, cachorro pequeno, coelho, papagaio, furão</td>
-</tr>
-<tr>
-<td><strong>Menor</strong></td>
-<td><strong>-2</strong></td>
-<td>Forma relativamente simples, com capacidades físicas ou naturais superiores às de um pet.</td>
-<td>Raposa, macaco, ave de rapina, goblin</td>
-</tr>
-<tr>
-<td><strong>Média</strong></td>
-<td><strong>-3</strong></td>
-<td>Forma completa, com capacidades físicas significativas, mas sem poderes sobrenaturais relevantes.</td>
-<td>Lobo, cão de guerra, humano, elfo, anão</td>
-</tr>
-<tr>
-<td><strong>Morto-vivo</strong></td>
-<td><strong>-4</strong></td>
-<td>Forma cuja natureza vital foi alterada pela morte ou por forças sobrenaturais, mas sem capacidades extraordinárias de alto nível.</td>
-<td>Esqueleto, zumbi, carniçal</td>
-</tr>
-<tr>
-<td><strong>Grande</strong></td>
-<td><strong>-5</strong></td>
-<td>Forma fisicamente poderosa ou de porte significativo, capaz de representar uma ameaça considerável.</td>
-<td>Urso, tigre, cavalo, gorila, crocodilo, elefante, lagarto do deserto, gigante (MT +1)</td>
-</tr>
-<tr>
-<td><strong>Atroz</strong></td>
-<td><strong>-6</strong></td>
-<td>Versão excepcional de uma criatura natural, significativamente mais poderosa, resistente ou especializada.</td>
-<td>Lobo atroz, urso atroz, tigre atroz</td>
-</tr>
-<tr>
-<td><strong>Enxame</strong></td>
-<td><strong>-7</strong></td>
-<td>Forma composta por numerosos indivíduos que funcionam como uma única entidade.</td>
-<td>Enxame de ratos, morcegos, insetos, vermes</td>
-</tr>
-<tr>
-<td><strong>Difuso</strong></td>
-<td><strong>-8</strong></td>
-<td>Forma cuja estrutura corporal é distribuída, amorfa ou incomum, dificultando tratá-la como um corpo convencional.</td>
-<td>Gelatina, massa amorfa, criatura líquida, espectro de caveira</td>
-</tr>
-<tr>
-<td><strong>Monstro</strong></td>
-<td><strong>-9</strong></td>
-<td>Criatura que ultrapassa claramente os limites mundanos, possuindo capacidades sobrenaturais ou uma combinação extraordinária de características.</td>
-<td>Grifo, mantícora, hidra, gigante da montanha, gigante da colina (MT +2), ent, planta gigante monstruosa, vampiro, dragão jovem</td>
-</tr>
-<tr>
-<td><strong>Insubstancial</strong></td>
-<td><strong>-10</strong></td>
-<td>Forma sem corpo físico convencional, capaz de atravessar matéria ou ignorar determinadas formas de interação física.</td>
-<td>Fantasma, aparição, espectro, espírito incorpóreo</td>
-</tr>
-<tr>
-<td><strong>Lendária</strong></td>
-<td><strong>-15</strong></td>
-<td>Criatura extraordinária, extremamente poderosa e associada a grandes lendas ou mitos.</td>
-<td>Dragão adulto, kraken, quimera poderosa, fênix, lich, ent ancestral</td>
-</tr>
-<tr>
-<td><strong>Mítica</strong></td>
-<td><strong>-20</strong></td>
-<td>Criatura de poder excepcional, ancestral ou quase única, representando o extremo da escala.</td>
-<td>Dragão ancestral, leviatã, criatura primordial</td>
-</tr>
-</tbody>
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 25%;">Mod.</th>
+      <th style="width: 25%;">Pontos da Forma</th>
+      <th style="width: 25%;">Mod.</th>
+      <th style="width: 25%;">Pontos da Forma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0</td><td>Cosmética</td><td>–10</td><td>226–250</td></tr>
+    <tr><td>–1</td><td>1–25</td><td>–11</td><td>251–275</td></tr>
+    <tr><td>–2</td><td>26–50</td><td>–12</td><td>276–300</td></tr>
+    <tr><td>–3</td><td>51–75</td><td>–13</td><td>301–325</td></tr>
+    <tr><td>–4</td><td>76–100</td><td>–14</td><td>326–350</td></tr>
+    <tr><td>–5</td><td>101–125</td><td>–15</td><td>351–375</td></tr>
+    <tr><td>–6</td><td>126–150</td><td>–16</td><td>376–400</td></tr>
+    <tr><td>–7</td><td>151–175</td><td>–17</td><td>401–425</td></tr>
+    <tr><td>–8</td><td>176–200</td><td>–18</td><td>426–450</td></tr>
+    <tr><td>–9</td><td>201–225</td><td>–19</td><td>451–475</td></tr>
+    <tr><td>–10</td><td>226–250</td><td>–20</td><td>476–500</td></tr>
+  </tbody>
 </table>
+
+> **Progressão:** a escala continua indefinidamente seguindo a mesma lógica. Para cada **+25 pontos na forma**, aplica-se **–1 adicional** à penalidade. Assim, uma forma de **501–525 pontos** sofre –21, **526–550** sofre –22, e assim por diante.
+
+### Inteligência da Forma
+
+A metamorfose altera o corpo, mas **não altera inicialmente a mente do personagem**. O personagem mantém seu IQ, memórias, personalidade, conhecimentos e perícias mentais enquanto estiver transformado.
+
+Entretanto, se o **IQ natural da forma for inferior ao IQ original do personagem**, a nova forma exerce gradualmente influência sobre sua mente.
+
+A cada **1 hora** permanecendo na forma, o personagem deve realizar um **teste de IQ**. Em caso de falha, seu IQ é reduzido em **1 ponto**. Esse processo continua a cada hora até que o IQ do personagem alcance o **IQ natural da forma**.
+
+O IQ reduzido dessa maneira é **temporário** e retorna imediatamente ao valor original quando a metamorfose termina.
+
+O personagem nunca tem seu IQ reduzido abaixo do IQ natural da forma.
+
 
 
 ---
 
 ## Modificadores de ataque
 
+Os modificadores abaixo são **específicos para magias de ataque que causam dano**. Eles representam características adicionais da forma como o ataque mágico é projetado, como alcance ampliado, projeção, cone, fragmentação, fogo contínuo, capacidade de atravessar armaduras ou orientação do ataque.
 
+Cada modificador é aplicado **além dos modificadores normais da magia**, sempre que o efeito correspondente fizer parte do ataque. Quando houver mais de uma característica, seus modificadores são cumulativos.
+
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 30%;">Mod.</th>
+      <th style="width: 70%;">Efeito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>-2</td><td>Afeta insubstancial</td></tr>
+    <tr><td>-6</td><td>Alcance ampliado 100x</td></tr>
+    <tr><td>-3</td><td>Alcance ampliado 10x</td></tr>
+    <tr><td>-4</td><td>Alcance ampliado 20x</td></tr>
+    <tr><td>-1</td><td>Alcance ampliado 2x</td></tr>
+    <tr><td>-5</td><td>Alcance ampliado 50x</td></tr>
+    <tr><td>-2</td><td>Alcance ampliado 5x</td></tr>
+    <tr><td>-8</td><td>Aura</td></tr>
+    <tr><td>-1</td><td>Baixa assinatura</td></tr>
+    <tr><td>-10 por ciclo</td><td>Cíclico (ciclo = 1 seg)</td></tr>
+    <tr><td>-1 por ciclo</td><td>Cíclico (ciclo = 1 dia)</td></tr>
+    <tr><td>-2 por ciclo</td><td>Cíclico (ciclo = 1 hora)</td></tr>
+    <tr><td>-4 por ciclo</td><td>Cíclico (ciclo = 1 min)</td></tr>
+    <tr><td>-5 por ciclo</td><td>Cíclico (ciclo = 10 seg)</td></tr>
+    <tr><td>-5 + (-1 por metro/base)</td><td>Cone</td></tr>
+    <tr><td>-20</td><td>Divisor de armadura 10</td></tr>
+    <tr><td>-5</td><td>Divisor de armadura 2</td></tr>
+    <tr><td>-10</td><td>Divisor de armadura 3</td></tr>
+    <tr><td>-15</td><td>Divisor de armadura 5</td></tr>
+    <tr><td>-4</td><td>Fogo Contínuo: CDT 2</td></tr>
+    <tr><td>-6</td><td>Fogo Contínuo: CDT 3</td></tr>
+    <tr><td>-8</td><td>Fogo Contínuo: CDT 4</td></tr>
+    <tr><td>-10</td><td>Fogo Contínuo: CDT 5</td></tr>
+    <tr><td>-12</td><td>Fogo Contínuo: CDT 6</td></tr>
+    <tr><td>-15</td><td>Fogo Contínuo: CDT 7-8</td></tr>
+    <tr><td>-20</td><td>Fogo Contínuo: CDT 9-10</td></tr>
+    <tr><td>-2/dado</td><td>Fragmentação</td></tr>
+    <tr><td>0</td><td>Jato</td></tr>
+    <tr><td>0</td><td>Apenas projeção</td></tr>
+    <tr><td>-2</td><td>Projeção dobrada</td></tr>
+    <tr><td>0</td><td>Retardo fixo</td></tr>
+    <tr><td>-1</td><td>Retardo variável (0-10 turnos)</td></tr>
+    <tr><td>-2</td><td>Retardo variável (qualquer período)</td></tr>
+    <tr><td>-2</td><td>Sem assinatura</td></tr>
+    <tr><td>-5</td><td>Guiado</td></tr>
+    <tr><td>-8</td><td>Teleguiado</td></tr>
+  </tbody>
+</table>
 
 ---
 
