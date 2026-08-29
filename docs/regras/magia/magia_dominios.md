@@ -10,28 +10,25 @@ Por fim, serão apresentadas as regras que determinam **como a magia é efetivam
 
 
 ---
+## Requisitos para o Mago do Domínio
 
-## Aptidão mágica (Sensibilidade a magia)
+O mago do domínio precisa de:
+
+* **[Aptidão mágica (Sensibilidade a magia)](../magia/magia_dominios.md#aptidao-magica-sensibilidade-a-magia)**;
+* Conhecer a perícia **[Magia Ritual](../magia/magia_dominios.md#magia-ritual)**;
+* Conhecer pelo menos uma perícia de **[Domínio](../magia/magia_dominios.md#os-dominios-arcanos-e-suas-esferas)**;
+* Vantagem **[Afinidade com a esfera](../magia/magia_dominios.md#vantagem-afinidade-com-esfera)** para os domínios que conhece;
+* <u>**Opcional:**</u> Conhecimento teórico da magia (**[Taumatologia](../magia/magia_dominios.md#taumatotologia-e-teoria-da-magia)**).
+  
+---
+
+### Aptidão mágica (Sensibilidade a magia)
 
 A vantagem **Aptidão Mágica ou Magery 0** representa a **sensibilidade à magia**, permitindo ao personagem perceber a presença e a natureza mágica de objetos encantados, além de proporcionar a capacidade de aprender e conjurar feitiços. Portanto, ela é **obrigatória para que um mago possa aprender os domínios da magia**.
 
 ---
 
-## Taumatotologia e Teoria da Magia
-
-**Taumatologia** é o estudo acadêmico e teórico da magia. Ela representa o conhecimento das leis que governam a magia, da natureza da mana e dos princípios que explicam como e por que os fenômenos mágicos ocorrem.
-
-Um taumatólogo estuda a magia de maneira semelhante à forma como um físico estuda as leis naturais. Ele procura compreender a estrutura da realidade mágica, as propriedades da mana, as interações entre diferentes forças sobrenaturais e os princípios que determinam o funcionamento de feitiços, rituais e artefatos.
-
-A Taumatologia é, portanto, **conhecimento teórico**, e não a capacidade prática de realizar magia.
-
-Seu principal uso é a **pesquisa e o desenvolvimento mágico**. Um mago pode utilizar Taumatologia para analisar um fenômeno mágico desconhecido, identificar os princípios envolvidos em um feitiço, compreender as consequências de uma falha crítica, determinar os componentes necessários para criar um encantamento ou desenvolver novas formas de magia.
-
-Qualquer pessoa pode estudar Taumatologia, mesmo sem ser capaz de realizar magia. Entretanto, aqueles que possuem **Magery** têm maior facilidade para compreender seus princípios, pois conseguem perceber e interpretar diretamente os fenômenos mágicos que estudam.
-
----
-
-## Magia Ritual
+### Magia Ritual
 
 **Magia Ritual** representa o conhecimento arcano fundamental necessário para compreender, preparar e executar rituais mágicos. Ela abrange os princípios, símbolos, procedimentos e técnicas que permitem ao mago manipular as forças sobrenaturais por meio de métodos ritualísticos.
 
@@ -41,9 +38,9 @@ Em mundos onde a magia ritualística é praticada, **Magia Ritual é a perícia-
 
 ---
 
-## Os Domínios Arcanos e suas esferas
+### Os Domínios Arcanos e suas esferas
 
-São 20 domínios de magia cada um representando um campo de estudo da magia que pode ser aprendida e controlada pelo mago: **Água**, **Ar**, **Artefatos**, **Bestas**, **Conhecimento**, **Cura**, **Destino**, **Dimensão**, **Escuridão**, **Fartura**, **Fogo**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Proteção**, **Sangue**, **Som** e **Terra**.
+São 20 domínios de magia cada um representando um campo de estudo da magia que pode ser aprendida e controlada pelo mago: **Água**, **Ar**, **Artefatos**, **Bestas**, **Conhecimento**, **Destino**, **Diabolismo**, **Dimensão**, **Escuridão**, **Fogo**, **Gravidade**, **Ilusão**, **Luz**, **Magia**, **Mente**, **Necromancia**, **Sangue**, **Som** e **Terra**.
 
 Os dominios estão distribuídos em 5 esferas. Cada esfera representa um aspecto da realidade:
 
@@ -86,32 +83,7 @@ Os dominios estão distribuídos em 5 esferas. Cada esfera representa um aspecto
 
 ---
 
-## Vantagem: Afinidade com Esfera (8 pontos por nivel)
-
-**Afinidade com Esfera** representa a aptidão natural e o grau de familiaridade de um mago com uma determinada **Esfera da Magia**. Cada nível funciona como um nível de Aptidão Mágica, mas seus benefícios se aplicam exclusivamente aos Domínios pertencentes à Esfera escolhida.
-
-Cada nível de Afinidade com Esfera custa **8 pontos**, até o nível máximo de **12**.
-
-Cada nível concede **+1 de Aptidão Mágica efetiva** para todas as magias dos Domínios pertencentes à Esfera escolhida. Assim, Afinidade 3 equivale a Aptidão Mágica 3 para essas magias, mas não proporciona qualquer benefício às magias de outras Esferas.
-
-**Afinidade 1 é também um requisito para aprender magias de uma Esfera.** Uma vez adquirida, permite ao personagem aprender magias de qualquer Domínio pertencente àquela Esfera, sem necessidade de níveis adicionais de Afinidade para Domínios específicos.
-
-Por exemplo, um personagem com **Afinidade com Vida 3** pode aprender magias dos Domínios Bestas, Flora, Cura e Sangue, recebendo +3 de Aptidão Mágica efetiva nessas magias. Para aprender uma magia pertencente a outra Esfera, deverá primeiro adquirir **Afinidade 1** com aquela Esfera.
-
-**Magery 0** permanece como requisito geral e representa apenas a **sensibilidade mágica**, não possuindo níveis superiores. A Afinidade com Esfera representa a especialização do mago e pode ser adquirida separadamente para diferentes esferas. Logo, existem **cinco** afinidadec:
-
-* Afinidade com a **Vida**
-* Afinidade com a **Matéria**
-* Afinidade com as **Forças**
-* Afinidade com a **Consciência**
-* Afinidade com a **Transcendência**
-
-!!! note "Importante"
-    Para não engessar ou burocratizar a mesa, a aquisição de uma nova afinidade ocorrerá naturalmente desde que o personagem mago tenha acesso ao conhecimento de um novo domínio (por meio de grimorio ou instrutor) e xp disponivel para gastar.
-
----
-
-## Magia de Domínios
+### Magia de Domínios
 
 A operação das **Magias de Domínio** depende diretamente da perícia Magia Ritual. Cada Domínio representa uma área específica do conhecimento arcano, como por exemplo: Fogo, Água, Terra, Mente, Sangue, Necromancia ou Dimensão.
 
@@ -129,7 +101,46 @@ A perícia também permite ao mago compreender a estrutura de um ritual mágico 
 
 ---
 
-### Taumatologia e Magia Ritual
+### Vantagem: Afinidade com Esfera 
+
+**Afinidade com Esfera** representa a aptidão natural e o grau de familiaridade de um mago com uma determinada **Esfera da Magia**. Cada nível funciona como um nível de Aptidão Mágica, mas seus benefícios se aplicam exclusivamente aos Domínios pertencentes à Esfera escolhida.
+
+O custo de cada nível de Afinidade com Esfera é variável dependendo da esfera. começando no nível 1 até o nível máximo de **12**.
+
+Cada nível concede **+1 de Aptidão Mágica efetiva** para todas as magias dos Domínios pertencentes à Esfera escolhida. Assim, Afinidade 3 equivale a Aptidão Mágica 3 para essas magias, mas não proporciona qualquer benefício às magias de outras Esferas.
+
+**Afinidade 1 é também um requisito para aprender magias de uma Esfera.** Uma vez adquirida, permite ao personagem aprender magias de qualquer Domínio pertencente àquela Esfera, sem necessidade de níveis adicionais de Afinidade para Domínios específicos.
+
+Por exemplo, um personagem com **Afinidade com Vida 3** pode aprender magias dos Domínios Bestas, Flora e Sangue, recebendo +3 de Aptidão Mágica efetiva nessas magias. Para aprender uma magia pertencente a outra Esfera, deverá primeiro adquirir **Afinidade 1** com aquela Esfera.
+
+**Magery 0** permanece como requisito geral e representa apenas a **sensibilidade mágica**, não possuindo níveis superiores. A Afinidade com Esfera representa a especialização do mago e pode ser adquirida separadamente para diferentes esferas. Logo, existem **cinco** afinidadec:
+
+* Afinidade com a **Vida** (6 pontos/nivel)
+* Afinidade com a **Matéria** (8 pontos/nivel)
+* Afinidade com as **Forças** (10 pontos/nível)
+* Afinidade com a **Consciência** (6 pontos/nível)
+* Afinidade com a **Transcendência** (10 pontos/nível)
+
+!!! note "Importante"
+    Para não engessar ou burocratizar a mesa, a aquisição de uma nova afinidade ocorrerá naturalmente desde que o personagem mago tenha acesso ao conhecimento de um novo domínio (por meio de grimorio ou instrutor) e xp disponivel para gastar.
+
+---
+
+### Taumatotologia e Teoria da Magia
+
+**Taumatologia** é o estudo acadêmico e teórico da magia. Ela representa o conhecimento das leis que governam a magia, da natureza da mana e dos princípios que explicam como e por que os fenômenos mágicos ocorrem.
+
+Um taumatólogo estuda a magia de maneira semelhante à forma como um físico estuda as leis naturais. Ele procura compreender a estrutura da realidade mágica, as propriedades da mana, as interações entre diferentes forças sobrenaturais e os princípios que determinam o funcionamento de feitiços, rituais e artefatos.
+
+A Taumatologia é, portanto, **conhecimento teórico**, e não a capacidade prática de realizar magia.
+
+Seu principal uso é a **pesquisa e o desenvolvimento mágico**. Um mago pode utilizar Taumatologia para analisar um fenômeno mágico desconhecido, identificar os princípios envolvidos em um feitiço, compreender as consequências de uma falha crítica, determinar os componentes necessários para criar um encantamento ou desenvolver novas formas de magia.
+
+Qualquer pessoa pode estudar Taumatologia, mesmo sem ser capaz de realizar magia. Entretanto, aqueles que possuem **Magery** têm maior facilidade para compreender seus princípios, pois conseguem perceber e interpretar diretamente os fenômenos mágicos que estudam.
+
+---
+
+## Taumatologia versus Magia Ritual
 
 Embora estejam intimamente relacionadas, Taumatologia e **Magia Ritual** representam conhecimentos diferentes.
 
@@ -145,13 +156,12 @@ No sistema de Magia de Domínios, a Taumatologia representa o conhecimento geral
 
 Um mago pode, portanto, estudar profundamente a Taumatologia para compreender as leis da magia, desenvolver sua Magia Ritual para aprender a aplicá-las e, posteriormente, especializar-se em determinados Domínios para exercer controle cada vez maior sobre aspectos específicos da realidade.
 
-### Uso Prático
+!!! note "Uso Prático"
+    Em resumo, Taumatologia representa o conhecimento teórico da magia enquanto Magia Ritual representa o conhecimento prático dos métodos e procedimentos usados para estruturar e conduzir um ritual. Já os Domínios representam o conhecimento especializado necessário para manipular diretamente um determinado aspecto da realidade. Em termos simples: Taumatologia é entender a magia; Magia Ritual é saber conduzir o ritual; Domínio é saber manipular aquilo que a magia produz.
 
-Em resumo, Taumatologia representa o conhecimento teórico da magia enquanto Magia Ritual representa o conhecimento prático dos métodos e procedimentos usados para estruturar e conduzir um ritual. Já os Domínios representam o conhecimento especializado necessário para manipular diretamente um determinado aspecto da realidade. Em termos simples: Taumatologia é entender a magia; Magia Ritual é saber conduzir o ritual; Domínio é saber manipular aquilo que a magia produz.
+    Use Taumatologia quando o personagem quiser compreender, identificar ou pesquisar magia, como analisar um artefato, identificar um efeito desconhecido, interpretar símbolos arcanos ou descobrir como determinado fenômeno mágico funciona. Use Magia Ritual quando precisar preparar, organizar ou conduzir o procedimento mágico, como estabelecer um círculo, executar corretamente uma sequência ritual, canalizar mana ou manter a estrutura de um ritual. Ela não determina qual aspecto da realidade o mago consegue manipular; isso pertence aos Domínios.
 
-Use Taumatologia quando o personagem quiser compreender, identificar ou pesquisar magia, como analisar um artefato, identificar um efeito desconhecido, interpretar símbolos arcanos ou descobrir como determinado fenômeno mágico funciona. Use Magia Ritual quando precisar preparar, organizar ou conduzir o procedimento mágico, como estabelecer um círculo, executar corretamente uma sequência ritual, canalizar mana ou manter a estrutura de um ritual. Ela não determina qual aspecto da realidade o mago consegue manipular; isso pertence aos Domínios.
-
-Use o Domínio quando o personagem efetivamente quiser manipular seu aspecto específico da realidade. Por exemplo, um mago pode usar Taumatologia para compreender teoricamente uma magia de fogo, Magia Ritual para preparar e conduzir o ritual necessário e, finalmente, seu Domínio Fogo para produzir e controlar as chamas. Dessa forma, Magia Ritual fornece a técnica para operar a estrutura mágica, enquanto o Domínio fornece o conhecimento especializado necessário para produzir o efeito.
+    Use o Domínio quando o personagem efetivamente quiser manipular seu aspecto específico da realidade. Por exemplo, um mago pode usar Taumatologia para compreender teoricamente uma magia de fogo, Magia Ritual para preparar e conduzir o ritual necessário e, finalmente, seu Domínio Fogo para produzir e controlar as chamas. Dessa forma, Magia Ritual fornece a técnica para operar a estrutura mágica, enquanto o Domínio fornece o conhecimento especializado necessário para produzir o efeito.
 
 ---
 
