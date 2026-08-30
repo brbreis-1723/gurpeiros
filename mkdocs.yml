@@ -21,6 +21,10 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/grimorio.css
+
+extra_javascript:
+  - javascripts/grimorio.js
 
 nav:
   - Início: index.md
@@ -42,6 +46,7 @@ nav:
             - Elementos da magia e como classificar: regras/magia/dominio_elementos.md
             - Operação da magia: regras/magia/dominio_operacao.md
             - Aprendendo um novo domínio: regras/magia/dominio_aprendizagem.md
+            - Grimório de Magias: regras/magia/grimorio.md
           - Magia do Limiar:
             - Regras gerais: regras/magia/magia_limiar.md
             - Efeitos adicionais: regras/magia/efeitos_adicionais.md

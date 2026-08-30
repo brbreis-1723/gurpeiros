@@ -1,0 +1,73 @@
+.fichas-magias {
+    margin-top: 2rem;
+}
+
+.ficha-magia {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 8px;
+    background: var(--md-default-bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 5rem;
+}
+
+.ficha-magia h2 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.8rem;
+}
+
+.ficha-cabecalho {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.ficha-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.ficha-meta span {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    background: var(--md-code-bg-color);
+    font-size: 0.85rem;
+}
+
+.ficha-secao {
+    margin-top: 1.5rem;
+}
+
+.ficha-secao h3 {
+    margin-bottom: 0.6rem;
+}
+
+.ficha-parametros {
+    width: 100%;
+}
+
+.ficha-parametros th {
+    text-align: left;
+}
+
+.penalidade-final {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid var(--md-primary-fg-color);
+    background: var(--md-code-bg-color);
+    font-size: 1.05rem;
+}
+
+.ficha-observacao {
+    margin-top: 1rem;
+}
+
+.ficha-voltar {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}

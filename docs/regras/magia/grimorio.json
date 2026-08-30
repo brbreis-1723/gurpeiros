@@ -1,0 +1,1080 @@
+[
+  {
+    "id": "ar-001",
+    "nome": "Sentir o Vento",
+    "dominio": "Ar",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "O mago torna-se capaz de perceber claramente a direção e a intensidade das correntes de ar próximas, mesmo que sejam muito sutis.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "area": {
+        "valor": "1 m",
+        "modificador": 0
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      }
+    },
+    "penalidade": 0
+  },
+  {
+    "id": "ar-002",
+    "nome": "Sentir Gases",
+    "dominio": "Ar",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "O mago consegue perceber a presença de gases diferentes do ar atmosférico normal e identificar sua localização aproximada. O efeito não permite determinar automaticamente a natureza do gás; isso exige conhecimento apropriado ou uma versão mais elaborada da magia.",
+    "parametros": {
+      "alcance": {
+        "valor": "< 3 m",
+        "modificador": 0
+      },
+      "area": {
+        "valor": "1 m",
+        "modificador": 0
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      }
+    },
+    "penalidade": 0
+  },
+  {
+    "id": "ar-003",
+    "nome": "Olhos do Atmosférico",
+    "dominio": "Ar",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "O mago consegue perceber alterações de pressão, temperatura e composição do ar nas proximidades. Pode detectar, por exemplo, uma região com pouco oxigênio, uma corrente de ar anormal ou a aproximação de uma massa de ar em movimento.",
+    "parametros": {
+      "alcance": {
+        "valor": "3 m",
+        "modificador": -1
+      },
+      "area": {
+        "valor": "2 m",
+        "modificador": -1
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      }
+    },
+    "penalidade": -2
+  },
+  {
+    "id": "ar-004",
+    "nome": "Brisa",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Truque",
+    "efeito": "O mago cria uma pequena corrente de ar capaz de produzir uma brisa perceptível. Pode ser utilizada para refrescar alguém, movimentar objetos muito leves ou simplesmente produzir uma corrente de vento.",
+    "parametros": {
+      "alcance": {
+        "valor": "< 3 m",
+        "modificador": 0
+      },
+      "area": {
+        "valor": "1 m",
+        "modificador": 0
+      },
+      "volume": {
+        "valor": "2 L",
+        "modificador": -1
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      }
+    },
+    "penalidade": -1
+  },
+  {
+    "id": "ar-005",
+    "nome": "Soprar Fumaça",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago cria uma corrente de ar capaz de deslocar fumaça, poeira ou outros gases leves em uma direção determinada.",
+    "parametros": {
+      "alcance": {
+        "valor": "7 m",
+        "modificador": -3
+      },
+      "area": {
+        "valor": "2 m",
+        "modificador": -1
+      },
+      "duracao": {
+        "valor": "Até 10 segundos",
+        "modificador": -1
+      },
+      "volume": {
+        "valor": "5 L",
+        "modificador": -3
+      },
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": 2
+      }
+    },
+    "penalidade": -6
+  },
+  {
+    "id": "ar-006",
+    "nome": "Bolsa de Ar",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago cria uma pequena quantidade de ar respirável em um ponto escolhido. É suficiente para permitir uma respiração ou fornecer uma pequena reserva de ar.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "volume": {
+        "valor": "3 L",
+        "modificador": -2
+      },
+      "duracao": {
+        "valor": "Até 30 segundos",
+        "modificador": -2
+      },
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": 2
+      }
+    },
+    "penalidade": -2
+  },
+  {
+    "id": "ar-007",
+    "nome": "Renovar o Ar",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago renova o ar de um pequeno espaço, substituindo ar viciado ou pobre em oxigênio por ar atmosférico adequado.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "area": {
+        "valor": "2 m",
+        "modificador": -1
+      },
+      "duracao": {
+        "valor": "Até 1 minuto",
+        "modificador": -3
+      },
+      "tempo_conjuracao": {
+        "valor": "10 segundos",
+        "modificador": 4
+      }
+    },
+    "penalidade": -2
+  },
+  {
+    "id": "ar-008",
+    "nome": "Pressão Incômoda",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago altera levemente a pressão do ar em torno de uma criatura, causando desconforto e dificuldade momentânea de concentração.",
+    "parametros": {
+      "alcance": {
+        "valor": "7 m",
+        "modificador": -3
+      },
+      "area": {
+        "valor": "1 m",
+        "modificador": 0
+      },
+      "atribulacao": {
+        "valor": "Condição irritante — tosse",
+        "modificador": -6
+      },
+      "duracao": {
+        "valor": "Até 10 segundos",
+        "modificador": -1
+      },
+      "tempo_conjuracao": {
+        "valor": "10 segundos",
+        "modificador": 4
+      }
+    },
+    "penalidade": -6
+  },
+  {
+    "id": "ar-009",
+    "nome": "Rajada de Vento",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "Uma massa de ar é acelerada violentamente contra o alvo, produzindo uma poderosa rajada capaz de derrubá-lo ou deslocá-lo.",
+    "parametros": {
+      "alcance": {
+        "valor": "15 m",
+        "modificador": -5
+      },
+      "area": {
+        "valor": "1 m",
+        "modificador": 0
+      },
+      "dano": {
+        "valor": "4d6",
+        "tipo": "contusivo",
+        "modificador": -4,
+        "direto": true
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "30 segundos",
+        "modificador": 5
+      }
+    },
+    "penalidade": -4
+  },
+  {
+    "id": "ar-010",
+    "nome": "Lâmina de Ar",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago comprime e acelera o ar, formando uma lâmina invisível que atinge o alvo como um golpe cortante.",
+    "parametros": {
+      "alcance": {
+        "valor": "20 m",
+        "modificador": -6
+      },
+      "dano": {
+        "valor": "3d6-3",
+        "tipo": "perfurante",
+        "modificador": -6,
+        "direto": true
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "30 segundos",
+        "modificador": 5
+      }
+    },
+    "penalidade": -7,
+    "observacao": "O dano perfurante sofre a redução própria da tabela de dano: 3d6 torna-se 3d6-3. Isso não altera a penalidade de conjuração."
+  },
+  {
+    "id": "ar-011",
+    "nome": "Muralha de Vento",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago cria uma barreira de vento forte em uma região, dificultando sua travessia e desviando objetos leves.",
+    "parametros": {
+      "alcance": {
+        "valor": "10 m",
+        "modificador": -4
+      },
+      "area": {
+        "valor": "Raio de 3 m",
+        "modificador": -2
+      },
+      "duracao": {
+        "valor": "Até 3 minutos",
+        "modificador": -4
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": 6
+      }
+    },
+    "penalidade": -4
+  },
+  {
+    "id": "ar-012",
+    "nome": "Vácuo Localizado",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago remove o ar de uma pequena região, criando uma zona de vácuo temporária.",
+    "parametros": {
+      "alcance": {
+        "valor": "10 m",
+        "modificador": -4
+      },
+      "area": {
+        "valor": "2 m",
+        "modificador": -1
+      },
+      "volume": {
+        "valor": "50 L",
+        "modificador": -8
+      },
+      "duracao": {
+        "valor": "Até 10 segundos",
+        "modificador": -1
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": 6
+      }
+    },
+    "penalidade": -8
+  },
+  {
+    "id": "ar-013",
+    "nome": "Purificar Atmosfera",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago remove ou dispersa gases nocivos, fumaça e outras impurezas presentes no ar de uma área.",
+    "parametros": {
+      "alcance": {
+        "valor": "20 m",
+        "modificador": -6
+      },
+      "area": {
+        "valor": "Raio de 5 m",
+        "modificador": -4
+      },
+      "volume": {
+        "valor": "300 L",
+        "modificador": -12
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": 6
+      }
+    },
+    "penalidade": -16
+  },
+  {
+    "id": "ar-014",
+    "nome": "Raio",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago canaliza uma descarga elétrica atmosférica contra um alvo.",
+    "parametros": {
+      "alcance": {
+        "valor": "50 m",
+        "modificador": -8
+      },
+      "dano": {
+        "valor": "5d6-5",
+        "tipo": "elétrico",
+        "modificador": -5,
+        "direto": true
+      },
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": 6
+      }
+    },
+    "penalidade": -7
+  },
+  {
+    "id": "ar-015",
+    "nome": "Voo",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Feitiço",
+    "efeito": "O mago manipula continuamente o ar ao redor de uma criatura, permitindo que ela se sustente e se desloque pelo ar.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "massa_volume": {
+        "valor": "70 kg",
+        "modificador": -9
+      },
+      "velocidade": {
+        "valor": "10 m/s",
+        "modificador": -4
+      },
+      "duracao": {
+        "valor": "Até 1 hora",
+        "modificador": -7
+      },
+      "tempo_conjuracao": {
+        "valor": "10 minutos",
+        "modificador": 9
+      }
+    },
+    "penalidade": -9
+  },
+  {
+    "id": "ar-016",
+    "nome": "Zona de Pressão",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Feitiço",
+    "efeito": "O mago estabelece uma região onde a pressão atmosférica é profundamente alterada, criando uma zona de pressão anormal.",
+    "parametros": {
+      "alcance": {
+        "valor": "30 m",
+        "modificador": -7
+      },
+      "area": {
+        "valor": "Raio de 7 m",
+        "modificador": -5
+      },
+      "duracao": {
+        "valor": "Até 3 minutos",
+        "modificador": -4
+      },
+      "volume": {
+        "valor": "5.000 L",
+        "modificador": -18
+      },
+      "tempo_conjuracao": {
+        "valor": "10 minutos",
+        "modificador": 9
+      }
+    },
+    "penalidade": -25
+  },
+  {
+    "id": "ar-017",
+    "nome": "Tempestade Elétrica",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Ritual",
+    "efeito": "O mago altera profundamente as condições atmosféricas de uma região, criando uma tempestade carregada de eletricidade.",
+    "parametros": {
+      "alcance": {
+        "valor": "100 m",
+        "modificador": -10
+      },
+      "area": {
+        "valor": "Raio de 20 m",
+        "modificador": -8
+      },
+      "duracao": {
+        "valor": "Até 1 hora",
+        "modificador": -7
+      },
+      "dano": {
+        "valor": "5d6-5",
+        "tipo": "elétrico",
+        "modificador": -5,
+        "direto": true
+      },
+      "tempo_conjuracao": {
+        "valor": "30 minutos",
+        "modificador": 10
+      }
+    },
+    "penalidade": -20
+  },
+  {
+    "id": "ar-018",
+    "nome": "Vácuo Absoluto",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Ritual",
+    "efeito": "O mago remove completamente o ar de uma grande região, estabelecendo temporariamente uma zona de vácuo.",
+    "parametros": {
+      "alcance": {
+        "valor": "30 m",
+        "modificador": -7
+      },
+      "area": {
+        "valor": "Raio de 10 m",
+        "modificador": -6
+      },
+      "duracao": {
+        "valor": "Até 3 minutos",
+        "modificador": -4
+      },
+      "volume": {
+        "valor": "10.000 L",
+        "modificador": -20
+      },
+      "tempo_conjuracao": {
+        "valor": "1 hora",
+        "modificador": 11
+      }
+    },
+    "penalidade": -26
+  },
+  {
+    "id": "ar-019",
+    "nome": "Grande Tempestade",
+    "dominio": "Ar",
+    "nivel": 5,
+    "nivel_nome": "Domínio",
+    "categoria": "Ritual",
+    "efeito": "O mago estabelece uma grande tempestade sobre uma região, controlando ventos, pressão e descargas elétricas atmosféricas.",
+    "parametros": {
+      "alcance": {
+        "valor": "300 m",
+        "modificador": -13
+      },
+      "area": {
+        "valor": "Raio de 100 m",
+        "modificador": -13
+      },
+      "duracao": {
+        "valor": "Até 3 horas",
+        "modificador": -8
+      },
+      "dano": {
+        "valor": "6d6-6",
+        "tipo": "elétrico",
+        "modificador": -6,
+        "direto": true
+      },
+      "tempo_conjuracao": {
+        "valor": "3 horas",
+        "modificador": 12
+      }
+    },
+    "penalidade": -28
+  },
+  {
+    "id": "ar-020",
+    "nome": "Domínio dos Ventos",
+    "dominio": "Ar",
+    "nivel": 5,
+    "nivel_nome": "Domínio",
+    "categoria": "Ritual",
+    "efeito": "O mago estabelece controle sobre os ventos e as correntes atmosféricas de uma grande região. Pode alterar a direção predominante dos ventos, dissipar correntes existentes ou estabelecer uma circulação atmosférica específica. O efeito representa uma alteração significativa e duradoura das condições atmosféricas, e não simplesmente uma rajada ou corrente de vento.",
+    "parametros": {
+      "alcance": {
+        "valor": "1 km",
+        "modificador": -16
+      },
+      "area": {
+        "valor": "Raio de 200 m",
+        "modificador": -15
+      },
+      "duracao": {
+        "valor": "Até 1 dia",
+        "modificador": -11
+      },
+      "tempo_conjuracao": {
+        "valor": "3 horas",
+        "modificador": 12
+      }
+    },
+    "penalidade": -30
+  },
+  {
+    "id": "ar-teste-001",
+    "nome": "Força do Vendaval",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O alvo recebe um aumento temporário de +3 em ST, representando uma intensificação artificial de sua força física.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "caracteristicas": [
+        {
+          "valor": "Aumentar ST: +3",
+          "modificador": -6
+        }
+      ],
+      "duracao": {
+        "valor": "Até 1 minuto",
+        "modificador": -3
+      },
+      "tempo_conjuracao": {
+        "valor": "10 segundos",
+        "modificador": 4
+      }
+    },
+    "penalidade": -3,
+    "duracao": "Até 1 minuto",
+    "alcance_maximo": "Toque"
+  },
+  {
+    "id": "ar-teste-002",
+    "nome": "Sopro Revigorante",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago canaliza uma corrente de ar revitalizante sobre o alvo, recuperando 2d6 PV.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "cura": [
+        {
+          "valor": "Recuperar PV: 2d6 PV",
+          "modificador": -2
+        }
+      ],
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": 2
+      }
+    },
+    "penalidade": 0,
+    "duracao": "Momentânea",
+    "alcance_maximo": "Toque"
+  },
+  {
+    "id": "ar-teste-003",
+    "nome": "Serviçal dos Ventos",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago conjura uma pequena criatura elemental dos ventos para auxiliá-lo.",
+    "parametros": {
+      "alcance": {
+        "valor": "3 m",
+        "modificador": -1
+      },
+      "invocacao": {
+        "valor": "100 pontos — Equivalente",
+        "modificador": -8
+      },
+      "duracao": {
+        "valor": "Até 1 hora",
+        "modificador": -7
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": 6
+      }
+    },
+    "penalidade": -10,
+    "duracao": "Até 1 hora",
+    "alcance_maximo": "3 m"
+  },
+  {
+    "id": "ar-teste-004",
+    "nome": "Forma de Névoa",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Feitiço",
+    "efeito": "O mago transforma o corpo do alvo em uma forma gasosa semelhante a uma névoa, permitindo que ele atravesse pequenas aberturas e se comporte como uma massa de ar difusa.",
+    "parametros": {
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 2
+      },
+      "metamorfose": {
+        "valor": "Forma gasosa de névoa — Poder da forma: 150 pontos",
+        "modificador": -6
+      },
+      "duracao": {
+        "valor": "Até 10 minutos",
+        "modificador": -5
+      },
+      "tempo_conjuracao": {
+        "valor": "10 minutos",
+        "modificador": 9
+      }
+    },
+    "penalidade": 0,
+    "duracao": "Até 10 minutos",
+    "alcance_maximo": "Toque"
+  },
+  {
+    "id": "ar-teste-005",
+    "nome": "Lança de Ar Guiada",
+    "dominio": "Ar",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O mago dispara uma lança de ar comprimido contra um alvo. A projeção mágica pode corrigir sua trajetória durante o voo.",
+    "parametros": {
+      "alcance": {
+        "valor": "20 m",
+        "modificador": -6
+      },
+      "dano": {
+        "valor": "3d6",
+        "tipo": "perfurante",
+        "modificador": -6
+      },
+      "modificadores_ataque": [
+        {
+          "valor": "Guiado",
+          "modificador": -5
+        }
+      ],
+      "duracao": {
+        "valor": "Momentânea",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "30 segundos",
+        "modificador": 5
+      }
+    },
+    "penalidade": -12,
+    "duracao": "Momentânea",
+    "alcance_maximo": "20 m"
+  },
+  {
+    "id": "ar-teste-006",
+    "nome": "Gigante dos Ventos",
+    "dominio": "Ar",
+    "nivel": 4,
+    "nivel_nome": "Transformação",
+    "categoria": "Feitiço",
+    "efeito": "O mago envolve uma criatura gigantesca com uma alteração atmosférica capaz de afetar seu corpo inteiro.",
+    "parametros": {
+      "alcance": {
+        "valor": "30 m",
+        "modificador": -7
+      },
+      "tamanho": {
+        "valor": "MT 4 — 10 m",
+        "modificador": -8
+      },
+      "duracao": {
+        "valor": "Até 3 minutos",
+        "modificador": -4
+      },
+      "tempo_conjuracao": {
+        "valor": "10 minutos",
+        "modificador": 9
+      }
+    },
+    "penalidade": -10,
+    "duracao": "Até 3 minutos",
+    "alcance_maximo": "30 m"
+  },
+  {
+    "id": "teste-001",
+    "nome": "Sentir Presença",
+    "dominio": "Conhecimento",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "O conjurador percebe a presença de criaturas próximas que normalmente não conseguiria detectar.",
+    "parametros": {
+      "alcance": {
+        "valor": "10 metros",
+        "modificador": -2
+      },
+      "duracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "1 segundo",
+        "modificador": 0
+      }
+    },
+    "penalidade": -2
+  },
+  {
+    "id": "teste-002",
+    "nome": "Curar Ferimento",
+    "dominio": "Sangue",
+    "nivel": 2,
+    "nivel_nome": "Básico",
+    "categoria": "Feitiço",
+    "efeito": "Recupera parte dos ferimentos físicos do alvo.",
+    "parametros": {
+      "cura": [
+        {
+          "valor": "Recuperar PV: 2d6",
+          "modificador": -2
+        }
+      ],
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": -1
+      }
+    },
+    "penalidade": -3
+  },
+  {
+    "id": "teste-003",
+    "nome": "Dissipar Atordoamento",
+    "dominio": "Sangue",
+    "nivel": 2,
+    "nivel_nome": "Básico",
+    "categoria": "Feitiço",
+    "efeito": "Remove o estado de atordoamento de uma criatura.",
+    "parametros": {
+      "cura": [
+        {
+          "valor": "Atribulação: Atordoamento — Remover",
+          "modificador": -3
+        }
+      ],
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": -1
+      }
+    },
+    "penalidade": -4
+  },
+  {
+    "id": "teste-004",
+    "nome": "Convocar Pequeno Guardião",
+    "dominio": "Bestas",
+    "nivel": 3,
+    "nivel_nome": "Intermediário",
+    "categoria": "Ritual",
+    "efeito": "Invoca uma pequena criatura para auxiliar o conjurador.",
+    "parametros": {
+      "invocacao": {
+        "valor": "50 pontos — 25% dos pontos do conjurador",
+        "modificador": -2
+      },
+      "duracao": {
+        "valor": "1 hora",
+        "modificador": -2
+      },
+      "tempo_conjuracao": {
+        "valor": "1 minuto",
+        "modificador": -4
+      }
+    },
+    "penalidade": -8
+  },
+  {
+    "id": "teste-005",
+    "nome": "Forma do Predador",
+    "dominio": "Bestas",
+    "nivel": 3,
+    "nivel_nome": "Intermediário",
+    "categoria": "Feitiço",
+    "efeito": "Transforma o conjurador em uma forma animal especializada em caça.",
+    "parametros": {
+      "metamorfose": {
+        "valor": "Forma animal predatória — Poder da forma: 75 pontos",
+        "modificador": -3
+      },
+      "duracao": {
+        "valor": "10 minutos",
+        "modificador": -4
+      },
+      "tempo_conjuracao": {
+        "valor": "10 segundos",
+        "modificador": -2
+      }
+    },
+    "penalidade": -9
+  },
+  {
+    "id": "teste-006",
+    "nome": "Raio Perfurante",
+    "dominio": "Fogo",
+    "nivel": 3,
+    "nivel_nome": "Intermediário",
+    "categoria": "Feitiço",
+    "efeito": "Projeta um ataque mágico concentrado capaz de atravessar parte da proteção do alvo.",
+    "parametros": {
+      "dano": {
+        "valor": "3d6",
+        "tipo": "fogo",
+        "modificador": -3
+      },
+      "modificadores_ataque": [
+        {
+          "valor": "Divisor de armadura 2",
+          "modificador": -5
+        }
+      ],
+      "alcance": {
+        "valor": "20 metros",
+        "modificador": -4
+      },
+      "tempo_conjuracao": {
+        "valor": "3 segundos",
+        "modificador": -1
+      }
+    },
+    "penalidade": -13
+  },
+  {
+    "id": "teste-007",
+    "nome": "Onda Incendiária",
+    "dominio": "Fogo",
+    "nivel": 4,
+    "nivel_nome": "Avançado",
+    "categoria": "Feitiço",
+    "efeito": "Libera uma onda de fogo que atinge uma área ao redor do ponto escolhido.",
+    "parametros": {
+      "dano": {
+        "valor": "4d6",
+        "tipo": "fogo",
+        "modificador": -4
+      },
+      "area": {
+        "valor": "3 metros de raio",
+        "modificador": -5
+      },
+      "modificadores_ataque": [
+        {
+          "valor": "Projeção dobrada",
+          "modificador": -2
+        }
+      ],
+      "tempo_conjuracao": {
+        "valor": "5 segundos",
+        "modificador": -2
+      }
+    },
+    "penalidade": -13
+  },
+  {
+    "id": "teste-008",
+    "nome": "Encolher Criatura",
+    "dominio": "Bestas",
+    "nivel": 4,
+    "nivel_nome": "Avançado",
+    "categoria": "Feitiço",
+    "efeito": "Reduz temporariamente o tamanho de uma criatura inteira.",
+    "parametros": {
+      "tamanho": {
+        "valor": "MT 2 — 5 metros",
+        "modificador": -4
+      },
+      "metamorfose": {
+        "valor": "Redução corporal — Poder da forma: 50 pontos",
+        "modificador": -2
+      },
+      "duracao": {
+        "valor": "1 hora",
+        "modificador": -2
+      },
+      "tempo_conjuracao": {
+        "valor": "10 segundos",
+        "modificador": -2
+      }
+    },
+    "penalidade": -10
+  },
+  {
+    "id": "teste-009",
+    "nome": "Fortalecer Corpo",
+    "dominio": "Sangue",
+    "nivel": 3,
+    "nivel_nome": "Intermediário",
+    "categoria": "Feitiço",
+    "efeito": "Altera temporariamente as características físicas do alvo.",
+    "parametros": {
+      "caracteristicas": [
+        {
+          "valor": "Aumentar Força: +2",
+          "modificador": -4
+        },
+        {
+          "valor": "Aumentar Vitalidade: +1",
+          "modificador": -2
+        }
+      ],
+      "duracao": {
+        "valor": "1 minuto",
+        "modificador": -4
+      },
+      "alcance": {
+        "valor": "Toque",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "5 segundos",
+        "modificador": -2
+      }
+    },
+    "penalidade": -12
+  },
+  {
+    "id": "teste-010",
+    "nome": "Comando Paralisante",
+    "dominio": "Mente",
+    "nivel": 4,
+    "nivel_nome": "Avançado",
+    "categoria": "Feitiço",
+    "efeito": "Impõe uma condição incapacitante sobre uma criatura.",
+    "parametros": {
+      "atribulacao": {
+        "valor": "Paralisia",
+        "modificador": -14
+      },
+      "alcance": {
+        "valor": "20 metros",
+        "modificador": -4
+      },
+      "tamanho": {
+        "valor": "MT 0 — 2 metros",
+        "modificador": 0
+      },
+      "tempo_conjuracao": {
+        "valor": "5 segundos",
+        "modificador": -2
+      }
+    },
+    "penalidade": -20
+  }
+]
