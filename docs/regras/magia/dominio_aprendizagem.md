@@ -38,3 +38,4 @@ __________________________________________
     - [Elementos da Magia de Dominio](../magia/dominio_elementos.md)
     - [Operação da magia](../magia/dominio_operacao.md)    
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Grimório de Magias](../magia/grimorio.md)

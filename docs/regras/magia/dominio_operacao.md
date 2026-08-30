@@ -145,3 +145,4 @@ __________________________________________
     - [Elementos da Magia de Dominio](../magia/dominio_elementos.md)
     - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Grimório de Magias](../magia/grimorio.md)

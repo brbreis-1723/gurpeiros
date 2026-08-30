@@ -381,3 +381,4 @@ __________________________________________
     - [Operação da magia](../magia/dominio_operacao.md)
     - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Grimório de Magias](../magia/grimorio.md)

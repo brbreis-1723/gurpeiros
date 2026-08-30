@@ -192,11 +192,130 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
+             * ORDENAÇÃO
+             * ==============================
+             */
+
+            let ordenacao = {
+                campo: null,
+                direcao: "asc"
+            };
+
+
+            function ordenarLista(lista) {
+
+                if (!ordenacao.campo) {
+                    return lista;
+                }
+
+                const listaOrdenada = [...lista];
+
+                listaOrdenada.sort((a, b) => {
+
+                    let valorA;
+                    let valorB;
+
+                    switch (ordenacao.campo) {
+
+                        case "nome":
+                            valorA = a.nome || "";
+                            valorB = b.nome || "";
+                            break;
+
+                        case "dominio":
+                            valorA = a.dominio || "";
+                            valorB = b.dominio || "";
+                            break;
+
+                        case "nivel":
+                            valorA = Number(a.nivel);
+                            valorB = Number(b.nivel);
+                            break;
+
+                        case "categoria":
+                            valorA = a.categoria || "";
+                            valorB = b.categoria || "";
+                            break;
+
+                        case "penalidade":
+                            valorA = Number(a.penalidade);
+                            valorB = Number(b.penalidade);
+                            break;
+
+                        default:
+                            return 0;
+
+                    }
+
+
+                    /*
+                     * Campos numéricos
+                     */
+                    if (
+                        ordenacao.campo === "nivel" ||
+                        ordenacao.campo === "penalidade"
+                    ) {
+
+                        const resultado =
+                            valorA - valorB;
+
+                        return ordenacao.direcao === "asc"
+                            ? resultado
+                            : -resultado;
+
+                    }
+
+
+                    /*
+                     * Campos de texto
+                     */
+                    const resultado =
+                        String(valorA).localeCompare(
+                            String(valorB),
+                            "pt-BR",
+                            {
+                                sensitivity: "base"
+                            }
+                        );
+
+                    return ordenacao.direcao === "asc"
+                        ? resultado
+                        : -resultado;
+
+                });
+
+                return listaOrdenada;
+
+            }
+
+
+            /*
+             * Indicador visual da ordenação
+             */
+            function indicadorOrdenacao(campo) {
+
+                if (ordenacao.campo !== campo) {
+                    return "";
+                }
+
+                return ordenacao.direcao === "asc"
+                    ? " ↑"
+                    : " ↓";
+
+            }
+
+
+            /*
+             * ==============================
              * RENDERIZAÇÃO DA TABELA
              * ==============================
              */
 
             function renderizarTabela(lista) {
+
+                const listaOrdenada =
+                    ordenarLista(lista);
+
 
                 let html = `
 
@@ -205,11 +324,47 @@ document.addEventListener("DOMContentLoaded", function () {
                         <thead>
 
                             <tr>
-                                <th>Nome</th>
-                                <th>Domínio</th>
-                                <th>Nível</th>
-                                <th>Categoria</th>
-                                <th>Penalidade</th>
+
+                                <th
+                                    class="ordenavel"
+                                    data-ordenar="nome"
+                                    title="Ordenar por nome"
+                                >
+                                    Nome${indicadorOrdenacao("nome")}
+                                </th>
+
+                                <th
+                                    class="ordenavel"
+                                    data-ordenar="dominio"
+                                    title="Ordenar por domínio"
+                                >
+                                    Domínio${indicadorOrdenacao("dominio")}
+                                </th>
+
+                                <th
+                                    class="ordenavel"
+                                    data-ordenar="nivel"
+                                    title="Ordenar por nível"
+                                >
+                                    Nível${indicadorOrdenacao("nivel")}
+                                </th>
+
+                                <th
+                                    class="ordenavel"
+                                    data-ordenar="categoria"
+                                    title="Ordenar por categoria"
+                                >
+                                    Categoria${indicadorOrdenacao("categoria")}
+                                </th>
+
+                                <th
+                                    class="ordenavel"
+                                    data-ordenar="penalidade"
+                                    title="Ordenar por penalidade"
+                                >
+                                    Penalidade${indicadorOrdenacao("penalidade")}
+                                </th>
+
                             </tr>
 
                         </thead>
@@ -218,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
 
 
-                if (lista.length === 0) {
+                if (listaOrdenada.length === 0) {
 
                     html += `
 
@@ -238,7 +393,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
-                lista.forEach(magia => {
+                listaOrdenada.forEach(magia => {
 
                     html += `
 
@@ -294,19 +449,57 @@ document.addEventListener("DOMContentLoaded", function () {
                 /*
                  * Atualiza contador
                  */
-
                 contador.textContent =
-                    `${lista.length} ${
-                        lista.length === 1
+                    `${listaOrdenada.length} ${
+                        listaOrdenada.length === 1
                             ? "magia encontrada"
                             : "magias encontradas"
                     }`;
 
 
                 /*
-                 * Eventos dos links
+                 * Eventos dos cabeçalhos
                  */
+                document
+                    .querySelectorAll(".ordenavel")
+                    .forEach(cabecalho => {
 
+                        cabecalho.addEventListener(
+                            "click",
+                            function () {
+
+                                const campo =
+                                    this.dataset.ordenar;
+
+
+                                if (
+                                    ordenacao.campo === campo
+                                ) {
+
+                                    ordenacao.direcao =
+                                        ordenacao.direcao === "asc"
+                                            ? "desc"
+                                            : "asc";
+
+                                } else {
+
+                                    ordenacao.campo = campo;
+                                    ordenacao.direcao = "asc";
+
+                                }
+
+
+                                aplicarFiltros();
+
+                            }
+                        );
+
+                    });
+
+
+                /*
+                 * Recria os eventos dos links
+                 */
                 document
                     .querySelectorAll(".magia-link")
                     .forEach(link => {
@@ -372,6 +565,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const filtradas =
                     magias.filter(magia => {
 
+                        /*
+                         * Busca pelo nome
+                         */
                         if (
                             busca &&
                             !magia.nome
@@ -382,6 +578,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
 
 
+                        /*
+                         * Domínio
+                         */
                         if (
                             dominio &&
                             magia.dominio !== dominio
@@ -390,6 +589,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
 
 
+                        /*
+                         * Nível
+                         */
                         if (
                             nivel &&
                             String(magia.nivel) !== nivel
@@ -398,6 +600,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
 
 
+                        /*
+                         * Categoria
+                         */
                         if (
                             categoria &&
                             magia.categoria !== categoria
@@ -559,11 +764,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * ==============================
-                 * PARÂMETROS
-                 * ==============================
+                 * Parâmetros
                  */
-
                 for (
                     const [nome, parametro]
                     of Object.entries(
@@ -571,60 +773,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     )
                 ) {
 
-                    /*
-                     * Tempo de conjuração possui
-                     * uma seção própria.
-                     */
-
                     if (
-                        nome === "tempo_conjuracao"
+                        nome ===
+                        "tempo_conjuracao"
                     ) {
                         continue;
                     }
 
-
-                    /*
-                     * Parâmetro com vários itens
-                     *
-                     * Cada item recebe sua própria
-                     * linha, mantendo Valor e
-                     * Modificador separados.
-                     */
-
-                    if (Array.isArray(parametro)) {
-
-                        parametro.forEach(item => {
-
-                            html += `
-
-                                <tr>
-
-                                    <td>
-                                        ${formatarNomeParametro(nome)}
-                                    </td>
-
-                                    <td>
-                                        ${formatarValorItem(item)}
-                                    </td>
-
-                                    <td>
-                                        ${item?.modificador ?? ""}
-                                    </td>
-
-                                </tr>
-
-                            `;
-
-                        });
-
-                        continue;
-
-                    }
-
-
-                    /*
-                     * Parâmetro normal
-                     */
 
                     html += `
 
@@ -635,11 +790,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             </td>
 
                             <td>
-                                ${formatarValorParametro(parametro)}
+                                ${formatarValor(parametro)}
                             </td>
 
                             <td>
-                                ${parametro?.modificador ?? ""}
+                                ${formatarModificador(parametro)}
                             </td>
 
                         </tr>
@@ -661,11 +816,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * ==============================
-                 * TEMPO DE CONJURAÇÃO
-                 * ==============================
+                 * Tempo de conjuração
                  */
-
                 if (
                     magia.parametros?.tempo_conjuracao
                 ) {
@@ -721,25 +873,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * ==============================
-                 * DANO
-                 * ==============================
+                 * Penalidade final
                  */
-
-                /*
-                 * O dano agora é tratado como
-                 * parâmetro normal na tabela.
-                 *
-                 * Não criamos uma seção adicional.
-                 */
-
-
-                /*
-                 * ==============================
-                 * PENALIDADE FINAL
-                 * ==============================
-                 */
-
                 html += `
 
                     <div class="penalidade-final">
@@ -756,11 +891,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * ==============================
-                 * OBSERVAÇÃO
-                 * ==============================
+                 * Observação
                  */
-
                 if (magia.observacao) {
 
                     html += `
@@ -779,11 +911,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * ==============================
-                 * VOLTAR PARA A TABELA
-                 * ==============================
+                 * Voltar para a tabela
                  */
-
                 html += `
 
                         <div class="ficha-voltar">
@@ -809,7 +938,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
-             * NOME DOS PARÂMETROS
+             * NOMES DOS PARÂMETROS
              * ==============================
              */
 
@@ -868,69 +997,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
-             * FORMATA ITEM DE LISTA
+             * FORMATAÇÃO DOS VALORES
              * ==============================
              */
 
-            function formatarValorItem(item) {
-
-                if (!item) {
-                    return "";
-                }
-
-
-                /*
-                 * Se possui efeito + valor,
-                 * mostra os dois juntos na coluna
-                 * Valor.
-                 */
-
-                if (
-                    item.efeito &&
-                    item.valor !== undefined
-                ) {
-
-                    return `
-                        ${item.efeito}: ${item.valor}
-                    `;
-
-                }
-
-
-                /*
-                 * Se possui apenas efeito.
-                 */
-
-                if (item.efeito) {
-
-                    return item.efeito;
-
-                }
-
-
-                /*
-                 * Se possui apenas valor.
-                 */
-
-                if (item.valor !== undefined) {
-
-                    return item.valor;
-
-                }
-
-
-                return "";
-
-            }
-
-
-            /*
-             * ==============================
-             * FORMATA PARÂMETRO NORMAL
-             * ==============================
-             */
-
-            function formatarValorParametro(parametro) {
+            function formatarValor(parametro) {
 
                 if (!parametro) {
                     return "";
@@ -938,9 +1009,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Valor + tipo
+                 * Listas de efeitos
                  */
+                if (Array.isArray(parametro)) {
 
+                    return parametro
+
+                        .map(item => {
+
+                            if (
+                                item &&
+                                item.efeito &&
+                                item.valor !== undefined
+                            ) {
+
+                                return `
+                                    ${item.efeito}
+                                `;
+
+                            }
+
+                            if (
+                                item &&
+                                item.efeito
+                            ) {
+
+                                return item.efeito;
+
+                            }
+
+                            return "";
+
+                        })
+
+                        .filter(
+                            valor => valor !== ""
+                        )
+
+                        .join("<br>");
+
+                }
+
+
+                /*
+                 * Parâmetros simples
+                 */
                 if (
                     parametro.valor !== undefined
                 ) {
@@ -962,7 +1075,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 /*
                  * Metamorfose
                  */
-
                 if (
                     parametro.poder_forma
                 ) {
@@ -975,7 +1087,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         ${parametro.descricao ||
                             "Forma alterada"}
 
-                        — Poder da forma:
+                        <br>
+
+                        Poder da forma:
                         ${poder.pontos ?? ""}
                         pontos
 
@@ -987,7 +1101,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 /*
                  * Invocação
                  */
-
                 if (
                     parametro.pontos_criatura !==
                     undefined
@@ -1014,7 +1127,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 /*
                  * Tamanho
                  */
-
                 if (
                     parametro.mt !== undefined ||
                     parametro.dimensao !== undefined
@@ -1039,12 +1151,102 @@ document.addEventListener("DOMContentLoaded", function () {
                 /*
                  * Descrição simples
                  */
-
                 if (
                     parametro.descricao
                 ) {
 
                     return parametro.descricao;
+
+                }
+
+
+                return "";
+
+            }
+
+
+            /*
+             * ==============================
+             * FORMATAÇÃO DOS MODIFICADORES
+             * ==============================
+             */
+
+            function formatarModificador(parametro) {
+
+                if (!parametro) {
+                    return "";
+                }
+
+
+                /*
+                 * Listas de efeitos
+                 */
+                if (Array.isArray(parametro)) {
+
+                    return parametro
+
+                        .map(item => {
+
+                            if (
+                                item &&
+                                item.modificador !== undefined
+                            ) {
+
+                                return item.modificador;
+
+                            }
+
+                            return "";
+
+                        })
+
+                        .filter(
+                            valor => valor !== ""
+                        )
+
+                        .join("<br>");
+
+                }
+
+
+                /*
+                 * Metamorfose
+                 */
+                if (
+                    parametro.poder_forma &&
+                    parametro.poder_forma.modificador !==
+                    undefined
+                ) {
+
+                    return parametro
+                        .poder_forma
+                        .modificador;
+
+                }
+
+
+                /*
+                 * Invocação
+                 */
+                if (
+                    parametro.modificador !==
+                    undefined
+                ) {
+
+                    return parametro.modificador;
+
+                }
+
+
+                /*
+                 * Tamanho
+                 */
+                if (
+                    parametro.modificador !==
+                    undefined
+                ) {
+
+                    return parametro.modificador;
 
                 }
 
@@ -1089,29 +1291,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             /*
-             * ==============================
-             * RENDERIZAÇÃO INICIAL
-             * ==============================
+             * Renderização inicial
              */
-
             renderizarTabela(magias);
 
 
             /*
-             * ==============================
-             * ABRE MAGIA PELA URL
-             * ==============================
+             * Abre magia através da URL
              */
-
             abrirMagiaDaURL();
 
 
             /*
-             * ==============================
-             * NAVEGAÇÃO VOLTAR / AVANÇAR
-             * ==============================
+             * Navegação voltar/avançar
              */
-
             window.addEventListener(
                 "popstate",
                 abrirMagiaDaURL

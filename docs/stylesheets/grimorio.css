@@ -71,3 +71,34 @@
     margin-top: 1.5rem;
     font-size: 0.9rem;
 }
+
+.filtro-acoes {
+    margin-top: 20px;
+}
+
+.filtro-acoes button {
+    padding: 8px 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #722222;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtro-acoes button:hover {
+    background-color: #ddd;
+    border-color: #666;
+}
+
+.contador-magias {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabela-grimorio th {
+    cursor: pointer;
+}
+
+#tabela-grimorio th:hover {
+    text-decoration: underline;
+}
