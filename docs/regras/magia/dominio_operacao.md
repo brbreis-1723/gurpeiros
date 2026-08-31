@@ -79,22 +79,21 @@ De forma simplificada:
 
 O **NH efetivo nunca pode ser superior ao NH básico do Domínio**. Dessa forma, os bônus obtidos pelos componentes e pelo tempo adicional não aumentam a capacidade do mago; eles apenas servem para **reduzir ou eliminar as penalidades impostas pela complexidade da magia**.
 
-### 7. Reduzir penalidades com Pontos de Magia
+### 7. Pagar o custo mínimo do Feitiço
 
-Depois de calculado o NH efetivo, o mago pode optar por **gastar Pontos de Magia para reduzir as penalidades restantes**. Cada ponto de magia gasto reduz em **1 ponto** a penalidade aplicada à operação.
+Todo feitiço possui um custo mínimo em Pontos de Magia, determinado pelo seu nível. Esse custo deve ser considerado antes da realização do teste de Domínio.
 
-O jogador pode escolher livremente quantos pontos deseja gastar, desde que não ultrapasse o total da penalidade existente. Também pode optar por não gastar nenhum ponto e realizar o teste assumindo toda a dificuldade.
+O custo mínimo representa o gasto básico necessário para realizar a operação mágica. As regras específicas desse custo e das consequências de reduzi-lo estão descritas em na seção de Lista de Domínios/Aplicação por nível de domínio em [**Custo mínimo do Feitiço**](../magia/dominio_lista.md#custo-minimo-feitico).
 
-Os Pontos de Magia representam o esforço adicional necessário para compensar as dificuldades da operação. A forma como esses pontos são obtidos ou recuperados depende do **sistema de magia utilizado**, podendo representar fadiga, uma reserva de energia ou aumento do Limiar de magia.
+### 8. Reduzir penalidades com Pontos de Magia
 
-Por exemplo, uma magia resulta em uma penalidade total de **-8**. O mago pode:
+Depois de definido o custo mínimo do feitiço, o mago pode optar por gastar Pontos de Magia adicionais para reduzir as penalidades restantes da operação.
 
-* Não gastar Pontos de Magia e testar com **-8**;
-* Gastar 3 pontos e testar com **-5**;
-* Gastar 6 pontos e testar com **-2**;
-* Gastar 8 pontos e eliminar completamente a penalidade.
+Cada PM gasto dessa forma reduz em 1 ponto a penalidade aplicada ao teste.
 
-### 8. Teste de Operação da Magia
+O jogador decide livremente quantos PM adicionais deseja gastar, podendo inclusive optar por não gastar nenhum. Esse gasto é independente do custo mínimo do feitiço e representa um esforço adicional para facilitar a realização da magia.
+
+### 9. Teste de Operação da Magia
 
 Depois de concluídas todas as etapas anteriores, o mago realiza um **teste da perícia do Domínio correspondente**. Esse é o único teste necessário para determinar se a operação mágica foi realizada com sucesso.
 

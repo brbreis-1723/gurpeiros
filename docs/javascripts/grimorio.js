@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("grimorio");
@@ -694,6 +693,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             function criarFicha(magia) {
 
+                /*
+                 * O custo do feitiço é igual ao seu nível.
+                 * Exemplo: nível 1 = 1 PM, nível 2 = 2 PM.
+                 *
+                 * O custo não é armazenado no JSON.
+                 */
+                const custo =
+                    Number(magia.nivel);
+
+
                 let html = `
 
                     <article
@@ -719,6 +728,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                     ${magia.nivel}
                                     —
                                     ${magia.nivel_nome}
+                                </span>
+
+                                <span>
+                                    <strong>Custo:</strong>
+                                    ${custo} PM
                                 </span>
 
                                 <span>
