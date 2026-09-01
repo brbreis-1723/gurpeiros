@@ -144,7 +144,7 @@ Nesta seção são apresentados os **20 Domínios**, sua evolução e exemplos d
 
 ### Níveis de Domínio
 
-O **Nível do Domínio** é determinado pelo nível de habilidade do mago naquele domínio, <u>sem considerar sua Aptidão Mágica</u>.:
+O **Nível do Domínio** é determinado pelo nível de habilidade do mago naquele domínio, <u>sem considerar sua [Afinidade com a Esfera](../magia/dominio_requisitos.md#vantagem-afinidade-com-esfera)</u>.:
 
 <table style="width: 100%; border-collapse: collapse;">
   <thead>

@@ -1,6 +1,6 @@
 # Destrinchando a magia: o que compõe o ritual e como classificar
 
-A opperação mágica é composta de elementos que fazem parte do processo de execução como gestos, falas e ingredientes utilizados no ritual. De acordo com a complexidade da execução a mágica é considerada como sendo um truque, um feitiço ou um ritual. Além disso o próprio tempo de conjuração e o uso ou não de assistentes também podem influenciar tal complexidade, o que veremos nos tópicos a seguir.
+A operação mágica é composta de elementos que fazem parte do processo de execução como gestos, falas e ingredientes utilizados no ritual. De acordo com a complexidade da execução a mágica é considerada como sendo um truque, um feitiço ou um ritual. Além disso o próprio tempo de conjuração e o uso ou não de assistentes também podem influenciar tal complexidade, o que veremos nos tópicos a seguir.
 
 ## Elementos da Magia
 
@@ -232,7 +232,7 @@ Um mago pode contar com outros praticantes para auxiliá-lo na realização de u
 * possuir **Magia Ritual 15+**; ou
 * possuir **NH 12+ no Domínio** utilizado no ritual.
 
-O NH de **Magia Ritual** e do **Domínio** deve ser considerado **sem qualquer bônus concedido por Aptidão Mágica (AM)**.
+O NH de **Magia Ritual** e do **Domínio** deve ser considerado **sem qualquer bônus concedido por [Afinidade com a Esfera](../magia/dominio_requisitos.md#vantagem-afinidade-com-esfera)**.
 
 O bônus concedido pelo assistente depende de seu conhecimento:
 

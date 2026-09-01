@@ -2,25 +2,31 @@
 
 ## Introdução
 
-O **Sistema dos Domínios Arcanos** apresenta uma abordagem modular para a magia, na qual o conhecimento mágico não é organizado simplesmente por uma lista fixa de feitiços, mas pelo domínio que o mago possui sobre diferentes aspectos da realidade. Cada **Domínio** representa um campo específico de conhecimento arcano, permitindo ao personagem compreender, manipular, transformar e, nos níveis mais elevados, exercer domínio pleno sobre aquilo que está dentro de sua esfera de atuação.
+# Sistema dos Domínios Arcanos
 
-A estrutura do sistema parte de uma distinção fundamental entre **teoria, prática e especialização**. A **Taumatologia** representa o conhecimento teórico das leis e princípios da magia; a **Magia Ritual** representa o conhecimento prático necessário para estruturar e conduzir uma operação mágica; e os **Domínios** representam o conhecimento especializado necessário para manipular determinados aspectos da realidade. Em termos simples: **Taumatologia é compreender a magia, Magia Ritual é saber operá-la e o Domínio é saber o que fazer com ela**.
+O **Sistema dos Domínios Arcanos** apresenta uma abordagem modular para a magia. Em vez de organizar o conhecimento mágico em uma lista fixa de feitiços, o sistema define **Domínios**, cada um representando um aspecto específico da realidade que o mago pode compreender, manipular e, nos níveis mais elevados, dominar.
 
-Os Domínios são organizados em **Esferas**, permitindo que o mago desenvolva afinidade com grandes áreas da realidade e, a partir delas, escolha quais conhecimentos deseja aprofundar. O sistema não exige que um personagem domine todos os campos da magia: um mago pode concentrar seu desenvolvimento em poucos Domínios e tornar-se excepcionalmente habilidoso neles, enquanto outro pode construir um conhecimento mais diversificado.
+O sistema distingue três formas de conhecimento:
 
-O sistema também estabelece uma progressão clara dentro de cada Domínio. O conhecimento começa pela **Percepção**, passa pela **Influência**, **Manipulação** e **Transformação**, até alcançar o **Domínio** propriamente dito. Essa progressão não representa apenas números maiores de habilidade, mas uma ampliação qualitativa daquilo que o mago é capaz de realizar: primeiro compreender o fenômeno, depois alterá-lo, controlá-lo, transformá-lo e, finalmente, exercer controle pleno sobre seus princípios fundamentais.
+* **Taumatologia** — compreender as leis e princípios da magia;
+* **Magia Ritual** — saber estruturar e realizar uma operação mágica;
+* **Domínios** — saber manipular um determinado aspecto da realidade.
 
-A realização de uma magia é organizada em três categorias: **Truques, Feitiços e Rituais**. Essa classificação não determina simplesmente o poder do efeito, mas principalmente a **complexidade da operação mágica e o trabalho necessário para produzi-la**. Truques representam operações simples e imediatas; Feitiços, operações mais estruturadas; e Rituais, operações complexas que podem exigir minutos, horas ou até dias de preparação e execução.
+Em termos simples: **Taumatologia é compreender a magia, Magia Ritual é saber operá-la e o Domínio é saber o que fazer com ela.**
 
-Uma das características centrais do sistema é que os efeitos mágicos não precisam estar limitados a uma lista fechada de possibilidades. A magia é construída a partir de diferentes parâmetros, permitindo definir elementos como **alcance, área, duração, dano, cura, massa, velocidade, características alteradas, metamorfose e outras propriedades**. Esses parâmetros determinam a dificuldade da operação e permitem adaptar uma mesma ideia mágica a diferentes situações.
+Os Domínios são organizados em **Esferas**, permitindo que cada personagem escolha entre especializar-se em poucos campos ou desenvolver conhecimentos mais diversificados. Dentro de cada Domínio, o conhecimento progride por **Percepção, Influência, Manipulação, Transformação e Domínio**, ampliando não apenas a habilidade do mago, mas aquilo que ele é capaz de fazer.
 
-Essa liberdade, entretanto, foi projetada para não transformar a mesa em um exercício constante de cálculos. Magias utilizadas com frequência podem ser **construídas previamente e registradas no Grimório**, com seus parâmetros, componentes, tempo de conjuração, modificadores e NH já definidos. O personagem também pode desenvolver **Técnicas de Magia**, representando o treinamento específico adquirido pela prática repetida de determinadas operações.
+A magia é dividida em três categorias: **Truques, Feitiços e Rituais**. A diferença está principalmente na complexidade e no trabalho necessário para realizar a operação: Truques são simples e imediatos; Feitiços são operações mais estruturadas; e Rituais podem exigir minutos, horas ou até dias de preparação.
 
-Dessa forma, o sistema procura equilibrar **liberdade e praticidade**. Durante a preparação, o jogador possui ferramentas para criar e personalizar suas próprias magias; durante o jogo, o Grimório e as Técnicas permitem que essas operações sejam utilizadas de maneira rápida, sem a necessidade de reconstruir cada efeito a cada vez que ele é conjurado.
+Os efeitos mágicos são construídos a partir de **parâmetros**, como alcance, área, duração, dano, cura, massa, velocidade, características alteradas e metamorfose. Esses parâmetros determinam a dificuldade da magia e permitem adaptar uma mesma ideia a diferentes situações, sem depender de uma lista fechada de efeitos.
 
-Este artigo apresenta, portanto, **todo o funcionamento da Magia de Domínios**: os requisitos para se tornar um mago, a relação entre Taumatologia e Magia Ritual, as Esferas e os Domínios Arcanos, os níveis de conhecimento, as categorias de magia, os componentes de conjuração, o tempo necessário para realizar uma magia, os modificadores que determinam sua dificuldade, as regras para criação e personalização de efeitos e os recursos utilizados para tornar sua execução mais eficiente em jogo.
+Para manter essa liberdade prática durante o jogo, as magias utilizadas com frequência podem ser **previamente construídas e registradas no Grimório**, com seus parâmetros, componentes, tempo de conjuração, modificadores e NH definidos. O personagem também pode desenvolver **Técnicas de Magia**, representando o domínio adquirido pela prática repetida de determinadas operações.
 
-O objetivo não é apenas definir **quais magias existem**, mas fornecer uma estrutura na qual o jogador possa compreender **como a magia funciona, o que seu personagem conhece e até onde esse conhecimento pode ser levado**. O resultado é um sistema em que aprender magia significa adquirir conhecimento, especializar-se significa aprofundar esse conhecimento e conjurar significa aplicar esse conhecimento para alterar a realidade.
+Assim, o sistema busca equilibrar **liberdade e praticidade**: o jogador pode criar e personalizar suas próprias magias durante a preparação, mas utilizá-las rapidamente durante o jogo.
+
+Este artigo apresenta o funcionamento completo da **Magia de Domínios**: os requisitos para se tornar um mago, Taumatologia e Magia Ritual, Esferas e Domínios, níveis de conhecimento, categorias de magia, componentes, tempo de conjuração, modificadores, criação de efeitos, Grimório e Técnicas de Magia.
+
+O objetivo não é apenas definir **quais magias existem**, mas estabelecer **como a magia funciona, o que o personagem conhece e até onde esse conhecimento pode ser levado**. Aprender magia é adquirir conhecimento; especializar-se é aprofundá-lo; e conjurar é aplicá-lo para alterar a realidade.
 
 ---
 
