@@ -36,8 +36,6 @@ Corresponde à distância entre o conjurador e o alvo ou objetivo da magia. Apli
 
     <b>Magias feitas em si mesmo:</b> Magias operadas no próprio próprio conjurador considere como alcance = toque.
 
-    **Magias de projétil:** não aplicam as penalidades de distância desta tabela. Utilize a distância padrão de 1/2D = 10 m e Max. = 100 m, podendo esses valores ser modificados por [modificadores de ataque](../tabelas/penalidades_dominio.md#modificadores-de-ataque).
-
     **Magias de teleporte:** utilizam esta tabela para determinar a penalidade de distância, considerando **duas instâncias de alcance**:  
     1. a distância entre o **conjurador e o alvo** no momento da conjuração; e  
     2. a distância entre a **posição atual do alvo e seu novo destino**.
@@ -160,9 +158,12 @@ Use essa tabela para aumento ou redução de atributos, inclusão ou remoção d
 
 ## Cura
 
-As magias de Cura utilizam penalidades diferentes conforme a natureza e a extensão do efeito desejado. A penalidade representa a dificuldade de produzir a alteração, antes da aplicação dos modificadores e recursos disponíveis ao mago.
+O parâmetro **Cura** deve ser utilizado para qualquer forma de restauração ou regeneração, independentemente de o objeto da cura ser um organismo vivo ou não. 
 
-Quando uma magia produzir mais de um efeito, as penalidades correspondentes são somadas, salvo quando a própria descrição indicar o contrário.
+Assim, enquanto os Domínios da Esfera da Vida (**Bestas, Flora e Sangue**) são capazes de curar seres vivos em suas respectivas áreas de atuação, magias pertencentes aos domínios de **Artefatos, Terra** (e afins), **Necromancia** e **Diabolismo** podem, respectivamente, restaurar objetos (e golens), elementais, mortos-vivos ou demônios. Naturalmente, nem todos os parâmetros da tabela são aplicáveis a todos os domínios. Por exemplo, demônios, mortos-vivos e não vivos são imunes a doenças enquanto mortos-vivos não podem ser "ressuscitados".
+
+Sua tabela utiliza penalidades diferentes conforme a natureza e a extensão do efeito desejado. Quando uma magia produzir mais de um efeito, as penalidades correspondentes são somadas, salvo quando a própria descrição indicar o contrário.
+
 
 <table>
 <thead>
@@ -362,77 +363,74 @@ A duração determina por quanto tempo os efeitos da magia permanecem ativos. Qu
     <tr>
       <td style="text-align: center;">0</td>
       <td>Momentânea</td>
-      <td style="text-align: center;">−9</td>
+      <td style="text-align: center;">−13</td>
       <td>Até 6 horas</td>
     </tr>
     <tr>
       <td style="text-align: center;">−1</td>
       <td>Até 10 segundos</td>
-      <td style="text-align: center;">−10</td>
+      <td style="text-align: center;">−14</td>
       <td>Até 12 horas</td>
     </tr>
     <tr>
       <td style="text-align: center;">−2</td>
       <td>Até 30 segundos</td>
-      <td style="text-align: center;">−11</td>
+      <td style="text-align: center;">−15</td>
       <td>Até 1 dia</td>
     </tr>
     <tr>
       <td style="text-align: center;">−3</td>
       <td>Até 1 minuto</td>
-      <td style="text-align: center;">−12</td>
-      <td>Até 3 dias</td>
+      <td style="text-align: center;">−16</td>
+      <td>Até 2 dias*</td>
     </tr>
     <tr>
       <td style="text-align: center;">−4</td>
       <td>Até 3 minutos</td>
-      <td style="text-align: center;">−13</td>
-      <td>Até 1 semana</td>
+      <td style="text-align: center;">−17</td>
+      <td>Até 3 dias*</td>
     </tr>
     <tr>
       <td style="text-align: center;">−5</td>
       <td>Até 6 minutos</td>
-      <td style="text-align: center;">−14</td>
-      <td>Até 2 semanas</td>
+      <td style="text-align: center;">−18</td>
+      <td>Até 1 semana*</td>
     </tr>
     <tr>
       <td style="text-align: center;">−6</td>
       <td>Até 12 minutos</td>
-      <td style="text-align: center;">−15</td>
-      <td>Até 1 mês</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">−7</td>
-      <td>Até 1 hora</td>
-      <td style="text-align: center;">−16</td>
-      <td>Até 3 meses</td>
+      <td style="text-align: center;">−19</td>
+      <td>Até 1 mês*</td>
     </tr>
     <tr>
       <td style="text-align: center;">−8</td>
-      <td>Até 3 horas</td>
-      <td style="text-align: center;">−17</td>
-      <td>Até 6 meses</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td style="text-align: center;">−18</td>
-      <td>Até 1 ano</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
+      <td>Até 30 minutos</td>
       <td style="text-align: center;"><strong>−20</strong></td>
       <td><strong>Permanente*</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">−10</td>
+      <td>Até 1 hora</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">−12</td>
+      <td>Até 3 horas</td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
 
 
-!!! note "Duração Permanente"
-    *Permanente* representa uma situação especial e não pode ser obtida por uma conjuração comum. Nem todos os efeitos podem ser permanentes (a ultima palavra é do GM). 
-    
-    Para produzir um efeito permanente, a magia deve ser realizada **por meio de um Ritual**, o conjurador deve possuir nível 5 (**NH 25 ou superior**) no domínio correspondente. O modificador de **−20** é aplicado normalmente ao teste de magia. Dependendo do tipo de efeito a ser produzido o GM poderá exigir outras condições para o ritual como por exemplo o uso de componentes **finos** ou **lendários**.
+!!! note "Durações exclusivas para rituais"
+    *<strong>Durações superiores a 1 dia (-16+) só podem ser obtidas por meio de Rituais.</strong>
+
+    Nesse sentido, *Permanente* representa uma situação especial que não pode ser obtida por uma conjuração comum. Nem todo efeito pode ser permanente, a critério do GM.
+
+    Para produzir um efeito permanente, o conjurador deve possuir **Nível 5 (NH 25 ou superior)** no Domínio correspondente. Dependendo da natureza do efeito, o GM pode exigir condições adicionais para a realização do Ritual, como o uso de componentes **Finos** ou **Lendários**.
+
 
 ---
 
@@ -661,12 +659,6 @@ Cada modificador é aplicado **além dos modificadores normais da magia**, sempr
   </thead>
   <tbody>
     <tr><td>-2</td><td>Afeta insubstancial</td></tr>
-    <tr><td>-6</td><td>Alcance ampliado 100x</td></tr>
-    <tr><td>-3</td><td>Alcance ampliado 10x</td></tr>
-    <tr><td>-4</td><td>Alcance ampliado 20x</td></tr>
-    <tr><td>-1</td><td>Alcance ampliado 2x</td></tr>
-    <tr><td>-5</td><td>Alcance ampliado 50x</td></tr>
-    <tr><td>-2</td><td>Alcance ampliado 5x</td></tr>
     <tr><td>-8</td><td>Aura</td></tr>
     <tr><td>-1</td><td>Baixa assinatura</td></tr>
     <tr><td>-10 por ciclo</td><td>Cíclico (ciclo = 1 seg)</td></tr>

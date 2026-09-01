@@ -254,7 +254,7 @@ A progressão representa um aumento gradual do controle sobre os princípios do 
 
     **Pontos de Magia (PM)**: podem representar o consumo de **Fadiga** ou de **Reserva de Energia**, ou ainda o acúmulo de **Tensão** para magias que utilizam o Limiar, dependendo das regras adotadas na mesa.
 
-    É possível reduzir o custo de PM abaixo desse mínimo, mas cada 1 PM não gasto impõe uma penalidade de **-5 no NH efetivo do feitiço**.
+    É possível reduzir o custo de PM abaixo desse mínimo (incluindo para [manutenção de magias](../magia/dominio_operacao.md#mantendo-magias)), mas cada 1 PM não gasto impõe uma penalidade de **-5 no NH efetivo do feitiço**.
     
 
 <div style="max-height:600px; overflow-y:auto;" align="center">
