@@ -38,6 +38,7 @@ O objetivo não é apenas definir **quais magias existem**, mas estabelecer **co
 * [Etapas da operação mágica](../magia/dominio_operacao.md)
 * [Aprendendo novos dominios](../magia/dominio_aprendizagem.md)
 * [Tabelas de Penalidades (Parâmetros da magia)](../tabelas/penalidades_dominio.md)
+* [Critérios de Aplicação das Tabelas de Penalidades](../magia/dominio_criterios.md)
 * [Grimório de Magias](../magia/grimorio.md)
 
 

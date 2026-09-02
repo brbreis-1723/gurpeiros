@@ -170,4 +170,5 @@ __________________________________________
     - [Operação da magia](../magia/dominio_operacao.md)
     - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Critérios de Aplicação Tabela de Penalidades](../magia/dominio_criterios.md)
     - [Grimório de Magias](../magia/grimorio.md)

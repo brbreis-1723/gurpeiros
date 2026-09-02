@@ -246,15 +246,6 @@ A progressão representa um aumento gradual do controle sobre os princípios do 
 * no **Nível 3**, passa a controlar manifestações significativas; 
 * no **Nível 4**, consegue alterar profundamente suas propriedades ou comportamento; e, 
 * no **Nível 5**, exerce domínio pleno sobre os princípios fundamentais da esfera.
-
-<a id="custo-minimo-feitico"></a>
-!!! info "Custo minimo do Feitiço"
-    
-    Todo feitiço possui um custo mínimo em **PM (Pontos de Magia)**. Esse custo é igual ao nível do feitiço, que corresponde ao nível do domínio necessário para conjurá-lo. Por exemplo, **Sentir o Ar** é um feitiço do Domínio do Ar de nível 1 (Percepção). Portanto, seu custo mínimo é de 1 PM.
-
-    **Pontos de Magia (PM)**: podem representar o consumo de **Fadiga** ou de **Reserva de Energia**, ou ainda o acúmulo de **Tensão** para magias que utilizam o Limiar, dependendo das regras adotadas na mesa.
-
-    É possível reduzir o custo de PM abaixo desse mínimo (incluindo para [manutenção de magias](../magia/dominio_operacao.md#mantendo-magias)), mas cada 1 PM não gasto impõe uma penalidade de **-5 no NH efetivo do feitiço**.
     
 
 <div style="max-height:600px; overflow-y:auto;" align="center">
@@ -746,4 +737,5 @@ __________________________________________
     - [Operação da magia](../magia/dominio_operacao.md)
     - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Critérios de Aplicação Tabela de Penalidades](../magia/dominio_criterios.md)
     - [Grimório de Magias](../magia/grimorio.md)

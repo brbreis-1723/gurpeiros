@@ -277,6 +277,9 @@ Sua tabela utiliza penalidades diferentes conforme a natureza e a extensão do e
     - **Ressurreição Perfeita:** restaura integralmente o corpo e a essência, sem perda de XP. Sua dificuldade excepcional representa a enorme quantidade de energia necessária.
     - **Componentes e demais modificadores:** aplicam-se normalmente às penalidades resultantes da tabela.
     - Valores muito elevados, especialmente **-300 ou mais**, representam efeitos extraordinários que podem exigir recursos, preparação e circunstâncias excepcionais.
+    - **Curas repetidas:** o uso do mesmo efeito de cura no mesmo alvo em menos de 24 horas impõe uma penalidade cumulativa de -3 sobre o teste de conjuração. Sendo circunstancial, essa penalidade não deve ser considerada na penalidade do feitiço, mas aplicada apenas na rolagem final.
+    - **Cura em si mesmo**: Qualquer tentativa de cura sobre si mesmo sofre uma **penalidade no teste de perícia igual à quantidade de PV perdidos pelo alvo**. Assim, quanto mais ferido ele estiver, mais difícil será curá-lo. **Exemplo:** um mago que tenha perdido **4 PV** sofre **-4 de penalidade** em qualquer teste de feitiço realizado para curá-lo.
+
 
 ---
 
@@ -693,6 +696,39 @@ Cada modificador é aplicado **além dos modificadores normais da magia**, sempr
 
 ---
 
+## Múltiplos Alvos
+
+Esta penalidade é utilizada quando um **Feitiço beneficia simultaneamente vários alvos**, em vez de utilizar o parâmetro **Área de Efeito**. A penalidade depende da **quantidade de alvos afetados**. O próprio mago é considerado um caso especial e pode ser afetado sem penalidade.
+
+<table>
+  <thead>
+    <tr>
+      <th>Mod</th>
+      <th>Quantidade Alvos</th>
+      <th>Mod</th>
+      <th>Quantidade Alvos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>0</td><td>Próprio mago</td><td>-10</td><td>20</td></tr>
+    <tr><td>-1</td><td>1</td><td>-11</td><td>30</td></tr>
+    <tr><td>-2</td><td>2</td><td>-12</td><td>50</td></tr>
+    <tr><td>-3</td><td>3</td><td>-13</td><td>75</td></tr>
+    <tr><td>-4</td><td>4</td><td>-14</td><td>100</td></tr>
+    <tr><td>-5</td><td>5</td><td>-15</td><td>150</td></tr>
+    <tr><td>-6</td><td>6</td><td>-16</td><td>200</td></tr>
+    <tr><td>-7</td><td>8</td><td>-17</td><td>300</td></tr>
+    <tr><td>-8</td><td>10</td><td>-18</td><td>500</td></tr>
+    <tr><td>-9</td><td>15</td><td>-19</td><td>750</td></tr>
+    <tr><td></td><td></td><td>-20</td><td>1.000</td></tr>
+  </tbody>
+</table>
+
+**Exemplo:** um Feitiço que beneficia 10 aliados sofre **-8** de penalidade por Múltiplos Alvos. O mago pode incluir a si próprio entre os alvos sem alterar a penalidade.
+
+---
+
+
 ## Tamanho
 
 Esta tabela é utilizada exclusivamente para feitiços cujo efeito precisa abranger a criatura ou o objeto como um todo. Ela não se aplica a feitiços direcionados a uma parte específica do alvo, nem substitui as regras de Área de Efeito. O mesmo princípio pode ser aplicado a objetos quando o efeito precisa abranger o objeto inteiro.
@@ -849,90 +885,13 @@ O limite de **-20** corresponde aproximadamente à velocidade do som na atmosfer
 </table>
 
 ---
+__________________________________________
 
-## Critérios de Aplicação: Tamanho, Massa/Volume e Área de Efeito
-
-Os parâmetros **Modificador de Tamanho**, **Massa/Volume** e **Área de Efeito** medem aspectos diferentes da escala de uma magia e não devem ser confundidos. Ao construir um feitiço, determine primeiro **o que está sendo dimensionado pelo efeito mágico** e aplique apenas o parâmetro correspondente.
-
-### Modificador de Tamanho
-
-Utilize o **Modificador de Tamanho** quando a magia tiver como alvo uma **criatura ou objeto individual** e o efeito precisar abranger esse alvo como um todo.
-
-O modificador representa a dificuldade adicional de afetar integralmente um alvo maior. Para determinar o modificador, considere a **maior dimensão física do alvo**.
-
-Exemplos:
-
-* transformar uma pessoa inteira;
-* controlar mentalmente uma criatura;
-* teleportar uma criatura inteira;
-* transformar um gigante inteiro;
-* proteger um objeto individual;
-* tornar uma criatura invisível por completo.
-
-Nesses casos, **não se calcula separadamente a massa ou o volume do alvo**. O tamanho do alvo já representa a escala necessária para que o efeito o abranja integralmente.
-
-Assim, uma magia que transforma um humano de 1,80 m e um gigante de 10 m utiliza o mesmo parâmetro, mas recebe modificadores diferentes conforme o **Modificador de Tamanho** de cada alvo.
-
-### Massa/Volume
-
-Utilize **Massa/Volume** quando a magia manipular, criar, destruir, transformar ou afetar uma **quantidade determinada de matéria**, sem que essa quantidade seja definida simplesmente pelo tamanho de um único alvo.
-
-Esse parâmetro responde à pergunta:
-
-> **Quanto de matéria está envolvida no efeito?**
-
-Exemplos:
-
-* criar 1.000 litros de água;
-* transformar 500 kg de pedra em metal;
-* destruir uma quantidade de madeira;
-* mover uma grande quantidade de areia;
-* transformar uma quantidade de alimento;
-* manipular uma quantidade determinada de sangue.
-
-A escolha entre massa e volume depende da natureza do efeito. Utilize **massa** quando a quantidade de matéria for mais relevante em termos de peso ou massa física; utilize **volume** quando a extensão material ocupar um determinado espaço ou quando a quantidade for naturalmente expressa em unidades de volume.
-
-Quando o alvo for uma criatura ou objeto individual e o efeito simplesmente precisar abranger o alvo inteiro, **não utilize Massa/Volume além do Modificador de Tamanho**. Isso evitaria cobrar duas vezes pela mesma escala.
-
-### Área de Efeito
-
-Utilize **Área de Efeito** quando a magia definir uma **região do espaço** na qual o efeito se aplica, em vez de dimensionar uma criatura, objeto ou quantidade específica de matéria.
-
-Esse parâmetro responde à pergunta:
-
-> **Qual extensão do espaço está sujeita ao efeito?**
-
-Exemplos:
-
-* criar uma zona de silêncio;
-* estabelecer uma área de proteção;
-* afetar todas as criaturas dentro de uma região;
-* criar uma região onde determinada condição mágica se aplica;
-* dissipar magia em uma área;
-* produzir um efeito que se aplica indistintamente a tudo dentro de uma região.
-
-A Área de Efeito mede a **extensão da região afetada**, não o tamanho das criaturas ou objetos que estejam dentro dela. Portanto, não se aplica automaticamente o Modificador de Tamanho de cada criatura ou objeto presente na área.
-
-### Critério de escolha
-
-Ao construir um feitiço, faça as seguintes perguntas, nesta ordem:
-
-1. **O efeito precisa abranger integralmente uma criatura ou objeto individual?**
-   → Utilize **Modificador de Tamanho**, considerando a maior dimensão do alvo.
-
-2. **O efeito manipula uma quantidade determinada de matéria?**
-   → Utilize **Massa/Volume**.
-
-3. **O efeito estabelece uma região do espaço na qual suas consequências ocorrem?**
-   → Utilize **Área de Efeito**.
-
-4. **O feitiço possui mais de uma dessas características de maneira independente?**
-   → Utilize cada parâmetro correspondente.
-
-Os parâmetros só devem ser combinados quando representam **exigências diferentes do efeito**, e não quando dois parâmetros estiverem simplesmente descrevendo a mesma escala física.
-
-### Regra prática
-
-> **Tamanho mede o alvo. Massa/Volume mede a matéria. Área de Efeito mede a região.**
-
-Essa distinção deve ser feita durante a **construção do feitiço**, antes de calcular as demais penalidades. O parâmetro escolhido deve representar diretamente aquilo que determina a escala do efeito, evitando que a mesma característica seja penalizada duas vezes.
+!!! info "Para saber mais"
+    - [Introdução a Magia de dominios](../magia/magia_dominios.md)
+    - [Requisitos do mago de Domínios](../magia/dominio_requisitos.md) 
+    - [Relação de Domínios](../magia/dominio_lista.md)
+    - [Elementos da Magia de Dominio](../magia/dominio_elementos.md)
+    - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
+    - [Critérios de Aplicação Tabela de Penalidades](../magia/dominio_criterios.md)
+    - [Grimório de Magias](../magia/grimorio.md)

@@ -115,17 +115,20 @@ Em caso de **sucesso decisivo**, não há consumo dos Pontos de Magia gastos na 
 
 ---
 
-## Mantendo Magias
+## Magias Ativas 
 
-As magias de Domínio possuem uma duração fixa, mas o mago pode **mantê-las ativas além dessa duração**. Para cada magia mantida, ele deve pagar, **a cada novo ciclo correspondente à duração original da magia**, metade do **Custo Mínimo da magia efetivamente gasto na conjuração**, arredondado para baixo. Se esse valor for inferior a **1 PM**, a magia poderá ser mantida **indefinidamente, sem custo adicional**.
+Cada magia conjurada **permanece ativa durante sua duração definida no feitiço original**, e impõe uma **penalidade cumulativa de -1** a qualquer nova magia conjurada pelo mago, independentemente do Domínio utilizado.
+
+### Mantendo Magias
+
+Embora possuam uma duração fixa, o mago pode **mantê-las ativas além dessa duração**. Para cada magia mantida, ele deve pagar, **a cada novo ciclo correspondente à duração original da magia**, metade do **Custo Mínimo da magia efetivamente gasto na conjuração**, arredondado para baixo. Se esse valor for inferior a **1 PM**, a magia poderá ser mantida **indefinidamente, sem custo adicional**.
+
 
 !!! example "Exemplos:" 
     1. A magia *Vôo* tem duração de 1 hora e é de **Nível 4**, portanto seu custo mínimo é de **4 PM**. O mago, porém, decide reduzir o custo em 1 PM, gastando apenas **3 PM** e sofrendo **-5 de penalidade** no teste de conjuração. Como a manutenção custa metade do valor efetivamente gasto, arredondada para baixo, ele poderá **manter a magia por mais 1 hora ao custo de 1 PM**. A cada nova hora, deverá pagar novamente 1 PM para continuar mantendo *Vôo*.   
     Caso não estivesse disposto a sofrer a penalidade de -5, o mago precisaria gastar os **4 PM** do custo mínimo. Nesse caso, poderia **manter a magia por mais 1 hora ao custo de 2 PM**, pagando novamente esse valor a cada nova hora.<br>   
     2. A magia **Força do Vendaval (Nível 2)** consome **2 PM** e dura 10 segundos. Para mantê-la por mais 10 segundos, o mago precisaria gastar mais 1 PM. No entanto, se impusesse uma penalidade de -5 no teste de conjuração, gastaria para conjurar apenas **1 PM** e poderia mantê-la ativa **indefinidamente**.
 
-
-Cada magia mantida impõe uma **penalidade cumulativa de -1** a qualquer nova magia conjurada pelo mago, independentemente do Domínio utilizado.
 
 Sempre que o mago **sofrer dano** ou ficar **Atordoado**, deve realizar um **Teste de Vontade** para manter suas magias ativas. O teste sofre **-1 para cada ponto de dano recebido**, até um máximo de **-4**. Em caso de Atordoamento, a penalidade é **-4**.
 
@@ -172,4 +175,5 @@ __________________________________________
     - [Elementos da Magia de Dominio](../magia/dominio_elementos.md)
     - [Aprendendo uma nova magia](../magia/dominio_aprendizagem.md)
     - [Tabela de Penalidades](../tabelas/penalidades_dominio.md)
+    - [Critérios de Aplicação Tabela de Penalidades](../magia/dominio_criterios.md)
     - [Grimório de Magias](../magia/grimorio.md)
