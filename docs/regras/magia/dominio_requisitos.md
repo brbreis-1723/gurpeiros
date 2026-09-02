@@ -103,11 +103,13 @@ Por exemplo, um personagem com **Afinidade com Vida 3** pode aprender magias dos
 
 **Magery 0** permanece como requisito geral e representa apenas a **sensibilidade mágica**, não possuindo níveis superiores. A Afinidade com Esfera representa a especialização do mago e pode ser adquirida separadamente para diferentes esferas. Logo, existem **cinco** afinidadec:
 
-* Afinidade com a **Vida** (6 pontos/nivel)
-* Afinidade com a **Matéria** (8 pontos/nivel)
-* Afinidade com as **Forças** (10 pontos/nível)
-* Afinidade com a **Consciência** (6 pontos/nível)
-* Afinidade com a **Transcendência** (10 pontos/nível)
+* Afinidade com a **Vida** 
+* Afinidade com a **Matéria** 
+* Afinidade com as **Forças** 
+* Afinidade com a **Consciência** 
+* Afinidade com a **Transcendência** 
+
+O custo de cada Afinidade é de **8 pontos / nível**. Ou seja, para ter **Afinidade com a Vida +3** gasta-se **24 pontos de personagem**.
 
 !!! note "Importante"
     Para não engessar ou burocratizar a mesa, a aquisição de uma nova afinidade ocorrerá naturalmente desde que o personagem mago tenha acesso ao conhecimento de um novo domínio (por meio de grimorio ou instrutor) e xp disponivel para gastar.

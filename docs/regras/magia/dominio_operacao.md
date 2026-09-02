@@ -60,6 +60,7 @@ Os redutores do feitiço são aplicados consultando as **[Tabelas de Penalidades
 * [Área de Efeito](../tabelas/penalidades_dominio.md#area-de-efeito)
 * [Atribulação](../tabelas/penalidades_dominio.md#atribulacao)
 * [Características alteradas](../tabelas/penalidades_dominio.md#caracteristicas-alteradas)
+* [Conceder Bônus / Impor Redutores](../tabelas/penalidades_dominio.md#conceder-bonus-ou-impor-redutores)
 * [Cura](../tabelas/penalidades_dominio.md#cura)
 * [Dano](../tabelas/penalidades_dominio.md#dano)
 * [Duração](../tabelas/penalidades_dominio.md#duracao)
@@ -67,6 +68,7 @@ Os redutores do feitiço são aplicados consultando as **[Tabelas de Penalidades
 * [Massa/Volume do alvo](../tabelas/penalidades_dominio.md#massavolume-do-alvo)
 * [Metamorfose](../tabelas/penalidades_dominio.md#metamorfose)
 * [Modificadores de ataque](../tabelas/penalidades_dominio.md#modificadores-de-ataque)
+* [Múltiplos Alvos](../tabelas/penalidades_dominio.md#multiplos-alvos)
 * [Tamanho](../tabelas/penalidades_dominio.md#tamanho)
 * [Velocidade](../tabelas/penalidades_dominio.md#velocidade)
 

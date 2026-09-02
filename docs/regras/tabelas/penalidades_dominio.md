@@ -1,5 +1,11 @@
 # Tabelas de Penalidades (Magia de Domínio)
 
+Nesta seção são listadas as tabelas de Penalidades para a Magia de Domínio de acordo com os parâmetros adotados no feitiço. Alguns deles são obrigatorios: **Alcance** e **Duração**. Outros parâmetros tais como **Area de Efeito**, **Dano** ou **Cura**, são aplicáveis de acordo com o efeito do feitiço.
+
+Para mais detalhes sobre os critérios de quando adotá-las, consulte a seção sobre os **[Critérios de Aplicação Tabela de Penalidades](../magia/dominio_criterios.md)**.
+
+---
+
 ## Alcance
 
 Corresponde à distância entre o conjurador e o alvo ou objetivo da magia. Aplique as penalidades de distância apresentadas na tabela abaixo, seguindo a progressão padrão de distância de GURPS:
@@ -153,6 +159,49 @@ Use essa tabela para aumento ou redução de atributos, inclusão ou remoção d
 !!! note "Importante:"
     A partir do limite racial do Atributo (20 para humanos por exemplo), cada acréscimo de penalidade é contada em **dobro**. Assim por exemplo, para um humano aumentar de 20 para 21 terá uma penalidade de -4 ao invés de -2; para aumentar de 21 para 22, será de -8;  e assim por diante. Estes valores são cumulativos. 
 
+
+---
+
+## Conceder Bônus ou Impor Redutores
+
+Quando um parâmetro impuser um **bônus ou redutor a rolagens específicas**, determine a penalidade de conjuração de acordo com a abrangência do efeito, conforme a tabela abaixo.
+
+!!! note "Abrangência:"
+    Use a coluna correspondente à abrangência do modificador: <br>
+    - **Amplo** para uma grande variedade de rolagens (como Defesas Ativas, Sentidos ou uma perícia coringa); <br>
+    - **Moderado** para um conjunto de rolagens relacionadas (como Furtividade ou Visão); e <br>
+    - **Único** para uma tarefa ou perícia específica (como Escalada).
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2">Bônus / Redutor</th>
+            <th colspan="3">Penalidade na conjuração</th>
+        </tr>
+        <tr>
+            <th>Único</th>
+            <th>Moderado</th>
+            <th>Amplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>±1</td><td>-2</td><td>-3</td><td>-4</td></tr>
+        <tr><td>±2</td><td>-4</td><td>-6</td><td>-8</td></tr>
+        <tr><td>±3</td><td>-6</td><td>-9</td><td>-12</td></tr>
+        <tr><td>±4</td><td>-8</td><td>-12</td><td>-16</td></tr>
+        <tr><td>±5</td><td>-10</td><td>-15</td><td>-20</td></tr>
+        <tr><td>±6</td><td>-12</td><td>-18</td><td>-24</td></tr>
+        <tr><td>±7</td><td>-14</td><td>-21</td><td>-28</td></tr>
+        <tr><td>±8</td><td>-16</td><td>-24</td><td>-32</td></tr>
+        <tr><td>±9</td><td>-18</td><td>-27</td><td>-36</td></tr>
+        <tr><td>±10</td><td>-20</td><td>-30</td><td>-40</td></tr>
+    </tbody>
+</table>
+
+!!! warning "Limites"
+    Este parâmetro **não pode conceder bônus à própria magia, à perícia de conjuração ou a qualquer rolagem necessária para conjurá-la**. 
+    
+    Também não pode ser usado para aumentar diretamente o efeito de uma magia, como conceder bônus ao dano ou impor uma penalidade à resistência do alvo. O bônus ou redutor deve sempre se aplicar às **rolagens específicas definidas pelo parâmetro**.
 
 ---
 
@@ -434,7 +483,6 @@ A duração determina por quanto tempo os efeitos da magia permanecem ativos. Qu
 
     Para produzir um efeito permanente, o conjurador deve possuir **Nível 5 (NH 25 ou superior)** no Domínio correspondente. Dependendo da natureza do efeito, o GM pode exigir condições adicionais para a realização do Ritual, como o uso de componentes **Finos** ou **Lendários**.
 
-
 ---
 
 ## Invocação Direta
@@ -652,45 +700,33 @@ Os modificadores abaixo são **específicos para magias de ataque que causam dan
 
 Cada modificador é aplicado **além dos modificadores normais da magia**, sempre que o efeito correspondente fizer parte do ataque. Quando houver mais de uma característica, seus modificadores são cumulativos.
 
-
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="width: 30%;">Mod.</th>
-      <th style="width: 70%;">Efeito</th>
+      <th style="width: 35%;">Efeito</th>
+      <th style="width: 15%;">Mod.</th>
+      <th style="width: 35%;">Efeito</th>
+      <th style="width: 15%;">Mod.</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>-2</td><td>Afeta insubstancial</td></tr>
-    <tr><td>-8</td><td>Aura</td></tr>
-    <tr><td>-1</td><td>Baixa assinatura</td></tr>
-    <tr><td>-10 por ciclo</td><td>Cíclico (ciclo = 1 seg)</td></tr>
-    <tr><td>-1 por ciclo</td><td>Cíclico (ciclo = 1 dia)</td></tr>
-    <tr><td>-2 por ciclo</td><td>Cíclico (ciclo = 1 hora)</td></tr>
-    <tr><td>-4 por ciclo</td><td>Cíclico (ciclo = 1 min)</td></tr>
-    <tr><td>-5 por ciclo</td><td>Cíclico (ciclo = 10 seg)</td></tr>
-    <tr><td>-5 + (-1 por metro/base)</td><td>Cone</td></tr>
-    <tr><td>-20</td><td>Divisor de armadura 10</td></tr>
-    <tr><td>-5</td><td>Divisor de armadura 2</td></tr>
-    <tr><td>-10</td><td>Divisor de armadura 3</td></tr>
-    <tr><td>-15</td><td>Divisor de armadura 5</td></tr>
-    <tr><td>-4</td><td>Fogo Contínuo: CDT 2</td></tr>
-    <tr><td>-6</td><td>Fogo Contínuo: CDT 3</td></tr>
-    <tr><td>-8</td><td>Fogo Contínuo: CDT 4</td></tr>
-    <tr><td>-10</td><td>Fogo Contínuo: CDT 5</td></tr>
-    <tr><td>-12</td><td>Fogo Contínuo: CDT 6</td></tr>
-    <tr><td>-15</td><td>Fogo Contínuo: CDT 7-8</td></tr>
-    <tr><td>-20</td><td>Fogo Contínuo: CDT 9-10</td></tr>
-    <tr><td>-2/dado</td><td>Fragmentação</td></tr>
-    <tr><td>0</td><td>Jato</td></tr>
-    <tr><td>0</td><td>Apenas projeção</td></tr>
-    <tr><td>-2</td><td>Projeção dobrada</td></tr>
-    <tr><td>0</td><td>Retardo fixo</td></tr>
-    <tr><td>-1</td><td>Retardo variável (0-10 turnos)</td></tr>
-    <tr><td>-2</td><td>Retardo variável (qualquer período)</td></tr>
-    <tr><td>-2</td><td>Sem assinatura</td></tr>
-    <tr><td>-5</td><td>Guiado</td></tr>
-    <tr><td>-8</td><td>Teleguiado</td></tr>
+    <tr><td>Afeta insubstancial</td><td>-2</td><td>Fogo Contínuo: CDT 5</td><td>-10</td></tr>
+    <tr><td>Aura</td><td>-8</td><td>Fogo Contínuo: CDT 6</td><td>-12</td></tr>
+    <tr><td>Assinatura (baixa)</td><td>-1</td><td>Fogo Contínuo: CDT 7-8</td><td>-15</td></tr>
+    <tr><td>Assinatura (inexistente)</td><td>-2</td><td>Fogo Contínuo: CDT 9-10</td><td>-20</td></tr>
+    <tr><td>Cíclico (ciclo = 1 dia)</td><td>-1 por ciclo</td><td>Fragmentação</td><td>-2/dado</td></tr>
+    <tr><td>Cíclico (ciclo = 1 hora)</td><td>-2 por ciclo</td><td>Jato</td><td>0</td></tr>
+    <tr><td>Cíclico (ciclo = 1 min)</td><td>-4 por ciclo</td><td>Apenas projeção</td><td>0</td></tr>
+    <tr><td>Cíclico (ciclo = 10 seg)</td><td>-5 por ciclo</td><td>Projeção dobrada</td><td>-2</td></tr>
+    <tr><td>Cíclico (ciclo = 1 seg)</td><td>-10 por ciclo</td><td>Retardo fixo</td><td>0</td></tr>
+    <tr><td>Cone</td><td>-5 + (-1 por metro/base)</td><td>Retardo variável (0-10 turnos)</td><td>-1</td></tr>
+    <tr><td>Divisor de armadura 2</td><td>-5</td><td>Retardo variável (qualquer período)</td><td>-2</td></tr>
+    <tr><td>Divisor de armadura 3</td><td>-10</td><td>Guiado</td><td>-5</td></tr>
+    <tr><td>Divisor de armadura 5</td><td>-15</td><td>Teleguiado (Visão normal)</td><td>-8</td></tr>
+    <tr><td>Divisor de armadura 10</td><td>-20</td><td>Teleguiado (Visão noturna)</td><td>-9</td></tr>
+    <tr><td>Fogo Contínuo: CDT 2</td><td>-4</td><td>Teleguiado (Infravisão)</td><td>-10</td></tr>
+    <tr><td>Fogo Contínuo: CDT 3</td><td>-6</td><td>Teleguiado (Visão nas Trevas)</td><td>-12</td></tr>
+    <tr><td>Fogo Contínuo: CDT 4</td><td>-8</td><td></td><td></td></tr>
   </tbody>
 </table>
 
