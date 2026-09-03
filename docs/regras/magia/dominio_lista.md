@@ -728,6 +728,56 @@ A progressão representa um aumento gradual do controle sobre os princípios do 
 
 </div>
 
+
+---
+
+## Magias que afetam mais de um Domínio
+
+Uma magia pode afetar elementos pertencentes a mais de um Domínio, mas **continua pertencendo a apenas um deles**, que determina sua classificação e nível.
+
+Quando isso ocorrer, o mago deverá conhecer **cada Domínio afetado em nível suficiente para produzir o efeito sobre seus respectivos elementos**. O nível necessário de cada Domínio adicional é determinado pela natureza do efeito, conforme especificado na descrição da magia ou nas regras aplicáveis.
+
+### Regra específica: Equipamentos
+
+Quando uma magia afetar **equipamentos vestidos ou carregados pelo alvo**, considera-se que ela também afeta o Domínio **Artefatos**. Nesse caso, o mago deverá conhecer **Artefatos** em nível suficiente para afetar a Carga do alvo.
+
+O nível mínimo de **Artefatos** necessário é igual à **Carga + 1**:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 50%;">Nível mínimo</th>
+      <th style="width: 50%;">Carga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center;">1</td>
+      <td>Nenhuma (0)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">2</td>
+      <td>Leve (1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">3</td>
+      <td>Média (2)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">4</td>
+      <td>Pesada (3)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">5</td>
+      <td>Muito Pesada (4)</td>
+    </tr>
+  </tbody>
+</table>
+
+A descrição da magia deve indicar quando seus efeitos se estendem aos equipamentos do alvo.
+
+Por exemplo, **Aumentar Corpo**, do Domínio **Sangue**, pode especificar que os equipamentos vestidos ou carregados pelo alvo também aumentam proporcionalmente para acompanhá-lo. Nesse caso, além de conhecer **Sangue** no nível exigido pela magia, o mago deverá conhecer **Artefatos** no nível correspondente à Carga do alvo.
+
 __________________________________________
 
 !!! info "Para saber mais"
