@@ -733,21 +733,31 @@ A progressão representa um aumento gradual do controle sobre os princípios do 
 
 ## Magias que afetam mais de um Domínio
 
-Uma magia pode afetar elementos pertencentes a mais de um Domínio, mas **continua pertencendo a apenas um deles**, que determina sua classificação e nível.
+Uma magia pode produzir efeitos que envolvam elementos relacionados a mais de um **Domínio** sem necessariamente exigir conhecimento de todos eles. O que determina a necessidade de outros Domínios é a **natureza do efeito produzido**, e não simplesmente o tipo de elemento afetado.
 
-Quando isso ocorrer, o mago deverá conhecer **cada Domínio afetado em nível suficiente para produzir o efeito sobre seus respectivos elementos**. O nível necessário de cada Domínio adicional é determinado pela natureza do efeito, conforme especificado na descrição da magia ou nas regras aplicáveis.
+Quando uma magia produzir **efeitos distintos**, que poderiam ser realizados separadamente por magias diferentes, cada efeito deverá ser considerado individualmente e poderá exigir conhecimento do Domínio correspondente.
 
-### Regra específica: Equipamentos
+Quando diferentes elementos forem afetados como consequência de **um único efeito**, não é necessário conhecer o Domínio ao qual esses elementos pertencem, desde que o efeito permaneça integralmente dentro da natureza do Domínio da magia.
 
-Quando uma magia afetar **equipamentos vestidos ou carregados pelo alvo**, considera-se que ela também afeta o Domínio **Artefatos**. Nesse caso, o mago deverá conhecer **Artefatos** em nível suficiente para afetar a Carga do alvo.
+Em caso de dúvida, deve-se perguntar:
+
+> **Os efeitos poderiam ser realizados separadamente por duas magias diferentes?**
+
+Se a resposta for **sim**, tratam-se de efeitos distintos e cada um deve ser considerado separadamente. Se a resposta for **não**, trata-se de um único efeito, e não há necessidade de exigir um segundo Domínio apenas porque o efeito alcança elementos relacionados a ele.
+
+### Regras específicas: Equipamentos
+
+Quando uma magia cujo efeito é aplicado a um alvo também determinar que **seus equipamentos vestidos ou carregados sejam afetados pelo mesmo efeito**, isso é considerado uma aplicação do efeito sobre elementos de **Artefatos**.
+
+Nesse caso, o mago deverá conhecer **Artefatos** em nível suficiente para afetar a Carga do alvo.
 
 O nível mínimo de **Artefatos** necessário é igual à **Carga + 1**:
 
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
-      <th style="width: 50%;">Nível mínimo</th>
-      <th style="width: 50%;">Carga</th>
+      <th style="width: 30%;">Nível mínimo de Artefatos</th>
+      <th>Carga permitida</th>
     </tr>
   </thead>
   <tbody>
@@ -774,9 +784,8 @@ O nível mínimo de **Artefatos** necessário é igual à **Carga + 1**:
   </tbody>
 </table>
 
-A descrição da magia deve indicar quando seus efeitos se estendem aos equipamentos do alvo.
+A descrição da magia deve indicar quando seus efeitos também se aplicam aos equipamentos do alvo.
 
-Por exemplo, **Aumentar Corpo**, do Domínio **Sangue**, pode especificar que os equipamentos vestidos ou carregados pelo alvo também aumentam proporcionalmente para acompanhá-lo. Nesse caso, além de conhecer **Sangue** no nível exigido pela magia, o mago deverá conhecer **Artefatos** no nível correspondente à Carga do alvo.
 
 __________________________________________
 

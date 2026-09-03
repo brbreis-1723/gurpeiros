@@ -130,34 +130,36 @@ Use essa tabela para aumento ou redução de atributos, inclusão ou remoção d
   <tbody>
     <tr>
       <td><strong>Reduzir atributo</strong></td>
-      <td>-2 por cada -1 de redução</td>
+      <td>-1 por cada -5 pontos do custo efetivo* da redução de atributo</td>
     </tr>
     <tr>
       <td><strong>Aumentar atributo</strong></td>
-      <td>-2 por cada +1 de acréscimo</td>
+      <td>-1 por cada +5 pontos do custo efetivo* do aumento  do atributo
+      </td>
     </tr>
     <tr>
       <td><strong>Conceder vantagem</strong></td>
-      <td>-1 por cada +5 pontos de vantagem concedida</td>
+      <td>-1 por cada +5 pontos do custo efetivo* de vantagem concedida</td>
     </tr>
     <tr>
       <td><strong>Conceder desvantagem</strong></td>
-      <td>-1 por cada -5 pontos de desvantagem concedida</td>
+      <td>-1 por cada -5 pontos do custo efetivo* de desvantagem concedida</td>
     </tr>
     <tr>
       <td><strong>Suprimir desvantagem</strong></td>
-      <td>-1 por cada -5 pontos de desvantagem suprimida</td>
+      <td>-1 por cada -5 pontos do custo efetivo* de desvantagem suprimida</td>
     </tr>
     <tr>
       <td><strong>Negar vantagem</strong></td>
-      <td>-1 por cada +5 pontos de vantagem negada</td>
+      <td>-1 por cada +5 pontos do custo efetivo* de vantagem negada</td>
     </tr>
   </tbody>
 </table>
 
+> Entende-se *custo efetivo* como sendo o custo real após qualquer modificador aplicado no atributo, vantagem ou desvantagem, como por exemplo % por modificador de tamanho maior que 0.
 
 !!! note "Importante:"
-    A partir do limite racial do Atributo (20 para humanos por exemplo), cada acréscimo de penalidade é contada em **dobro**. Assim por exemplo, para um humano aumentar de 20 para 21 terá uma penalidade de -4 ao invés de -2; para aumentar de 21 para 22, será de -8;  e assim por diante. Estes valores são cumulativos. 
+    A partir do limite racial do Atributo (20 para humanos por exemplo), cada acréscimo de penalidade é contada em **dobro**. Assim por exemplo, para um humano aumentar de 20 para 21 terá uma penalidade de -8 ao invés de -4; para aumentar de 21 para 22, será de -16;  e assim por diante. Estes valores são cumulativos. 
 
 
 ---
@@ -476,10 +478,12 @@ A duração determina por quanto tempo os efeitos da magia permanecem ativos. Qu
 </table>
 
 
-!!! note "Durações exclusivas para rituais"
+!!! note "Durações de longo prazo ou Permanentes:"
     *<strong>Durações superiores a 1 dia (-16+) só podem ser obtidas por meio de Rituais.</strong>
 
-    Nesse sentido, *Permanente* representa uma situação especial que não pode ser obtida por uma conjuração comum. Nem todo efeito pode ser permanente, a critério do GM.
+    Nesse sentido, uma duração *Permanente* representa uma situação especial que não pode ser obtida por uma conjuração comum. Nem todo efeito pode ser permanente, a critério do GM.
+    
+    Qualquer efeito com duração permanente que conceda benefícios ao personagem e aumente seu nível de pontos — como a redução de desvantagens que existiam na criação do personagem, o aumento de atributos ou o aumento ou aquisição de novas vantagens — deverá ser acompanhado da respectiva compra em pontos de personagem.
 
     Para produzir um efeito permanente, o conjurador deve possuir **Nível 5 (NH 25 ou superior)** no Domínio correspondente. Dependendo da natureza do efeito, o GM pode exigir condições adicionais para a realização do Ritual, como o uso de componentes **Finos** ou **Lendários**.
 

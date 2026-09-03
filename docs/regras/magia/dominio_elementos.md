@@ -29,7 +29,7 @@ São as palavras ditas pelo mago durante a conjuração do truque, feitiço ou r
     <tr>
       <td>Sussurrada</td>
       <td>Sussurro</td>
-      <td>Palavras pronunciadas em voz muito baixa, permitindo alguma furtividade.</td>
+      <td>Algumas Palavras pronunciadas em voz muito baixa, permitindo alguma furtividade.</td>
       <td>−1</td>
     </tr>
     <tr>
@@ -41,25 +41,25 @@ São as palavras ditas pelo mago durante a conjuração do truque, feitiço ou r
     <tr>
       <td>Clara</td>
       <td>Frase curta</td>
-      <td>Uma frase curta, pronunciada em voz normal e bem articulada.</td>
+      <td>Uma frase curta, pronunciada em voz normal e bem articulada que poderia ser dita em um turno.</td>
       <td>+1</td>
     </tr>
     <tr>
       <td>Enfática</td>
       <td>Frase completa</td>
-      <td>Uma frase elaborada, pronunciada em voz alta e com forte entonação.</td>
+      <td>Uma frase elaborada, pronunciada em voz alta e com forte entonação demorando mais que um turno.</td>
       <td>+2</td>
     </tr>
     <tr>
       <td>Ritualística</td>
       <td>Fórmula ou cântico</td>
-      <td>Fórmulas longas, versos, cânticos ou recitações realizadas de maneira expressiva.</td>
+      <td>Fórmulas longas, versos, cânticos ou recitações realizadas de maneira expressiva demorando vários turnos.</td>
       <td>+3</td>
     </tr>
     <tr>
       <td>Grandiosa</td>
       <td>Invocação</td>
-      <td>Longa proclamação, cântico ou invocação em voz muito alta e extremamente chamativa.</td>
+      <td>Longa proclamação, cântico ou invocação em voz muito alta e extremamente chamativa demorando vários turnos.</td>
       <td>+4</td>
     </tr>
   </tbody>
@@ -100,13 +100,13 @@ São os gestos e movimentos realizados pelo mago durante a conjuração. Observe
     <tr>
       <td>Elaborada</td>
       <td>Braços, pernas e corpo</td>
-      <td>Movimentos coordenados envolvendo grande parte do corpo.</td>
+      <td>Movimentos coordenados envolvendo grande parte do corpo demorando mais que um turno.</td>
       <td>+3</td>
     </tr>
     <tr>
       <td>Grandiosa</td>
       <td>Corpo inteiro</td>
-      <td>Movimentos amplos, poses e gestos ritualísticos extremamente chamativos.</td>
+      <td>Movimentos amplos, poses e gestos ritualísticos extremamente chamativos demorando vários turnos.</td>
       <td>+4</td>
     </tr>
   </tbody>
