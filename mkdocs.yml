@@ -25,6 +25,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/grimorio.js
+  - javascripts/validador-grimorio.js
 
 nav:
   - Início: index.md
@@ -119,6 +120,9 @@ nav:
             - Organizações mágicas: cenarios/zandia/ideias/organizacoes_magicas.md
   - Material de Apoio:
       - Resumo: material/index.md
+      - Gerador de Magias (Documentação):
+        - Gerador - Regras de negocio: material/gerador-magias/regra-negocio.md
+        - Gerador - Esquema JSON: material/gerador-magias/esquema-json.md
       - Artigos do Blog: material/artigos.md
         
 

@@ -687,6 +687,133 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
+             * COMPATIBILIDADE DOS PARÂMETROS
+             * ==============================
+             *
+             * O formato antigo utiliza objetos para alguns
+             * parâmetros únicos:
+             *
+             * "alcance": {
+             *     "valor": "Toque",
+             *     "modificador": 2
+             * }
+             *
+             * O formato novo utiliza arrays para TODOS:
+             *
+             * "alcance": [
+             *     {
+             *         "valor": "Toque",
+             *         "modificador": 2
+             *     }
+             * ]
+             *
+             * Estas funções permitem que os dois formatos
+             * sejam utilizados simultaneamente.
+             */
+
+
+            /*
+             * Nomes antigos dos parâmetros
+             */
+            function normalizarNomeParametro(nome) {
+
+                const nomesLegados = {
+
+                    area:
+                        "area_efeito",
+
+                    caracteristicas:
+                        "caracteristicas_alteradas"
+
+                };
+
+                return nomesLegados[nome] || nome;
+
+            }
+
+
+            /*
+             * Converte objeto único em array.
+             * Se já for array, mantém.
+             */
+            function normalizarParametro(parametro) {
+
+                if (
+                    parametro === undefined ||
+                    parametro === null
+                ) {
+                    return [];
+                }
+
+                if (Array.isArray(parametro)) {
+                    return parametro;
+                }
+
+                return [parametro];
+
+            }
+
+
+            /*
+             * Obtém todos os parâmetros com os nomes
+             * convertidos para o padrão novo.
+             *
+             * O objeto original NÃO é alterado.
+             */
+            function obterParametrosNormalizados(magia) {
+
+                const resultado = {};
+
+                for (
+                    const [nomeOriginal, parametro]
+                    of Object.entries(
+                        magia.parametros || {}
+                    )
+                ) {
+
+                    const nome =
+                        normalizarNomeParametro(
+                            nomeOriginal
+                        );
+
+                    resultado[nome] =
+                        normalizarParametro(
+                            parametro
+                        );
+
+                }
+
+                return resultado;
+
+            }
+
+
+            /*
+             * Obtém o primeiro item de um parâmetro
+             * considerado único.
+             */
+            function obterParametroUnico(
+                magia,
+                nome
+            ) {
+
+                const parametros =
+                    obterParametrosNormalizados(
+                        magia
+                    );
+
+                const itens =
+                    parametros[nome] || [];
+
+                return itens.length > 0
+                    ? itens[0]
+                    : null;
+
+            }
+
+
+            /*
+             * ==============================
              * CRIA A FICHA DA MAGIA
              * ==============================
              */
@@ -695,12 +822,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 /*
                  * O custo do feitiço é igual ao seu nível.
-                 * Exemplo: nível 1 = 1 PM, nível 2 = 2 PM.
+                 *
+                 * Nível 1 = 1 PM
+                 * Nível 2 = 2 PM
+                 * Nível 3 = 3 PM
+                 * etc.
                  *
                  * O custo não é armazenado no JSON.
                  */
                 const custo =
                     Number(magia.nivel);
+
+
+                /*
+                 * Parâmetros normalizados.
+                 *
+                 * A partir daqui, TODOS os parâmetros
+                 * serão tratados como arrays.
+                 */
+                const parametros =
+                    obterParametrosNormalizados(
+                        magia
+                    );
 
 
                 let html = `
@@ -778,15 +921,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Parâmetros
+                 * ==============================
+                 * PARÂMETROS
+                 * ==============================
                  */
+
                 for (
-                    const [nome, parametro]
-                    of Object.entries(
-                        magia.parametros || {}
-                    )
+                    const [nome, itens]
+                    of Object.entries(parametros)
                 ) {
 
+                    /*
+                     * O tempo de conjuração possui
+                     * uma seção própria.
+                     */
                     if (
                         nome ===
                         "tempo_conjuracao"
@@ -795,25 +943,52 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
 
 
-                    html += `
+                    /*
+                     * Cada item do array vira uma linha.
+                     *
+                     * Isso permite, por exemplo:
+                     *
+                     * "dano": [
+                     *     {...},
+                     *     {...}
+                     * ]
+                     *
+                     * ou:
+                     *
+                     * "cura": [
+                     *     {...},
+                     *     {...}
+                     * ]
+                     */
+                    itens.forEach(item => {
 
-                        <tr>
+                        html += `
 
-                            <td>
-                                ${formatarNomeParametro(nome)}
-                            </td>
+                            <tr>
 
-                            <td>
-                                ${formatarValor(parametro)}
-                            </td>
+                                <td>
+                                    ${formatarNomeParametro(
+                                        nome
+                                    )}
+                                </td>
 
-                            <td>
-                                ${formatarModificador(parametro)}
-                            </td>
+                                <td>
+                                    ${formatarValorItem(
+                                        item
+                                    )}
+                                </td>
 
-                        </tr>
+                                <td>
+                                    ${formatarModificadorItem(
+                                        item
+                                    )}
+                                </td>
 
-                    `;
+                            </tr>
+
+                        `;
+
+                    });
 
                 }
 
@@ -830,15 +1005,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Tempo de conjuração
+                 * ==============================
+                 * TEMPO DE CONJURAÇÃO
+                 * ==============================
                  */
-                if (
-                    magia.parametros?.tempo_conjuracao
-                ) {
 
-                    const tempo =
-                        magia.parametros
-                            .tempo_conjuracao;
+                const tempo =
+                    obterParametroUnico(
+                        magia,
+                        "tempo_conjuracao"
+                    );
+
+
+                if (tempo) {
 
                     html += `
 
@@ -866,11 +1045,15 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <tr>
 
                                         <td>
-                                            ${tempo.valor ?? ""}
+                                            ${formatarValorItem(
+                                                tempo
+                                            )}
                                         </td>
 
                                         <td>
-                                            ${tempo.modificador ?? ""}
+                                            ${formatarModificadorItem(
+                                                tempo
+                                            )}
                                         </td>
 
                                     </tr>
@@ -887,8 +1070,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Penalidade final
+                 * ==============================
+                 * PENALIDADE FINAL
+                 * ==============================
                  */
+
                 html += `
 
                     <div class="penalidade-final">
@@ -905,8 +1091,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Observação
+                 * ==============================
+                 * OBSERVAÇÃO
+                 * ==============================
                  */
+
                 if (magia.observacao) {
 
                     html += `
@@ -925,8 +1114,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Voltar para a tabela
+                 * ==============================
+                 * VOLTAR PARA A TABELA
+                 * ==============================
                  */
+
                 html += `
 
                         <div class="ficha-voltar">
@@ -963,14 +1155,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     alcance:
                         "Alcance",
 
-                    area:
-                        "Área",
+                    area_efeito:
+                        "Área de efeito",
 
                     atribulacao:
                         "Atribulação",
 
-                    caracteristicas:
-                        "Características",
+                    caracteristicas_alteradas:
+                        "Características alteradas",
+
+                    conceder_bonus:
+                        "Conceder bônus",
 
                     cura:
                         "Cura",
@@ -993,16 +1188,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     modificadores_ataque:
                         "Modificadores de ataque",
 
+                    multiplos_alvos:
+                        "Múltiplos alvos",
+
                     tamanho:
                         "Tamanho",
 
                     velocidade:
-                        "Velocidade",
-
-                    volume:
-                        "Volume"
+                        "Velocidade"
 
                 };
+
 
                 return nomes[nome] || nome;
 
@@ -1011,94 +1207,123 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
-             * FORMATAÇÃO DOS VALORES
+             * FORMATAÇÃO DO VALOR
              * ==============================
              */
 
-            function formatarValor(parametro) {
+            function formatarValorItem(item) {
 
-                if (!parametro) {
+                if (!item) {
                     return "";
                 }
 
 
                 /*
-                 * Listas de efeitos
+                 * ==========================
+                 * FORMATO NOVO
+                 * ==========================
+                 *
+                 * {
+                 *     "valor": "3d6-3",
+                 *     "modificador": -6,
+                 *     "detalhes": {
+                 *         "quantidade": 3,
+                 *         "tipo": "Perfurante"
+                 *     }
+                 * }
                  */
-                if (Array.isArray(parametro)) {
 
-                    return parametro
-
-                        .map(item => {
-
-                            if (
-                                item &&
-                                item.efeito &&
-                                item.valor !== undefined
-                            ) {
-
-                                return `
-                                    ${item.efeito}
-                                `;
-
-                            }
-
-                            if (
-                                item &&
-                                item.efeito
-                            ) {
-
-                                return item.efeito;
-
-                            }
-
-                            return "";
-
-                        })
-
-                        .filter(
-                            valor => valor !== ""
-                        )
-
-                        .join("<br>");
-
-                }
-
-
-                /*
-                 * Parâmetros simples
-                 */
                 if (
-                    parametro.valor !== undefined
+                    item.valor !== undefined &&
+                    item.valor !== null
                 ) {
 
-                    if (parametro.tipo) {
+                    let valor =
+                        String(item.valor);
 
-                        return `
-                            ${parametro.valor}
-                            (${parametro.tipo})
-                        `;
+
+                    /*
+                     * Compatibilidade com o formato antigo,
+                     * onde "tipo" ficava diretamente no item:
+                     *
+                     * "dano": {
+                     *     "valor": "4d6",
+                     *     "tipo": "Contusivo"
+                     * }
+                     */
+                    if (item.tipo) {
+
+                        valor +=
+                            ` (${item.tipo})`;
 
                     }
 
-                    return parametro.valor;
+
+                    /*
+                     * Formato novo:
+                     *
+                     * "detalhes": {
+                     *     "tipo": "Perfurante"
+                     * }
+                     */
+                    else if (
+                        item.detalhes &&
+                        item.detalhes.tipo
+                    ) {
+
+                        valor +=
+                            ` (${item.detalhes.tipo})`;
+
+                    }
+
+
+                    return valor;
 
                 }
 
 
                 /*
-                 * Metamorfose
+                 * ==========================
+                 * COMPATIBILIDADE LEGADA
+                 * ==========================
+                 */
+
+                if (
+                    item.efeito !== undefined
+                ) {
+
+                    return String(
+                        item.efeito
+                    );
+
+                }
+
+
+                if (
+                    item.descricao !== undefined
+                ) {
+
+                    return String(
+                        item.descricao
+                    );
+
+                }
+
+
+                /*
+                 * Metamorfose antiga
                  */
                 if (
-                    parametro.poder_forma
+                    item.poder_forma
                 ) {
 
                     const poder =
-                        parametro.poder_forma;
+                        item.poder_forma;
+
 
                     return `
 
-                        ${parametro.descricao ||
+                        ${item.descricao ||
                             "Forma alterada"}
 
                         <br>
@@ -1113,22 +1338,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Invocação
+                 * Invocação antiga
                  */
                 if (
-                    parametro.pontos_criatura !==
+                    item.pontos_criatura !==
                     undefined
                 ) {
 
                     return `
 
-                        ${parametro.pontos_criatura}
+                        ${item.pontos_criatura}
                         pontos
 
                         ${
-                            parametro.relacao
+                            item.relacao
                                 ? "(" +
-                                  parametro.relacao +
+                                  item.relacao +
                                   ")"
                                 : ""
                         }
@@ -1139,37 +1364,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
                 /*
-                 * Tamanho
+                 * Tamanho antigo
                  */
                 if (
-                    parametro.mt !== undefined ||
-                    parametro.dimensao !== undefined
+                    item.mt !== undefined ||
+                    item.dimensao !== undefined
                 ) {
 
                     return `
 
-                        MT ${parametro.mt ?? ""}
+                        MT ${item.mt ?? ""}
 
                         ${
-                            parametro.dimensao
+                            item.dimensao
                                 ? " — " +
-                                  parametro.dimensao
+                                  item.dimensao
                                 : ""
                         }
 
                     `;
-
-                }
-
-
-                /*
-                 * Descrição simples
-                 */
-                if (
-                    parametro.descricao
-                ) {
-
-                    return parametro.descricao;
 
                 }
 
@@ -1181,86 +1394,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*
              * ==============================
-             * FORMATAÇÃO DOS MODIFICADORES
+             * FORMATAÇÃO DO MODIFICADOR
              * ==============================
              */
 
-            function formatarModificador(parametro) {
+            function formatarModificadorItem(item) {
 
-                if (!parametro) {
+                if (!item) {
                     return "";
                 }
 
 
                 /*
-                 * Listas de efeitos
+                 * Formato novo e formato antigo:
+                 *
+                 * "modificador": -4
                  */
-                if (Array.isArray(parametro)) {
+                if (
+                    item.modificador !== undefined &&
+                    item.modificador !== null
+                ) {
 
-                    return parametro
-
-                        .map(item => {
-
-                            if (
-                                item &&
-                                item.modificador !== undefined
-                            ) {
-
-                                return item.modificador;
-
-                            }
-
-                            return "";
-
-                        })
-
-                        .filter(
-                            valor => valor !== ""
-                        )
-
-                        .join("<br>");
+                    return item.modificador;
 
                 }
 
 
                 /*
-                 * Metamorfose
+                 * Metamorfose em formatos antigos
                  */
                 if (
-                    parametro.poder_forma &&
-                    parametro.poder_forma.modificador !==
+                    item.poder_forma &&
+                    item.poder_forma.modificador !==
                     undefined
                 ) {
 
-                    return parametro
+                    return item
                         .poder_forma
                         .modificador;
-
-                }
-
-
-                /*
-                 * Invocação
-                 */
-                if (
-                    parametro.modificador !==
-                    undefined
-                ) {
-
-                    return parametro.modificador;
-
-                }
-
-
-                /*
-                 * Tamanho
-                 */
-                if (
-                    parametro.modificador !==
-                    undefined
-                ) {
-
-                    return parametro.modificador;
 
                 }
 
@@ -1305,8 +1476,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             /*
-             * Renderização inicial
+             * ==============================
+             * RENDERIZAÇÃO INICIAL
+             * ==============================
              */
+
             renderizarTabela(magias);
 
 

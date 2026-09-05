@@ -22,7 +22,7 @@ O chifre não é apenas uma característica estética. Ele é uma estrutura extr
 
 Os olhos dos Oni normalmente possuem cores intensas, como vermelho, âmbar, dourado, violeta ou negro. Suas pupilas podem assumir formatos incomuns, reforçando sua aparência predatória. Os dentes são afiados, com caninos pronunciados, e as unhas são fortes e resistentes, capazes de causar ferimentos mesmo quando o Oni está desarmado.
 
-Apesar de sua aparência monstruosa, a anatomia Oni é proporcional. Eles não possuem corpos deformados ou grotescos. São, em essência, humanoides gigantescos, musculosos e predatórios. Essa característica torna sua presença particularmente intimidante: não parecem feras irracionais, mas indivíduos perfeitamente capazes de compreender aquilo que estão fazendo.
+Apesar de sua aparência, a anatomia Oni é proporcional. Eles não possuem corpos deformados ou grotescos. São, em essência, humanoides gigantescos, musculosos e predatórios. Essa característica torna sua presença particularmente intimidante: não parecem feras irracionais, mas indivíduos perfeitamente capazes de compreender aquilo que estão fazendo.
 
 ## Fisiologia
 
@@ -34,7 +34,7 @@ Essa resistência é acompanhada por uma tolerância excepcional à dor. Oni sen
 
 Sua visão é adaptada à escuridão. Os olhos Oni conseguem aproveitar pequenas quantidades de luz, permitindo que enxerguem com facilidade durante a noite e em ambientes subterrâneos. Essa característica é particularmente útil em Zandia, onde a noite é frequentemente mais segura para viajar devido às temperaturas extremas do deserto.
 
-O metabolismo Oni exige uma quantidade significativa de alimento devido ao tamanho e à massa corporal da espécie. Eles são onívoros e podem sobreviver com uma grande variedade de alimentos, incluindo plantas resistentes, raízes, insetos e carne. Entretanto, a carne ocupa um lugar particularmente importante na dieta e na cultura Oni.
+O metabolismo Oni exige uma quantidade significativa de alimento devido ao tamanho e à massa corporal da espécie, são glutões em essência. Eles são onívoros e podem sobreviver com uma grande variedade de alimentos, incluindo plantas resistentes, raízes, insetos e carne. Entretanto, a carne ocupa um lugar particularmente importante na dieta e na cultura Oni.
 
 A carne de criaturas inteligentes é considerada especialmente valiosa. Para os Oni, a diferença entre a carne de um animal e a carne de um humano ou elfo não possui o significado moral que possui para as outras raças. Isso não significa que todos os Oni estejam sempre dispostos a matar para obter alimento, mas significa que o canibalismo, no sentido em que outras raças compreendem o termo, não é universalmente considerado um tabu entre eles.
 

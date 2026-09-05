@@ -731,7 +731,8 @@ A progressão representa um aumento gradual do controle sobre os princípios do 
 
 ---
 
-## Magias que afetam mais de um Domínio
+##
+ Magias que afetam mais de um Domínio
 
 Uma magia pode produzir efeitos que envolvam elementos relacionados a mais de um **Domínio** sem necessariamente exigir conhecimento de todos eles. O que determina a necessidade de outros Domínios é a **natureza do efeito produzido**, e não simplesmente o tipo de elemento afetado.
 
