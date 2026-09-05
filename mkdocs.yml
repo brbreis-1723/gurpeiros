@@ -25,7 +25,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/grimorio.js
-  - javascripts/validador-grimorio.js
+
 
 nav:
   - Início: index.md
