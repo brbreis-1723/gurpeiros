@@ -22,9 +22,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/grimorio.css
+  - stylesheets/gerador-magias.css
 
 extra_javascript:
   - javascripts/grimorio.js
+  - javascripts/gerador-magias.js
 
 
 nav:
@@ -121,6 +123,7 @@ nav:
   - Material de Apoio:
       - Resumo: material/index.md
       - Gerador de Magias (Documentação):
+        - Gerador de magias: material/gerador-magias/gerador-magias.md
         - Gerador - Regras de negocio: material/gerador-magias/regra-negocio.md
         - Gerador - Esquema JSON: material/gerador-magias/esquema-json.md
       - Artigos do Blog: material/artigos.md
