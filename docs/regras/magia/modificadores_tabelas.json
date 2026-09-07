@@ -1,0 +1,1506 @@
+{
+  "Alcance": [
+    {
+      "valor": "Toque",
+      "modificador": 2
+    },
+    {
+      "valor": "< 3 m",
+      "modificador": 0
+    },
+    {
+      "valor": "3 m",
+      "modificador": -1
+    },
+    {
+      "valor": "5 m",
+      "modificador": -2
+    },
+    {
+      "valor": "7 m",
+      "modificador": -3
+    },
+    {
+      "valor": "10 m",
+      "modificador": -4
+    },
+    {
+      "valor": "15 m",
+      "modificador": -5
+    },
+    {
+      "valor": "20 m",
+      "modificador": -6
+    },
+    {
+      "valor": "30 m",
+      "modificador": -7
+    },
+    {
+      "valor": "50 m",
+      "modificador": -8
+    },
+    {
+      "valor": "70 m",
+      "modificador": -9
+    },
+    {
+      "valor": "100 m",
+      "modificador": -10
+    },
+    {
+      "valor": "150 m",
+      "modificador": -11
+    },
+    {
+      "valor": "200 m",
+      "modificador": -12
+    },
+    {
+      "valor": "300 m",
+      "modificador": -13
+    },
+    {
+      "valor": "500 m",
+      "modificador": -14
+    },
+    {
+      "valor": "700 m",
+      "modificador": -15
+    },
+    {
+      "valor": "1 km",
+      "modificador": -16
+    },
+    {
+      "valor": "1,5 km",
+      "modificador": -17
+    },
+    {
+      "valor": "2 km",
+      "modificador": -18
+    },
+    {
+      "valor": "3 km",
+      "modificador": -19
+    },
+    {
+      "valor": "5 km",
+      "modificador": -20
+    }
+  ],
+  "Área de efeito": [
+    {
+      "valor": "1 m",
+      "modificador": 0
+    },
+    {
+      "valor": "2 m",
+      "modificador": -1
+    },
+    {
+      "valor": "3 m",
+      "modificador": -2
+    },
+    {
+      "valor": "4 m",
+      "modificador": -3
+    },
+    {
+      "valor": "5 m",
+      "modificador": -4
+    },
+    {
+      "valor": "7 m",
+      "modificador": -5
+    },
+    {
+      "valor": "10 m",
+      "modificador": -6
+    },
+    {
+      "valor": "14 m",
+      "modificador": -7
+    },
+    {
+      "valor": "20 m",
+      "modificador": -8
+    },
+    {
+      "valor": "30 m",
+      "modificador": -9
+    },
+    {
+      "valor": "40 m",
+      "modificador": -10
+    },
+    {
+      "valor": "50 m",
+      "modificador": -11
+    },
+    {
+      "valor": "70 m",
+      "modificador": -12
+    },
+    {
+      "valor": "100 m",
+      "modificador": -13
+    },
+    {
+      "valor": "140 m",
+      "modificador": -14
+    },
+    {
+      "valor": "200 m",
+      "modificador": -15
+    },
+    {
+      "valor": "300 m",
+      "modificador": -16
+    },
+    {
+      "valor": "400 m",
+      "modificador": -17
+    },
+    {
+      "valor": "500 m",
+      "modificador": -18
+    },
+    {
+      "valor": "700 m",
+      "modificador": -19
+    },
+    {
+      "valor": "1 km",
+      "modificador": -20
+    }
+  ],
+  "Atribulação": [
+    {
+      "valor": "Atordoamento",
+      "modificador": -3
+    },
+    {
+      "valor": "Embriagado",
+      "modificador": -5
+    },
+    {
+      "valor": "Bêbado, Dor Moderada, Tosse",
+      "modificador": -6
+    },
+    {
+      "valor": "Euforia, Nauseado",
+      "modificador": -7
+    },
+    {
+      "valor": "Dor Severa",
+      "modificador": -8
+    },
+    {
+      "valor": "Dor Terrível",
+      "modificador": -9
+    },
+    {
+      "valor": "Alucinação, Ansia, Torpor, Vômito",
+      "modificador": -10
+    },
+    {
+      "valor": "Agonia, Epilepsia, Asfixia, Extase",
+      "modificador": -12
+    },
+    {
+      "valor": "Paralisia, Sono",
+      "modificador": -14
+    },
+    {
+      "valor": "Ataque Cardíaco, Coma",
+      "modificador": -20
+    }
+  ],
+  "Características alteradas": [
+    {
+      "valor": "Reduzir atributo",
+      "modificador": "-1 / -5 pts"
+    },
+    {
+      "valor": "Aumentar atributo",
+      "modificador": "-1 / +5 pts"
+    },
+    {
+      "valor": "Conceder vantagem",
+      "modificador": "-1 / +5 pts"
+    },
+    {
+      "valor": "Conceder desvantagem",
+      "modificador": "-1 / -5 pts"
+    },
+    {
+      "valor": "Suprimir desvantagem",
+      "modificador": "-1 / -5 pts"
+    },
+    {
+      "valor": "Negar vantagem",
+      "modificador": "-1 / +5 pts"
+    }
+  ],
+  "Conceder Bônus ou Impor Redutores": [
+    {
+      "valor": "±1 Único",
+      "modificador": -2
+    },
+    {
+      "valor": "±1 Moderado",
+      "modificador": -3
+    },
+    {
+      "valor": "±1 Amplo",
+      "modificador": -4
+    },
+    {
+      "valor": "±2 Único",
+      "modificador": -4
+    },
+    {
+      "valor": "±2 Moderado",
+      "modificador": -6
+    },
+    {
+      "valor": "±2 Amplo",
+      "modificador": -8
+    },
+    {
+      "valor": "±3 Único",
+      "modificador": -6
+    },
+    {
+      "valor": "±3 Moderado",
+      "modificador": -9
+    },
+    {
+      "valor": "±3 Amplo",
+      "modificador": -12
+    },
+    {
+      "valor": "±4 Único",
+      "modificador": -8
+    },
+    {
+      "valor": "±4 Moderado",
+      "modificador": -12
+    },
+    {
+      "valor": "±4 Amplo",
+      "modificador": -16
+    },
+    {
+      "valor": "±5 Único",
+      "modificador": -10
+    },
+    {
+      "valor": "±5 Moderado",
+      "modificador": -15
+    },
+    {
+      "valor": "±5 Amplo",
+      "modificador": -20
+    },
+    {
+      "valor": "±6 Único",
+      "modificador": -12
+    },
+    {
+      "valor": "±6 Moderado",
+      "modificador": -18
+    },
+    {
+      "valor": "±6 Amplo",
+      "modificador": -24
+    },
+    {
+      "valor": "±7 Único",
+      "modificador": -14
+    },
+    {
+      "valor": "±7 Moderado",
+      "modificador": -21
+    },
+    {
+      "valor": "±7 Amplo",
+      "modificador": -28
+    },
+    {
+      "valor": "±8 Único",
+      "modificador": -16
+    },
+    {
+      "valor": "±8 Moderado",
+      "modificador": -24
+    },
+    {
+      "valor": "±8 Amplo",
+      "modificador": -32
+    },
+    {
+      "valor": "±9 Único",
+      "modificador": -18
+    },
+    {
+      "valor": "±9 Moderado",
+      "modificador": -27
+    },
+    {
+      "valor": "±9 Amplo",
+      "modificador": -36
+    },
+    {
+      "valor": "±10 Único",
+      "modificador": -20
+    },
+    {
+      "valor": "±10 Moderado",
+      "modificador": -30
+    },
+    {
+      "valor": "±10 Amplo",
+      "modificador": -40
+    }
+  ],
+  "Cura": [
+    {
+      "valor": "Fadiga: Recuperar PF",
+      "modificador": "-1 / 2 PF"
+    },
+    {
+      "valor": "Vitalidade: Recuperar PV",
+      "modificador": "-1 / 1d6 PV"
+    },
+    {
+      "valor": "Vitalidade: Estancar sangramento (+1 PV)",
+      "modificador": 0
+    },
+    {
+      "valor": "Consciência: Trauma leve (PV > 0)",
+      "modificador": -1
+    },
+    {
+      "valor": "Consciência: Trauma moderado (PV 0 a -1xPV)",
+      "modificador": -2
+    },
+    {
+      "valor": "Consciência: Trauma grave (PV < -1xPV)",
+      "modificador": -4
+    },
+    {
+      "valor": "Membros: Incapacitação temp. menor",
+      "modificador": -5
+    },
+    {
+      "valor": "Membros: Incapacitação temp. maior",
+      "modificador": -10
+    },
+    {
+      "valor": "Membros: Incapacitação duradoura menor",
+      "modificador": -8
+    },
+    {
+      "valor": "Membros: Incapacitação duradoura maior",
+      "modificador": -15
+    },
+    {
+      "valor": "Membros: Regenerar em 30 dias",
+      "modificador": -20
+    },
+    {
+      "valor": "Membros: Regenerar em 24h",
+      "modificador": -25
+    },
+    {
+      "valor": "Membros: Regenerar em 1h",
+      "modificador": -30
+    },
+    {
+      "valor": "Membros: Regenerar instantâneo",
+      "modificador": -40
+    },
+    {
+      "valor": "Sentidos: Restaurar temp. (órgão intacto)",
+      "modificador": -5
+    },
+    {
+      "valor": "Sentidos: Restaurar perm. (órgão intacto)",
+      "modificador": -10
+    },
+    {
+      "valor": "Sentidos: Fala temp.",
+      "modificador": -10
+    },
+    {
+      "valor": "Sentidos: Fala perm.",
+      "modificador": -20
+    },
+    {
+      "valor": "Doença: Trivial",
+      "modificador": -1
+    },
+    {
+      "valor": "Doença: Leve",
+      "modificador": -3
+    },
+    {
+      "valor": "Doença: Moderada",
+      "modificador": -5
+    },
+    {
+      "valor": "Doença: Grave",
+      "modificador": -8
+    },
+    {
+      "valor": "Doença: Crônica",
+      "modificador": -12
+    },
+    {
+      "valor": "Doença: Degenerativa",
+      "modificador": -16
+    },
+    {
+      "valor": "Doença: Incurável",
+      "modificador": -20
+    },
+    {
+      "valor": "Doença: Incurável (mágica comum)",
+      "modificador": -25
+    },
+    {
+      "valor": "Doença: Terminal",
+      "modificador": -30
+    },
+    {
+      "valor": "Doença: Terminal avançada",
+      "modificador": -40
+    },
+    {
+      "valor": "Doença: Sobrenatural",
+      "modificador": -50
+    },
+    {
+      "valor": "Doença: Sobrenatural terminal",
+      "modificador": -60
+    },
+    {
+      "valor": "Doença: Corpo e essência",
+      "modificador": -75
+    },
+    {
+      "valor": "Atribulação: Atordoamento",
+      "modificador": -3
+    },
+    {
+      "valor": "Atribulação: Embriagado",
+      "modificador": -5
+    },
+    {
+      "valor": "Atribulação: Bêbado, Dor Mod., Tosse",
+      "modificador": -6
+    },
+    {
+      "valor": "Atribulação: Euforia, Nauseado",
+      "modificador": -7
+    },
+    {
+      "valor": "Atribulação: Dor Sev.",
+      "modificador": -8
+    },
+    {
+      "valor": "Atribulação: Dor Ter.",
+      "modificador": -9
+    },
+    {
+      "valor": "Atribulação: Alucinação, Ansiol., Torpor, Vômito",
+      "modificador": -10
+    },
+    {
+      "valor": "Atribulação: Agonia, Epilepsia, Asfixia, Éxtase",
+      "modificador": -12
+    },
+    {
+      "valor": "Atribulação: Paralisia, Sono",
+      "modificador": -14
+    },
+    {
+      "valor": "Atribulação: Ataque Cardíaco, Coma",
+      "modificador": -20
+    },
+    {
+      "valor": "Atribulação: Remover maldição perm.",
+      "modificador": -30
+    },
+    {
+      "valor": "Atribulação: Petrificação",
+      "modificador": -40
+    },
+    {
+      "valor": "Atribulação: Transformação temp.",
+      "modificador": -25
+    },
+    {
+      "valor": "Atribulação: Transformação perm.",
+      "modificador": -40
+    },
+    {
+      "valor": "Mente: Confusão",
+      "modificador": -2
+    },
+    {
+      "valor": "Mente: Medo ou pânico",
+      "modificador": -3
+    },
+    {
+      "valor": "Mente: Perturbação temp.",
+      "modificador": -5
+    },
+    {
+      "valor": "Mente: Psic. leve (peculiaridade)",
+      "modificador": -5
+    },
+    {
+      "valor": "Mente: Psic. mod. (até -10 pts)",
+      "modificador": -10
+    },
+    {
+      "valor": "Mente: Psic. grave (> -10 pts)",
+      "modificador": -20
+    },
+    {
+      "valor": "Mente: Loucura temp.",
+      "modificador": -10
+    },
+    {
+      "valor": "Mente: Loucura perm.",
+      "modificador": -25
+    },
+    {
+      "valor": "Mente: Personalidade alterada",
+      "modificador": -30
+    },
+    {
+      "valor": "Mente: Memórias perdidas",
+      "modificador": -30
+    },
+    {
+      "valor": "Mente: Identidade/mente danificada",
+      "modificador": -40
+    },
+    {
+      "valor": "Mente: Reconstruir mente destruída",
+      "modificador": -50
+    },
+    {
+      "valor": "Veneno: Leve",
+      "modificador": -2
+    },
+    {
+      "valor": "Veneno: Moderado",
+      "modificador": -5
+    },
+    {
+      "valor": "Veneno: Potente",
+      "modificador": -10
+    },
+    {
+      "valor": "Veneno: Letal",
+      "modificador": -15
+    },
+    {
+      "valor": "Veneno: Toxina complexa",
+      "modificador": -20
+    },
+    {
+      "valor": "Veneno: Sobrenatural/mágico",
+      "modificador": -30
+    },
+    {
+      "valor": "Veneno: Altera corpo perm.",
+      "modificador": -40
+    },
+    {
+      "valor": "Morte Iminente: Estabilizar ferimento fatal",
+      "modificador": -5
+    },
+    {
+      "valor": "Morte Iminente: Impedir (-5xPV)",
+      "modificador": -10
+    },
+    {
+      "valor": "Morte Iminente: Ressuscitação (asfixia/parada)",
+      "modificador": -15
+    },
+    {
+      "valor": "Ressurreição Imp.: Morte recente (<10 min)",
+      "modificador": -50
+    },
+    {
+      "valor": "Ressurreição Imp.: Morte prolongada (<24h)",
+      "modificador": -60
+    },
+    {
+      "valor": "Ressurreição Imp.: Corpo deteriorado",
+      "modificador": -75
+    },
+    {
+      "valor": "Ressurreição Imp.: Corpo parc. destruído",
+      "modificador": -90
+    },
+    {
+      "valor": "Ressurreição Imp.: Sem corpo",
+      "modificador": -120
+    },
+    {
+      "valor": "Ressurreição Perf.: Morte recente (<10 min)",
+      "modificador": -300
+    },
+    {
+      "valor": "Ressurreição Perf.: Morte prolongada (<24h)",
+      "modificador": -325
+    },
+    {
+      "valor": "Ressurreição Perf.: Morte (dias/semanas)",
+      "modificador": -350
+    },
+    {
+      "valor": "Ressurreição Perf.: Morte (meses/anos)",
+      "modificador": -400
+    },
+    {
+      "valor": "Ressurreição Perf.: Corpo dest. (< -10xPV)",
+      "modificador": -450
+    },
+    {
+      "valor": "Ressurreição Perf.: Corpo totalmente dest.",
+      "modificador": -500
+    },
+    {
+      "valor": "Ressurreição Perf.: Corpo e essência dispersos",
+      "modificador": -600
+    }
+  ],
+  "Dano": [
+    {
+      "valor": "2 pts",
+      "modificador": 0
+    },
+    {
+      "valor": "1d6",
+      "modificador": -1
+    },
+    {
+      "valor": "2d6",
+      "modificador": -2
+    },
+    {
+      "valor": "3d6",
+      "modificador": -3
+    },
+    {
+      "valor": "4d6",
+      "modificador": -4
+    },
+    {
+      "valor": "5d6",
+      "modificador": -5
+    },
+    {
+      "valor": "6d6",
+      "modificador": -6
+    },
+    {
+      "valor": "7d6",
+      "modificador": -7
+    },
+    {
+      "valor": "8d6",
+      "modificador": -8
+    },
+    {
+      "valor": "9d6",
+      "modificador": -9
+    },
+    {
+      "valor": "10d6",
+      "modificador": -10
+    },
+    {
+      "valor": "+1d6",
+      "modificador": -1
+    }
+  ],
+  "Duração": [
+    {
+      "valor": "Momentânea",
+      "modificador": 0
+    },
+    {
+      "valor": "Até 10s",
+      "modificador": -1
+    },
+    {
+      "valor": "Até 30s",
+      "modificador": -2
+    },
+    {
+      "valor": "Até 1min",
+      "modificador": -3
+    },
+    {
+      "valor": "Até 3min",
+      "modificador": -4
+    },
+    {
+      "valor": "Até 6min",
+      "modificador": -5
+    },
+    {
+      "valor": "Até 12min",
+      "modificador": -6
+    },
+    {
+      "valor": "Até 30min",
+      "modificador": -8
+    },
+    {
+      "valor": "Até 1h",
+      "modificador": -10
+    },
+    {
+      "valor": "Até 3h",
+      "modificador": -12
+    },
+    {
+      "valor": "Até 6h",
+      "modificador": -13
+    },
+    {
+      "valor": "Até 12h",
+      "modificador": -14
+    },
+    {
+      "valor": "Até 1 dia",
+      "modificador": -15
+    },
+    {
+      "valor": "Até 2 dias",
+      "modificador": -16
+    },
+    {
+      "valor": "Até 3 dias",
+      "modificador": -17
+    },
+    {
+      "valor": "Até 1 semana",
+      "modificador": -18
+    },
+    {
+      "valor": "Até 1 mês",
+      "modificador": -19
+    },
+    {
+      "valor": "Permanente",
+      "modificador": -20
+    }
+  ],
+  "Invocação Direta": [
+    {
+      "valor": "Pet básico (1 XP / 5%)",
+      "modificador": 0
+    },
+    {
+      "valor": "Até 25%",
+      "modificador": -2
+    },
+    {
+      "valor": "26–50%",
+      "modificador": -4
+    },
+    {
+      "valor": "51–75%",
+      "modificador": -6
+    },
+    {
+      "valor": "76–100%",
+      "modificador": -8
+    },
+    {
+      "valor": "101–125%",
+      "modificador": -10
+    },
+    {
+      "valor": "126–150%",
+      "modificador": -12
+    },
+    {
+      "valor": "151–175%",
+      "modificador": -14
+    },
+    {
+      "valor": "176–200%",
+      "modificador": -16
+    },
+    {
+      "valor": "201–250%",
+      "modificador": -18
+    },
+    {
+      "valor": "251–300%",
+      "modificador": -20
+    }
+  ],
+  "Massa/Volume do alvo": [
+    {
+      "valor": "1 kg / 1 L",
+      "modificador": 0
+    },
+    {
+      "valor": "2 kg / 2 L",
+      "modificador": -1
+    },
+    {
+      "valor": "3 kg / 3 L",
+      "modificador": -2
+    },
+    {
+      "valor": "5 kg / 5 L",
+      "modificador": -3
+    },
+    {
+      "valor": "7 kg / 7 L",
+      "modificador": -4
+    },
+    {
+      "valor": "10 kg / 10 L",
+      "modificador": -5
+    },
+    {
+      "valor": "20 kg / 20 L",
+      "modificador": -6
+    },
+    {
+      "valor": "30 kg / 30 L",
+      "modificador": -7
+    },
+    {
+      "valor": "50 kg / 50 L",
+      "modificador": -8
+    },
+    {
+      "valor": "70 kg / 70 L",
+      "modificador": -9
+    },
+    {
+      "valor": "100 kg / 100 L",
+      "modificador": -10
+    },
+    {
+      "valor": "200 kg / 200 L",
+      "modificador": -11
+    },
+    {
+      "valor": "300 kg / 300 L",
+      "modificador": -12
+    },
+    {
+      "valor": "500 kg / 500 L",
+      "modificador": -13
+    },
+    {
+      "valor": "700 kg / 700 L",
+      "modificador": -14
+    },
+    {
+      "valor": "1.000 kg / 1.000 L",
+      "modificador": -15
+    },
+    {
+      "valor": "2.000 kg / 2.000 L",
+      "modificador": -16
+    },
+    {
+      "valor": "3.000 kg / 3.000 L",
+      "modificador": -17
+    },
+    {
+      "valor": "5.000 kg / 5.000 L",
+      "modificador": -18
+    },
+    {
+      "valor": "7.000 kg / 7.000 L",
+      "modificador": -19
+    },
+    {
+      "valor": "10.000 kg / 10.000 L",
+      "modificador": -20
+    }
+  ],
+  "Metamorfose": [
+    {
+      "valor": "Cosmética (0 pts)",
+      "modificador": 0
+    },
+    {
+      "valor": "1–25 pts",
+      "modificador": -1
+    },
+    {
+      "valor": "26–50 pts",
+      "modificador": -2
+    },
+    {
+      "valor": "51–75 pts",
+      "modificador": -3
+    },
+    {
+      "valor": "76–100 pts",
+      "modificador": -4
+    },
+    {
+      "valor": "101–125 pts",
+      "modificador": -5
+    },
+    {
+      "valor": "126–150 pts",
+      "modificador": -6
+    },
+    {
+      "valor": "151–175 pts",
+      "modificador": -7
+    },
+    {
+      "valor": "176–200 pts",
+      "modificador": -8
+    },
+    {
+      "valor": "201–225 pts",
+      "modificador": -9
+    },
+    {
+      "valor": "226–250 pts",
+      "modificador": -10
+    },
+    {
+      "valor": "251–275 pts",
+      "modificador": -11
+    },
+    {
+      "valor": "276–300 pts",
+      "modificador": -12
+    },
+    {
+      "valor": "301–325 pts",
+      "modificador": -13
+    },
+    {
+      "valor": "326–350 pts",
+      "modificador": -14
+    },
+    {
+      "valor": "351–375 pts",
+      "modificador": -15
+    },
+    {
+      "valor": "376–400 pts",
+      "modificador": -16
+    },
+    {
+      "valor": "401–425 pts",
+      "modificador": -17
+    },
+    {
+      "valor": "426–450 pts",
+      "modificador": -18
+    },
+    {
+      "valor": "451–475 pts",
+      "modificador": -19
+    },
+    {
+      "valor": "476–500 pts",
+      "modificador": -20
+    }
+  ],
+  "Modificadores de ataque": [
+    {
+      "valor": "Afeta insubstancial",
+      "modificador": -2
+    },
+    {
+      "valor": "Aura",
+      "modificador": -8
+    },
+    {
+      "valor": "Assinatura baixa",
+      "modificador": -1
+    },
+    {
+      "valor": "Assinatura inexistente",
+      "modificador": -2
+    },
+    {
+      "valor": "Cíclico (1 dia)",
+      "modificador": "-1 / ciclo"
+    },
+    {
+      "valor": "Cíclico (1h)",
+      "modificador": "-2 / ciclo"
+    },
+    {
+      "valor": "Cíclico (1min)",
+      "modificador": "-4 / ciclo"
+    },
+    {
+      "valor": "Cíclico (10s)",
+      "modificador": "-5 / ciclo"
+    },
+    {
+      "valor": "Cíclico (1s)",
+      "modificador": "-10 / ciclo"
+    },
+    {
+      "valor": "Cone",
+      "modificador": "-5 + (-1/m base)"
+    },
+    {
+      "valor": "Divisor armadura 2",
+      "modificador": -5
+    },
+    {
+      "valor": "Divisor armadura 3",
+      "modificador": -10
+    },
+    {
+      "valor": "Divisor armadura 5",
+      "modificador": -15
+    },
+    {
+      "valor": "Divisor armadura 10",
+      "modificador": -20
+    },
+    {
+      "valor": "Fogo Contínuo CDT 2",
+      "modificador": -4
+    },
+    {
+      "valor": "Fogo Contínuo CDT 3",
+      "modificador": -6
+    },
+    {
+      "valor": "Fogo Contínuo CDT 4",
+      "modificador": -8
+    },
+    {
+      "valor": "Fogo Contínuo CDT 5",
+      "modificador": -10
+    },
+    {
+      "valor": "Fogo Contínuo CDT 6",
+      "modificador": -12
+    },
+    {
+      "valor": "Fogo Contínuo CDT 7-8",
+      "modificador": -15
+    },
+    {
+      "valor": "Fogo Contínuo CDT 9-10",
+      "modificador": -20
+    },
+    {
+      "valor": "Fragmentação",
+      "modificador": "-2 / dado"
+    },
+    {
+      "valor": "Jato",
+      "modificador": 0
+    },
+    {
+      "valor": "Apenas projeção",
+      "modificador": 0
+    },
+    {
+      "valor": "Projeção dobrada",
+      "modificador": -2
+    },
+    {
+      "valor": "Retardo fixo",
+      "modificador": 0
+    },
+    {
+      "valor": "Retardo var. (0-10 turnos)",
+      "modificador": -1
+    },
+    {
+      "valor": "Retardo var. (qualquer)",
+      "modificador": -2
+    },
+    {
+      "valor": "Guiado",
+      "modificador": -5
+    },
+    {
+      "valor": "Teleguiado (Visão normal)",
+      "modificador": -8
+    },
+    {
+      "valor": "Teleguiado (Visão noturna)",
+      "modificador": -9
+    },
+    {
+      "valor": "Teleguiado (Infravisão)",
+      "modificador": -10
+    },
+    {
+      "valor": "Teleguiado (Visão nas Trevas)",
+      "modificador": -12
+    }
+  ],
+  "Múltiplos Alvos": [
+    {
+      "valor": "Próprio mago",
+      "modificador": 0
+    },
+    {
+      "valor": "1",
+      "modificador": -1
+    },
+    {
+      "valor": "2",
+      "modificador": -2
+    },
+    {
+      "valor": "3",
+      "modificador": -3
+    },
+    {
+      "valor": "4",
+      "modificador": -4
+    },
+    {
+      "valor": "5",
+      "modificador": -5
+    },
+    {
+      "valor": "6",
+      "modificador": -6
+    },
+    {
+      "valor": "8",
+      "modificador": -7
+    },
+    {
+      "valor": "10",
+      "modificador": -8
+    },
+    {
+      "valor": "15",
+      "modificador": -9
+    },
+    {
+      "valor": "20",
+      "modificador": -10
+    },
+    {
+      "valor": "30",
+      "modificador": -11
+    },
+    {
+      "valor": "50",
+      "modificador": -12
+    },
+    {
+      "valor": "75",
+      "modificador": -13
+    },
+    {
+      "valor": "100",
+      "modificador": -14
+    },
+    {
+      "valor": "150",
+      "modificador": -15
+    },
+    {
+      "valor": "200",
+      "modificador": -16
+    },
+    {
+      "valor": "300",
+      "modificador": -17
+    },
+    {
+      "valor": "500",
+      "modificador": -18
+    },
+    {
+      "valor": "750",
+      "modificador": -19
+    },
+    {
+      "valor": "1000",
+      "modificador": -20
+    }
+  ],
+  "Tamanho": [
+    {
+      "valor": "MT <= 0 (2m)",
+      "modificador": 0
+    },
+    {
+      "valor": "MT +1 (3m)",
+      "modificador": -2
+    },
+    {
+      "valor": "MT +2 (5m)",
+      "modificador": -4
+    },
+    {
+      "valor": "MT +3 (7m)",
+      "modificador": -6
+    },
+    {
+      "valor": "MT +4 (10m)",
+      "modificador": -8
+    },
+    {
+      "valor": "MT +5 (15m)",
+      "modificador": -10
+    },
+    {
+      "valor": "MT +6 (20m)",
+      "modificador": -12
+    },
+    {
+      "valor": "MT +7 (30m)",
+      "modificador": -14
+    },
+    {
+      "valor": "MT +8 (50m)",
+      "modificador": -16
+    },
+    {
+      "valor": "MT +9 (70m)",
+      "modificador": -18
+    },
+    {
+      "valor": "MT +10 (100m)",
+      "modificador": -20
+    },
+    {
+      "valor": "MT +11 (150m)",
+      "modificador": -22
+    },
+    {
+      "valor": "MT +12 (200m)",
+      "modificador": -24
+    },
+    {
+      "valor": "MT +13 (300m)",
+      "modificador": -26
+    },
+    {
+      "valor": "MT +14 (500m)",
+      "modificador": -28
+    },
+    {
+      "valor": "MT +15 (700m)",
+      "modificador": -30
+    },
+    {
+      "valor": "MT +16 (1km)",
+      "modificador": -32
+    },
+    {
+      "valor": "MT +17 (1,5km)",
+      "modificador": -34
+    },
+    {
+      "valor": "MT +18 (2km)",
+      "modificador": -36
+    },
+    {
+      "valor": "MT +19 (3km)",
+      "modificador": -38
+    },
+    {
+      "valor": "MT +20 (5km)",
+      "modificador": -40
+    }
+  ],
+  "Velocidade": [
+    {
+      "valor": "1 m/s (3,6 km/h)",
+      "modificador": 0
+    },
+    {
+      "valor": "2 m/s (7,2 km/h)",
+      "modificador": -1
+    },
+    {
+      "valor": "3 m/s (10,8 km/h)",
+      "modificador": -2
+    },
+    {
+      "valor": "5 m/s (18 km/h)",
+      "modificador": -3
+    },
+    {
+      "valor": "7 m/s (25,2 km/h)",
+      "modificador": -4
+    },
+    {
+      "valor": "10 m/s (36 km/h)",
+      "modificador": -5
+    },
+    {
+      "valor": "15 m/s (54 km/h)",
+      "modificador": -6
+    },
+    {
+      "valor": "20 m/s (72 km/h)",
+      "modificador": -7
+    },
+    {
+      "valor": "25 m/s (90 km/h)",
+      "modificador": -8
+    },
+    {
+      "valor": "30 m/s (108 km/h)",
+      "modificador": -9
+    },
+    {
+      "valor": "40 m/s (144 km/h)",
+      "modificador": -10
+    },
+    {
+      "valor": "50 m/s (180 km/h)",
+      "modificador": -11
+    },
+    {
+      "valor": "70 m/s (252 km/h)",
+      "modificador": -12
+    },
+    {
+      "valor": "100 m/s (360 km/h)",
+      "modificador": -13
+    },
+    {
+      "valor": "140 m/s (504 km/h)",
+      "modificador": -14
+    },
+    {
+      "valor": "180 m/s (648 km/h)",
+      "modificador": -15
+    },
+    {
+      "valor": "220 m/s (792 km/h)",
+      "modificador": -16
+    },
+    {
+      "valor": "250 m/s (900 km/h)",
+      "modificador": -17
+    },
+    {
+      "valor": "280 m/s (1.008 km/h)",
+      "modificador": -18
+    },
+    {
+      "valor": "315 m/s (1.134 km/h)",
+      "modificador": -19
+    },
+    {
+      "valor": "350 m/s (1.260 km/h)",
+      "modificador": -20
+    }
+  ],
+  "Tempo de conjuração": [
+    {
+      "valor": "1 segundo",
+      "modificador": 0
+    },
+    {
+      "valor": "2 segundos",
+      "modificador": 1
+    },
+    {
+      "valor": "3 segundos",
+      "modificador": 2
+    },
+    {
+      "valor": "5 segundos",
+      "modificador": 3
+    },
+    {
+      "valor": "10 segundos",
+      "modificador": 4
+    },
+    {
+      "valor": "30 segundos",
+      "modificador": 5
+    },
+    {
+      "valor": "1 minuto",
+      "modificador": 6
+    },
+    {
+      "valor": "2 minutos",
+      "modificador": 7
+    },
+    {
+      "valor": "5 minutos",
+      "modificador": 8
+    },
+    {
+      "valor": "10 minutos",
+      "modificador": 9
+    },
+    {
+      "valor": "30 minutos",
+      "modificador": 10
+    },
+    {
+      "valor": "1 hora",
+      "modificador": 11
+    },
+    {
+      "valor": "3 horas",
+      "modificador": 12
+    },
+    {
+      "valor": "6 horas",
+      "modificador": 13
+    },
+    {
+      "valor": "12 horas",
+      "modificador": 14
+    },
+    {
+      "valor": "24 horas",
+      "modificador": 15
+    },
+    {
+      "valor": "3 dias",
+      "modificador": 16
+    },
+    {
+      "valor": "5 dias",
+      "modificador": 17
+    },
+    {
+      "valor": "10 dias",
+      "modificador": 18
+    },
+    {
+      "valor": "20 dias",
+      "modificador": 19
+    },
+    {
+      "valor": "1 mês",
+      "modificador": 20
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "Alcance": {
+    "fator_escala": 1.5,
+    "modificador_passo": -1,
+    "regra": "A cada +1 passo de distância na tabela, aplique -1 ao teste. Além de 5 km (-20), continue multiplicando por ~1,5 (7km, 10km, 15km, etc)."
+  },
+  "Área de efeito": {
+    "sequencia_base": [
+      1,
+      1.4,
+      2,
+      3,
+      4,
+      5,
+      7,
+      10
+    ],
+    "modificador_passo": -1,
+    "regra": "Após 1 km (-20), repita o ciclo multiplicando por 10 (1,4 km, 2 km, 3 km, etc), aplicando -1 por passo."
+  },
+  "Características alteradas": {
+    "limite_racial_dobro": true,
+    "regra": "A partir do limite racial do atributo, cada acréscimo de penalidade é contado em dobro (-8 por +5 pts, depois -16, cumulativos)."
+  },
+  "Dano": {
+    "base_maxima": "10d6",
+    "modificador_base_maxima": -10,
+    "incremento": "+1d6",
+    "modificador_incremento": -1,
+    "regra": "Para cada +1d6 além de 10d6, aplique -1 adicional."
+  },
+  "Massa/Volume do alvo": {
+    "sequencia_base": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      10
+    ],
+    "modificador_passo": -1,
+    "regra": "A cada 5 pontos de penalidade a capacidade multiplica por 10. Segue padrão 1, 2, 3, 5, 7, 10."
+  },
+  "Metamorfose": {
+    "passo_pontos": 25,
+    "modificador_passo": -1,
+    "regra": "Para cada +25 pontos na forma além de 500, aplique -1 adicional (-21 para 501-525, -22 para 526-550, etc)."
+  }
+}

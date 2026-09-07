@@ -106,17 +106,20 @@
 
 .gm-status-sucesso {
     border: 1px solid #7bb27b;
-    background: #eef8ee;
+    background: #003366;
+    color: white
 }
 
 .gm-status-aviso {
     border: 1px solid #d0a74b;
-    background: #fff8e5;
+    background: #856404;
+    color:#003366
 }
 
 .gm-status-erro {
     border: 1px solid #c66;
-    background: #fff0f0;
+    background: #721C24;
+    color:white
 }
 
 .gm-layout {

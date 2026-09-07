@@ -1,14 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
-    const container = document.getElementById("gerador-magias");
+    const container =
+        document.getElementById("gerador-magias");
 
     if (!container) {
         return;
     }
 
+
     /* =========================================================
        CONFIGURAÇÃO
        ========================================================= */
+
+    const URL_TABELAS =
+        "/regras/magia/modificadores_tabelas.json";
+
+    const URL_PROGRESSOES =
+        "/regras/magia/progressoes_Regras.json";
+
 
     const NIVEIS = {
         1: "Percepção",
@@ -17,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         4: "Transformação",
         5: "Domínio"
     };
+
 
     const DOMINIOS = [
         "Água",
@@ -42,11 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Terra"
     ];
 
+
     const CATEGORIAS = [
         "Truque",
         "Feitiço",
         "Ritual"
     ];
+
 
     const PARAMETROS = [
         "alcance",
@@ -67,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "velocidade"
     ];
 
+
     const PARAMETROS_MULTIPLOS = [
         "atribulacao",
         "caracteristicas_alteradas",
@@ -76,11 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "modificadores_ataque"
     ];
 
+
     const PARAMETROS_OBRIGATORIOS = [
         "alcance",
         "duracao",
         "tempo_conjuracao"
     ];
+
 
     const ALIASES_PARAMETROS = {
         area: "area_efeito",
@@ -88,17 +103,24 @@ document.addEventListener("DOMContentLoaded", () => {
         volume: "massa_volume"
     };
 
+
+    /*
+     * Nome exibido na interface.
+     *
+     * ATENÇÃO:
+     * "conceder_bonus" continua sendo o nome interno.
+     */
     const NOMES_PARAMETROS = {
         alcance: "Alcance",
         area_efeito: "Área de efeito",
         atribulacao: "Atribulação",
         caracteristicas_alteradas: "Características alteradas",
-        conceder_bonus: "Conceder bônus",
+        conceder_bonus: "Conceder Bônus / Redutor",
         cura: "Cura",
         dano: "Dano",
         duracao: "Duração",
-        invocacao: "Invocação",
-        massa_volume: "Massa / Volume",
+        invocacao: "Invocação Direta",
+        massa_volume: "Massa / Volume do alvo",
         metamorfose: "Metamorfose",
         modificadores_ataque: "Modificadores de ataque",
         multiplos_alvos: "Múltiplos alvos",
@@ -107,12 +129,61 @@ document.addEventListener("DOMContentLoaded", () => {
         velocidade: "Velocidade"
     };
 
+
+    /*
+     * Nome real das tabelas dentro de
+     * modificadores_tabelas.json.
+     *
+     * Isso evita problemas quando o nome
+     * exibido é diferente do nome da tabela.
+     */
+    const CHAVES_TABELAS = {
+        alcance: "Alcance",
+        area_efeito: "Área de efeito",
+        atribulacao: "Atribulação",
+        caracteristicas_alteradas: "Características alteradas",
+        conceder_bonus: "Conceder Bônus ou Impor Redutores",
+        cura: "Cura",
+        dano: "Dano",
+        duracao: "Duração",
+        invocacao: "Invocação Direta",
+        massa_volume: "Massa/Volume do alvo",
+        metamorfose: "Metamorfose",
+        modificadores_ataque: "Modificadores de ataque",
+        multiplos_alvos: "Múltiplos Alvos",
+        tamanho: "Tamanho",
+        tempo_conjuracao: "Tempo de conjuração",
+        velocidade: "Velocidade"
+    };
+
+
+    const CAMPOS_TOPO = [
+        "id",
+        "nome",
+        "dominio",
+        "nivel",
+        "nivel_nome",
+        "categoria",
+        "efeito",
+        "parametros",
+        "penalidade",
+        "observacao"
+    ];
+
+
     /* =========================================================
        ESTADO
        ========================================================= */
 
     let magias = [];
+
     let indiceEdicao = null;
+
+    let tabelas = {};
+
+    let progressoes = {};
+
+    let filtroLista = "";
 
 
     /* =========================================================
@@ -120,6 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
        ========================================================= */
 
     function escaparHTML(valor) {
+
         return String(valor ?? "")
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
@@ -128,26 +200,350 @@ document.addEventListener("DOMContentLoaded", () => {
             .replace(/'/g, "&#039;");
     }
 
+
+    function clone(obj) {
+
+        return JSON.parse(
+            JSON.stringify(obj)
+        );
+    }
+
+
     function gerarId() {
+
         return (
             "magia-" +
             Date.now().toString(36) +
             "-" +
-            Math.random().toString(36).substring(2, 8)
+            Math.random()
+                .toString(36)
+                .substring(2, 8)
         );
     }
 
-    function nomeParametro(nome) {
-        return NOMES_PARAMETROS[nome] || nome;
+
+    function valorVazio(valor) {
+
+        return (
+            valor === undefined ||
+            valor === null ||
+            String(valor).trim() === ""
+        );
     }
+
+
+    function numero(valor, padrao = 0) {
+
+        const n = Number(valor);
+
+        return Number.isFinite(n)
+            ? n
+            : padrao;
+    }
+
+
+    function nomeParametro(nome) {
+
+        return (
+            NOMES_PARAMETROS[nome] ||
+            nome
+        );
+    }
+
 
     function normalizarNomeParametro(nome) {
-        return ALIASES_PARAMETROS[nome] || nome;
+
+        return (
+            ALIASES_PARAMETROS[nome] ||
+            nome
+        );
     }
 
-    function clone(obj) {
-        return JSON.parse(JSON.stringify(obj));
+
+    function escaparSeletor(valor) {
+
+        if (
+            window.CSS &&
+            typeof CSS.escape === "function"
+        ) {
+            return CSS.escape(valor);
+        }
+
+        return String(valor).replace(
+            /[^a-zA-Z0-9_-]/g,
+            "\\$&"
+        );
     }
+
+
+    function formatarNumero(valor) {
+
+        const n = Number(valor);
+
+        if (!Number.isFinite(n)) {
+            return String(valor ?? "—");
+        }
+
+        return Number.isInteger(n)
+            ? String(n)
+            : String(n).replace(".", ",");
+    }
+
+
+    function formatarModificador(modificador) {
+
+        const n = Number(modificador);
+
+        if (!Number.isFinite(n)) {
+            return String(modificador ?? "—");
+        }
+
+        return n > 0
+            ? `+${n}`
+            : String(n);
+    }
+
+
+    function ceilDiv(valor, divisor) {
+
+        return Math.ceil(
+            Math.max(0, Number(valor)) /
+            divisor
+        );
+    }
+
+
+    /* =========================================================
+       TABELAS
+       ========================================================= */
+
+    function obterTabela(nome) {
+
+        const chave =
+            CHAVES_TABELAS[nome];
+
+        if (!chave) {
+            return [];
+        }
+
+        const tabela =
+            tabelas[chave];
+
+        return Array.isArray(tabela)
+            ? tabela
+            : [];
+    }
+
+
+    /*
+     * Alcance:
+     *
+     * A tabela base termina em 5 km / -20.
+     * A progressão seguinte é fixa.
+     */
+    const ALCANCE_EXTRA = [
+        ["7 km", -21],
+        ["10 km", -22],
+        ["15 km", -23],
+        ["20 km", -24],
+        ["30 km", -25],
+        ["50 km", -26],
+        ["100 km", -27],
+        ["150 km", -28],
+        ["200 km", -29],
+        ["300 km", -30],
+        ["500 km", -31],
+        ["700 km", -32],
+        ["1000 km", -33],
+        ["1500 km", -34],
+        ["2000 km", -35],
+        ["3000 km", -36],
+        ["5000 km", -37],
+        ["7000 km", -38],
+        ["10000 km", -39],
+        ["15000 km", -40]
+    ];
+
+
+    /*
+     * Área de efeito:
+     *
+     * A tabela base termina em 1 km / -20.
+     */
+    const AREA_EXTRA = [
+        ["1,4 km", -21],
+        ["2 km", -22],
+        ["3 km", -23],
+        ["4 km", -24],
+        ["5 km", -25],
+        ["7 km", -26],
+        ["10 km", -27],
+        ["14 km", -28],
+        ["20 km", -29],
+        ["30 km", -30],
+        ["40 km", -31],
+        ["50 km", -32],
+        ["70 km", -33],
+        ["100 km", -34],
+        ["140 km", -35],
+        ["200 km", -36],
+        ["300 km", -37],
+        ["400 km", -38],
+        ["500 km", -39],
+        ["700 km", -40]
+    ];
+
+
+    /*
+     * Tempo de conjuração.
+     *
+     * É incorporado aqui para que o gerador
+     * continue funcionando mesmo se a tabela
+     * ainda estiver sem essa chave.
+     */
+    const TEMPO_CONJURACAO_PADRAO = [
+        ["1 segundo", 0],
+        ["2 segundos", 1],
+        ["3 segundos", 2],
+        ["5 segundos", 3],
+        ["10 segundos", 4],
+        ["30 segundos", 5],
+        ["1 minuto", 6],
+        ["2 minutos", 7],
+        ["5 minutos", 8],
+        ["10 minutos", 9],
+        ["30 minutos", 10],
+        ["1 hora", 11],
+        ["3 horas", 12],
+        ["6 horas", 13],
+        ["12 horas", 14],
+        ["24 horas", 15],
+        ["3 dias", 16],
+        ["5 dias", 17],
+        ["10 dias", 18],
+        ["20 dias", 19],
+        ["1 mês", 20]
+    ];
+
+
+    function obterOpcoesParametro(nome) {
+
+        /*
+         * DANO é tratado de forma própria.
+         * Não usamos a lista de d6 do JSON.
+         */
+        if (nome === "dano") {
+            return [];
+        }
+
+
+        let tabela =
+            obterTabela(nome);
+
+
+        /*
+         * Tempo de conjuração possui
+         * fallback incorporado.
+         */
+        if (
+            nome === "tempo_conjuracao" &&
+            !tabela.length
+        ) {
+
+            tabela =
+                TEMPO_CONJURACAO_PADRAO.map(
+                    ([valor, modificador]) => ({
+                        valor,
+                        modificador
+                    })
+                );
+        }
+
+
+        const resultado =
+            tabela.map(clone);
+
+
+        /*
+         * ALCANCE
+         */
+        if (nome === "alcance") {
+
+            const valoresExistentes =
+                new Set(
+                    resultado.map(
+                        item =>
+                            String(item.valor)
+                    )
+                );
+
+
+            ALCANCE_EXTRA.forEach(
+                ([valor, modificador]) => {
+
+                    if (
+                        !valoresExistentes.has(
+                            valor
+                        )
+                    ) {
+
+                        resultado.push({
+                            valor,
+                            modificador
+                        });
+                    }
+                }
+            );
+        }
+
+
+        /*
+         * ÁREA DE EFEITO
+         */
+        if (nome === "area_efeito") {
+
+            const valoresExistentes =
+                new Set(
+                    resultado.map(
+                        item =>
+                            String(item.valor)
+                    )
+                );
+
+
+            AREA_EXTRA.forEach(
+                ([valor, modificador]) => {
+
+                    if (
+                        !valoresExistentes.has(
+                            valor
+                        )
+                    ) {
+
+                        resultado.push({
+                            valor,
+                            modificador
+                        });
+                    }
+                }
+            );
+        }
+
+
+        return resultado;
+    }
+
+
+    function encontrarOpcao(nome, valor) {
+
+        return obterOpcoesParametro(nome)
+            .find(
+                opcao =>
+                    String(opcao.valor) ===
+                    String(valor)
+            );
+    }
+
 
     /* =========================================================
        NORMALIZAÇÃO
@@ -155,70 +551,126 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function normalizarItem(item) {
 
-        if (!item || typeof item !== "object") {
+        if (
+            !item ||
+            typeof item !== "object" ||
+            Array.isArray(item)
+        ) {
+
             return {
                 valor: "",
                 modificador: 0
             };
         }
 
+
         const resultado = {
-            valor: "",
-            modificador: 0
+
+            valor:
+                item.valor ??
+                item.efeito ??
+                item.descricao ??
+                "",
+
+            modificador:
+                numero(
+                    item.modificador,
+                    0
+                )
         };
 
-        if (item.valor !== undefined) {
-            resultado.valor = item.valor;
-        }
-        else if (item.efeito !== undefined) {
-            resultado.valor = item.efeito;
-        }
-        else if (item.descricao !== undefined) {
-            resultado.valor = item.descricao;
-        }
-
-        if (
-            item.modificador !== undefined &&
-            item.modificador !== null &&
-            item.modificador !== ""
-        ) {
-            const numero = Number(item.modificador);
-
-            resultado.modificador =
-                Number.isNaN(numero) ? 0 : numero;
-        }
 
         if (
             item.detalhes &&
-            typeof item.detalhes === "object"
+            typeof item.detalhes ===
+                "object" &&
+            !Array.isArray(item.detalhes)
         ) {
-            resultado.detalhes = clone(item.detalhes);
+
+            resultado.detalhes =
+                clone(item.detalhes);
         }
 
-        const camposDetalhes = [
+
+        /*
+         * Compatibilidade com estruturas
+         * anteriores.
+         */
+        [
             "tipo",
             "direto",
-            "quantidade"
-        ];
+            "quantidade",
+            "pontos",
+            "limite_racial",
+            "base_metros",
+            "quantidade_d6",
+            "quantidade_ciclos",
+            "unidade"
+        ].forEach(campo => {
 
-        camposDetalhes.forEach(campo => {
+            if (
+                item[campo] !== undefined
+            ) {
 
-            if (item[campo] !== undefined) {
-
-                if (!resultado.detalhes) {
+                if (
+                    !resultado.detalhes
+                ) {
                     resultado.detalhes = {};
                 }
 
                 if (
-                    resultado.detalhes[campo] === undefined
+                    resultado.detalhes[campo] ===
+                    undefined
                 ) {
-                    resultado.detalhes[campo] = item[campo];
+
+                    resultado.detalhes[campo] =
+                        item[campo];
                 }
             }
         });
 
+
+        /*
+         * Compatibilidade especial para Dano.
+         *
+         * Se o valor antigo era "10d6",
+         * transformamos em quantidade_d6.
+         */
+        if (
+            resultado.valor !== undefined &&
+            typeof resultado.valor === "string"
+        ) {
+
+            const match =
+                resultado.valor.match(
+                    /^(\d+)\s*d6$/i
+                );
+
+            if (match) {
+
+                if (
+                    !resultado.detalhes
+                ) {
+                    resultado.detalhes = {};
+                }
+
+                if (
+                    resultado.detalhes
+                        .quantidade_d6 ===
+                    undefined
+                ) {
+
+                    resultado.detalhes
+                        .quantidade_d6 =
+                        Number(match[1]);
+                }
+            }
+        }
+
+
         return resultado;
     }
+
 
     function normalizarParametro(valor) {
 
@@ -226,121 +678,710 @@ document.addEventListener("DOMContentLoaded", () => {
             valor === undefined ||
             valor === null
         ) {
-            return [];
+            return undefined;
         }
+
 
         if (Array.isArray(valor)) {
-            return valor.map(normalizarItem);
+
+            return valor.map(
+                normalizarItem
+            );
         }
 
-        return [normalizarItem(valor)];
+
+        return [
+            normalizarItem(valor)
+        ];
     }
+
 
     function normalizarMagia(magia) {
 
         const resultado = {
-            id: magia.id || gerarId(),
 
-            nome: magia.nome || "",
+            id:
+                magia?.id ||
+                gerarId(),
 
-            dominio: magia.dominio || "",
+            nome:
+                magia?.nome ||
+                "",
+
+            dominio:
+                magia?.dominio ||
+                "",
 
             nivel:
-                magia.nivel !== undefined
-                    ? Number(magia.nivel)
+                magia?.nivel !== undefined &&
+                magia?.nivel !== ""
+                    ? numero(
+                        magia.nivel,
+                        ""
+                    )
                     : "",
 
             nivel_nome:
-                magia.nivel_nome || "",
+                magia?.nivel_nome ||
+                "",
 
             categoria:
-                magia.categoria || "",
+                magia?.categoria ||
+                "",
 
             efeito:
-                magia.efeito || "",
+                magia?.efeito ||
+                "",
 
             parametros: {},
 
             penalidade:
-                typeof magia.penalidade === "number"
-                    ? magia.penalidade
-                    : Number(magia.penalidade) || 0,
+                numero(
+                    magia?.penalidade,
+                    0
+                ),
 
             observacao:
-                magia.observacao || ""
+                magia?.observacao ||
+                ""
         };
 
-        const parametrosOriginais =
-            magia.parametros &&
-            typeof magia.parametros === "object"
+
+        const originais =
+            magia?.parametros &&
+            typeof magia.parametros ===
+                "object" &&
+            !Array.isArray(
+                magia.parametros
+            )
                 ? magia.parametros
                 : {};
 
-        Object.keys(parametrosOriginais).forEach(nome => {
 
-            const nomeCanonico =
-                normalizarNomeParametro(nome);
+        Object.keys(originais)
+            .forEach(nome => {
 
-            if (!PARAMETROS.includes(nomeCanonico)) {
-                return;
-            }
+                const canonico =
+                    normalizarNomeParametro(
+                        nome
+                    );
 
-            resultado.parametros[nomeCanonico] =
-                normalizarParametro(
-                    parametrosOriginais[nome]
-                );
-        });
+
+                if (
+                    !PARAMETROS.includes(
+                        canonico
+                    )
+                ) {
+                    return;
+                }
+
+
+                if (
+                    Object.hasOwn(
+                        resultado.parametros,
+                        canonico
+                    )
+                ) {
+                    return;
+                }
+
+
+                const parametro =
+                    normalizarParametro(
+                        originais[nome]
+                    );
+
+
+                if (
+                    parametro !== undefined
+                ) {
+
+                    resultado.parametros[
+                        canonico
+                    ] = parametro;
+                }
+            });
+
 
         return resultado;
     }
+
 
     function criarMagiaVazia() {
 
         return {
 
-            id: gerarId(),
+            id:
+                gerarId(),
 
-            nome: "",
+            nome:
+                "",
 
-            dominio: "",
+            dominio:
+                "",
 
-            nivel: 1,
+            nivel:
+                1,
 
-            nivel_nome: NIVEIS[1],
+            nivel_nome:
+                NIVEIS[1],
 
-            categoria: "Truque",
+            categoria:
+                "Truque",
 
-            efeito: "",
+            efeito:
+                "",
 
-            parametros: {
+            parametros:
+                {},
 
-                alcance: [
-                    {
-                        valor: "",
-                        modificador: 0
-                    }
-                ],
+            penalidade:
+                0,
 
-                duracao: [
-                    {
-                        valor: "",
-                        modificador: 0
-                    }
-                ],
-
-                tempo_conjuracao: [
-                    {
-                        valor: "",
-                        modificador: 0
-                    }
-                ]
-            },
-
-            penalidade: 0,
-
-            observacao: ""
+            observacao:
+                ""
         };
     }
+
+
+    /* =========================================================
+       CÁLCULO DOS MODIFICADORES
+       ========================================================= */
+
+    function calcularModificadorItem(
+        nome,
+        item
+    ) {
+
+        if (!item) {
+            return null;
+        }
+
+
+        const detalhes =
+            item.detalhes || {};
+
+
+        /*
+         * -----------------------------------------------------
+         * DANO
+         * -----------------------------------------------------
+         *
+         * Cada d6 = -1.
+         */
+        if (nome === "dano") {
+
+            let quantidade =
+                detalhes.quantidade_d6;
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "number"
+            ) {
+                quantidade =
+                    item.valor;
+            }
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "string"
+            ) {
+
+                const match =
+                    item.valor.match(
+                        /^(\d+)\s*d6$/i
+                    );
+
+                if (match) {
+                    quantidade =
+                        Number(match[1]);
+                }
+            }
+
+
+            if (
+                quantidade ===
+                    undefined ||
+                quantidade === ""
+            ) {
+                return null;
+            }
+
+
+            quantidade =
+                Number(quantidade);
+
+
+            if (
+                !Number.isFinite(
+                    quantidade
+                ) ||
+                quantidade < 0
+            ) {
+                return null;
+            }
+
+
+            return -Math.ceil(
+                quantidade
+            );
+        }
+
+
+        /*
+         * -----------------------------------------------------
+         * CARACTERÍSTICAS ALTERADAS
+         * -----------------------------------------------------
+         *
+         * Cada 5 pontos = -1.
+         *
+         * A partir do limite racial,
+         * cada passo adicional vale o dobro.
+         */
+        if (
+            nome ===
+            "caracteristicas_alteradas"
+        ) {
+
+            const pontos =
+                Number(
+                    detalhes.pontos
+                );
+
+
+            if (
+                !Number.isFinite(
+                    pontos
+                )
+            ) {
+                return null;
+            }
+
+
+            if (pontos <= 0) {
+                return 0;
+            }
+
+
+            const limite =
+                Number(
+                    detalhes.limite_racial
+                );
+
+
+            /*
+             * Sem limite racial informado:
+             * progressão normal.
+             */
+            if (
+                !Number.isFinite(
+                    limite
+                )
+            ) {
+
+                return -
+                    Math.ceil(
+                        pontos / 5
+                    );
+            }
+
+
+            if (
+                pontos <= limite
+            ) {
+
+                return -
+                    Math.ceil(
+                        pontos / 5
+                    );
+            }
+
+
+            const antes =
+                Math.ceil(
+                    limite / 5
+                );
+
+
+            const depois =
+                Math.ceil(
+                    (pontos - limite) / 5
+                );
+
+
+            return -(
+                antes +
+                depois * 2
+            );
+        }
+
+
+        /*
+         * -----------------------------------------------------
+         * CURA
+         * -----------------------------------------------------
+         */
+        if (nome === "cura") {
+
+            const opcao =
+                encontrarOpcao(
+                    nome,
+                    item.valor
+                );
+
+
+            if (!opcao) {
+                return null;
+            }
+
+
+            const texto =
+                String(
+                    opcao.modificador ??
+                    ""
+                );
+
+
+            /*
+             * Vitalidade: Recuperar PV
+             *
+             * Cada d6 = -1.
+             */
+            if (
+                texto.includes(
+                    "1d6 PV"
+                ) ||
+                String(item.valor)
+                    .toLowerCase()
+                    .includes(
+                        "vitalidade: recuperar pv"
+                    )
+            ) {
+
+                const quantidade =
+                    Number(
+                        detalhes.pv_d6 ??
+                        detalhes.quantidade
+                    );
+
+
+                if (
+                    !Number.isFinite(
+                        quantidade
+                    )
+                ) {
+                    return null;
+                }
+
+
+                return -
+                    Math.ceil(
+                        Math.max(
+                            0,
+                            quantidade
+                        )
+                    );
+            }
+
+
+            /*
+             * Fadiga: Recuperar PF
+             *
+             * Cada 2 PF = -1,
+             * arredondando para cima.
+             */
+            if (
+                texto.includes(
+                    "2 PF"
+                ) ||
+                String(item.valor)
+                    .toLowerCase()
+                    .includes(
+                        "fadiga: recuperar pf"
+                    )
+            ) {
+
+                const quantidade =
+                    Number(
+                        detalhes.qtd_pf ??
+                        detalhes.quantidade
+                    );
+
+
+                if (
+                    !Number.isFinite(
+                        quantidade
+                    )
+                ) {
+                    return null;
+                }
+
+
+                return -
+                    Math.ceil(
+                        Math.max(
+                            0,
+                            quantidade
+                        ) / 2
+                    );
+            }
+
+
+            if (
+                typeof opcao.modificador ===
+                "number"
+            ) {
+                return opcao.modificador;
+            }
+
+
+            return null;
+        }
+
+
+        /*
+         * -----------------------------------------------------
+         * MODIFICADORES DE ATAQUE
+         * -----------------------------------------------------
+         *
+         * Cíclico:
+         * modificador por ciclo × quantidade.
+         */
+        if (
+            nome ===
+            "modificadores_ataque"
+        ) {
+
+            const opcao =
+                encontrarOpcao(
+                    nome,
+                    item.valor
+                );
+
+
+            if (!opcao) {
+                return null;
+            }
+
+
+            const texto =
+                String(
+                    opcao.modificador ??
+                    ""
+                );
+
+
+            if (
+                texto
+                    .toLowerCase()
+                    .includes("ciclo")
+            ) {
+
+                const match =
+                    texto.match(
+                        /(-\d+)\s*\/\s*ciclo/i
+                    );
+
+
+                if (!match) {
+                    return null;
+                }
+
+
+                const porCiclo =
+                    Number(match[1]);
+
+
+                const ciclos =
+                    Number(
+                        detalhes.quantidade_ciclos ??
+                        detalhes.quantidade
+                    );
+
+
+                if (
+                    !Number.isFinite(
+                        ciclos
+                    )
+                ) {
+                    return null;
+                }
+
+
+                return (
+                    porCiclo *
+                    Math.max(
+                        0,
+                        ciclos
+                    )
+                );
+            }
+
+
+            if (
+                typeof opcao.modificador ===
+                "number"
+            ) {
+                return opcao.modificador;
+            }
+
+
+            return null;
+        }
+
+
+        /*
+         * -----------------------------------------------------
+         * DEMAIS PARÂMETROS
+         * -----------------------------------------------------
+         */
+        const opcao =
+            encontrarOpcao(
+                nome,
+                item.valor
+            );
+
+
+        if (!opcao) {
+            return null;
+        }
+
+
+        if (
+            typeof opcao.modificador ===
+            "number"
+        ) {
+            return opcao.modificador;
+        }
+
+
+        return null;
+    }
+
+
+    function calcularPenalidade(magia) {
+
+        let total = 0;
+
+
+        const parametros =
+            magia?.parametros || {};
+
+
+        Object.values(parametros)
+            .forEach(lista => {
+
+                if (
+                    !Array.isArray(lista)
+                ) {
+                    return;
+                }
+
+
+                lista.forEach(item => {
+
+                    const modificador =
+                        Number(
+                            item?.modificador
+                        );
+
+
+                    if (
+                        Number.isFinite(
+                            modificador
+                        )
+                    ) {
+
+                        total +=
+                            modificador;
+                    }
+                });
+            });
+
+
+        /*
+         * A penalidade nunca pode
+         * ser positiva.
+         */
+        return Math.min(
+            total,
+            0
+        );
+    }
+
+
+    function recalcularItens(magia) {
+
+        let alterados = 0;
+
+
+        Object.entries(
+            magia.parametros || {}
+        ).forEach(
+            ([nome, lista]) => {
+
+                if (
+                    !Array.isArray(lista)
+                ) {
+                    return;
+                }
+
+
+                lista.forEach(item => {
+
+                    const calculado =
+                        calcularModificadorItem(
+                            nome,
+                            item
+                        );
+
+
+                    if (
+                        calculado !== null &&
+                        calculado !==
+                            numero(
+                                item.modificador,
+                                0
+                            )
+                    ) {
+
+                        item.modificador =
+                            calculado;
+
+                        alterados++;
+                    }
+                });
+            }
+        );
+
+
+        return alterados;
+    }
+
+
+    function calcularPMMinimo(magia) {
+
+        const nivel =
+            Number(
+                magia?.nivel
+            );
+
+
+        return (
+            Number.isInteger(nivel) &&
+            nivel >= 1 &&
+            nivel <= 5
+        )
+            ? nivel
+            : "—";
+    }
+
 
     /* =========================================================
        VALIDAÇÃO
@@ -348,324 +1389,635 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function validarMagia(magia) {
 
-        const erros = [];
-        const avisos = [];
+        const resultado = {
 
+            erros: [],
+
+            avisos: [],
+
+            campos: [],
+
+            penalidadeCalculada:
+                calcularPenalidade(
+                    magia
+                )
+        };
+
+
+        /*
+         * Nome
+         */
         if (
-            !magia.nome ||
-            !String(magia.nome).trim()
+            valorVazio(
+                magia.nome
+            )
         ) {
-            erros.push(
+
+            resultado.erros.push(
                 "Nome da magia não informado."
             );
+
+            resultado.campos.push({
+                tipo: "erro",
+                seletor: "#gm-nome"
+            });
         }
 
-        if (!DOMINIOS.includes(magia.dominio)) {
 
-            erros.push(
+        /*
+         * Domínio
+         */
+        if (
+            !DOMINIOS.includes(
+                magia.dominio
+            )
+        ) {
+
+            resultado.erros.push(
                 "Domínio inválido ou não informado."
             );
+
+            resultado.campos.push({
+                tipo: "erro",
+                seletor: "#gm-dominio"
+            });
         }
 
-        const nivel = Number(magia.nivel);
+
+        /*
+         * Nível
+         */
+        const nivel =
+            Number(
+                magia.nivel
+            );
+
 
         if (
             !Number.isInteger(nivel) ||
             !NIVEIS[nivel]
         ) {
 
-            erros.push(
+            resultado.erros.push(
                 "Nível inválido. O nível deve estar entre 1 e 5."
             );
 
-        }
-        else if (
-            magia.nivel_nome !== NIVEIS[nivel]
+            resultado.campos.push({
+                tipo: "erro",
+                seletor: "#gm-nivel"
+            });
+
+        } else if (
+            magia.nivel_nome !==
+            NIVEIS[nivel]
         ) {
 
-            avisos.push(
-                `O nível ${nivel} corresponde a "${NIVEIS[nivel]}", ` +
-                `mas nivel_nome está como "${magia.nivel_nome || "(vazio)"}".`
+            resultado.avisos.push(
+                `O nível ${nivel} corresponde a "${NIVEIS[nivel]}", mas nivel_nome está como "${magia.nivel_nome || "(vazio)"}".`
             );
+
+            resultado.campos.push({
+                tipo: "aviso",
+                seletor: "#gm-nivel-nome"
+            });
         }
 
-        if (!CATEGORIAS.includes(magia.categoria)) {
 
-            erros.push(
+        /*
+         * Categoria
+         */
+        if (
+            !CATEGORIAS.includes(
+                magia.categoria
+            )
+        ) {
+
+            resultado.erros.push(
                 "Categoria inválida ou não informada."
             );
+
+            resultado.campos.push({
+                tipo: "erro",
+                seletor: "#gm-categoria"
+            });
         }
 
+
+        /*
+         * Efeito
+         */
         if (
-            !magia.efeito ||
-            !String(magia.efeito).trim()
+            valorVazio(
+                magia.efeito
+            )
         ) {
 
-            avisos.push(
+            resultado.avisos.push(
                 "A magia não possui descrição de efeito."
             );
+
+            resultado.campos.push({
+                tipo: "aviso",
+                seletor: "#gm-efeito"
+            });
         }
 
-        if (
-            !magia.parametros ||
-            typeof magia.parametros !== "object"
-        ) {
 
-            erros.push(
-                "Objeto parametros ausente ou inválido."
-            );
+        /*
+         * Parâmetros obrigatórios
+         */
+        PARAMETROS_OBRIGATORIOS
+            .forEach(nome => {
 
-        }
-        else {
+                const lista =
+                    magia.parametros?.[
+                        nome
+                    ];
 
-            /* -----------------------------------------
-               PARÂMETROS OBRIGATÓRIOS
-               ----------------------------------------- */
 
-            PARAMETROS_OBRIGATORIOS.forEach(nome => {
+                if (
+                    lista === undefined
+                ) {
 
-                const parametro =
-                    magia.parametros[nome];
-
-                /*
-                 * IMPORTANTE:
-                 *
-                 * Ausente ≠ estrutura inválida.
-                 *
-                 * Se o parâmetro não existir,
-                 * informamos que ele é obrigatório,
-                 * mas não geramos o erro
-                 * "deve ser um array".
-                 */
-
-                if (parametro === undefined) {
-
-                    erros.push(
+                    resultado.erros.push(
                         `Parâmetro obrigatório ausente: ${nomeParametro(nome)}.`
                     );
 
                     return;
                 }
 
-                /*
-                 * Só aqui verificamos se é array.
-                 */
 
-                if (!Array.isArray(parametro)) {
+                if (
+                    !Array.isArray(lista)
+                ) {
 
-                    erros.push(
+                    resultado.erros.push(
                         `O parâmetro "${nomeParametro(nome)}" deve ser um array.`
                     );
 
                     return;
                 }
 
-                if (parametro.length !== 1) {
 
-                    erros.push(
-                        `O parâmetro obrigatório "${nomeParametro(nome)}" ` +
-                        `deve possuir exatamente um item.`
+                if (
+                    lista.length !== 1
+                ) {
+
+                    resultado.erros.push(
+                        `O parâmetro obrigatório "${nomeParametro(nome)}" deve possuir exatamente um item.`
                     );
                 }
 
-                parametro.forEach(
-                    (item, indice) => {
 
+                lista.forEach(
+                    (item, indice) =>
                         validarItemParametro(
                             nome,
                             item,
                             indice,
-                            erros
-                        );
-                    }
+                            resultado
+                        )
                 );
             });
 
-            /* -----------------------------------------
-               DEMAIS PARÂMETROS
-               ----------------------------------------- */
 
-            Object.keys(magia.parametros)
-                .forEach(nome => {
+        /*
+         * Todos os parâmetros presentes
+         */
+        Object.keys(
+            magia.parametros || {}
+        ).forEach(nome => {
 
-                    if (!PARAMETROS.includes(nome)) {
+            if (
+                !PARAMETROS.includes(
+                    nome
+                )
+            ) {
 
-                        avisos.push(
-                            `Parâmetro desconhecido: "${nome}".`
-                        );
+                resultado.avisos.push(
+                    `Parâmetro desconhecido: "${nome}".`
+                );
 
-                        return;
-                    }
+                return;
+            }
 
-                    /*
-                     * Se o parâmetro existe,
-                     * ele precisa ser array.
-                     */
 
-                    if (
-                        !Array.isArray(
-                            magia.parametros[nome]
-                        )
-                    ) {
+            const lista =
+                magia.parametros[nome];
 
-                        erros.push(
-                            `O parâmetro "${nomeParametro(nome)}" ` +
-                            `deve ser um array.`
-                        );
 
-                        return;
-                    }
+            if (
+                !Array.isArray(lista)
+            ) {
 
-                    magia.parametros[nome]
-                        .forEach(
-                            (item, indice) => {
+                resultado.erros.push(
+                    `O parâmetro "${nomeParametro(nome)}" deve ser um array.`
+                );
 
-                                validarItemParametro(
-                                    nome,
-                                    item,
-                                    indice,
-                                    erros
-                                );
-                            }
-                        );
-                });
-        }
+                return;
+            }
 
-        const penalidadeCalculada =
-            calcularPenalidade(magia);
 
+            if (
+                lista.length === 0
+            ) {
+
+                resultado.avisos.push(
+                    `O parâmetro "${nomeParametro(nome)}" está vazio; ele será omitido na exportação.`
+                );
+            }
+
+
+            lista.forEach(
+                (item, indice) =>
+                    validarItemParametro(
+                        nome,
+                        item,
+                        indice,
+                        resultado
+                    )
+            );
+        });
+
+
+        /*
+         * Penalidade armazenada × calculada
+         */
         if (
-            Number(magia.penalidade) !==
-            penalidadeCalculada
+            numero(
+                magia.penalidade
+            ) !==
+            resultado.penalidadeCalculada
         ) {
 
-            avisos.push(
-                `A penalidade armazenada (${magia.penalidade}) ` +
-                `é diferente da penalidade calculada ` +
-                `(${penalidadeCalculada}).`
+            resultado.avisos.push(
+                `A penalidade armazenada (${magia.penalidade}) é diferente da penalidade calculada (${resultado.penalidadeCalculada}).`
             );
         }
 
-        return {
 
-            valido:
-                erros.length === 0,
-
-            erros,
-
-            avisos,
-
-            penalidadeCalculada
-        };
+        return resultado;
     }
+
 
     function validarItemParametro(
         nome,
         item,
         indice,
-        erros
+        resultado
     ) {
+
+        const caminho =
+            `${nomeParametro(nome)} — item ${indice + 1}`;
+
+
+        const seletor =
+            `[data-item-parametro="${escaparSeletor(nome)}"][data-indice="${indice}"]`;
+
 
         if (
             !item ||
-            typeof item !== "object"
+            typeof item !== "object" ||
+            Array.isArray(item)
         ) {
 
-            erros.push(
-                `${nomeParametro(nome)}: ` +
-                `item ${indice + 1} inválido.`
+            resultado.erros.push(
+                `${caminho}: item inválido.`
             );
 
             return;
         }
 
-        if (
-            item.valor === undefined ||
-            item.valor === null ||
-            String(item.valor).trim() === ""
+
+        /*
+         * Dano usa quantidade_d6
+         * como dado principal.
+         */
+        if (nome === "dano") {
+
+            const quantidade =
+                Number(
+                    item?.detalhes
+                        ?.quantidade_d6
+                );
+
+
+            if (
+                !Number.isFinite(
+                    quantidade
+                ) ||
+                quantidade < 1
+            ) {
+
+                resultado.erros.push(
+                    `${caminho}: quantidade de d6 não informada.`
+                );
+
+                resultado.campos.push({
+                    tipo: "erro",
+                    seletor:
+                        `${seletor} [data-detalhe="quantidade_d6"]`
+                });
+            }
+
+
+        } else if (
+            nome ===
+            "caracteristicas_alteradas"
         ) {
 
-            erros.push(
-                `${nomeParametro(nome)}: ` +
-                `valor não informado ` +
-                `(item ${indice + 1}).`
-            );
+            const pontos =
+                Number(
+                    item?.detalhes?.pontos
+                );
+
+
+            if (
+                !Number.isFinite(
+                    pontos
+                ) ||
+                pontos < 1
+            ) {
+
+                resultado.erros.push(
+                    `${caminho}: Pontos não informados.`
+                );
+
+                resultado.campos.push({
+                    tipo: "erro",
+                    seletor:
+                        `${seletor} [data-detalhe="pontos"]`
+                });
+            }
+
+
+            if (
+                valorVazio(
+                    item?.detalhes
+                        ?.alvo
+                )
+            ) {
+
+                resultado.avisos.push(
+                    `${caminho}: informe o atributo, vantagem ou desvantagem afetado.`
+                );
+
+                resultado.campos.push({
+                    tipo: "aviso",
+                    seletor:
+                        `${seletor} [data-detalhe="alvo"]`
+                });
+            }
+
+
+        } else if (
+            nome === "cura"
+        ) {
+
+            const opcao =
+                encontrarOpcao(
+                    nome,
+                    item.valor
+                );
+
+
+            if (!opcao) {
+
+                if (
+                    valorVazio(
+                        item.valor
+                    )
+                ) {
+
+                    resultado.erros.push(
+                        `${caminho}: valor não informado.`
+                    );
+
+                    resultado.campos.push({
+                        tipo: "erro",
+                        seletor:
+                            `${seletor} [data-campo="valor"]`
+                    });
+                }
+
+            } else {
+
+                const texto =
+                    String(
+                        opcao.modificador ??
+                        ""
+                    );
+
+
+                if (
+                    texto.includes(
+                        "2 PF"
+                    )
+                ) {
+
+                    const pf =
+                        Number(
+                            item.detalhes
+                                ?.qtd_pf
+                        );
+
+
+                    if (
+                        !Number.isFinite(
+                            pf
+                        ) ||
+                        pf < 1
+                    ) {
+
+                        resultado.erros.push(
+                            `${caminho}: Qtd PF não informada.`
+                        );
+
+                        resultado.campos.push({
+                            tipo: "erro",
+                            seletor:
+                                `${seletor} [data-detalhe="qtd_pf"]`
+                        });
+                    }
+
+
+                } else if (
+                    texto.includes(
+                        "1d6 PV"
+                    )
+                ) {
+
+                    const d6 =
+                        Number(
+                            item.detalhes
+                                ?.pv_d6
+                        );
+
+
+                    if (
+                        !Number.isFinite(
+                            d6
+                        ) ||
+                        d6 < 1
+                    ) {
+
+                        resultado.erros.push(
+                            `${caminho}: PV (d6) não informado.`
+                        );
+
+                        resultado.campos.push({
+                            tipo: "erro",
+                            seletor:
+                                `${seletor} [data-detalhe="pv_d6"]`
+                        });
+                    }
+                }
+            }
+
+
+        } else if (
+            nome ===
+            "modificadores_ataque"
+        ) {
+
+            const opcao =
+                encontrarOpcao(
+                    nome,
+                    item.valor
+                );
+
+
+            if (opcao) {
+
+                const texto =
+                    String(
+                        opcao.modificador ??
+                        ""
+                    );
+
+
+                if (
+                    texto
+                        .toLowerCase()
+                        .includes("ciclo")
+                ) {
+
+                    const ciclos =
+                        Number(
+                            item.detalhes
+                                ?.quantidade_ciclos
+                        );
+
+
+                    if (
+                        !Number.isFinite(
+                            ciclos
+                        ) ||
+                        ciclos < 1
+                    ) {
+
+                        resultado.erros.push(
+                            `${caminho}: quantidade de ciclos não informada.`
+                        );
+
+                        resultado.campos.push({
+                            tipo: "erro",
+                            seletor:
+                                `${seletor} [data-detalhe="quantidade_ciclos"]`
+                        });
+                    }
+                }
+            }
         }
 
+
+        /*
+         * Valor normal
+         */
         if (
-            item.modificador === undefined ||
-            item.modificador === null ||
-            item.modificador === "" ||
-            Number.isNaN(
-                Number(item.modificador)
+            nome !== "dano" &&
+            valorVazio(
+                item.valor
             )
         ) {
 
-            erros.push(
-                `${nomeParametro(nome)}: ` +
-                `modificador inválido ` +
-                `(item ${indice + 1}).`
+            resultado.erros.push(
+                `${caminho}: valor não informado.`
             );
-        }
-    }
 
-    /* =========================================================
-       PENALIDADE
-       ========================================================= */
-
-    function calcularPenalidade(magia) {
-
-        let total = 0;
-
-        if (
-            !magia.parametros ||
-            typeof magia.parametros !== "object"
-        ) {
-            return 0;
-        }
-
-        Object.values(magia.parametros)
-            .forEach(parametro => {
-
-                if (!Array.isArray(parametro)) {
-                    return;
-                }
-
-                parametro.forEach(item => {
-
-                    const modificador =
-                        Number(item?.modificador);
-
-                    if (
-                        !Number.isNaN(modificador)
-                    ) {
-                        total += modificador;
-                    }
-                });
+            resultado.campos.push({
+                tipo: "erro",
+                seletor:
+                    `${seletor} [data-campo="valor"]`
             });
+        }
+
 
         /*
-         * A penalidade nunca pode ser positiva.
-         * Bônus apenas cancelam penalidades.
+         * Modificador
          */
-
-        return Math.min(total, 0);
-    }
-
-    function calcularPMMinimo(magia) {
-
-        const nivel = Number(magia.nivel);
-
         if (
-            Number.isInteger(nivel) &&
-            nivel >= 1 &&
-            nivel <= 5
+            !Number.isFinite(
+                Number(
+                    item.modificador
+                )
+            )
         ) {
-            return nivel;
+
+            resultado.erros.push(
+                `${caminho}: modificador inválido.`
+            );
+
+            resultado.campos.push({
+                tipo: "erro",
+                seletor:
+                    `${seletor} [data-campo="modificador"]`
+            });
         }
 
-        return "—";
+
+        const calculado =
+            calcularModificadorItem(
+                nome,
+                item
+            );
+
+
+        if (
+            calculado === null
+        ) {
+
+            if (
+                nome !== "dano" &&
+                !valorVazio(
+                    item.valor
+                )
+            ) {
+
+                resultado.avisos.push(
+                    `${caminho}: o valor não foi encontrado na tabela ou exige detalhes adicionais para calcular o modificador.`
+                );
+            }
+
+
+        } else if (
+            numero(
+                item.modificador
+            ) !== calculado
+        ) {
+
+            resultado.avisos.push(
+                `${caminho}: modificador informado (${item.modificador}) difere do modificador calculado (${calculado}).`
+            );
+
+            resultado.campos.push({
+                tipo: "aviso",
+                seletor:
+                    `${seletor} [data-campo="modificador"]`
+            });
+        }
     }
+
 
     /* =========================================================
        INTERFACE PRINCIPAL
@@ -679,14 +2031,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <div>
 
-                    <h2>Gerador de Magias</h2>
+                    <h2>
+                        Gerador de Magias
+                    </h2>
 
                     <p class="gm-subtitulo">
-                        Crie, edite, valide, importe e exporte
-                        as magias do grimório.
+                        Crie, edite, valide, importe e exporte magias.
                     </p>
 
                 </div>
+
 
                 <div class="gm-acoes-principais">
 
@@ -698,6 +2052,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Importar JSON
                     </button>
 
+
                     <button
                         type="button"
                         class="gm-btn gm-btn-primario"
@@ -705,6 +2060,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     >
                         + Nova magia
                     </button>
+
 
                     <button
                         type="button"
@@ -716,6 +2072,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 </div>
 
+
                 <input
                     type="file"
                     id="gm-input-arquivo"
@@ -725,18 +2082,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </div>
 
+
             <div
                 id="gm-status"
                 class="gm-status"
+                role="status"
+                aria-live="polite"
             ></div>
+
 
             <div class="gm-layout">
 
-                <aside class="gm-lista">
+                <aside
+                    class="gm-lista"
+                    aria-label="Lista de magias"
+                >
 
                     <div class="gm-lista-cabecalho">
 
-                        <strong>Magias carregadas</strong>
+                        <strong>
+                            Magias em edição
+                        </strong>
 
                         <span
                             id="gm-contador"
@@ -747,9 +2113,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     </div>
 
+
+                    <div class="gm-filtro-lista">
+
+                        <label
+                            for="gm-busca"
+                            class="gm-label"
+                        >
+                            Pesquisar
+                        </label>
+
+                        <input
+                            type="search"
+                            id="gm-busca"
+                            class="gm-input"
+                            placeholder="Nome, domínio ou nível..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
                     <div id="gm-lista-magias"></div>
 
                 </aside>
+
 
                 <main
                     id="gm-editor"
@@ -759,6 +2147,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
+
         configurarEventos();
 
         renderizarLista();
@@ -766,45 +2155,71 @@ document.addEventListener("DOMContentLoaded", () => {
         renderizarEditor();
     }
 
-    /* =========================================================
-       EVENTOS
-       ========================================================= */
 
     function configurarEventos() {
 
         document
-            .getElementById("gm-importar")
-            .addEventListener(
+            .getElementById(
+                "gm-importar"
+            )
+            ?.addEventListener(
                 "click",
-                () => {
-
+                () =>
                     document
-                        .getElementById("gm-input-arquivo")
-                        .click();
-                }
+                        .getElementById(
+                            "gm-input-arquivo"
+                        )
+                        ?.click()
             );
 
+
         document
-            .getElementById("gm-input-arquivo")
-            .addEventListener(
+            .getElementById(
+                "gm-input-arquivo"
+            )
+            ?.addEventListener(
                 "change",
                 importarArquivo
             );
 
+
         document
-            .getElementById("gm-nova-magia")
-            .addEventListener(
+            .getElementById(
+                "gm-nova-magia"
+            )
+            ?.addEventListener(
                 "click",
                 novaMagia
             );
 
+
         document
-            .getElementById("gm-exportar")
-            .addEventListener(
+            .getElementById(
+                "gm-exportar"
+            )
+            ?.addEventListener(
                 "click",
                 exportarJSON
             );
+
+
+        document
+            .getElementById(
+                "gm-busca"
+            )
+            ?.addEventListener(
+                "input",
+                evento => {
+
+                    filtroLista =
+                        evento.target.value ||
+                        "";
+
+                    renderizarLista();
+                }
+            );
     }
+
 
     /* =========================================================
        LISTA
@@ -817,124 +2232,221 @@ document.addEventListener("DOMContentLoaded", () => {
                 "gm-lista-magias"
             );
 
+
         const contador =
             document.getElementById(
                 "gm-contador"
             );
 
-        contador.textContent =
-            magias.length;
 
-        if (magias.length === 0) {
+        if (
+            !lista ||
+            !contador
+        ) {
+            return;
+        }
+
+
+        const termo =
+            filtroLista
+                .trim()
+                .toLocaleLowerCase(
+                    "pt-BR"
+                );
+
+
+        const indices =
+            magias
+                .map(
+                    (magia, indice) => ({
+                        magia,
+                        indice
+                    })
+                )
+                .filter(
+                    ({ magia }) => {
+
+                        if (!termo) {
+                            return true;
+                        }
+
+
+                        const texto =
+                            `${magia.nome} ${magia.dominio} ${magia.nivel} ${magia.categoria}`
+                                .toLocaleLowerCase(
+                                    "pt-BR"
+                                );
+
+
+                        return texto.includes(
+                            termo
+                        );
+                    }
+                );
+
+
+        contador.textContent =
+            termo
+                ? `${indices.length}/${magias.length}`
+                : magias.length;
+
+
+        if (
+            !indices.length
+        ) {
 
             lista.innerHTML = `
+
                 <div class="gm-lista-vazia">
-                    Nenhuma magia carregada.
+
+                    ${
+                        magias.length
+                            ? "Nenhuma magia corresponde à pesquisa."
+                            : "Nenhuma magia criada ou importada."
+                    }
+
                 </div>
             `;
 
             return;
         }
 
+
         lista.innerHTML =
-            magias.map((magia, indice) => {
+            indices
+                .map(
+                    ({
+                        magia,
+                        indice
+                    }) => {
 
-                const validacao =
-                    validarMagia(magia);
+                        const validacao =
+                            validarMagia(
+                                magia
+                            );
 
-                let classeStatus =
-                    "gm-item-ok";
 
-                let simbolo =
-                    "✓";
+                        const possuiErro =
+                            validacao.erros.length >
+                            0;
 
-                if (
-                    validacao.erros.length > 0
-                ) {
 
-                    classeStatus =
-                        "gm-item-erro";
+                        const possuiAviso =
+                            !possuiErro &&
+                            validacao.avisos.length >
+                            0;
 
-                    simbolo =
-                        "!";
-                }
-                else if (
-                    validacao.avisos.length > 0
-                ) {
 
-                    classeStatus =
-                        "gm-item-aviso";
+                        return `
 
-                    simbolo =
-                        "⚠";
-                }
+                            <button
+                                type="button"
+                                class="gm-item-magia
+                                    ${
+                                        indice === indiceEdicao
+                                            ? "gm-item-selecionada"
+                                            : ""
+                                    }
+                                    ${
+                                        possuiErro
+                                            ? "gm-item-erro"
+                                            : possuiAviso
+                                                ? "gm-item-aviso"
+                                                : "gm-item-ok"
+                                    }"
+                                data-indice="${indice}"
+                            >
 
-                return `
+                                <span
+                                    class="gm-item-simbolo"
+                                    aria-hidden="true"
+                                >
+                                    ${
+                                        possuiErro
+                                            ? "!"
+                                            : possuiAviso
+                                                ? "⚠"
+                                                : "✓"
+                                    }
+                                </span>
 
-                    <button
-                        type="button"
-                        class="gm-item-magia
-                        ${indice === indiceEdicao
-                            ? "gm-item-selecionada"
-                            : ""}
-                        ${classeStatus}"
-                        data-indice="${indice}"
-                    >
 
-                        <span class="gm-item-simbolo">
-                            ${simbolo}
-                        </span>
+                                <span class="gm-item-conteudo">
 
-                        <span class="gm-item-conteudo">
+                                    <strong>
+                                        ${
+                                            escaparHTML(
+                                                magia.nome ||
+                                                "(sem nome)"
+                                            )
+                                        }
+                                    </strong>
 
-                            <strong>
-                                ${escaparHTML(
-                                    magia.nome ||
-                                    "(sem nome)"
-                                )}
-                            </strong>
 
-                            <small>
-                                ${escaparHTML(
-                                    magia.dominio ||
-                                    "Sem domínio"
-                                )}
-                                ·
-                                Nível
-                                ${escaparHTML(
-                                    magia.nivel
-                                )}
-                            </small>
+                                    <small>
+                                        ${
+                                            escaparHTML(
+                                                magia.dominio ||
+                                                "Sem domínio"
+                                            )
+                                        }
+                                        · Nível
+                                        ${
+                                            escaparHTML(
+                                                magia.nivel
+                                            )
+                                        }
+                                        ·
+                                        ${
+                                            escaparHTML(
+                                                magia.categoria ||
+                                                "Sem categoria"
+                                            )
+                                        }
+                                    </small>
 
-                        </span>
+                                </span>
 
-                    </button>
-                `;
+                            </button>
+                        `;
+                    }
+                )
+                .join("");
 
-            }).join("");
 
         lista
             .querySelectorAll(
                 ".gm-item-magia"
             )
-            .forEach(botao => {
+            .forEach(
+                botao => {
 
-                botao.addEventListener(
-                    "click",
-                    () => {
+                    botao.addEventListener(
+                        "click",
+                        () => {
 
-                        indiceEdicao =
-                            Number(
-                                botao.dataset.indice
-                            );
+                            if (
+                                indiceEdicao !== null
+                            ) {
+                                atualizarMagiaDoFormulario();
+                            }
 
-                        renderizarLista();
 
-                        renderizarEditor();
-                    }
-                );
-            });
+                            indiceEdicao =
+                                Number(
+                                    botao.dataset.indice
+                                );
+
+
+                            renderizarLista();
+
+                            renderizarEditor();
+                        }
+                    );
+                }
+            );
     }
+
 
     /* =========================================================
        EDITOR
@@ -947,18 +2459,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 "gm-editor"
             );
 
-        if (indiceEdicao === null) {
+
+        if (!editor) {
+            return;
+        }
+
+
+        if (
+            indiceEdicao === null
+        ) {
 
             editor.innerHTML = `
 
                 <div class="gm-editor-vazio">
 
-                    <h2>Gerador de Magias</h2>
+                    <h2>
+                        Gerador de Magias
+                    </h2>
 
                     <p>
-                        Selecione uma magia na lista
-                        ou crie uma nova magia.
+                        Crie uma nova magia ou importe um JSON
+                        quando quiser continuar um trabalho anterior.
                     </p>
+
 
                     <button
                         type="button"
@@ -971,27 +2494,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
 
+
             document
-                .getElementById("gm-nova-vazia")
-                .addEventListener(
+                .getElementById(
+                    "gm-nova-vazia"
+                )
+                ?.addEventListener(
                     "click",
                     novaMagia
                 );
 
+
             return;
         }
+
 
         const magia =
             magias[indiceEdicao];
 
+
         if (!magia) {
 
-            indiceEdicao = null;
+            indiceEdicao =
+                null;
 
             renderizarEditor();
 
             return;
         }
+
 
         editor.innerHTML = `
 
@@ -1000,18 +2531,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div>
 
                     <h2>
-                        ${escaparHTML(
-                            magia.nome ||
-                            "Nova magia"
-                        )}
+                        ${
+                            escaparHTML(
+                                magia.nome ||
+                                "Nova magia"
+                            )
+                        }
                     </h2>
+
 
                     <div
                         id="gm-status-magia"
                         class="gm-status-magia"
+                        role="status"
+                        aria-live="polite"
                     ></div>
 
                 </div>
+
 
                 <div class="gm-acoes-editor">
 
@@ -1022,6 +2559,25 @@ document.addEventListener("DOMContentLoaded", () => {
                     >
                         Salvar alterações
                     </button>
+
+
+                    <button
+                        type="button"
+                        class="gm-btn gm-btn-secundario"
+                        id="gm-aplicar-penalidade"
+                    >
+                        Aplicar penalidade calculada
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gm-btn gm-btn-perigo"
+                        id="gm-duplicar"
+                    >
+                        Duplicar
+                    </button>
+
 
                     <button
                         type="button"
@@ -1035,42 +2591,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </div>
 
+
             <div class="gm-form">
 
                 ${renderizarDadosBasicos(magia)}
 
                 ${renderizarResumo(magia)}
 
-                <section class="gm-secao-parametros">
+                ${renderizarParametros(magia)}
 
-                    <div class="gm-secao-titulo">
-
-                        <div>
-
-                            <h3>Parâmetros obrigatórios</h3>
-
-                            <p>
-                                Estes parâmetros devem possuir
-                                exatamente um item.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    ${PARAMETROS_OBRIGATORIOS
-                        .map(nome =>
-                            renderizarParametro(
-                                magia,
-                                nome,
-                                true
-                            )
-                        )
-                        .join("")}
-
-                </section>
-
-                ${renderizarParametrosAdicionais(magia)}
 
                 <section class="gm-secao">
 
@@ -1081,16 +2610,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         Observação
                     </label>
 
+
                     <textarea
                         id="gm-observacao"
                         class="gm-input gm-textarea"
                         rows="4"
                         placeholder="Observações internas..."
-                    >${escaparHTML(
-                        magia.observacao
-                    )}</textarea>
+                    >${
+                        escaparHTML(
+                            magia.observacao
+                        )
+                    }</textarea>
 
                 </section>
+
 
                 <section
                     id="gm-validacao"
@@ -1100,26 +2633,35 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
 
+
         configurarEventosEditor();
 
         renderizarValidacao();
     }
 
+
     /* =========================================================
        DADOS BÁSICOS
        ========================================================= */
 
-    function renderizarDadosBasicos(magia) {
+    function renderizarDadosBasicos(
+        magia
+    ) {
 
         return `
 
             <section class="gm-secao">
 
-                <h3>Dados básicos</h3>
+                <h3>
+                    Dados básicos
+                </h3>
+
 
                 <div class="gm-grid">
 
-                    <div class="gm-campo gm-campo-largo">
+                    <div
+                        class="gm-campo gm-campo-largo"
+                    >
 
                         <label
                             for="gm-nome"
@@ -1128,16 +2670,21 @@ document.addEventListener("DOMContentLoaded", () => {
                             Nome
                         </label>
 
+
                         <input
                             type="text"
                             id="gm-nome"
                             class="gm-input"
-                            value="${escaparHTML(
-                                magia.nome
-                            )}"
+                            value="${
+                                escaparHTML(
+                                    magia.nome
+                                )
+                            }"
+                            autocomplete="off"
                         >
 
                     </div>
+
 
                     <div class="gm-campo">
 
@@ -1148,6 +2695,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             Domínio
                         </label>
 
+
                         <select
                             id="gm-dominio"
                             class="gm-input"
@@ -1157,20 +2705,35 @@ document.addEventListener("DOMContentLoaded", () => {
                                 Selecione...
                             </option>
 
-                            ${DOMINIOS.map(dominio => `
-                                <option
-                                    value="${escaparHTML(dominio)}"
-                                    ${magia.dominio === dominio
-                                        ? "selected"
-                                        : ""}
-                                >
-                                    ${escaparHTML(dominio)}
-                                </option>
-                            `).join("")}
+                            ${
+                                DOMINIOS
+                                    .map(
+                                        dominio => `
+
+                                            <option
+                                                value="${escaparHTML(dominio)}"
+                                                ${
+                                                    magia.dominio ===
+                                                    dominio
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        dominio
+                                                    )
+                                                }
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
 
                         </select>
 
                     </div>
+
 
                     <div class="gm-campo">
 
@@ -1181,27 +2744,52 @@ document.addEventListener("DOMContentLoaded", () => {
                             Nível
                         </label>
 
+
                         <select
                             id="gm-nivel"
                             class="gm-input"
                         >
 
-                            ${Object.entries(NIVEIS)
-                                .map(([nivel, nome]) => `
-                                    <option
-                                        value="${nivel}"
-                                        ${Number(magia.nivel) === Number(nivel)
-                                            ? "selected"
-                                            : ""}
-                                    >
-                                        ${nivel} — ${escaparHTML(nome)}
-                                    </option>
-                                `)
-                                .join("")}
+                            ${
+                                Object.entries(
+                                    NIVEIS
+                                )
+                                    .map(
+                                        ([
+                                            nivel,
+                                            nome
+                                        ]) => `
+
+                                            <option
+                                                value="${nivel}"
+                                                ${
+                                                    Number(
+                                                        magia.nivel
+                                                    ) ===
+                                                    Number(
+                                                        nivel
+                                                    )
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${nivel}
+                                                —
+                                                ${
+                                                    escaparHTML(
+                                                        nome
+                                                    )
+                                                }
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
 
                         </select>
 
                     </div>
+
 
                     <div class="gm-campo">
 
@@ -1212,16 +2800,20 @@ document.addEventListener("DOMContentLoaded", () => {
                             Nome do nível
                         </label>
 
+
                         <input
                             type="text"
                             id="gm-nivel-nome"
                             class="gm-input"
-                            value="${escaparHTML(
-                                magia.nivel_nome
-                            )}"
+                            value="${
+                                escaparHTML(
+                                    magia.nivel_nome
+                                )
+                            }"
                         >
 
                     </div>
+
 
                     <div class="gm-campo">
 
@@ -1232,29 +2824,43 @@ document.addEventListener("DOMContentLoaded", () => {
                             Categoria
                         </label>
 
+
                         <select
                             id="gm-categoria"
                             class="gm-input"
                         >
 
-                            ${CATEGORIAS
-                                .map(categoria => `
-                                    <option
-                                        value="${escaparHTML(categoria)}"
-                                        ${magia.categoria === categoria
-                                            ? "selected"
-                                            : ""}
-                                    >
-                                        ${escaparHTML(categoria)}
-                                    </option>
-                                `)
-                                .join("")}
+                            ${
+                                CATEGORIAS
+                                    .map(
+                                        categoria => `
+
+                                            <option
+                                                value="${escaparHTML(categoria)}"
+                                                ${
+                                                    magia.categoria ===
+                                                    categoria
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        categoria
+                                                    )
+                                                }
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
 
                         </select>
 
                     </div>
 
                 </div>
+
 
                 <div class="gm-campo">
 
@@ -1265,13 +2871,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         Efeito
                     </label>
 
+
                     <textarea
                         id="gm-efeito"
                         class="gm-input gm-textarea"
                         rows="5"
-                    >${escaparHTML(
-                        magia.efeito
-                    )}</textarea>
+                    >${
+                        escaparHTML(
+                            magia.efeito
+                        )
+                    }</textarea>
 
                 </div>
 
@@ -1279,29 +2888,39 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
+
     /* =========================================================
        RESUMO
        ========================================================= */
 
-    function renderizarResumo(magia) {
+    function renderizarResumo(
+        magia
+    ) {
 
         const calculada =
-            calcularPenalidade(magia);
+            calcularPenalidade(
+                magia
+            );
 
-        const pm =
-            calcularPMMinimo(magia);
 
         const armazenada =
-            Number(magia.penalidade);
+            numero(
+                magia.penalidade
+            );
 
-        let classe =
+
+        const classe =
             armazenada === calculada
                 ? "gm-resumo-ok"
                 : "gm-resumo-aviso";
 
+
         return `
 
-            <section class="gm-resumo">
+            <section
+                class="gm-resumo"
+                aria-label="Resumo da magia"
+            >
 
                 <div class="gm-resumo-item">
 
@@ -1310,12 +2929,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
 
                     <strong>
-                        ${escaparHTML(
-                            magia.nivel
-                        )}
+                        ${
+                            escaparHTML(
+                                magia.nivel
+                            )
+                        }
                     </strong>
 
                 </div>
+
 
                 <div class="gm-resumo-item">
 
@@ -1324,24 +2946,36 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
 
                     <strong>
-                        ${escaparHTML(pm)}
+                        ${
+                            escaparHTML(
+                                calcularPMMinimo(
+                                    magia
+                                )
+                            )
+                        }
                     </strong>
 
                 </div>
 
-                <div class="gm-resumo-item ${classe}">
+
+                <div
+                    class="gm-resumo-item ${classe}"
+                >
 
                     <span>
                         Penalidade armazenada
                     </span>
 
                     <strong>
-                        ${escaparHTML(
-                            magia.penalidade
-                        )}
+                        ${
+                            escaparHTML(
+                                magia.penalidade
+                            )
+                        }
                     </strong>
 
                 </div>
+
 
                 <div class="gm-resumo-item">
 
@@ -1350,9 +2984,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
 
                     <strong>
-                        ${escaparHTML(
-                            calculada
-                        )}
+                        ${
+                            escaparHTML(
+                                calculada
+                            )
+                        }
                     </strong>
 
                 </div>
@@ -1361,23 +2997,34 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
+
     /* =========================================================
-       PARÂMETROS ADICIONAIS
+       PARÂMETROS
        ========================================================= */
 
-    function renderizarParametrosAdicionais(magia) {
+    function renderizarParametros(
+        magia
+    ) {
 
-        const existentes =
-            new Set(
-                Object.keys(
-                    magia.parametros || {}
-                )
+        const presentes =
+            PARAMETROS.filter(
+                nome =>
+                    Object.hasOwn(
+                        magia.parametros || {},
+                        nome
+                    )
             );
 
-        const disponiveis =
-            PARAMETROS.filter(nome =>
-                !existentes.has(nome)
+
+        const faltantes =
+            PARAMETROS.filter(
+                nome =>
+                    !Object.hasOwn(
+                        magia.parametros || {},
+                        nome
+                    )
             );
+
 
         return `
 
@@ -1387,59 +3034,111 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <div>
 
-                        <h3>Parâmetros adicionais</h3>
+                        <h3>
+                            Parâmetros
+                        </h3>
 
                         <p>
-                            Adicione somente os parâmetros
-                            utilizados pela magia.
+                            Somente os parâmetros utilizados
+                            pela magia são exibidos.
                         </p>
 
                     </div>
 
                 </div>
 
-                <div class="gm-botoes-adicionar">
+
+                <div
+                    class="gm-parametros-presentes"
+                >
 
                     ${
-                        disponiveis.length === 0
-                            ? `
-                                <span class="gm-todos-adicionados">
-                                    Todos os parâmetros estão adicionados.
-                                </span>
-                              `
-                            : disponiveis
-                                .map(nome => `
-                                    <button
-                                        type="button"
-                                        class="gm-btn gm-btn-adicionar"
-                                        data-adicionar-parametro="${nome}"
-                                    >
-                                        + ${escaparHTML(
-                                            nomeParametro(nome)
-                                        )}
-                                    </button>
-                                `)
+                        presentes.length
+                            ? presentes
+                                .map(
+                                    nome =>
+                                        renderizarParametro(
+                                            magia,
+                                            nome
+                                        )
+                                )
                                 .join("")
+                            : `
+                                <div class="gm-parametro-vazio">
+                                    Nenhum parâmetro adicionado.
+                                </div>
+                            `
                     }
 
                 </div>
 
-                <div class="gm-parametros-opcionais">
 
-                    ${PARAMETROS
-                        .filter(nome =>
-                            !PARAMETROS_OBRIGATORIOS
-                                .includes(nome) &&
-                            existentes.has(nome)
-                        )
-                        .map(nome =>
-                            renderizarParametro(
-                                magia,
-                                nome,
-                                false
-                            )
-                        )
-                        .join("")}
+                <div
+                    class="gm-adicionar-parametro"
+                >
+
+                    <label
+                        for="gm-seletor-parametro"
+                        class="gm-label"
+                    >
+                        Adicionar parâmetro
+                    </label>
+
+
+                    <div
+                        class="gm-adicionar-parametro-linha"
+                    >
+
+                        <select
+                            id="gm-seletor-parametro"
+                            class="gm-input"
+                        >
+
+                            <option value="">
+                                Selecione...
+                            </option>
+
+
+                            ${
+                                faltantes
+                                    .map(
+                                        nome => `
+
+                                            <option
+                                                value="${escaparHTML(nome)}"
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        nomeParametro(
+                                                            nome
+                                                        )
+                                                    )
+                                                }
+                                                ${
+                                                    PARAMETROS_OBRIGATORIOS.includes(
+                                                        nome
+                                                    )
+                                                        ? " — obrigatório"
+                                                        : ""
+                                                }
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
+
+                        </select>
+
+
+                        <button
+                            type="button"
+                            class="gm-btn gm-btn-adicionar"
+                            id="gm-adicionar-parametro"
+                        >
+                            Adicionar
+                        </button>
+
+                    </div>
 
                 </div>
 
@@ -1447,81 +3146,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    /* =========================================================
-       PARÂMETRO
-       ========================================================= */
 
     function renderizarParametro(
         magia,
-        nome,
-        obrigatorio
+        nome
     ) {
 
-        const existe =
-            magia.parametros &&
-            Object.prototype.hasOwnProperty.call(
-                magia.parametros,
+        const obrigatorio =
+            PARAMETROS_OBRIGATORIOS.includes(
                 nome
             );
 
-        /*
-         * Parâmetro obrigatório ausente:
-         * mostramos a situação e um botão
-         * para corrigir diretamente.
-         */
-
-        if (!existe) {
-
-            return `
-
-                <div
-                    class="gm-parametro gm-parametro-ausente"
-                    data-parametro="${nome}"
-                >
-
-                    <div class="gm-parametro-cabecalho">
-
-                        <div>
-
-                            <h4>
-                                ${escaparHTML(
-                                    nomeParametro(nome)
-                                )}
-                            </h4>
-
-                            <span class="gm-tag-obrigatorio">
-                                Obrigatório
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="gm-parametro-alerta">
-
-                        <span class="gm-alerta-icone">
-                            ⚠
-                        </span>
-
-                        <span>
-                            Parâmetro obrigatório ausente.
-                        </span>
-
-                    </div>
-
-                    <button
-                        type="button"
-                        class="gm-btn gm-btn-adicionar"
-                        data-adicionar-parametro="${nome}"
-                    >
-                        + Adicionar ${escaparHTML(
-                            nomeParametro(nome)
-                        )}
-                    </button>
-
-                </div>
-            `;
-        }
 
         const itens =
             Array.isArray(
@@ -1530,8 +3165,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 ? magia.parametros[nome]
                 : [];
 
+
         const multiplos =
-            PARAMETROS_MULTIPLOS.includes(nome);
+            PARAMETROS_MULTIPLOS.includes(
+                nome
+            );
+
 
         return `
 
@@ -1540,15 +3179,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 data-parametro="${nome}"
             >
 
-                <div class="gm-parametro-cabecalho">
+                <div
+                    class="gm-parametro-cabecalho"
+                >
 
                     <div>
 
                         <h4>
-                            ${escaparHTML(
-                                nomeParametro(nome)
-                            )}
+                            ${
+                                escaparHTML(
+                                    nomeParametro(
+                                        nome
+                                    )
+                                )
+                            }
                         </h4>
+
 
                         ${
                             obrigatorio
@@ -1556,40 +3202,36 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <span class="gm-tag-obrigatorio">
                                         Obrigatório
                                     </span>
-                                  `
+                                `
                                 : ""
                         }
 
                     </div>
 
-                    ${
-                        !obrigatorio
-                            ? `
-                                <button
-                                    type="button"
-                                    class="gm-btn gm-btn-remover"
-                                    data-remover-parametro="${nome}"
-                                >
-                                    Remover
-                                </button>
-                              `
-                            : ""
-                    }
+
+                    <button
+                        type="button"
+                        class="gm-btn gm-btn-remover"
+                        data-remover-parametro="${nome}"
+                    >
+                        Remover parâmetro
+                    </button>
 
                 </div>
 
-                <div class="gm-itens-parametro">
+
+                <div
+                    class="gm-itens-parametro"
+                >
 
                     ${
-                        itens.length === 0
-                            ? `
-                                <div class="gm-parametro-vazio">
-                                    Nenhum item informado.
-                                </div>
-                              `
-                            : itens
+                        itens.length
+                            ? itens
                                 .map(
-                                    (item, indice) =>
+                                    (
+                                        item,
+                                        indice
+                                    ) =>
                                         renderizarItemParametro(
                                             nome,
                                             item,
@@ -1598,9 +3240,15 @@ document.addEventListener("DOMContentLoaded", () => {
                                         )
                                 )
                                 .join("")
+                            : `
+                                <div class="gm-parametro-vazio">
+                                    Nenhum item informado.
+                                </div>
+                            `
                     }
 
                 </div>
+
 
                 ${
                     multiplos
@@ -1612,13 +3260,18 @@ document.addEventListener("DOMContentLoaded", () => {
                             >
                                 + Adicionar item
                             </button>
-                          `
+                        `
                         : ""
                 }
 
             </div>
         `;
     }
+
+
+    /* =========================================================
+       ITEM DE PARÂMETRO
+       ========================================================= */
 
     function renderizarItemParametro(
         nome,
@@ -1627,6 +3280,146 @@ document.addEventListener("DOMContentLoaded", () => {
         multiplos
     ) {
 
+        const detalhes =
+            item.detalhes || {};
+
+
+        const opcoes =
+            obterOpcoesParametro(
+                nome
+            );
+
+
+        const existeNaTabela =
+            opcoes.some(
+                opcao =>
+                    String(opcao.valor) ===
+                    String(item.valor)
+            );
+
+
+        const opcao =
+            opcoes.find(
+                opcao =>
+                    String(opcao.valor) ===
+                    String(item.valor)
+            );
+
+
+        const calculado =
+            calcularModificadorItem(
+                nome,
+                item
+            );
+
+
+        let valorInicial =
+            item.valor;
+
+
+        /*
+         * Dano:
+         *
+         * O valor exportado é numérico.
+         * Durante edição mostramos a quantidade
+         * no campo específico.
+         */
+        if (nome === "dano") {
+
+            let quantidade =
+                detalhes.quantidade_d6;
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "number"
+            ) {
+                quantidade =
+                    item.valor;
+            }
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "string"
+            ) {
+
+                const match =
+                    item.valor.match(
+                        /^(\d+)\s*d6$/i
+                    );
+
+                if (match) {
+                    quantidade =
+                        Number(match[1]);
+                }
+            }
+
+
+            return renderizarItemDano(
+                item,
+                indice,
+                multiplos,
+                quantidade
+            );
+        }
+
+
+        /*
+         * Características alteradas
+         */
+        if (
+            nome ===
+            "caracteristicas_alteradas"
+        ) {
+
+            return renderizarItemCaracteristicas(
+                item,
+                indice,
+                multiplos,
+                opcoes
+            );
+        }
+
+
+        /*
+         * Cura
+         */
+        if (nome === "cura") {
+
+            return renderizarItemCura(
+                item,
+                indice,
+                multiplos,
+                opcoes
+            );
+        }
+
+
+        /*
+         * Modificadores de ataque
+         */
+        if (
+            nome ===
+            "modificadores_ataque"
+        ) {
+
+            return renderizarItemAtaque(
+                item,
+                indice,
+                multiplos,
+                opcoes
+            );
+        }
+
+
+        /*
+         * Parâmetros normais.
+         */
         return `
 
             <div
@@ -1635,39 +3428,130 @@ document.addEventListener("DOMContentLoaded", () => {
                 data-indice="${indice}"
             >
 
-                <div class="gm-campo">
+                <div
+                    class="gm-campo gm-campo-largo"
+                >
 
                     <label class="gm-label">
                         Valor
                     </label>
 
-                    <input
-                        type="text"
+
+                    <select
                         class="gm-input"
                         data-campo="valor"
-                        value="${escaparHTML(
-                            item.valor
-                        )}"
                     >
+
+                        <option value="">
+                            Selecione...
+                        </option>
+
+
+                        ${
+                            !existeNaTabela &&
+                            !valorVazio(
+                                item.valor
+                            )
+                                ? `
+                                    <option
+                                        value="${escaparHTML(item.valor)}"
+                                        selected
+                                    >
+                                        ⚠
+                                        ${
+                                            escaparHTML(
+                                                item.valor
+                                            )
+                                        }
+                                        (importado)
+                                    </option>
+                                `
+                                : ""
+                        }
+
+
+                        ${
+                            opcoes
+                                .map(
+                                    opcao => `
+
+                                        <option
+                                            value="${escaparHTML(opcao.valor)}"
+                                            ${
+                                                String(
+                                                    opcao.valor
+                                                ) ===
+                                                String(
+                                                    item.valor
+                                                )
+                                                    ? "selected"
+                                                    : ""
+                                            }
+                                        >
+                                            ${
+                                                escaparHTML(
+                                                    opcao.valor
+                                                )
+                                            }
+                                            (
+                                            ${
+                                                formatarModificador(
+                                                    opcao.modificador
+                                                )
+                                            }
+                                            )
+                                        </option>
+                                    `
+                                )
+                                .join("")
+                        }
+
+                    </select>
 
                 </div>
 
-                <div class="gm-campo gm-campo-modificador">
+
+                <div
+                    class="gm-campo gm-campo-modificador"
+                >
 
                     <label class="gm-label">
                         Modificador
                     </label>
 
+
                     <input
                         type="number"
                         class="gm-input"
                         data-campo="modificador"
-                        value="${escaparHTML(
-                            item.modificador
-                        )}"
+                        value="${
+                            escaparHTML(
+                                calculado !== null
+                                    ? calculado
+                                    : item.modificador
+                            )
+                        }"
+                        readonly
                     >
 
                 </div>
+
+
+                ${
+                    nome ===
+                    "tempo_conjuracao"
+                        ? `
+                            <div class="gm-campo">
+                                <small>
+                                    O modificador do tempo
+                                    de conjuração entra no
+                                    cálculo da penalidade.
+                                </small>
+                            </div>
+                        `
+                        : ""
+                }
+
 
                 ${
                     multiplos
@@ -1678,16 +3562,758 @@ document.addEventListener("DOMContentLoaded", () => {
                                 data-remover-item="${nome}"
                                 data-indice="${indice}"
                                 title="Remover este item"
+                                aria-label="Remover item"
                             >
                                 ×
                             </button>
-                          `
+                        `
                         : ""
                 }
 
             </div>
         `;
     }
+
+
+    /* =========================================================
+       DANO
+       ========================================================= */
+
+    function renderizarItemDano(
+        item,
+        indice,
+        multiplos,
+        quantidade
+    ) {
+
+        const detalhes =
+            item.detalhes || {};
+
+
+        return `
+
+            <div
+                class="gm-item-parametro"
+                data-item-parametro="dano"
+                data-indice="${indice}"
+            >
+
+                <div class="gm-grid">
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Qtde de d6
+                        </label>
+
+
+                        <input
+                            type="number"
+                            min="1"
+                            step="1"
+                            class="gm-input"
+                            data-detalhe="quantidade_d6"
+                            value="${
+                                escaparHTML(
+                                    quantidade ??
+                                    ""
+                                )
+                            }"
+                        >
+
+                    </div>
+
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Tipo
+                        </label>
+
+
+                        <input
+                            type="text"
+                            class="gm-input"
+                            data-detalhe="tipo"
+                            value="${
+                                escaparHTML(
+                                    detalhes.tipo ??
+                                    ""
+                                )
+                            }"
+                            placeholder="Fogo, elétrico, físico..."
+                        >
+
+                    </div>
+
+
+                    <div class="gm-campo gm-campo-modificador">
+
+                        <label class="gm-label">
+                            Modificador
+                        </label>
+
+
+                        <input
+                            type="number"
+                            class="gm-input"
+                            data-campo="modificador"
+                            value="${
+                                escaparHTML(
+                                    calcularModificadorItem(
+                                        "dano",
+                                        item
+                                    ) ??
+                                    item.modificador ??
+                                    0
+                                )
+                            }"
+                            readonly
+                        >
+
+                    </div>
+
+                </div>
+
+
+                ${
+                    multiplos
+                        ? `
+                            <button
+                                type="button"
+                                class="gm-btn gm-btn-remover-item"
+                                data-remover-item="dano"
+                                data-indice="${indice}"
+                                title="Remover este item"
+                                aria-label="Remover item"
+                            >
+                                ×
+                            </button>
+                        `
+                        : ""
+                }
+
+            </div>
+        `;
+    }
+
+
+    /* =========================================================
+       CARACTERÍSTICAS ALTERADAS
+       ========================================================= */
+
+    function renderizarItemCaracteristicas(
+        item,
+        indice,
+        multiplos,
+        opcoes
+    ) {
+
+        const detalhes =
+            item.detalhes || {};
+
+
+        const calculado =
+            calcularModificadorItem(
+                "caracteristicas_alteradas",
+                item
+            );
+
+
+        return `
+
+            <div
+                class="gm-item-parametro"
+                data-item-parametro="caracteristicas_alteradas"
+                data-indice="${indice}"
+            >
+
+                <div class="gm-grid">
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Operação
+                        </label>
+
+
+                        <select
+                            class="gm-input"
+                            data-campo="valor"
+                        >
+
+                            <option value="">
+                                Selecione...
+                            </option>
+
+
+                            ${
+                                opcoes
+                                    .map(
+                                        opcao => `
+
+                                            <option
+                                                value="${escaparHTML(opcao.valor)}"
+                                                ${
+                                                    String(
+                                                        opcao.valor
+                                                    ) ===
+                                                    String(
+                                                        item.valor
+                                                    )
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        opcao.valor
+                                                    )
+                                                }
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Atributo / Vantagem / Desvantagem
+                        </label>
+
+
+                        <input
+                            type="text"
+                            class="gm-input"
+                            data-detalhe="alvo"
+                            value="${
+                                escaparHTML(
+                                    detalhes.alvo ??
+                                    ""
+                                )
+                            }"
+                            placeholder="Ex.: ST, Visão Noturna..."
+                        >
+
+                    </div>
+
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Pontos
+                        </label>
+
+
+                        <input
+                            type="number"
+                            min="1"
+                            step="1"
+                            class="gm-input"
+                            data-detalhe="pontos"
+                            value="${
+                                escaparHTML(
+                                    detalhes.pontos ??
+                                    ""
+                                )
+                            }"
+                        >
+
+                    </div>
+
+
+                    <div class="gm-campo">
+
+                        <label class="gm-label">
+                            Limite racial
+                        </label>
+
+
+                        <input
+                            type="number"
+                            min="0"
+                            step="1"
+                            class="gm-input"
+                            data-detalhe="limite_racial"
+                            value="${
+                                escaparHTML(
+                                    detalhes.limite_racial ??
+                                    ""
+                                )
+                            }"
+                        >
+
+                    </div>
+
+
+                    <div class="gm-campo gm-campo-modificador">
+
+                        <label class="gm-label">
+                            Modificador
+                        </label>
+
+
+                        <input
+                            type="number"
+                            class="gm-input"
+                            data-campo="modificador"
+                            value="${
+                                escaparHTML(
+                                    calculado ??
+                                    item.modificador ??
+                                    0
+                                )
+                            }"
+                            readonly
+                        >
+
+                    </div>
+
+                </div>
+
+
+                ${
+                    multiplos
+                        ? `
+                            <button
+                                type="button"
+                                class="gm-btn gm-btn-remover-item"
+                                data-remover-item="caracteristicas_alteradas"
+                                data-indice="${indice}"
+                                title="Remover este item"
+                                aria-label="Remover item"
+                            >
+                                ×
+                            </button>
+                        `
+                        : ""
+                }
+
+            </div>
+        `;
+    }
+
+
+    /* =========================================================
+       CURA
+       ========================================================= */
+
+    function renderizarItemCura(
+        item,
+        indice,
+        multiplos,
+        opcoes
+    ) {
+
+        const detalhes =
+            item.detalhes || {};
+
+
+        const opcao =
+            opcoes.find(
+                op =>
+                    String(op.valor) ===
+                    String(item.valor)
+            );
+
+
+        const texto =
+            String(
+                opcao?.modificador ??
+                ""
+            );
+
+
+        const recuperaPF =
+            texto.includes(
+                "2 PF"
+            );
+
+
+        const recuperaPV =
+            texto.includes(
+                "1d6 PV"
+            );
+
+
+        const calculado =
+            calcularModificadorItem(
+                "cura",
+                item
+            );
+
+
+        return `
+
+            <div
+                class="gm-item-parametro"
+                data-item-parametro="cura"
+                data-indice="${indice}"
+            >
+
+                <div class="gm-grid">
+
+                    <div
+                        class="gm-campo gm-campo-largo"
+                    >
+
+                        <label class="gm-label">
+                            Tipo de cura
+                        </label>
+
+
+                        <select
+                            class="gm-input"
+                            data-campo="valor"
+                        >
+
+                            <option value="">
+                                Selecione...
+                            </option>
+
+
+                            ${
+                                opcoes
+                                    .map(
+                                        opcao => `
+
+                                            <option
+                                                value="${escaparHTML(opcao.valor)}"
+                                                ${
+                                                    String(
+                                                        opcao.valor
+                                                    ) ===
+                                                    String(
+                                                        item.valor
+                                                    )
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        opcao.valor
+                                                    )
+                                                }
+                                                (
+                                                ${
+                                                    formatarModificador(
+                                                        opcao.modificador
+                                                    )
+                                                }
+                                                )
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
+
+                        </select>
+
+                    </div>
+
+
+                    ${
+                        recuperaPF
+                            ? `
+                                <div class="gm-campo">
+
+                                    <label class="gm-label">
+                                        Qtd PF
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        step="1"
+                                        class="gm-input"
+                                        data-detalhe="qtd_pf"
+                                        value="${
+                                            escaparHTML(
+                                                detalhes.qtd_pf ??
+                                                ""
+                                            )
+                                        }"
+                                    >
+
+                                </div>
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        recuperaPV
+                            ? `
+                                <div class="gm-campo">
+
+                                    <label class="gm-label">
+                                        PV (d6)
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        step="1"
+                                        class="gm-input"
+                                        data-detalhe="pv_d6"
+                                        value="${
+                                            escaparHTML(
+                                                detalhes.pv_d6 ??
+                                                ""
+                                            )
+                                        }"
+                                    >
+
+                                </div>
+                            `
+                            : ""
+                    }
+
+
+                    <div
+                        class="gm-campo gm-campo-modificador"
+                    >
+
+                        <label class="gm-label">
+                            Modificador
+                        </label>
+
+
+                        <input
+                            type="number"
+                            class="gm-input"
+                            data-campo="modificador"
+                            value="${
+                                escaparHTML(
+                                    calculado ??
+                                    item.modificador ??
+                                    0
+                                )
+                            }"
+                            readonly
+                        >
+
+                    </div>
+
+                </div>
+
+
+                ${
+                    multiplos
+                        ? `
+                            <button
+                                type="button"
+                                class="gm-btn gm-btn-remover-item"
+                                data-remover-item="cura"
+                                data-indice="${indice}"
+                                title="Remover este item"
+                                aria-label="Remover item"
+                            >
+                                ×
+                            </button>
+                        `
+                        : ""
+                }
+
+            </div>
+        `;
+    }
+
+
+    /* =========================================================
+       MODIFICADORES DE ATAQUE
+       ========================================================= */
+
+    function renderizarItemAtaque(
+        item,
+        indice,
+        multiplos,
+        opcoes
+    ) {
+
+        const detalhes =
+            item.detalhes || {};
+
+
+        const opcao =
+            opcoes.find(
+                op =>
+                    String(op.valor) ===
+                    String(item.valor)
+            );
+
+
+        const ciclico =
+            String(
+                opcao?.modificador ??
+                ""
+            )
+                .toLowerCase()
+                .includes("ciclo");
+
+
+        const calculado =
+            calcularModificadorItem(
+                "modificadores_ataque",
+                item
+            );
+
+
+        return `
+
+            <div
+                class="gm-item-parametro"
+                data-item-parametro="modificadores_ataque"
+                data-indice="${indice}"
+            >
+
+                <div class="gm-grid">
+
+                    <div
+                        class="gm-campo gm-campo-largo"
+                    >
+
+                        <label class="gm-label">
+                            Modificador de ataque
+                        </label>
+
+
+                        <select
+                            class="gm-input"
+                            data-campo="valor"
+                        >
+
+                            <option value="">
+                                Selecione...
+                            </option>
+
+
+                            ${
+                                opcoes
+                                    .map(
+                                        opcao => `
+
+                                            <option
+                                                value="${escaparHTML(opcao.valor)}"
+                                                ${
+                                                    String(
+                                                        opcao.valor
+                                                    ) ===
+                                                    String(
+                                                        item.valor
+                                                    )
+                                                        ? "selected"
+                                                        : ""
+                                                }
+                                            >
+                                                ${
+                                                    escaparHTML(
+                                                        opcao.valor
+                                                    )
+                                                }
+                                                (
+                                                ${
+                                                    formatarModificador(
+                                                        opcao.modificador
+                                                    )
+                                                }
+                                                )
+                                            </option>
+                                        `
+                                    )
+                                    .join("")
+                            }
+
+                        </select>
+
+                    </div>
+
+
+                    ${
+                        ciclico
+                            ? `
+                                <div class="gm-campo">
+
+                                    <label class="gm-label">
+                                        Quantidade de ciclos
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        step="1"
+                                        class="gm-input"
+                                        data-detalhe="quantidade_ciclos"
+                                        value="${
+                                            escaparHTML(
+                                                detalhes.quantidade_ciclos ??
+                                                ""
+                                            )
+                                        }"
+                                    >
+
+                                </div>
+                            `
+                            : ""
+                    }
+
+
+                    <div
+                        class="gm-campo gm-campo-modificador"
+                    >
+
+                        <label class="gm-label">
+                            Modificador
+                        </label>
+
+
+                        <input
+                            type="number"
+                            class="gm-input"
+                            data-campo="modificador"
+                            value="${
+                                escaparHTML(
+                                    calculado ??
+                                    item.modificador ??
+                                    0
+                                )
+                            }"
+                            readonly
+                        >
+
+                    </div>
+
+                </div>
+
+
+                ${
+                    multiplos
+                        ? `
+                            <button
+                                type="button"
+                                class="gm-btn gm-btn-remover-item"
+                                data-remover-item="modificadores_ataque"
+                                data-indice="${indice}"
+                                title="Remover este item"
+                                aria-label="Remover item"
+                            >
+                                ×
+                            </button>
+                        `
+                        : ""
+                }
+
+            </div>
+        `;
+    }
+
 
     /* =========================================================
        EVENTOS DO EDITOR
@@ -1700,172 +4326,206 @@ document.addEventListener("DOMContentLoaded", () => {
                 "gm-editor"
             );
 
-        const campos =
-            editor.querySelectorAll(
-                "input, textarea, select"
-            );
 
-        campos.forEach(campo => {
+        if (!editor) {
+            return;
+        }
 
-            campo.addEventListener(
-                "input",
-                atualizarMagiaDoFormulario
-            );
-
-            campo.addEventListener(
-                "change",
-                atualizarMagiaDoFormulario
-            );
-        });
 
         editor
             .querySelectorAll(
-                "[data-adicionar-parametro]"
+                "input, textarea, select"
             )
-            .forEach(botao => {
+            .forEach(
+                campo => {
 
-                botao.addEventListener(
-                    "click",
-                    () => {
+                    campo.addEventListener(
+                        "input",
+                        () => {
+
+                            atualizarMagiaDoFormulario();
+
+                            atualizarModificadoresVisuais();
+                        }
+                    );
+
+
+                    campo.addEventListener(
+                        "change",
+                        () => {
+
+                            if (
+                                campo.matches(
+                                    '[data-campo="valor"]'
+                                )
+                            ) {
+
+                                aplicarModificadorSelecionado(
+                                    campo
+                                );
+
+                                return;
+                            }
+
+
+                            atualizarMagiaDoFormulario();
+
+                            atualizarModificadoresVisuais();
+                        }
+                    );
+                }
+            );
+
+
+        document
+            .getElementById(
+                "gm-adicionar-parametro"
+            )
+            ?.addEventListener(
+                "click",
+                () => {
+
+                    const nome =
+                        document
+                            .getElementById(
+                                "gm-seletor-parametro"
+                            )
+                            ?.value;
+
+
+                    if (nome) {
 
                         adicionarParametro(
-                            botao.dataset
-                                .adicionarParametro
+                            nome
                         );
                     }
-                );
-            });
+                }
+            );
+
 
         editor
             .querySelectorAll(
                 "[data-remover-parametro]"
             )
-            .forEach(botao => {
+            .forEach(
+                botao => {
 
-                botao.addEventListener(
-                    "click",
-                    () => {
+                    botao.addEventListener(
+                        "click",
+                        () =>
+                            removerParametro(
+                                botao.dataset
+                                    .removerParametro
+                            )
+                    );
+                }
+            );
 
-                        removerParametro(
-                            botao.dataset
-                                .removerParametro
-                        );
-                    }
-                );
-            });
 
         editor
             .querySelectorAll(
                 "[data-adicionar-item]"
             )
-            .forEach(botao => {
+            .forEach(
+                botao => {
 
-                botao.addEventListener(
-                    "click",
-                    () => {
+                    botao.addEventListener(
+                        "click",
+                        () =>
+                            adicionarItemParametro(
+                                botao.dataset
+                                    .adicionarItem
+                            )
+                    );
+                }
+            );
 
-                        adicionarItemParametro(
-                            botao.dataset
-                                .adicionarItem
-                        );
-                    }
-                );
-            });
 
         editor
             .querySelectorAll(
                 "[data-remover-item]"
             )
-            .forEach(botao => {
+            .forEach(
+                botao => {
 
-                botao.addEventListener(
-                    "click",
-                    () => {
-
-                        removerItemParametro(
-                            botao.dataset
-                                .removerItem,
-                            Number(
-                                botao.dataset.indice
+                    botao.addEventListener(
+                        "click",
+                        () =>
+                            removerItemParametro(
+                                botao.dataset
+                                    .removerItem,
+                                Number(
+                                    botao.dataset
+                                        .indice
+                                )
                             )
-                        );
-                    }
-                );
-            });
+                    );
+                }
+            );
+
 
         document
-            .getElementById("gm-salvar")
-            .addEventListener(
+            .getElementById(
+                "gm-salvar"
+            )
+            ?.addEventListener(
                 "click",
                 salvarMagia
             );
 
+
         document
-            .getElementById("gm-excluir")
-            .addEventListener(
+            .getElementById(
+                "gm-aplicar-penalidade"
+            )
+            ?.addEventListener(
+                "click",
+                aplicarPenalidadeCalculada
+            );
+
+
+        document
+            .getElementById(
+                "gm-duplicar"
+            )
+            ?.addEventListener(
+                "click",
+                duplicarMagia
+            );
+
+
+        document
+            .getElementById(
+                "gm-excluir"
+            )
+            ?.addEventListener(
                 "click",
                 excluirMagia
             );
     }
 
+
     /* =========================================================
-       ATUALIZAR FORMULÁRIO
+       ATUALIZAÇÃO VISUAL DOS MODIFICADORES
        ========================================================= */
 
-    function atualizarMagiaDoFormulario() {
+    function atualizarModificadoresVisuais() {
 
-        if (indiceEdicao === null) {
+        if (
+            indiceEdicao === null
+        ) {
             return;
         }
 
+
         const magia =
             magias[indiceEdicao];
+
 
         if (!magia) {
             return;
         }
 
-        magia.nome =
-            document.getElementById(
-                "gm-nome"
-            )?.value || "";
-
-        magia.dominio =
-            document.getElementById(
-                "gm-dominio"
-            )?.value || "";
-
-        magia.nivel =
-            Number(
-                document.getElementById(
-                    "gm-nivel"
-                )?.value
-            );
-
-        magia.nivel_nome =
-            document.getElementById(
-                "gm-nivel-nome"
-            )?.value || "";
-
-        magia.categoria =
-            document.getElementById(
-                "gm-categoria"
-            )?.value || "";
-
-        magia.efeito =
-            document.getElementById(
-                "gm-efeito"
-            )?.value || "";
-
-        magia.observacao =
-            document.getElementById(
-                "gm-observacao"
-            )?.value || "";
-
-        /*
-         * Atualiza os itens de parâmetros
-         * existentes no formulário.
-         */
 
         document
             .querySelectorAll(
@@ -1874,145 +4534,556 @@ document.addEventListener("DOMContentLoaded", () => {
             .forEach(bloco => {
 
                 const nome =
-                    bloco.dataset.itemParametro;
+                    bloco.dataset
+                        .itemParametro;
+
 
                 const indice =
                     Number(
-                        bloco.dataset.indice
+                        bloco.dataset
+                            .indice
                     );
 
-                if (
-                    !magia.parametros[nome] ||
-                    !magia.parametros[nome][indice]
-                ) {
+
+                const item =
+                    magia.parametros
+                        ?.[nome]
+                        ?.[indice];
+
+
+                if (!item) {
                     return;
                 }
 
-                const valor =
-                    bloco.querySelector(
-                        '[data-campo="valor"]'
+
+                const calculado =
+                    calcularModificadorItem(
+                        nome,
+                        item
                     );
 
-                const modificador =
+
+                const campo =
                     bloco.querySelector(
                         '[data-campo="modificador"]'
                     );
 
-                magia.parametros[nome][indice]
-                    .valor =
-                    valor?.value || "";
-
-                magia.parametros[nome][indice]
-                    .modificador =
-                    Number(
-                        modificador?.value
-                    );
 
                 if (
-                    Number.isNaN(
-                        magia.parametros[nome][indice]
-                            .modificador
-                    )
+                    campo &&
+                    calculado !== null
                 ) {
 
-                    magia.parametros[nome][indice]
-                        .modificador = 0;
+                    campo.value =
+                        calculado;
                 }
             });
 
+
+        atualizarResumoSemRecriar();
+
+        renderizarValidacao();
+    }
+
+
+    /* =========================================================
+       APLICA MODIFICADOR AO SELECIONAR VALOR
+       ========================================================= */
+
+    function aplicarModificadorSelecionado(
+        campo
+    ) {
+
+        const bloco =
+            campo.closest(
+                "[data-item-parametro]"
+            );
+
+
+        if (
+            !bloco ||
+            indiceEdicao === null
+        ) {
+            return;
+        }
+
+
+        const nome =
+            bloco.dataset
+                .itemParametro;
+
+
+        const indice =
+            Number(
+                bloco.dataset
+                    .indice
+            );
+
+
+        const magia =
+            magias[indiceEdicao];
+
+
+        const item =
+            magia?.parametros?.[
+                nome
+            ]?.[indice];
+
+
+        if (!item) {
+            return;
+        }
+
+
+        item.valor =
+            campo.value;
+
+
+        /*
+         * Ao mudar a opção, alguns parâmetros
+         * precisam de campos adicionais.
+         *
+         * Por isso recriamos o editor.
+         */
+        renderizarEditor();
+
+
+        focarItem(
+            nome,
+            indice
+        );
+    }
+
+
+    /* =========================================================
+       FORMULÁRIO → OBJETO
+       ========================================================= */
+
+    function atualizarMagiaDoFormulario() {
+
+        if (
+            indiceEdicao === null
+        ) {
+            return;
+        }
+
+
+        const magia =
+            magias[indiceEdicao];
+
+
+        if (!magia) {
+            return;
+        }
+
+
+        /*
+         * Dados básicos
+         */
+        magia.nome =
+            document
+                .getElementById(
+                    "gm-nome"
+                )
+                ?.value ||
+            "";
+
+
+        magia.dominio =
+            document
+                .getElementById(
+                    "gm-dominio"
+                )
+                ?.value ||
+            "";
+
+
+        magia.nivel =
+            numero(
+                document
+                    .getElementById(
+                        "gm-nivel"
+                    )
+                    ?.value,
+                ""
+            );
+
+
+        magia.nivel_nome =
+            document
+                .getElementById(
+                    "gm-nivel-nome"
+                )
+                ?.value ||
+            "";
+
+
+        magia.categoria =
+            document
+                .getElementById(
+                    "gm-categoria"
+                )
+                ?.value ||
+            "";
+
+
+        magia.efeito =
+            document
+                .getElementById(
+                    "gm-efeito"
+                )
+                ?.value ||
+            "";
+
+
+        magia.observacao =
+            document
+                .getElementById(
+                    "gm-observacao"
+                )
+                ?.value ||
+            "";
+
+
+        /*
+         * Parâmetros
+         */
+        document
+            .querySelectorAll(
+                "#gm-editor [data-item-parametro]"
+            )
+            .forEach(
+                bloco => {
+
+                    const nome =
+                        bloco.dataset
+                            .itemParametro;
+
+
+                    const indice =
+                        Number(
+                            bloco.dataset
+                                .indice
+                        );
+
+
+                    const item =
+                        magia
+                            .parametros
+                            ?.[nome]
+                            ?.[indice];
+
+
+                    if (!item) {
+                        return;
+                    }
+
+
+                    const valorCampo =
+                        bloco.querySelector(
+                            '[data-campo="valor"]'
+                        );
+
+
+                    /*
+                     * Dano não usa valor como
+                     * texto "10d6".
+                     */
+                    if (
+                        valorCampo &&
+                        nome !== "dano"
+                    ) {
+
+                        item.valor =
+                            valorCampo.value;
+                    }
+
+
+                    const detalhes = {};
+
+
+                    /*
+                     * Preserva detalhes antigos
+                     * enquanto atualiza os campos
+                     * visíveis.
+                     */
+                    if (
+                        item.detalhes &&
+                        typeof item.detalhes ===
+                            "object"
+                    ) {
+
+                        Object.assign(
+                            detalhes,
+                            item.detalhes
+                        );
+                    }
+
+
+                    bloco
+                        .querySelectorAll(
+                            "[data-detalhe]"
+                        )
+                        .forEach(
+                            campo => {
+
+                                const chave =
+                                    campo.dataset
+                                        .detalhe;
+
+
+                                if (
+                                    campo.value ===
+                                    ""
+                                ) {
+
+                                    delete detalhes[
+                                        chave
+                                    ];
+
+                                    return;
+                                }
+
+
+                                /*
+                                 * Campos textuais
+                                 */
+                                if (
+                                    campo.type ===
+                                        "text" ||
+                                    campo.tagName ===
+                                        "TEXTAREA"
+                                ) {
+
+                                    detalhes[
+                                        chave
+                                    ] =
+                                        campo.value;
+
+                                    return;
+                                }
+
+
+                                /*
+                                 * Campos numéricos.
+                                 */
+                                const valor =
+                                    Number(
+                                        campo.value
+                                    );
+
+
+                                detalhes[
+                                    chave
+                                ] =
+                                    Number.isFinite(
+                                        valor
+                                    )
+                                        ? valor
+                                        : campo.value;
+                            }
+                        );
+
+
+                    /*
+                     * Dano:
+                     * valor canônico = quantidade
+                     * numérica de d6.
+                     */
+                    if (
+                        nome === "dano"
+                    ) {
+
+                        const quantidade =
+                            Number(
+                                detalhes
+                                    .quantidade_d6
+                            );
+
+
+                        if (
+                            Number.isFinite(
+                                quantidade
+                            )
+                        ) {
+
+                            item.valor =
+                                quantidade;
+
+                            detalhes.unidade =
+                                "d6";
+                        }
+                    }
+
+
+                    if (
+                        Object.keys(
+                            detalhes
+                        ).length
+                    ) {
+
+                        item.detalhes =
+                            detalhes;
+
+                    } else {
+
+                        delete item.detalhes;
+                    }
+
+
+                    /*
+                     * Recalcula automaticamente
+                     * quando houver fórmula.
+                     */
+                    const calculado =
+                        calcularModificadorItem(
+                            nome,
+                            item
+                        );
+
+
+                    if (
+                        calculado !== null
+                    ) {
+
+                        item.modificador =
+                            calculado;
+                    }
+                }
+            );
+
+
         atualizarResumoSemRecriar();
     }
+
 
     function atualizarResumoSemRecriar() {
 
         const magia =
             magias[indiceEdicao];
 
-        if (!magia) {
-            return;
-        }
-
-        const calculada =
-            calcularPenalidade(magia);
-
-        const pm =
-            calcularPMMinimo(magia);
 
         const resumo =
             document.querySelector(
                 "#gm-editor .gm-resumo"
             );
 
-        if (!resumo) {
+
+        if (
+            !magia ||
+            !resumo
+        ) {
             return;
         }
+
 
         const valores =
             resumo.querySelectorAll(
                 ".gm-resumo-item strong"
             );
 
+
+        const calculada =
+            calcularPenalidade(
+                magia
+            );
+
+
         if (valores[0]) {
             valores[0].textContent =
                 magia.nivel;
         }
 
+
         if (valores[1]) {
+
             valores[1].textContent =
-                pm;
+                calcularPMMinimo(
+                    magia
+                );
         }
+
 
         if (valores[2]) {
+
             valores[2].textContent =
                 magia.penalidade;
-
-            valores[2]
-                .parentElement
-                .classList.toggle(
-                    "gm-resumo-ok",
-                    Number(magia.penalidade) ===
-                    calculada
-                );
-
-            valores[2]
-                .parentElement
-                .classList.toggle(
-                    "gm-resumo-aviso",
-                    Number(magia.penalidade) !==
-                    calculada
-                );
         }
 
+
         if (valores[3]) {
+
             valores[3].textContent =
                 calculada;
         }
 
-        renderizarValidacao();
+
+        const itensResumo =
+            resumo.querySelectorAll(
+                ".gm-resumo-item"
+            );
+
+
+        const armazenada =
+            itensResumo[2];
+
+
+        if (armazenada) {
+
+            armazenada.classList.toggle(
+                "gm-resumo-ok",
+                numero(
+                    magia.penalidade
+                ) === calculada
+            );
+
+
+            armazenada.classList.toggle(
+                "gm-resumo-aviso",
+                numero(
+                    magia.penalidade
+                ) !== calculada
+            );
+        }
     }
 
+
     /* =========================================================
-       ADICIONAR / REMOVER PARÂMETRO
+       ADICIONAR / REMOVER
        ========================================================= */
 
-    function adicionarParametro(nome) {
+    function adicionarParametro(
+        nome
+    ) {
 
-        if (!PARAMETROS.includes(nome)) {
+        if (
+            !PARAMETROS.includes(
+                nome
+            ) ||
+            indiceEdicao === null
+        ) {
             return;
         }
 
+
         const magia =
             magias[indiceEdicao];
+
 
         if (!magia) {
             return;
         }
 
+
         if (
-            magia.parametros[nome] !== undefined
+            Object.hasOwn(
+                magia.parametros,
+                nome
+            )
         ) {
             return;
         }
+
 
         magia.parametros[nome] = [
             {
@@ -2021,234 +5092,437 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         ];
 
+
         renderizarEditor();
+
+
+        focarItem(
+            nome,
+            0
+        );
     }
 
-    function removerParametro(nome) {
+
+    function removerParametro(
+        nome
+    ) {
+
+        if (
+            indiceEdicao === null
+        ) {
+            return;
+        }
+
 
         const magia =
             magias[indiceEdicao];
+
+
+        if (
+            !magia ||
+            !Object.hasOwn(
+                magia.parametros,
+                nome
+            )
+        ) {
+            return;
+        }
+
+
+        delete magia.parametros[
+            nome
+        ];
+
+
+        renderizarEditor();
+    }
+
+
+    function adicionarItemParametro(
+        nome
+    ) {
+
+        if (
+            indiceEdicao === null ||
+            !PARAMETROS_MULTIPLOS.includes(
+                nome
+            )
+        ) {
+            return;
+        }
+
+
+        const magia =
+            magias[indiceEdicao];
+
 
         if (!magia) {
             return;
         }
 
-        /*
-         * Parâmetros obrigatórios não podem
-         * ser removidos.
-         */
 
         if (
-            PARAMETROS_OBRIGATORIOS.includes(nome)
+            !Array.isArray(
+                magia.parametros[
+                    nome
+                ]
+            )
         ) {
-            return;
+
+            magia.parametros[
+                nome
+            ] = [];
         }
 
-        delete magia.parametros[nome];
 
-        renderizarEditor();
-    }
-
-    /* =========================================================
-       ITENS
-       ========================================================= */
-
-    function adicionarItemParametro(nome) {
-
-        const magia =
-            magias[indiceEdicao];
-
-        if (!magia) {
-            return;
-        }
-
-        if (
-            !PARAMETROS_MULTIPLOS.includes(nome)
-        ) {
-            return;
-        }
-
-        if (!Array.isArray(
-            magia.parametros[nome]
-        )) {
-            magia.parametros[nome] = [];
-        }
-
-        magia.parametros[nome].push({
-
+        magia.parametros[
+            nome
+        ].push({
             valor: "",
-
             modificador: 0
-
         });
 
+
+        const novoIndice =
+            magia.parametros[
+                nome
+            ].length - 1;
+
+
         renderizarEditor();
+
+
+        focarItem(
+            nome,
+            novoIndice
+        );
     }
+
 
     function removerItemParametro(
         nome,
         indice
     ) {
 
-        const magia =
-            magias[indiceEdicao];
-
-        if (!magia) {
+        if (
+            indiceEdicao === null
+        ) {
             return;
         }
 
+
+        const magia =
+            magias[indiceEdicao];
+
+
         if (
             !Array.isArray(
-                magia.parametros[nome]
+                magia?.parametros?.[
+                    nome
+                ]
             )
         ) {
             return;
         }
 
+
+        magia.parametros[
+            nome
+        ].splice(
+            indice,
+            1
+        );
+
+
         if (
-            indice < 0 ||
-            indice >=
-                magia.parametros[nome].length
+            magia.parametros[
+                nome
+            ].length === 0
         ) {
-            return;
+
+            delete magia.parametros[
+                nome
+            ];
         }
 
-        magia.parametros[nome]
-            .splice(indice, 1);
 
         renderizarEditor();
     }
 
+
+    function focarItem(
+        nome,
+        indice
+    ) {
+
+        requestAnimationFrame(
+            () => {
+
+                document
+                    .querySelector(
+                        `[data-item-parametro="${escaparSeletor(nome)}"][data-indice="${indice}"] [data-campo="valor"]`
+                    )
+                    ?.focus();
+            }
+        );
+    }
+
+
     /* =========================================================
-       VALIDAÇÃO VISUAL
+       PENALIDADE
        ========================================================= */
 
-    function renderizarValidacao() {
+    function aplicarPenalidadeCalculada() {
 
-        if (indiceEdicao === null) {
+        if (
+            indiceEdicao === null
+        ) {
             return;
         }
 
+
+        atualizarMagiaDoFormulario();
+
+
         const magia =
             magias[indiceEdicao];
+
 
         if (!magia) {
             return;
         }
 
-        const resultado =
-            validarMagia(magia);
+
+        magia.penalidade =
+            calcularPenalidade(
+                magia
+            );
+
+
+        renderizarLista();
+
+        renderizarEditor();
+
+
+        mostrarStatus(
+            `Penalidade armazenada atualizada para ${magia.penalidade}.`,
+            "sucesso"
+        );
+    }
+
+
+    /* =========================================================
+       VALIDAÇÃO VISUAL
+       ========================================================= */
+
+    function aplicarMarcacaoCampos(
+        resultado
+    ) {
+
+        const editor =
+            document.getElementById(
+                "gm-editor"
+            );
+
+
+        if (!editor) {
+            return;
+        }
+
+
+        editor
+            .querySelectorAll(
+                ".gm-campo-erro, .gm-campo-aviso"
+            )
+            .forEach(
+                elemento => {
+
+                    elemento.classList.remove(
+                        "gm-campo-erro",
+                        "gm-campo-aviso"
+                    );
+                }
+            );
+
+
+        resultado.campos.forEach(
+            item => {
+
+                try {
+
+                    const campo =
+                        editor.querySelector(
+                            item.seletor
+                        );
+
+
+                    if (!campo) {
+                        return;
+                    }
+
+
+                    campo.classList.add(
+                        item.tipo === "erro"
+                            ? "gm-campo-erro"
+                            : "gm-campo-aviso"
+                    );
+
+                } catch (_) {
+                    /*
+                     * Ignora seletor inválido.
+                     */
+                }
+            }
+        );
+    }
+
+
+    function renderizarValidacao() {
+
+        if (
+            indiceEdicao === null
+        ) {
+            return;
+        }
+
+
+        const magia =
+            magias[indiceEdicao];
+
 
         const area =
             document.getElementById(
                 "gm-validacao"
             );
 
+
         const status =
             document.getElementById(
                 "gm-status-magia"
             );
 
-        if (!area || !status) {
+
+        if (
+            !magia ||
+            !area ||
+            !status
+        ) {
             return;
         }
 
-        let classe;
-        let titulo;
 
-        if (resultado.erros.length > 0) {
+        const resultado =
+            validarMagia(
+                magia
+            );
 
-            classe =
-                "gm-validacao-erro";
 
-            titulo =
-                "Magia com erros";
+        const possuiErro =
+            resultado.erros.length >
+            0;
 
-        }
-        else if (
-            resultado.avisos.length > 0
-        ) {
 
-            classe =
-                "gm-validacao-aviso";
+        const possuiAviso =
+            !possuiErro &&
+            resultado.avisos.length >
+            0;
 
-            titulo =
-                "Magia válida com avisos";
-
-        }
-        else {
-
-            classe =
-                "gm-validacao-ok";
-
-            titulo =
-                "Magia válida";
-        }
 
         status.className =
-            `gm-status-magia ${classe}`;
+            `gm-status-magia ${
+                possuiErro
+                    ? "gm-validacao-erro"
+                    : possuiAviso
+                        ? "gm-validacao-aviso"
+                        : "gm-validacao-ok"
+            }`;
+
 
         status.textContent =
-            titulo;
+            possuiErro
+                ? `! Magia com ${resultado.erros.length} erro(s)`
+                : possuiAviso
+                    ? `⚠ Magia válida com ${resultado.avisos.length} aviso(s)`
+                    : "✓ Magia válida";
+
 
         let html = "";
 
-        if (resultado.erros.length > 0) {
+
+        if (
+            resultado.erros.length
+        ) {
 
             html += `
 
-                <div class="gm-caixa-validacao gm-caixa-erro">
+                <div
+                    class="gm-caixa-validacao gm-caixa-erro"
+                    role="alert"
+                >
 
                     <strong>
                         Erros
                     </strong>
 
+
                     <ul>
-                        ${resultado.erros
-                            .map(erro => `
-                                <li>
-                                    ${escaparHTML(erro)}
-                                </li>
-                            `)
-                            .join("")}
+
+                        ${
+                            resultado.erros
+                                .map(
+                                    erro =>
+                                        `<li>${escaparHTML(erro)}</li>`
+                                )
+                                .join("")
+                        }
+
                     </ul>
 
                 </div>
             `;
         }
 
-        if (resultado.avisos.length > 0) {
+
+        if (
+            resultado.avisos.length
+        ) {
 
             html += `
 
-                <div class="gm-caixa-validacao gm-caixa-aviso">
+                <div
+                    class="gm-caixa-validacao gm-caixa-aviso"
+                >
 
                     <strong>
                         Avisos
                     </strong>
 
+
                     <ul>
-                        ${resultado.avisos
-                            .map(aviso => `
-                                <li>
-                                    ${escaparHTML(aviso)}
-                                </li>
-                            `)
-                            .join("")}
+
+                        ${
+                            resultado.avisos
+                                .map(
+                                    aviso =>
+                                        `<li>${escaparHTML(aviso)}</li>`
+                                )
+                                .join("")
+                        }
+
                     </ul>
 
                 </div>
             `;
         }
 
-        if (
-            resultado.erros.length === 0 &&
-            resultado.avisos.length === 0
-        ) {
+
+        if (!html) {
 
             html = `
 
-                <div class="gm-caixa-validacao gm-caixa-ok">
+                <div
+                    class="gm-caixa-validacao gm-caixa-ok"
+                >
 
                     <strong>
                         ✓ Todos os dados estão válidos.
@@ -2258,8 +5532,16 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }
 
-        area.innerHTML = html;
+
+        area.innerHTML =
+            html;
+
+
+        aplicarMarcacaoCampos(
+            resultado
+        );
     }
+
 
     /* =========================================================
        NOVA MAGIA
@@ -2267,23 +5549,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function novaMagia() {
 
+        if (
+            indiceEdicao !== null
+        ) {
+
+            atualizarMagiaDoFormulario();
+        }
+
+
         const magia =
             criarMagiaVazia();
 
-        magias.push(magia);
+
+        magias.push(
+            magia
+        );
+
 
         indiceEdicao =
             magias.length - 1;
+
 
         renderizarLista();
 
         renderizarEditor();
 
+
         mostrarStatus(
             "Nova magia criada.",
             "sucesso"
         );
+
+
+        requestAnimationFrame(
+            () =>
+                document
+                    .getElementById(
+                        "gm-nome"
+                    )
+                    ?.focus()
+        );
     }
+
 
     /* =========================================================
        SALVAR
@@ -2291,53 +5598,123 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function salvarMagia() {
 
-        if (indiceEdicao === null) {
+        if (
+            indiceEdicao === null
+        ) {
             return;
         }
 
+
         atualizarMagiaDoFormulario();
+
 
         const magia =
             magias[indiceEdicao];
 
-        const resultado =
-            validarMagia(magia);
 
-        /*
-         * Não impedimos o salvamento por avisos,
-         * mas erros impedem a exportação.
-         */
+        if (!magia) {
+            return;
+        }
+
+
+        magia.penalidade =
+            calcularPenalidade(
+                magia
+            );
+
+
+        const resultado =
+            validarMagia(
+                magia
+            );
+
 
         renderizarLista();
 
         renderizarEditor();
 
-        if (resultado.erros.length > 0) {
 
-            mostrarStatus(
-                "Alterações salvas em memória, mas a magia possui erros.",
-                "erro"
-            );
-
-        }
-        else if (
-            resultado.avisos.length > 0
+        if (
+            resultado.erros.length
         ) {
 
             mostrarStatus(
-                "Alterações salvas com avisos.",
+                "Alterações salvas em memória. A penalidade foi atualizada, mas ainda existem erros.",
+                "erro"
+            );
+
+        } else if (
+            resultado.avisos.length
+        ) {
+
+            mostrarStatus(
+                "Alterações salvas em memória e penalidade atualizada. Ainda existem avisos.",
                 "aviso"
             );
 
-        }
-        else {
+        } else {
 
             mostrarStatus(
-                "Magia salva e validada.",
+                "Magia salva e validada. Penalidade armazenada atualizada.",
                 "sucesso"
             );
         }
     }
+
+
+    /* =========================================================
+       DUPLICAR
+       ========================================================= */
+
+    function duplicarMagia() {
+
+        if (
+            indiceEdicao === null
+        ) {
+            return;
+        }
+
+
+        atualizarMagiaDoFormulario();
+
+
+        const copia =
+            clone(
+                magias[indiceEdicao]
+            );
+
+
+        copia.id =
+            gerarId();
+
+
+        copia.nome =
+            copia.nome
+                ? `${copia.nome} (cópia)`
+                : "Nova magia (cópia)";
+
+
+        magias.splice(
+            indiceEdicao + 1,
+            0,
+            copia
+        );
+
+
+        indiceEdicao++;
+
+
+        renderizarLista();
+
+        renderizarEditor();
+
+
+        mostrarStatus(
+            "Magia duplicada.",
+            "sucesso"
+        );
+    }
+
 
     /* =========================================================
        EXCLUIR
@@ -2345,16 +5722,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function excluirMagia() {
 
-        if (indiceEdicao === null) {
+        if (
+            indiceEdicao === null
+        ) {
             return;
         }
 
-        const magia =
-            magias[indiceEdicao];
+
+        atualizarMagiaDoFormulario();
+
 
         const nome =
-            magia?.nome ||
+            magias[
+                indiceEdicao
+            ]?.nome ||
             "esta magia";
+
 
         if (
             !confirm(
@@ -2364,17 +5747,26 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+
         magias.splice(
             indiceEdicao,
             1
         );
 
+
         indiceEdicao =
-            null;
+            magias.length
+                ? Math.min(
+                    indiceEdicao,
+                    magias.length - 1
+                )
+                : null;
+
 
         renderizarLista();
 
         renderizarEditor();
+
 
         mostrarStatus(
             "Magia excluída.",
@@ -2382,92 +5774,457 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
+
     /* =========================================================
        IMPORTAÇÃO
        ========================================================= */
 
-    async function importarArquivo(evento) {
+    async function importarArquivo(
+        evento
+    ) {
 
         const arquivo =
             evento.target.files?.[0];
+
 
         if (!arquivo) {
             return;
         }
 
+
         try {
 
-            const texto =
-                await arquivo.text();
-
             const dados =
-                JSON.parse(texto);
+                JSON.parse(
+                    await arquivo.text()
+                );
 
-            let lista;
 
-            if (Array.isArray(dados)) {
+            const lista =
+                Array.isArray(dados)
+                    ? dados
+                    : Array.isArray(
+                        dados?.magias
+                    )
+                        ? dados.magias
+                        : null;
 
-                lista = dados;
 
-            }
-            else if (
-                dados &&
-                Array.isArray(dados.magias)
-            ) {
-
-                lista =
-                    dados.magias;
-
-            }
-            else {
+            if (!lista) {
 
                 throw new Error(
                     "O JSON não contém um array de magias."
                 );
             }
 
+
+            const avisos = [];
+
+
+            lista.forEach(
+                (
+                    magia,
+                    indice
+                ) => {
+
+                    if (
+                        !magia ||
+                        typeof magia !==
+                            "object" ||
+                        Array.isArray(magia)
+                    ) {
+
+                        avisos.push(
+                            `Registro ${indice + 1}: inválido.`
+                        );
+
+                        return;
+                    }
+
+
+                    /*
+                     * Campos desconhecidos.
+                     */
+                    Object.keys(
+                        magia
+                    ).forEach(
+                        campo => {
+
+                            if (
+                                !CAMPOS_TOPO.includes(
+                                    campo
+                                )
+                            ) {
+
+                                avisos.push(
+                                    `Magia ${indice + 1}: campo desconhecido "${campo}" foi ignorado.`
+                                );
+                            }
+                        }
+                    );
+
+
+                    /*
+                     * Campos legados.
+                     */
+                    if (
+                        magia.duracao !==
+                        undefined
+                    ) {
+
+                        avisos.push(
+                            `Magia ${indice + 1}: campo legado "duracao" foi ignorado; use parametros.duracao.`
+                        );
+                    }
+
+
+                    if (
+                        magia.alcance_maximo !==
+                        undefined
+                    ) {
+
+                        avisos.push(
+                            `Magia ${indice + 1}: campo legado "alcance_maximo" foi ignorado; use parametros.alcance.`
+                        );
+                    }
+
+
+                    /*
+                     * Parâmetros.
+                     */
+                    Object.keys(
+                        magia.parametros ||
+                        {}
+                    ).forEach(
+                        nome => {
+
+                            const canonico =
+                                normalizarNomeParametro(
+                                    nome
+                                );
+
+
+                            if (
+                                !PARAMETROS.includes(
+                                    canonico
+                                )
+                            ) {
+
+                                avisos.push(
+                                    `Magia ${indice + 1}: parâmetro desconhecido "${nome}" foi ignorado.`
+                                );
+
+                            } else if (
+                                canonico !==
+                                nome
+                            ) {
+
+                                avisos.push(
+                                    `Magia ${indice + 1}: parâmetro legado "${nome}" foi convertido para "${canonico}".`
+                                );
+                            }
+                        }
+                    );
+
+
+                    /*
+                     * nivel_nome divergente:
+                     * não corrigimos automaticamente.
+                     */
+                    const nivel =
+                        Number(
+                            magia.nivel
+                        );
+
+
+                    if (
+                        Number.isInteger(
+                            nivel
+                        ) &&
+                        NIVEIS[nivel] &&
+                        magia.nivel_nome &&
+                        magia.nivel_nome !==
+                            NIVEIS[nivel]
+                    ) {
+
+                        avisos.push(
+                            `Magia ${indice + 1}: nivel_nome "${magia.nivel_nome}" não corresponde ao nível ${nivel} ("${NIVEIS[nivel]}").`
+                        );
+                    }
+                }
+            );
+
+
+            /*
+             * A penalidade original é preservada.
+             */
             magias =
-                lista.map(normalizarMagia);
+                lista.map(
+                    normalizarMagia
+                );
+
 
             indiceEdicao =
-                magias.length > 0
+                magias.length
                     ? 0
                     : null;
 
-            renderizarLista();
 
-            renderizarEditor();
+            filtroLista =
+                "";
+
+
+            renderizar();
+
 
             mostrarStatus(
-                `${magias.length} magia(s) importada(s).`,
-                "sucesso"
+                `${magias.length} magia(s) importada(s).${
+                    avisos.length
+                        ? ` ${avisos.length} aviso(s) de estrutura.`
+                        : ""
+                }`,
+                avisos.length
+                    ? "aviso"
+                    : "sucesso"
             );
 
-        }
-        catch (erro) {
+        } catch (erro) {
 
-            console.error(erro);
+            console.error(
+                erro
+            );
+
 
             mostrarStatus(
-                "Erro ao importar JSON: " +
-                erro.message,
+                `Erro ao importar JSON: ${erro.message}`,
                 "erro"
             );
 
-        }
-        finally {
+        } finally {
 
-            evento.target.value = "";
+            evento.target.value =
+                "";
         }
     }
+
 
     /* =========================================================
        EXPORTAÇÃO
        ========================================================= */
 
+    function prepararItemParaExportacao(
+        nome,
+        item
+    ) {
+
+        const resultado = {
+
+            valor:
+                item?.valor ??
+                "",
+
+            modificador:
+                numero(
+                    item?.modificador,
+                    0
+                )
+        };
+
+
+        const detalhes =
+            item?.detalhes &&
+            typeof item.detalhes ===
+                "object" &&
+            !Array.isArray(
+                item.detalhes
+            )
+                ? clone(
+                    item.detalhes
+                )
+                : {};
+
+
+        /*
+         * Dano:
+         *
+         * NÃO exportamos "10d6".
+         * O valor é a quantidade numérica
+         * de d6.
+         */
+        if (
+            nome === "dano"
+        ) {
+
+            let quantidade =
+                detalhes.quantidade_d6;
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "number"
+            ) {
+
+                quantidade =
+                    item.valor;
+            }
+
+
+            if (
+                quantidade ===
+                    undefined &&
+                typeof item.valor ===
+                    "string"
+            ) {
+
+                const match =
+                    item.valor.match(
+                        /^(\d+)\s*d6$/i
+                    );
+
+
+                if (match) {
+
+                    quantidade =
+                        Number(
+                            match[1]
+                        );
+                }
+            }
+
+
+            if (
+                Number.isFinite(
+                    Number(
+                        quantidade
+                    )
+                )
+            ) {
+
+                resultado.valor =
+                    Number(
+                        quantidade
+                    );
+
+
+                detalhes.quantidade_d6 =
+                    Number(
+                        quantidade
+                    );
+
+
+                detalhes.unidade =
+                    "d6";
+            }
+        }
+
+
+        /*
+         * Remove marcadores internos.
+         */
+        delete detalhes._json_invalido;
+
+        delete detalhes._valor_invalido;
+
+
+        if (
+            Object.keys(
+                detalhes
+            ).length
+        ) {
+
+            resultado.detalhes =
+                detalhes;
+        }
+
+
+        return resultado;
+    }
+
+
+    function prepararMagiaParaExportacao(
+        magia
+    ) {
+
+        const resultado = {
+
+            id:
+                magia.id,
+
+            nome:
+                magia.nome,
+
+            dominio:
+                magia.dominio,
+
+            nivel:
+                magia.nivel,
+
+            nivel_nome:
+                magia.nivel_nome,
+
+            categoria:
+                magia.categoria,
+
+            efeito:
+                magia.efeito,
+
+            parametros:
+                {},
+
+            penalidade:
+                magia.penalidade,
+
+            observacao:
+                magia.observacao
+        };
+
+
+        PARAMETROS.forEach(
+            nome => {
+
+                const parametro =
+                    magia
+                        .parametros
+                        ?.[nome];
+
+
+                if (
+                    !Array.isArray(
+                        parametro
+                    ) ||
+                    parametro.length ===
+                        0
+                ) {
+                    return;
+                }
+
+
+                resultado
+                    .parametros[
+                        nome
+                    ] =
+                    parametro.map(
+                        item =>
+                            prepararItemParaExportacao(
+                                nome,
+                                item
+                            )
+                    );
+            }
+        );
+
+
+        return resultado;
+    }
+
+
     function exportarJSON() {
 
-        if (magias.length === 0) {
+        if (
+            !magias.length
+        ) {
 
             mostrarStatus(
                 "Não há magias para exportar.",
@@ -2477,48 +6234,66 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        /*
-         * Atualiza a magia atualmente editada
-         * antes da exportação.
-         */
 
-        if (indiceEdicao !== null) {
+        if (
+            indiceEdicao !== null
+        ) {
+
             atualizarMagiaDoFormulario();
         }
 
-        let totalErros = 0;
-        let totalAvisos = 0;
 
-        magias.forEach(magia => {
+        const resultados =
+            magias.map(
+                validarMagia
+            );
 
-            const resultado =
-                validarMagia(magia);
 
-            totalErros +=
-                resultado.erros.length;
+        const totalErros =
+            resultados.reduce(
+                (
+                    soma,
+                    resultado
+                ) =>
+                    soma +
+                    resultado.erros.length,
+                0
+            );
 
-            totalAvisos +=
-                resultado.avisos.length;
-        });
 
-        if (totalErros > 0) {
+        const totalAvisos =
+            resultados.reduce(
+                (
+                    soma,
+                    resultado
+                ) =>
+                    soma +
+                    resultado.avisos.length,
+                0
+            );
+
+
+        if (
+            totalErros
+        ) {
 
             const continuar =
                 confirm(
-                    `Existem ${totalErros} erro(s) ` +
-                    `de validação em ${magias.length} magia(s).\n\n` +
-                    `Deseja exportar mesmo assim?`
+                    `Existem ${totalErros} erro(s) de validação.\n\nO JSON será exportado mesmo assim, preservando os dados atuais.\n\nDeseja continuar?`
                 );
+
 
             if (!continuar) {
                 return;
             }
         }
 
+
         const dados =
-            magias.map(magia =>
-                prepararParaExportacao(magia)
+            magias.map(
+                prepararMagiaParaExportacao
             );
+
 
         const json =
             JSON.stringify(
@@ -2526,6 +6301,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 null,
                 2
             );
+
 
         const blob =
             new Blob(
@@ -2536,109 +6312,136 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             );
 
+
         const url =
-            URL.createObjectURL(blob);
+            URL.createObjectURL(
+                blob
+            );
+
 
         const link =
-            document.createElement("a");
+            document.createElement(
+                "a"
+            );
 
-        link.href = url;
+
+        link.href =
+            url;
+
 
         link.download =
             "grimorio-gerado.json";
 
-        document
-            .body
-            .appendChild(link);
+
+        document.body.appendChild(
+            link
+        );
+
 
         link.click();
 
         link.remove();
 
-        URL.revokeObjectURL(url);
+
+        URL.revokeObjectURL(
+            url
+        );
+
 
         mostrarStatus(
-            `JSON exportado com ${magias.length} magia(s). ` +
-            (
-                totalAvisos > 0
-                    ? `${totalAvisos} aviso(s) foram detectados.`
+            `JSON exportado com ${magias.length} magia(s).${
+                totalAvisos
+                    ? ` ${totalAvisos} aviso(s) foram detectados.`
                     : ""
-            ),
-            totalErros > 0
+            }`,
+            totalErros || totalAvisos
                 ? "aviso"
                 : "sucesso"
         );
     }
 
-    function prepararParaExportacao(magia) {
-
-        const resultado = {
-            id: magia.id,
-            nome: magia.nome,
-            dominio: magia.dominio,
-            nivel: magia.nivel,
-            nivel_nome: magia.nivel_nome,
-            categoria: magia.categoria,
-            efeito: magia.efeito,
-            parametros: {},
-            penalidade: magia.penalidade,
-            observacao: magia.observacao
-        };
-
-        Object.keys(magia.parametros || {})
-            .forEach(nome => {
-
-                if (
-                    !PARAMETROS.includes(nome)
-                ) {
-                    return;
-                }
-
-                const parametro =
-                    magia.parametros[nome];
-
-                /*
-                 * Só exporta parâmetros presentes.
-                 * Parâmetros ausentes não são inventados.
-                 */
-
-                if (!Array.isArray(parametro)) {
-                    return;
-                }
-
-                resultado.parametros[nome] =
-                    parametro.map(item => {
-
-                        const novoItem = {
-                            valor:
-                                item.valor ?? "",
-                            modificador:
-                                Number(
-                                    item.modificador
-                                ) || 0
-                        };
-
-                        if (
-                            item.detalhes &&
-                            typeof item.detalhes ===
-                                "object"
-                        ) {
-
-                            novoItem.detalhes =
-                                clone(
-                                    item.detalhes
-                                );
-                        }
-
-                        return novoItem;
-                    });
-            });
-
-        return resultado;
-    }
 
     /* =========================================================
-       STATUS GLOBAL
+       CARREGAMENTO DAS TABELAS
+       ========================================================= */
+
+    async function carregarJSON(
+        url
+    ) {
+
+        const resposta =
+            await fetch(
+                url
+            );
+
+
+        if (
+            !resposta.ok
+        ) {
+
+            throw new Error(
+                `${resposta.status} ${resposta.statusText}`
+            );
+        }
+
+
+        return resposta.json();
+    }
+
+
+    async function inicializarDados() {
+
+        /*
+         * Carrega somente as tabelas.
+         *
+         * NÃO carrega grimorio.json.
+         */
+        try {
+
+            tabelas =
+                await carregarJSON(
+                    URL_TABELAS
+                );
+
+        } catch (erro) {
+
+            tabelas = {};
+
+
+            console.warn(
+                "Não foi possível carregar modificadores_tabelas.json:",
+                erro
+            );
+        }
+
+
+        /*
+         * Progressões são auxiliares.
+         */
+        try {
+
+            progressoes =
+                await carregarJSON(
+                    URL_PROGRESSOES
+                );
+
+        } catch (erro) {
+
+            progressoes = {};
+
+
+            console.info(
+                "Arquivo de progressões não encontrado. As progressões incorporadas serão utilizadas quando aplicável."
+            );
+        }
+
+
+        renderizar();
+    }
+
+
+    /* =========================================================
+       STATUS
        ========================================================= */
 
     function mostrarStatus(
@@ -2651,37 +6454,45 @@ document.addEventListener("DOMContentLoaded", () => {
                 "gm-status"
             );
 
+
         if (!status) {
             return;
         }
 
+
         status.className =
             `gm-status gm-status-${tipo}`;
 
+
         status.textContent =
             mensagem;
+
 
         clearTimeout(
             mostrarStatus.timer
         );
 
+
         mostrarStatus.timer =
-            setTimeout(() => {
+            setTimeout(
+                () => {
 
-                status.textContent =
-                    "";
+                    status.textContent =
+                        "";
 
-                status.className =
-                    "gm-status";
+                    status.className =
+                        "gm-status";
 
-            }, 5000);
+                },
+                6000
+            );
     }
 
-    
+
     /* =========================================================
        INICIALIZAÇÃO
        ========================================================= */
 
-    renderizar();
+    await inicializarDados();
 
 });

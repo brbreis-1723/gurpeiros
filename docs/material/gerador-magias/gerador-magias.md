@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Gerador de Magias
 
 Esse é o **Gerador de Magias de Dominio** com as funcionalidades:
@@ -12,3 +17,4 @@ Ainda não totalmente funcional (em construção)...
 <div id="gerador-magias">
     <p>Carregando gerador...</p>
 </div>
+
