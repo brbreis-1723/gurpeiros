@@ -238,6 +238,7 @@ Toda magia deve possuir obrigatoriamente:
 
 * `alcance`
 * `duracao`
+* `tempo de conjuração`
 
 Mesmo que ambos tenham modificador `0`.
 

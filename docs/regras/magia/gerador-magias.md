@@ -14,6 +14,8 @@ Esse é o **Gerador de Magias de Dominio** com as funcionalidades:
 
 Consulte o **[Manual do Sistema](../../material/gerador-magias/gerador-magias-manual.md)**
 
+---
+
 <div id="gerador-magias">
     <p>Carregando gerador...</p>
 </div>
