@@ -4,6 +4,9 @@ Nesta seção, você pode consultar todas as magias de domínio já criadas, uti
 
 Ao clicar em uma magia, seus detalhes serão exibidos, incluindo descrição, efeitos e parâmetros. A tabela de resultados também permite ordenar os registros clicando no campo correspondente.
 
+!!! note "Importante:"
+    Você poderá criar suas próprias magias e gerar o seu grimorio utilizando o **Gerador de Magias de Dominio**.<br>
+    [CLIQUE AQUI](../magia/gerador-magias.md)
 ---
 
 ## Pesquisa de Magias

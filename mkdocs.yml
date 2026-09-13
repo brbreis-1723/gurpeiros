@@ -25,8 +25,26 @@ extra_css:
   - stylesheets/gerador-magias.css
 
 extra_javascript:
+  # Grimório — pesquisa/consulta
   - javascripts/grimorio.js
-  - javascripts/gerador-magias.js
+  # Gerador de Magias
+  - javascripts/gerador/gerador-config.js
+  - javascripts/gerador/gerador-estado.js
+  - javascripts/gerador/gerador-utilitarios.js
+  - javascripts/gerador/gerador-tabelas.js
+  - javascripts/gerador/gerador-normalizacao.js
+  - javascripts/gerador/gerador-calculos.js
+  - javascripts/gerador/gerador-validacao.js
+  - javascripts/gerador/gerador-interface.js
+  - javascripts/gerador/gerador-parametros.js
+  - javascripts/gerador/gerador-detalhes.js
+  - javascripts/gerador/gerador-eventos.js
+  - javascripts/gerador/gerador-operacoes.js
+  - javascripts/gerador/gerador-importacao-exportacao.js
+  - javascripts/gerador/gerador-grimorio.js
+  - javascripts/gerador-magias.js 
+
+      
 
 
 nav:
@@ -51,6 +69,7 @@ nav:
             - Aprendendo um novo domínio: regras/magia/dominio_aprendizagem.md
             - Critérios de Aplicação das Tabelas de Penalidades: regras/magia/dominio_criterios.md
             - Grimório de Magias: regras/magia/grimorio.md
+            - Gerador de magias: regras/magia/gerador-magias.md
           - Magia do Limiar:
             - Regras gerais: regras/magia/magia_limiar.md
             - Efeitos adicionais: regras/magia/efeitos_adicionais.md
@@ -123,7 +142,8 @@ nav:
   - Material de Apoio:
       - Resumo: material/index.md
       - Gerador de Magias (Documentação):
-        - Gerador de magias: material/gerador-magias/gerador-magias.md
+        - Passo a passo: material/gerador-magias/gerador-magias-manual.md
+        - Gerador - Modularização: material/gerador-magias/readme.md
         - Gerador - Regras de negocio: material/gerador-magias/regra-negocio.md
         - Gerador - Esquema JSON: material/gerador-magias/esquema-json.md
       - Artigos do Blog: material/artigos.md

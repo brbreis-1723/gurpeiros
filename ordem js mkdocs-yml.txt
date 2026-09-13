@@ -1,0 +1,19 @@
+extra_javascript:
+  # Grimório — pesquisa/consulta
+  - javascripts/grimorio.js
+
+  # Gerador de Magias
+  - javascripts/gerador/gerador-config.js
+  - javascripts/gerador/gerador-estado.js
+  - javascripts/gerador/gerador-utilitarios.js
+  - javascripts/gerador/gerador-tabelas.js
+  - javascripts/gerador/gerador-normalizacao.js
+  - javascripts/gerador/gerador-calculos.js
+  - javascripts/gerador/gerador-validacao.js
+  - javascripts/gerador/gerador-interface.js
+  - javascripts/gerador/gerador-parametros.js
+  - javascripts/gerador/gerador-detalhes.js
+  - javascripts/gerador/gerador-eventos.js
+  - javascripts/gerador/gerador-operacoes.js
+  - javascripts/gerador/gerador-importacao-exportacao.js
+  - javascripts/gerador/gerador-magias.js

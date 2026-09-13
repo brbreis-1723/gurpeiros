@@ -1127,6 +1127,22 @@
       "modificador": -2
     },
     {
+      "valor": "Retenção",
+      "modificador": 0
+    },
+    {
+      "valor": "Retenção (Grudento)",
+      "modificador": -2
+    },
+    {
+      "valor": "Retenção (Constritivo)",
+      "modificador": -8
+    },
+    {
+      "valor": "Retenção (Sufocante)",
+      "modificador": -8
+    },
+    {
       "valor": "Retardo fixo",
       "modificador": 0
     },
