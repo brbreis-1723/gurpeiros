@@ -144,12 +144,21 @@ Nesta seção são apresentados os **20 Domínios**, sua evolução e exemplos d
 
 ### Níveis de Domínio
 
-O **Nível do Domínio** é determinado pelo nível de habilidade do mago naquele domínio, <u>sem considerar sua [Afinidade com a Esfera](../magia/dominio_requisitos.md#vantagem-afinidade-com-esfera)</u>.:
+O **Nível do Domínio** é determinado pelo atendimento simultâneo de duas condições:
+
+* **Nível de habilidade:** o mago deve possuir o nível de habilidade necessário naquele domínio, <u>sem considerar sua [Afinidade com a Esfera](../magia/dominio_requisitos.md#vantagem-afinidade-com-esfera)</u>.
+* **Pontos gastos:** o mago deve ter investido no domínio o **número mínimo de pontos de personagem exigido para aquele nível**.
+
+O domínio só alcança determinado nível quando **ambas as condições forem atendidas**.
+
+> **Observação:** Entenda-se **pontos gastos** como aqueles **pontos acumulados no Domínio**, e não apenas os pontos necessários para alcançar o nível atual a partir do nível anterior.
+
 
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
       <th style="width: 30%;">Habilidade</th>
+      <th style="width: 30%;">Pontos Mínimos</th>
       <th style="width: 45%;">Título</th>
       <th style="width: 25%;">Nível</th>
     </tr>
@@ -157,31 +166,37 @@ O **Nível do Domínio** é determinado pelo nível de habilidade do mago naquel
   <tbody>
     <tr>
       <td>NH &lt; 12</td>
+      <td>-</td>
       <td><strong>Aprendiz</strong></td>
       <td>Nível 0</td>
     </tr>
     <tr>
       <td>NH 12–14</td>
+      <td>1 pto</td>      
       <td><strong>Iniciante</strong></td>
       <td>Nível 1</td>
     </tr>
     <tr>
       <td>NH 15–17</td>
+      <td>4 ptos</td>      
       <td><strong>Adepto</strong></td>
       <td>Nível 2</td>
     </tr>
     <tr>
       <td>NH 18–20</td>
+      <td>8 ptos</td>            
       <td><strong>Especialista</strong></td>
       <td>Nível 3</td>
     </tr>
     <tr>
       <td>NH 21–24</td>
+      <td>16 ptos</td>            
       <td><strong>Mestre</strong></td>
       <td>Nível 4</td>
     </tr>
     <tr>
       <td>NH 25+</td>
+      <td>24 ptos</td>            
       <td><strong>Sábio</strong></td>
       <td>Nível 5</td>
     </tr>
