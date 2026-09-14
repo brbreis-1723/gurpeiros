@@ -6,7 +6,7 @@ Ao clicar em uma magia, seus detalhes serão exibidos, incluindo descrição, ef
 
 !!! note "Importante:"
     Você poderá criar suas próprias magias e gerar o seu grimorio utilizando o **Gerador de Magias de Dominio**.<br>
-    [CLIQUE AQUI](../magia/gerador-magias.md)
+    **[CLIQUE AQUI](../magia/gerador-magias.md)**
 ---
 
 ## Pesquisa de Magias
