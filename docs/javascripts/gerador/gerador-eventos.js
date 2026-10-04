@@ -110,6 +110,29 @@ function configurarEventosEditor() {
     }
 
 
+    // Listener dinâmico para mudança de Nível (Atualiza automaticamente o Nome do Nível)
+    const selectNivel = document.getElementById("gm-nivel");
+    if (selectNivel) {
+        selectNivel.addEventListener("change", () => {
+            if (indiceEdicao === null) return;
+            const magia = magias[indiceEdicao];
+            const nivelNum = Number(selectNivel.value);
+            const nomeNivelCorrespondente = NIVEIS[nivelNum] || "";
+            
+            magia.nivel = nivelNum;
+            magia.nivel_nome = nomeNivelCorrespondente;
+
+            const inputNomeNivel = document.getElementById("gm-nivel-nome");
+            if (inputNomeNivel) {
+                inputNomeNivel.value = nomeNivelCorrespondente;
+            }
+
+            atualizarMagiaDoFormulario();
+            renderizarValidacao();
+        });
+    }
+
+
     // Listener dinâmico para mudança de Categoria (Regra de Tempo de Conjuração Automático)
     const selectCategoria = document.getElementById("gm-categoria");
     if (selectCategoria) {

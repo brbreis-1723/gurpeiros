@@ -577,6 +577,10 @@ function renderizarEditor() {
 function renderizarDadosBasicos(
     magia
 ) {
+    // Garante que o nome do nível reflete o nível atual caso esteja vazio
+    const nivelNum = Number(magia.nivel) || 1;
+    const nomeNivelAutomatico = NIVEIS[nivelNum] || magia.nivel_nome || "";
+    magia.nivel_nome = nomeNivelAutomatico;
 
     return `
 
@@ -737,9 +741,11 @@ function renderizarDadosBasicos(
                         class="gm-input"
                         value="${
                             escaparHTML(
-                                magia.nivel_nome
+                                nomeNivelAutomatico
                             )
                         }"
+                        readonly
+                        title="Preenchido automaticamente pelo nível selecionado"
                     >
 
                 </div>

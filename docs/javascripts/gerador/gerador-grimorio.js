@@ -14,7 +14,13 @@ function visualizarGrimorio() {
         return;
     }
 
-    const linhasTabela = magias.map((magia) => {
+    // Ordena as magias em ordem alfabética pelo nome (ignorando maiúsculas/minúsculas)
+    const magiasOrdenadas = [...magias].sort((a, b) => {
+        const nomeA = (a.nome || "").trim().localeCompare((b.nome || "").trim(), 'pt-BR', { sensitivity: 'base' });
+        return nomeA;
+    });
+
+    const linhasTabela = magiasOrdenadas.map((magia) => {
         const params = magia.parametros || {};
         
         const obterDadoObrigatorio = (chave) => {
@@ -50,11 +56,10 @@ function visualizarGrimorio() {
             }
         });
 
-        // Adiciona a observação ao final dos demais parâmetros se estiver preenchida
         let textoDemaisParametros = outrosTextos.length ? outrosTextos.join("; ") : "";
         if (magia.observacao && magia.observacao.trim() !== "") {
             const obsFormatada = `. Obs: ${magia.observacao.trim()}`;
-            textoDemaisParametros = textoDemaisParametros ? `${textoDemaisParametros}${obsFormatada}` : obsFormatada.substring(2); // Remove o ponto inicial se não houver outros parâmetros
+            textoDemaisParametros = textoDemaisParametros ? `${textoDemaisParametros}${obsFormatada}` : obsFormatada.substring(2);
         }
 
         return `
