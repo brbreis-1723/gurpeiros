@@ -134,7 +134,7 @@ Por outro lado, o mago poderá utilizar **ingredientes improvisados**. Eles pode
       <td>Ingrediente comum ou substituto improvisado, adequado apenas para representar o componente necessário.</td>
       <td>Sal, carvão, areia, ervas comuns, água, argila, sangue ou saliva (do mago).</td>
       <td>+0</td>
-      <td>$10</td>
+      <td>$5</td>
     </tr>
     <tr>
       <td>Básico</td>
