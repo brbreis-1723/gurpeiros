@@ -1,49 +1,12 @@
 [
   {
-    "id": "ar-001",
-    "nome": "Sentir o Vento",
-    "dominio": "Ar",
-    "nivel": 1,
-    "nivel_nome": "Percepção",
-    "categoria": "Truque",
-    "efeito": "O mago torna-se capaz de perceber claramente a direção e a intensidade das correntes de ar próximas, mesmo que sejam muito sutis.",
-    "parametros": {
-      "alcance": [
-        {
-          "valor": "Toque",
-          "modificador": 2
-        }
-      ],
-      "area_efeito": [
-        {
-          "valor": "1 m",
-          "modificador": 0
-        }
-      ],
-      "duracao": [
-        {
-          "valor": "Momentânea",
-          "modificador": 0
-        }
-      ],
-      "tempo_conjuracao": [
-        {
-          "valor": "1 segundo",
-          "modificador": 0
-        }
-      ]
-    },
-    "penalidade": 0,
-    "observacao": ""
-  },
-  {
     "id": "ar-002",
-    "nome": "Sentir Gases",
+    "nome": "Sentir Ar",
     "dominio": "Ar",
     "nivel": 1,
     "nivel_nome": "Percepção",
     "categoria": "Truque",
-    "efeito": "O mago consegue perceber a presença de gases diferentes do ar atmosférico normal e identificar sua localização aproximada. O efeito não permite determinar automaticamente a natureza do gás; isso exige conhecimento apropriado ou uma versão mais elaborada da magia.",
+    "efeito": "O mago consegue perceber as condições do ar em sua proximidade, identificando se ele é adequado para respiração e percebendo alterações significativas, como falta de oxigênio, fumaça, vapores ou a presença de outros gases.\n\nA magia permite distinguir ar respirável de ar impróprio ou potencialmente perigoso, mas não revela a composição, natureza ou toxicidade específica das substâncias presentes.\n\nO efeito está limitado a uma área de aproximadamente 3 metros ao redor do mago e não permite detectar condições além desse alcance ou através de barreiras que impeçam a circulação do ar.",
     "parametros": {
       "alcance": [
         {
@@ -51,12 +14,6 @@
           "modificador": 0
         }
       ],
-      "area_efeito": [
-        {
-          "valor": "1 m",
-          "modificador": 0
-        }
-      ],
       "duracao": [
         {
           "valor": "Momentânea",
@@ -66,7 +23,10 @@
       "tempo_conjuracao": [
         {
           "valor": "1 segundo",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -79,19 +39,16 @@
     "dominio": "Ar",
     "nivel": 1,
     "nivel_nome": "Percepção",
-    "categoria": "Truque",
-    "efeito": "O mago consegue perceber alterações de pressão, temperatura e composição do ar nas proximidades. Pode detectar, por exemplo, uma região com pouco oxigênio, uma corrente de ar anormal ou a aproximação de uma massa de ar em movimento.",
+    "categoria": "Feitiço",
+    "efeito": "O mago consegue perceber alterações de pressão, temperatura e composição do ar nas proximidades (até 100 metros de distância). Pode detectar, por exemplo, uma região com pouco oxigênio, uma corrente de ar anormal ou a aproximação de uma massa de ar em movimento.",
     "parametros": {
       "alcance": [
         {
-          "valor": "3 m",
-          "modificador": -1
-        }
-      ],
-      "area_efeito": [
-        {
-          "valor": "2 m",
-          "modificador": -1
+          "valor": "100 m",
+          "modificador": -10,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ],
       "duracao": [
@@ -103,11 +60,14 @@
       "tempo_conjuracao": [
         {
           "valor": "1 segundo",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
-    "penalidade": -2,
+    "penalidade": -10,
     "observacao": ""
   },
   {
@@ -125,16 +85,50 @@
           "modificador": 0
         }
       ],
-      "area_efeito": [
+      "duracao": [
         {
-          "valor": "1 m",
+          "valor": "Momentânea",
           "modificador": 0
         }
       ],
-      "massa_volume": [
+      "tempo_conjuracao": [
         {
-          "valor": "2 L",
-          "modificador": -1
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": 0,
+    "observacao": ""
+  },
+  {
+    "id": "ar-006",
+    "nome": "Bolsa de Ar",
+    "dominio": "Ar",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O mago cria uma pequena quantidade de ar respirável em um ponto escolhido (para preencher um hexágono) em até 10 metros. É suficiente para permitir uma respiração ou fornecer uma pequena reserva de ar.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "10 m",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "area_efeito": [
+        {
+          "valor": "1 m",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "duracao": [
@@ -146,91 +140,14 @@
       "tempo_conjuracao": [
         {
           "valor": "1 segundo",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
-    "penalidade": -1,
-    "observacao": ""
-  },
-  {
-    "id": "ar-005",
-    "nome": "Soprar Fumaça",
-    "dominio": "Ar",
-    "nivel": 2,
-    "nivel_nome": "Influência",
-    "categoria": "Feitiço",
-    "efeito": "O mago cria uma corrente de ar capaz de deslocar fumaça, poeira ou outros gases leves em uma direção determinada.",
-    "parametros": {
-      "alcance": [
-        {
-          "valor": "7 m",
-          "modificador": -3
-        }
-      ],
-      "area_efeito": [
-        {
-          "valor": "2 m",
-          "modificador": -1
-        }
-      ],
-      "duracao": [
-        {
-          "valor": "Até 10 segundos",
-          "modificador": -1
-        }
-      ],
-      "massa_volume": [
-        {
-          "valor": "5 L",
-          "modificador": -3
-        }
-      ],
-      "tempo_conjuracao": [
-        {
-          "valor": "3 segundos",
-          "modificador": 2
-        }
-      ]
-    },
-    "penalidade": -6,
-    "observacao": ""
-  },
-  {
-    "id": "ar-006",
-    "nome": "Bolsa de Ar",
-    "dominio": "Ar",
-    "nivel": 2,
-    "nivel_nome": "Influência",
-    "categoria": "Feitiço",
-    "efeito": "O mago cria uma pequena quantidade de ar respirável em um ponto escolhido. É suficiente para permitir uma respiração ou fornecer uma pequena reserva de ar.",
-    "parametros": {
-      "alcance": [
-        {
-          "valor": "Toque",
-          "modificador": 2
-        }
-      ],
-      "massa_volume": [
-        {
-          "valor": "3 L",
-          "modificador": -2
-        }
-      ],
-      "duracao": [
-        {
-          "valor": "Até 30 segundos",
-          "modificador": -2
-        }
-      ],
-      "tempo_conjuracao": [
-        {
-          "valor": "3 segundos",
-          "modificador": 2
-        }
-      ]
-    },
-    "penalidade": -2,
+    "penalidade": -4,
     "observacao": ""
   },
   {
@@ -251,7 +168,10 @@
       "area_efeito": [
         {
           "valor": "2 m",
-          "modificador": -1
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 2
+          }
         }
       ],
       "duracao": [
@@ -263,7 +183,10 @@
       "tempo_conjuracao": [
         {
           "valor": "10 segundos",
-          "modificador": 4
+          "modificador": 4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -282,13 +205,19 @@
       "alcance": [
         {
           "valor": "7 m",
-          "modificador": -3
+          "modificador": -3,
+          "detalhes": {
+            "quantidade_d6": 7
+          }
         }
       ],
       "area_efeito": [
         {
           "valor": "1 m",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "atribulacao": [
@@ -306,7 +235,10 @@
       "tempo_conjuracao": [
         {
           "valor": "10 segundos",
-          "modificador": 4
+          "modificador": 4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -325,22 +257,30 @@
       "alcance": [
         {
           "valor": "15 m",
-          "modificador": -5
+          "modificador": -5,
+          "detalhes": {
+            "quantidade_d6": 15
+          }
         }
       ],
       "area_efeito": [
         {
           "valor": "1 m",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "dano": [
         {
-          "valor": "4d6",
+          "valor": 4,
           "modificador": -4,
           "detalhes": {
             "tipo": "contusivo",
-            "direto": true
+            "direto": true,
+            "quantidade_d6": 4,
+            "unidade": "d6"
           }
         }
       ],
@@ -353,7 +293,10 @@
       "tempo_conjuracao": [
         {
           "valor": "30 segundos",
-          "modificador": 5
+          "modificador": 5,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ]
     },
@@ -372,16 +315,21 @@
       "alcance": [
         {
           "valor": "20 m",
-          "modificador": -6
+          "modificador": -6,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
         }
       ],
       "dano": [
         {
-          "valor": "3d6-3",
+          "valor": 3,
           "modificador": -6,
           "detalhes": {
             "tipo": "perfurante",
-            "direto": true
+            "direto": true,
+            "quantidade_d6": 3,
+            "unidade": "d6"
           }
         }
       ],
@@ -394,7 +342,10 @@
       "tempo_conjuracao": [
         {
           "valor": "30 segundos",
-          "modificador": 5
+          "modificador": 5,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ]
     },
@@ -413,7 +364,10 @@
       "alcance": [
         {
           "valor": "10 m",
-          "modificador": -4
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ],
       "area_efeito": [
@@ -431,7 +385,10 @@
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": 6
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -450,19 +407,19 @@
       "alcance": [
         {
           "valor": "10 m",
-          "modificador": -4
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ],
       "area_efeito": [
         {
           "valor": "2 m",
-          "modificador": -1
-        }
-      ],
-      "massa_volume": [
-        {
-          "valor": "50 L",
-          "modificador": -8
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 2
+          }
         }
       ],
       "duracao": [
@@ -471,10 +428,22 @@
           "modificador": -1
         }
       ],
+      "massa_volume": [
+        {
+          "valor": "50 L",
+          "modificador": -8,
+          "detalhes": {
+            "quantidade_d6": 50
+          }
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": 6
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -493,7 +462,10 @@
       "alcance": [
         {
           "valor": "20 m",
-          "modificador": -6
+          "modificador": -6,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
         }
       ],
       "area_efeito": [
@@ -502,22 +474,28 @@
           "modificador": -4
         }
       ],
-      "massa_volume": [
-        {
-          "valor": "300 L",
-          "modificador": -12
-        }
-      ],
       "duracao": [
         {
           "valor": "Momentânea",
           "modificador": 0
         }
       ],
+      "massa_volume": [
+        {
+          "valor": "300 L",
+          "modificador": -12,
+          "detalhes": {
+            "quantidade_d6": 300
+          }
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": 6
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -536,16 +514,21 @@
       "alcance": [
         {
           "valor": "50 m",
-          "modificador": -8
+          "modificador": -8,
+          "detalhes": {
+            "quantidade_d6": 50
+          }
         }
       ],
       "dano": [
         {
-          "valor": "5d6-5",
+          "valor": 5,
           "modificador": -5,
           "detalhes": {
             "tipo": "elétrico",
-            "direto": true
+            "direto": true,
+            "quantidade_d6": 5,
+            "unidade": "d6"
           }
         }
       ],
@@ -558,7 +541,10 @@
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": 6
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -580,28 +566,37 @@
           "modificador": 2
         }
       ],
-      "massa_volume": [
-        {
-          "valor": "70 kg",
-          "modificador": -9
-        }
-      ],
-      "velocidade": [
-        {
-          "valor": "10 m/s",
-          "modificador": -4
-        }
-      ],
       "duracao": [
         {
           "valor": "Até 1 hora",
           "modificador": -7
         }
       ],
+      "massa_volume": [
+        {
+          "valor": "70 kg",
+          "modificador": -9,
+          "detalhes": {
+            "quantidade_d6": 70
+          }
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "10 minutos",
-          "modificador": 9
+          "modificador": 9,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "velocidade": [
+        {
+          "valor": "10 m/s",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -620,7 +615,10 @@
       "alcance": [
         {
           "valor": "30 m",
-          "modificador": -7
+          "modificador": -7,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ],
       "area_efeito": [
@@ -638,13 +636,19 @@
       "massa_volume": [
         {
           "valor": "5.000 L",
-          "modificador": -18
+          "modificador": -18,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "10 minutos",
-          "modificador": 9
+          "modificador": 9,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -663,7 +667,10 @@
       "alcance": [
         {
           "valor": "100 m",
-          "modificador": -10
+          "modificador": -10,
+          "detalhes": {
+            "quantidade_d6": 100
+          }
         }
       ],
       "area_efeito": [
@@ -672,26 +679,31 @@
           "modificador": -8
         }
       ],
+      "dano": [
+        {
+          "valor": 5,
+          "modificador": -5,
+          "detalhes": {
+            "tipo": "elétrico",
+            "direto": true,
+            "quantidade_d6": 5,
+            "unidade": "d6"
+          }
+        }
+      ],
       "duracao": [
         {
           "valor": "Até 1 hora",
           "modificador": -7
         }
       ],
-      "dano": [
-        {
-          "valor": "5d6-5",
-          "modificador": -5,
-          "detalhes": {
-            "tipo": "elétrico",
-            "direto": true
-          }
-        }
-      ],
       "tempo_conjuracao": [
         {
           "valor": "30 minutos",
-          "modificador": 10
+          "modificador": 10,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ]
     },
@@ -710,7 +722,10 @@
       "alcance": [
         {
           "valor": "30 m",
-          "modificador": -7
+          "modificador": -7,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ],
       "area_efeito": [
@@ -728,13 +743,19 @@
       "massa_volume": [
         {
           "valor": "10.000 L",
-          "modificador": -20
+          "modificador": -20,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "1 hora",
-          "modificador": 11
+          "modificador": 11,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -753,7 +774,10 @@
       "alcance": [
         {
           "valor": "300 m",
-          "modificador": -13
+          "modificador": -13,
+          "detalhes": {
+            "quantidade_d6": 300
+          }
         }
       ],
       "area_efeito": [
@@ -762,26 +786,31 @@
           "modificador": -13
         }
       ],
+      "dano": [
+        {
+          "valor": 6,
+          "modificador": -6,
+          "detalhes": {
+            "tipo": "elétrico",
+            "direto": true,
+            "quantidade_d6": 6,
+            "unidade": "d6"
+          }
+        }
+      ],
       "duracao": [
         {
           "valor": "Até 3 horas",
           "modificador": -8
         }
       ],
-      "dano": [
-        {
-          "valor": "6d6-6",
-          "modificador": -6,
-          "detalhes": {
-            "tipo": "elétrico",
-            "direto": true
-          }
-        }
-      ],
       "tempo_conjuracao": [
         {
           "valor": "3 horas",
-          "modificador": 12
+          "modificador": 12,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -800,7 +829,10 @@
       "alcance": [
         {
           "valor": "1 km",
-          "modificador": -16
+          "modificador": -16,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "area_efeito": [
@@ -818,7 +850,10 @@
       "tempo_conjuracao": [
         {
           "valor": "3 horas",
-          "modificador": 12
+          "modificador": 12,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -855,7 +890,10 @@
       "tempo_conjuracao": [
         {
           "valor": "10 segundos",
-          "modificador": 4
+          "modificador": 4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -886,7 +924,10 @@
       "tempo_conjuracao": [
         {
           "valor": "3 segundos",
-          "modificador": 2
+          "modificador": 2,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -905,13 +946,10 @@
       "alcance": [
         {
           "valor": "3 m",
-          "modificador": -1
-        }
-      ],
-      "invocacao": [
-        {
-          "valor": "100 pontos — Equivalente",
-          "modificador": -8
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ],
       "duracao": [
@@ -920,10 +958,22 @@
           "modificador": -7
         }
       ],
+      "invocacao": [
+        {
+          "valor": "100 pontos — Equivalente",
+          "modificador": -8,
+          "detalhes": {
+            "quantidade_d6": 100
+          }
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": 6
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -945,22 +995,25 @@
           "modificador": 2
         }
       ],
-      "metamorfose": [
-        {
-          "valor": "Forma gasosa de névoa — Poder da forma: 150 pontos",
-          "modificador": -6
-        }
-      ],
       "duracao": [
         {
           "valor": "Até 10 minutos",
           "modificador": -5
         }
       ],
+      "metamorfose": [
+        {
+          "valor": "Forma gasosa de névoa — Poder da forma: 150 pontos",
+          "modificador": -6
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "10 minutos",
-          "modificador": 9
+          "modificador": 9,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -979,22 +1032,21 @@
       "alcance": [
         {
           "valor": "20 m",
-          "modificador": -6
+          "modificador": -6,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
         }
       ],
       "dano": [
         {
-          "valor": "3d6",
+          "valor": 3,
           "modificador": -6,
           "detalhes": {
-            "tipo": "perfurante"
+            "tipo": "perfurante",
+            "quantidade_d6": 3,
+            "unidade": "d6"
           }
-        }
-      ],
-      "modificadores_ataque": [
-        {
-          "valor": "Guiado",
-          "modificador": -5
         }
       ],
       "duracao": [
@@ -1003,10 +1055,19 @@
           "modificador": 0
         }
       ],
+      "modificadores_ataque": [
+        {
+          "valor": "Guiado",
+          "modificador": -5
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "30 segundos",
-          "modificador": 5
+          "modificador": 5,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ]
     },
@@ -1025,13 +1086,10 @@
       "alcance": [
         {
           "valor": "30 m",
-          "modificador": -7
-        }
-      ],
-      "tamanho": [
-        {
-          "valor": "MT 4 — 10 m",
-          "modificador": -8
+          "modificador": -7,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
         }
       ],
       "duracao": [
@@ -1040,10 +1098,19 @@
           "modificador": -4
         }
       ],
+      "tamanho": [
+        {
+          "valor": "MT 4 — 10 m",
+          "modificador": -8
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "10 minutos",
-          "modificador": 9
+          "modificador": 9,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -1062,19 +1129,28 @@
       "alcance": [
         {
           "valor": "10 metros",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ],
       "duracao": [
         {
           "valor": "1 segundo",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "1 segundo",
-          "modificador": 0
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -1090,22 +1166,25 @@
     "categoria": "Feitiço",
     "efeito": "Recupera parte dos ferimentos físicos do alvo.",
     "parametros": {
-      "cura": [
-        {
-          "valor": "Recuperar PV: 2d6",
-          "modificador": -2
-        }
-      ],
       "alcance": [
         {
           "valor": "Toque",
           "modificador": 0
         }
       ],
+      "cura": [
+        {
+          "valor": "Recuperar PV: 2d6",
+          "modificador": -2
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "3 segundos",
-          "modificador": -1
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -1121,22 +1200,25 @@
     "categoria": "Feitiço",
     "efeito": "Remove o estado de atordoamento de uma criatura.",
     "parametros": {
-      "cura": [
-        {
-          "valor": "Atribulação: Atordoamento — Remover",
-          "modificador": -3
-        }
-      ],
       "alcance": [
         {
           "valor": "Toque",
           "modificador": 0
         }
       ],
+      "cura": [
+        {
+          "valor": "Atribulação: Atordoamento — Remover",
+          "modificador": -3
+        }
+      ],
       "tempo_conjuracao": [
         {
           "valor": "3 segundos",
-          "modificador": -1
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -1152,22 +1234,31 @@
     "categoria": "Ritual",
     "efeito": "Invoca uma pequena criatura para auxiliar o conjurador.",
     "parametros": {
-      "invocacao": [
-        {
-          "valor": "50 pontos — 25% dos pontos do conjurador",
-          "modificador": -2
-        }
-      ],
       "duracao": [
         {
           "valor": "1 hora",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ],
+      "invocacao": [
+        {
+          "valor": "50 pontos — 25% dos pontos do conjurador",
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 50
+          }
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "1 minuto",
-          "modificador": -4
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ]
     },
@@ -1183,22 +1274,28 @@
     "categoria": "Feitiço",
     "efeito": "Transforma o conjurador em uma forma animal especializada em caça.",
     "parametros": {
+      "duracao": [
+        {
+          "valor": "10 minutos",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
       "metamorfose": [
         {
           "valor": "Forma animal predatória — Poder da forma: 75 pontos",
           "modificador": -3
         }
       ],
-      "duracao": [
-        {
-          "valor": "10 minutos",
-          "modificador": -4
-        }
-      ],
       "tempo_conjuracao": [
         {
           "valor": "10 segundos",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -1214,12 +1311,23 @@
     "categoria": "Feitiço",
     "efeito": "Projeta um ataque mágico concentrado capaz de atravessar parte da proteção do alvo.",
     "parametros": {
+      "alcance": [
+        {
+          "valor": "20 metros",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
+        }
+      ],
       "dano": [
         {
-          "valor": "3d6",
+          "valor": 3,
           "modificador": -3,
           "detalhes": {
-            "tipo": "fogo"
+            "tipo": "fogo",
+            "quantidade_d6": 3,
+            "unidade": "d6"
           }
         }
       ],
@@ -1229,16 +1337,13 @@
           "modificador": -5
         }
       ],
-      "alcance": [
-        {
-          "valor": "20 metros",
-          "modificador": -4
-        }
-      ],
       "tempo_conjuracao": [
         {
           "valor": "3 segundos",
-          "modificador": -1
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
         }
       ]
     },
@@ -1254,19 +1359,24 @@
     "categoria": "Feitiço",
     "efeito": "Libera uma onda de fogo que atinge uma área ao redor do ponto escolhido.",
     "parametros": {
-      "dano": [
-        {
-          "valor": "4d6",
-          "modificador": -4,
-          "detalhes": {
-            "tipo": "fogo"
-          }
-        }
-      ],
       "area_efeito": [
         {
           "valor": "3 metros de raio",
-          "modificador": -5
+          "modificador": -5,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
+        }
+      ],
+      "dano": [
+        {
+          "valor": 4,
+          "modificador": -4,
+          "detalhes": {
+            "tipo": "fogo",
+            "quantidade_d6": 4,
+            "unidade": "d6"
+          }
         }
       ],
       "modificadores_ataque": [
@@ -1278,7 +1388,10 @@
       "tempo_conjuracao": [
         {
           "valor": "5 segundos",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
         }
       ]
     },
@@ -1294,10 +1407,13 @@
     "categoria": "Feitiço",
     "efeito": "Reduz temporariamente o tamanho de uma criatura inteira.",
     "parametros": {
-      "tamanho": [
+      "duracao": [
         {
-          "valor": "MT 2 — 5 metros",
-          "modificador": -4
+          "valor": "1 hora",
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "metamorfose": [
@@ -1306,16 +1422,19 @@
           "modificador": -2
         }
       ],
-      "duracao": [
+      "tamanho": [
         {
-          "valor": "1 hora",
-          "modificador": -2
+          "valor": "MT 2 — 5 metros",
+          "modificador": -4
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "10 segundos",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
         }
       ]
     },
@@ -1331,6 +1450,12 @@
     "categoria": "Feitiço",
     "efeito": "Altera temporariamente as características físicas do alvo.",
     "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 0
+        }
+      ],
       "caracteristicas_alteradas": [
         {
           "valor": "Aumentar Força: +2",
@@ -1344,19 +1469,19 @@
       "duracao": [
         {
           "valor": "1 minuto",
-          "modificador": -4
-        }
-      ],
-      "alcance": [
-        {
-          "valor": "Toque",
-          "modificador": 0
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
         }
       ],
       "tempo_conjuracao": [
         {
           "valor": "5 segundos",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
         }
       ]
     },
@@ -1372,16 +1497,19 @@
     "categoria": "Feitiço",
     "efeito": "Impõe uma condição incapacitante sobre uma criatura.",
     "parametros": {
+      "alcance": [
+        {
+          "valor": "20 metros",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
+        }
+      ],
       "atribulacao": [
         {
           "valor": "Paralisia",
           "modificador": -14
-        }
-      ],
-      "alcance": [
-        {
-          "valor": "20 metros",
-          "modificador": -4
         }
       ],
       "tamanho": [
@@ -1393,11 +1521,840 @@
       "tempo_conjuracao": [
         {
           "valor": "5 segundos",
-          "modificador": -2
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
         }
       ]
     },
     "penalidade": -20,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukj23g7-kgqcrl",
+    "nome": "Ignição Espontânea",
+    "dominio": "Fogo",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "O alvo subitamente entra em combustão, como se uma chama invisível tivesse surgido diretamente sobre seu corpo. Uma pequena explosão de fogo envolve o alvo por um instante, causando 1d de dano por queimadura.\n\nSe o alvo estiver usando roupas ou outros materiais inflamáveis, estes podem pegar fogo como consequência da ignição. O fogo então passa a seguir as regras normais para uma criatura em chamas.\n\nA magia não cria fogo permanente sobre o alvo: seu efeito principal é a ignição súbita. O incêndio subsequente, caso ocorra, depende dos materiais atingidos.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "5 m",
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "dano": [
+        {
+          "valor": 1,
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 1,
+            "unidade": "d6",
+            "tipo": "Fogo"
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -3,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukjadgo-urvhr9",
+    "nome": "Atear Fogo",
+    "dominio": "Fogo",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Truque",
+    "efeito": "O conjurador cria uma pequena chama sobre um ponto escolhido, suficiente para acender uma vela, tocha, fogueira ou outro material facilmente inflamável.\n\nO truque não causa dano significativo a criaturas e não pode incendiar diretamente pessoas ou objetos que não sejam facilmente inflamáveis. A chama desaparece imediatamente após cumprir seu propósito, deixando apenas o fogo normalmente produzido pelo objeto aceso.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "< 3 m",
+          "modificador": 0
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": 0,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukjh3m3-l6fz61",
+    "nome": "Extinguir Chamas Menores",
+    "dominio": "Fogo",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O conjurador extingue instantaneamente as chamas existentes dentro de 1 hexágono, apagando velas, tochas, fogueiras e outras chamas de tamanho semelhante.\n\nO truque não remove o combustível nem impede que o material volte a pegar fogo. Ele apenas extingue as chamas presentes no momento da conjuração.\n\nNão pode ser usado para apagar incêndios de grandes proporções ou chamas que ocupem uma área maior que 1 hexágono.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "10 m",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "area_efeito": [
+        {
+          "valor": "1 m",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -4,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukjm6dj-6thvi9",
+    "nome": "Aquecer bebida",
+    "dominio": "Fogo",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Truque",
+    "efeito": "O conjurador aquece rapidamente até 1 litro de líquido, elevando sua temperatura até um nível confortável para consumo, sem ferver ou evaporar a bebida.\n\nPode ser usado para aquecer água, leite, café, chá, vinho ou outras bebidas. O truque não altera sabor, propriedades ou composição do líquido.\n\nLimitação: o efeito se aplica apenas ao líquido contido em um único recipiente e não pode ser usado para causar dano por calor.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "massa_volume": [
+        {
+          "valor": "1 kg / 1 L",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": 0,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukjopey-0asd4k",
+    "nome": "Sentir Fogo",
+    "dominio": "Fogo",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Feitiço",
+    "efeito": "O conjurador percebe a presença e a direção da chama ou fonte de calor de origem ígnea mais próxima dentro do alcance de 100 m. A magia indica apenas a direção aproximada e a distância estimada, sem revelar sua natureza ou tamanho.\n\nPode detectar uma vela, tocha, fogueira ou outra fonte de fogo, mesmo que esteja oculta ou fora da linha de visão.\n\nA magia não detecta simplesmente criaturas ou objetos quentes; é necessário que exista uma chama ou fogo ativo. \n\nExemplo: em uma floresta à noite, o conjurador poderia perceber uma fogueira acesa a algumas centenas de metros e saber imediatamente em que direção ela se encontra.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "100 m",
+          "modificador": -10,
+          "detalhes": {
+            "quantidade_d6": 100
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "30 segundos",
+          "modificador": 5,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
+        }
+      ]
+    },
+    "penalidade": -5,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukjvr4j-han7qw",
+    "nome": "Visão Térmica",
+    "dominio": "Fogo",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Feitiço",
+    "efeito": "O conjurador passa a perceber fontes de calor, permitindo identificar criaturas vivas mesmo na escuridão ou quando não podem ser vistas normalmente.\n\nCriaturas que possuem temperatura corporal significativamente superior à do ambiente aparecem como silhuetas ou manchas de calor, facilitando sua localização. A magia não permite identificar detalhes visuais, cores, inscrições ou objetos que não emitam calor.\n\nA intensidade do calor percebido pode fornecer uma noção aproximada do tamanho e da localização da criatura, mas não revela sua identidade, estado de saúde ou emoções.\n\nLimitações: barreiras espessas podem bloquear ou dificultar a percepção térmica, especialmente materiais que isolem o calor. A magia também pode ser enganada ou dificultada por fontes intensas de calor, como fogueiras, fornalhas ou ambientes extremamente quentes.\n\nVisual: para o conjurador, o ambiente continua escuro, mas as criaturas aparecem destacadas pelo calor que irradiam.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "caracteristicas_alteradas": [
+        {
+          "valor": "Conceder vantagem",
+          "modificador": -2,
+          "detalhes": {
+            "alvo": "Infravisão",
+            "pontos": 10
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 30min",
+          "modificador": -8
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "3 segundos",
+          "modificador": 2,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
+        }
+      ]
+    },
+    "penalidade": -6,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mukk70yv-mvzp14",
+    "nome": "Calor da Pegada",
+    "dominio": "Fogo",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "O conjurador aquece subitamente até a incandescência um objeto metálico que uma criatura esteja segurando. O calor se concentra na região em contato com a mão.\n\nA criatura sofre 1d de dano por queimadura e deve largar o objeto imediatamente, a menos que consiga resistir aos efeitos do calor ou  passe em um teste de Vontade (+4 se tiver Hipoalgia).\n\nA magia não pode afetar objetos que estejam apenas sendo usados ou vestidos, como elmos, armaduras, fivelas ou grevas. O objeto precisa estar sendo segurado diretamente pela mão no momento da conjuração.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "10 m",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
+        }
+      ],
+      "dano": [
+        {
+          "valor": 1,
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 1,
+            "unidade": "d6",
+            "tipo": "Fogo"
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "massa_volume": [
+        {
+          "valor": "5 kg / 5 L",
+          "modificador": -3,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -8,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mut7w9g8-0r0pj9",
+    "nome": "Toque da Escuridão",
+    "dominio": "Escuridão",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Feitiço",
+    "efeito": "Trevas sobrenaturais invadem os olhos do alvo, envolvendo sua visão em completa escuridão e deixando-o temporariamente cego. Para o feitiço surtir efeito, o conjurador precisa tocar o alvo e vencer uma disputa entre seu NH e a HT da vítima. \n\nEnquanto durar o efeito, o alvo não consegue enxergar, independentemente das condições de iluminação do ambiente. \n\nA magia não causa dano físico aos olhos. Quando o efeito termina, a visão retorna normalmente.\n\nVisual: os olhos do alvo tornam-se completamente negros, como se uma sombra líquida tivesse preenchido suas pupilas.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "caracteristicas_alteradas": [
+        {
+          "valor": "Conceder desvantagem",
+          "modificador": -10,
+          "detalhes": {
+            "alvo": "Cegueira",
+            "pontos": 50
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 10s",
+          "modificador": -1
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 2
+          }
+        }
+      ]
+    },
+    "penalidade": -9,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mut865um-3kxczi",
+    "nome": "Manto de Sombras",
+    "dominio": "Escuridão",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "Sombras envolvem o corpo do conjurador, tornando sua silhueta difícil de distinguir. Enquanto permanecer em uma área de pouca luz ou escuridão, ele recebe +4 para se esconder ou evitar ser percebido visualmente. Manto das sombras não funciona em plena luz!",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "caracteristicas_alteradas": [
+        {
+          "valor": "Conceder vantagem",
+          "modificador": -4,
+          "detalhes": {
+            "alvo": "Obscure Vision +4 (Defensive +50%; Stealth +100%; Only in areas of shadowy ilumination  -20%)",
+            "pontos": 19
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 1min",
+          "modificador": -3
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -5,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mut8g3g3-efcbb4",
+    "nome": "Ofuscar chama",
+    "dominio": "Escuridão",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Truque",
+    "efeito": "O conjurador envolve uma fonte de luz com uma tênue camada de trevas, reduzindo sua intensidade a fraco brilho pálido.  Uma vela, tocha ou lamparina passa a iluminar como uma fonte de luz muito mais fraca, tornando o ambiente ao redor mais sombrio. \n\nChamas de velas  adquirem um brilho tênue equiparado a luz das estrelas (-7 em visão). Fontes maiores, como tochas e lamparinas têm sua capacidade de iluminação reduzida à metade equiparando-se às velas (-5).  Um objeto enfeitiçado com magia de luz, se falhar em resistir ao  efeito de Escurecer chama tem, seu poder reduzido:  luz do dia se torna luz de tochas (-3), luz de tochas se torna luz de velas(-5) e luz de velas se torna luz das estrelas (-7).\n\nA magia não extingue a chama nem interfere em sua capacidade de queimar. Quando o efeito termina, a fonte de luz volta imediatamente à sua intensidade normal.\n\nLimitação: afeta apenas uma fonte de luz de tamanho pequeno ou médio tais como velas, tochas e lamparinas. Fontes maiores ou intensas, como incêndios extensos, fogueiras ou luz solar, não são afetadas.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "3 m",
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 3
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 10s",
+          "modificador": -1
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -2,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mutz1fuc-kqayvm",
+    "nome": "Avaliar Material",
+    "dominio": "Artefatos",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "O conjurador identifica o material predominante de um objeto manufaturado que toca,c omo ferro, aço, cobre, prata, ouro, madeira, pedra, vidro, couro etc. A magia não revela o valor do objeto, sua qualidade, composição exata ou propriedades mágicas. Ela serve apenas para reconhecer de que material o objeto é feito.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": 0,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mutz8rfy-ujjr8k",
+    "nome": "Índice Vivo",
+    "dominio": "Artefatos",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Truque",
+    "efeito": "Ao tocar um livro (com até 7 Kg), o conjurador pode determinar seu conteúdo geral e onde determinada informação está localizada, sem precisar ler o livro inteiro.\n\nPor exemplo, pode descobrir em qual capítulo se encontra uma referência a dragões, em que página começa um determinado assunto ou se o livro contém informações sobre determinado tema.\n\nNão revela o conteúdo da informação — apenas onde ela pode ser encontrada.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "Toque",
+          "modificador": 2
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "massa_volume": [
+        {
+          "valor": "7 kg / 7 L",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 7
+          }
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -2,
+    "observacao": ""
+  },
+  {
+    "id": "magia-muudq402-20m16t",
+    "nome": "Folhear",
+    "dominio": "Artefatos",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Truque",
+    "efeito": "Essa é uma habilidade extremamente util se o mago estiver com as duas mãos ocupadas... O conjurador pode virar as páginas de um livro sem tocá-lo, como se mãos invisíveis o folheassem. Pode virar uma pagina individual, para se chegar a seguinte, ou várias  páginas rapidamente, permitindo localizar visualmente uma determinada seção, ilustração ou passagem. \n\nO truque não permite ler o conteúdo sem enxergá-lo e não pode virar páginas de livros fechados ou protegidos por magia.\n",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "< 3 m",
+          "modificador": 0
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": 0,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mutzkird-eyhntl",
+    "nome": "Olho do Bibliotecário",
+    "dominio": "Artefatos",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Feitiço",
+    "efeito": "O conjurador consegue identificar em uma biblioteca (em uma área de 10m de raio no  maximo) rapidamente livros e documentos relevantes para um assunto específico. Entre diversos volumes, a magia indica quais contêm informações relacionadas ao tema desejado. Não informa se a informação é verdadeira, completa ou confiável.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "10 m",
+          "modificador": -4,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "area_efeito": [
+        {
+          "valor": "10 m",
+          "modificador": -6,
+          "detalhes": {
+            "quantidade_d6": 10
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "5 segundos",
+          "modificador": 3,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
+        }
+      ]
+    },
+    "penalidade": -7,
+    "observacao": ""
+  },
+  {
+    "id": "magia-mutzqrar-m9aq9i",
+    "nome": "Localizar Tesouro",
+    "dominio": "Artefatos",
+    "nivel": 1,
+    "nivel_nome": "Percepção",
+    "categoria": "Feitiço",
+    "efeito": "Detecta qualquer objeto criado pelo homem (moedas cunhadas, pedras preciosas lapidadas, jóias, objetos encantados, armas e armaduras de qualidade superior) de valor significativo mais próximo (até 100 metros) e indica a direção/distância aproximada até ele.  Em teste de IQ permite analisar o objeto e quanto melhor o resultado mais informações o conjurador irá receber. Não serve para detectar riquezas naturais como veios de minérios ou pedras preciosas brutas.\n\nO conjurador pode escolher eliminar da pesquisa objetos que já conheça que estejam proximos (como aquela espada mágica que seu companheiro está usando, ou o seu próprio saco de moedas de ouro).\n",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "100 m",
+          "modificador": -10,
+          "detalhes": {
+            "quantidade_d6": 100
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "30 segundos",
+          "modificador": 5,
+          "detalhes": {
+            "quantidade_d6": 30
+          }
+        }
+      ]
+    },
+    "penalidade": -5,
+    "observacao": ""
+  },
+  {
+    "id": "magia-muujxdvh-6unums",
+    "nome": "Bola de Fogo",
+    "dominio": "Fogo",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "Dispara uma bola de fogo que causa 5d6 de dano em uma área de 2 metros de raio. Alcance de 16m.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "20 m",
+          "modificador": -6,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
+        }
+      ],
+      "area_efeito": [
+        {
+          "valor": "2 m",
+          "modificador": -1,
+          "detalhes": {
+            "quantidade_d6": 2
+          }
+        }
+      ],
+      "dano": [
+        {
+          "valor": 5,
+          "modificador": -5,
+          "detalhes": {
+            "quantidade_d6": 5,
+            "unidade": "d6"
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 segundo",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -12,
+    "observacao": ""
+  },
+  {
+    "id": "magia-muul4kb5-3rnin3",
+    "nome": "Invocar Pequeno Elemental de Chamas",
+    "dominio": "Fogo",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Ritual",
+    "efeito": "Invoca um elemental de fogo que tenha até 25% do nivel de pontos do conjurador. Ele aparecerá próximo ao conjurador (até 3 metros) e obedecerá o conjurador por  1 hora e depois desaparecerá.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "< 3 m",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 1h",
+          "modificador": -10
+        }
+      ],
+      "invocacao": [
+        {
+          "valor": "Até 25%",
+          "modificador": -2
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 minuto",
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -6,
+    "observacao": ""
+  },
+  {
+    "id": "magia-muulk9ar-abperk",
+    "nome": "Invocar Imp das Sombras",
+    "dominio": "Escuridão",
+    "nivel": 2,
+    "nivel_nome": "Influência",
+    "categoria": "Ritual",
+    "efeito": "Invoca um servo das sombras, uma criatura alada na forma de um imp feito de matéria sombria. Ele aparecerá próximo ao conjurador (até 3 metros) e o obedecerá por  1 hora antes de desaparecer.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "< 3 m",
+          "modificador": 0,
+          "detalhes": {
+            "quantidade_d6": 20
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Até 1h",
+          "modificador": -10
+        }
+      ],
+      "invocacao": [
+        {
+          "valor": "Até 25%",
+          "modificador": -2
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "1 minuto",
+          "modificador": 6,
+          "detalhes": {
+            "quantidade_d6": 1
+          }
+        }
+      ]
+    },
+    "penalidade": -6,
+    "observacao": ""
+  },
+  {
+    "id": "magia-muuk15vj-pa2fo6",
+    "nome": "Mãos Flamejantes",
+    "dominio": "Fogo",
+    "nivel": 3,
+    "nivel_nome": "Manipulação",
+    "categoria": "Feitiço",
+    "efeito": "Dispara um jato de chamas na forma de um cone de 5 metros de profundidade por 3 de base que causa 3d6 de dano de queimadura por fogo.",
+    "parametros": {
+      "alcance": [
+        {
+          "valor": "5 m",
+          "modificador": -2,
+          "detalhes": {
+            "quantidade_d6": 5
+          }
+        }
+      ],
+      "dano": [
+        {
+          "valor": 3,
+          "modificador": -3,
+          "detalhes": {
+            "quantidade_d6": 3,
+            "unidade": "d6"
+          }
+        }
+      ],
+      "duracao": [
+        {
+          "valor": "Momentânea",
+          "modificador": 0
+        }
+      ],
+      "modificadores_ataque": [
+        {
+          "valor": "Cone",
+          "modificador": -8,
+          "detalhes": {
+            "base_metros": 3
+          }
+        }
+      ],
+      "tempo_conjuracao": [
+        {
+          "valor": "2 segundos",
+          "modificador": 1,
+          "detalhes": {
+            "quantidade_d6": 2
+          }
+        }
+      ]
+    },
+    "penalidade": -12,
     "observacao": ""
   }
 ]
