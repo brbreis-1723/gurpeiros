@@ -101,6 +101,17 @@ A Aptidão Natural melhora os testes de improvisação, mas não substitui Wild 
 </table>
 
 
+!!! warning "Assinatura Mágica:"
+    Toda improvisação mágica produz uma manifestação arcana característica do personagem.
+    
+    Essa manifestação pode assumir diferentes formas, como:
+
+      - Brilho nos olhos;
+      - Descargas ou manifestações de energia;
+      - Distorções perceptíveis no ar;
+      - Sons ou efeitos visuais característicos.
+    
+    A assinatura não precisa revelar qual magia está sendo executada, mas permite reconhecer que aquela manifestação mágica pertence ao personagem. Essa característica constitui a limitação de -5% aplicada à vantagem.
 
 ### 4.1. Improviso na prática
 
