@@ -18,6 +18,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
@@ -43,6 +45,7 @@ extra_javascript:
   - javascripts/gerador/gerador-importacao-exportacao.js
   - javascripts/gerador/gerador-grimorio.js
   - javascripts/gerador-magias.js 
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
       
 
@@ -70,6 +73,7 @@ nav:
             - Critérios de Aplicação das Tabelas de Penalidades: regras/magia/dominio_criterios.md
             - Grimório de Magias: regras/magia/grimorio.md
             - Gerador de magias: regras/magia/gerador-magias.md
+          - Magia de Improviso: regras/magia/magia_improviso.md
           - Magia do Limiar:
             - Regras gerais: regras/magia/magia_limiar.md
             - Efeitos adicionais: regras/magia/efeitos_adicionais.md
