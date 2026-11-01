@@ -218,7 +218,7 @@ Imagine que esse personagem já tenha adquirido 2 *Perks* convencionais. Restam,
 </tbody>
 </table>
 
-Cada magia retida exige a aquisição de um *Charm* e de uma *Spell*, totalizando **3 pontos de personagem**: 2 pontos pelo *Charm* e 1 ponto pela magia.
+Cada magia retida exige a aquisição de um *Charm* e de uma *Spell*, totalizando **2 pontos de personagem**: 1 pontos pelo *Charm* e 1 ponto pela magia.
 
 Se o personagem decidir adquirir uma terceira *Perk* convencional, passará a ter apenas 3 vagas disponíveis para *Charms*, podendo reter no máximo 3 magias.
 
