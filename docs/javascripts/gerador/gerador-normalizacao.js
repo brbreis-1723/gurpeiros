@@ -141,6 +141,8 @@ function normalizarParametro(valor) {
 
 function normalizarMagia(magia) {
 
+    const eTruque = magia?.categoria === "Truque" || magia?.categoria === "truque";
+
     const resultado = {
 
         id:
@@ -156,17 +158,16 @@ function normalizarMagia(magia) {
             "",
 
         nivel:
-            magia?.nivel !== undefined &&
-            magia?.nivel !== ""
-                ? numero(
-                    magia.nivel,
-                    ""
-                )
-                : "",
+            eTruque
+                ? 0
+                : (magia?.nivel !== undefined && magia?.nivel !== ""
+                    ? numero(magia.nivel, "")
+                    : 1),
 
         nivel_nome:
-            magia?.nivel_nome ||
-            "",
+            eTruque
+                ? "Sem nível"
+                : (magia?.nivel_nome || ""),
 
         categoria:
             magia?.categoria ||
@@ -179,10 +180,9 @@ function normalizarMagia(magia) {
         parametros: {},
 
         penalidade:
-            numero(
-                magia?.penalidade,
-                0
-            ),
+            eTruque
+                ? 0
+                : numero(magia?.penalidade, 0),
 
         observacao:
             magia?.observacao ||
@@ -264,10 +264,10 @@ function criarMagiaVazia() {
             "",
 
         nivel:
-            1,
+            0,
 
         nivel_nome:
-            NIVEIS[1],
+            "Sem nível",
 
         categoria:
             "Truque",

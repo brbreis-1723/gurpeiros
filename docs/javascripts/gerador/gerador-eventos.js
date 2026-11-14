@@ -133,7 +133,7 @@ function configurarEventosEditor() {
     }
 
 
-    // Listener dinâmico para mudança de Categoria (Regra de Tempo de Conjuração Automático)
+    // Listener dinâmico para mudança de Categoria (Regra de Truque e Tempo de Conjuração)
     const selectCategoria = document.getElementById("gm-categoria");
     if (selectCategoria) {
         selectCategoria.addEventListener("change", () => {
@@ -141,6 +141,14 @@ function configurarEventosEditor() {
             const magia = magias[indiceEdicao];
             const novaCat = selectCategoria.value;
             magia.categoria = novaCat;
+
+            if (novaCat === "Truque" || novaCat === "truque") {
+                magia.nivel = 0;
+                magia.nivel_nome = "Sem nível";
+            } else if (Number(magia.nivel) === 0) {
+                magia.nivel = 1;
+                magia.nivel_nome = NIVEIS[1] || "";
+            }
 
             if (magia.parametros && magia.parametros.tempo_conjuracao && magia.parametros.tempo_conjuracao[0]) {
                 if (novaCat === "Truque" || novaCat === "Feitiço") {
@@ -513,24 +521,31 @@ function atualizarMagiaDoFormulario() {
         "";
 
 
-    magia.nivel =
-        numero(
+    const eTruque = magia.categoria === "Truque" || magia.categoria === "truque";
+
+    if (eTruque) {
+        magia.nivel = 0;
+        magia.nivel_nome = "Sem nível";
+    } else {
+        magia.nivel =
+            numero(
+                document
+                    .getElementById(
+                        "gm-nivel"
+                    )
+                    ?.value,
+                ""
+            );
+
+
+        magia.nivel_nome =
             document
                 .getElementById(
-                    "gm-nivel"
+                    "gm-nivel-nome"
                 )
-                ?.value,
-            ""
-        );
-
-
-    magia.nivel_nome =
-        document
-            .getElementById(
-                "gm-nivel-nome"
-            )
-            ?.value ||
-        "";
+                ?.value ||
+            "";
+    }
 
 
     magia.categoria =
@@ -779,7 +794,7 @@ function atualizarResumoSemRecriar() {
 
     if (valores[0]) {
         valores[0].textContent =
-            magia.nivel;
+            magia.categoria === "Truque" ? "Sem nível" : magia.nivel;
     }
 
 

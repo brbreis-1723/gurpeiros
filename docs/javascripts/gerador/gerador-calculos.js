@@ -61,21 +61,18 @@ function calcularModificadorItem(nome, item) {
     if (nome === "modificadores_ataque") {
         const valorString = String(item.valor || "").toLowerCase();
 
-        // CONE: -5 base + (-1 por metro de base) -> 1m = -6, 2m = -7...
         if (valorString.startsWith("cone")) {
             const baseMetros = Number(detalhes.base_metros ?? 1);
             if (!Number.isFinite(baseMetros) || baseMetros < 1) return null;
             return -5 - Math.ceil(baseMetros);
         }
 
-        // FRAGMENTAÇÃO: -2 por dado de d6
         if (valorString.includes("fragmentação") || valorString.includes("fragmentacao")) {
             const quantidade = Number(detalhes.quantidade_d6);
             if (!Number.isFinite(quantidade) || quantidade <= 0) return null;
             return -2 * Math.ceil(quantidade);
         }
 
-        // CÍCLICO: Modificador por ciclo
         const opcao = encontrarOpcao(nome, item.valor);
         if (!opcao) return null;
 
@@ -133,6 +130,10 @@ function recalcularItens(magia) {
 }
 
 function calcularPMMinimo(magia) {
+    const eTruque = magia?.categoria === "Truque" || magia?.categoria === "truque" || Number(magia?.nivel) === 0;
+    if (eTruque) {
+        return 0;
+    }
     const nivel = Number(magia?.nivel);
     return (Number.isInteger(nivel) && nivel >= 1 && nivel <= 5) ? nivel : "—";
 }

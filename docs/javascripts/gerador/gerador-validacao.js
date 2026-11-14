@@ -53,39 +53,48 @@ function validarMagia(magia) {
     }
 
 
-    const nivel =
-        Number(
-            magia.nivel
-        );
+    const eTruque = magia.categoria === "Truque" || magia.categoria === "truque" || Number(magia.nivel) === 0;
+    const nivel = Number(magia.nivel);
 
+    if (eTruque) {
+        if (nivel !== 0 || magia.nivel_nome !== "Sem nível") {
+            resultado.erros.push("Truques devem possuir nível configurado como 'Sem nível' (Nível 0).");
+            resultado.campos.push({ tipo: "erro", seletor: "#gm-nivel" });
+        }
 
-    if (
-        !Number.isInteger(nivel) ||
-        !NIVEIS[nivel]
-    ) {
+        // Regra 2: Trava de penalidade em truques (se a penalidade calculada for menor que 0)
+        if (resultado.penalidadeCalculada < 0) {
+            resultado.erros.push("Não é permitido ter penalidade em truques (os modificadores resultaram em penalidade).");
+        }
+    } else {
+        if (
+            !Number.isInteger(nivel) ||
+            !NIVEIS[nivel]
+        ) {
 
-        resultado.erros.push(
-            "Nível inválido. O nível deve estar entre 1 e 5."
-        );
+            resultado.erros.push(
+                "Nível inválido. O nível deve estar entre 1 e 5."
+            );
 
-        resultado.campos.push({
-            tipo: "erro",
-            seletor: "#gm-nivel"
-        });
+            resultado.campos.push({
+                tipo: "erro",
+                seletor: "#gm-nivel"
+            });
 
-    } else if (
-        magia.nivel_nome !==
-        NIVEIS[nivel]
-    ) {
+        } else if (
+            magia.nivel_nome !==
+            NIVEIS[nivel]
+        ) {
 
-        resultado.avisos.push(
-            `O nível ${nivel} corresponde a "${NIVEIS[nivel]}", mas nivel_nome está como "${magia.nivel_nome || "(vazio)"}".`
-        );
+            resultado.avisos.push(
+                `O nível ${nivel} corresponde a "${NIVEIS[nivel]}", mas nivel_nome está como "${magia.nivel_nome || "(vazio)"}".`
+            );
 
-        resultado.campos.push({
-            tipo: "aviso",
-            seletor: "#gm-nivel-nome"
-        });
+            resultado.campos.push({
+                tipo: "aviso",
+                seletor: "#gm-nivel-nome"
+            });
+        }
     }
 
 
@@ -235,6 +244,7 @@ function validarMagia(magia) {
 
 
     if (
+        !eTruque &&
         numero(
             magia.penalidade
         ) !==
