@@ -3,8 +3,8 @@
     "id": "ar-002",
     "nome": "Sentir Ar",
     "dominio": "Ar",
-    "nivel": 1,
-    "nivel_nome": "Percepção",
+    "nivel": 0,
+    "nivel_nome": "Sem nível",
     "categoria": "Truque",
     "efeito": "O mago consegue perceber as condições do ar em sua proximidade, identificando se ele é adequado para respiração e percebendo alterações significativas, como falta de oxigênio, fumaça, vapores ou a presença de outros gases.\n\nA magia permite distinguir ar respirável de ar impróprio ou potencialmente perigoso, mas não revela a composição, natureza ou toxicidade específica das substâncias presentes.\n\nO efeito está limitado a uma área de aproximadamente 3 metros ao redor do mago e não permite detectar condições além desse alcance ou através de barreiras que impeçam a circulação do ar.",
     "parametros": {
