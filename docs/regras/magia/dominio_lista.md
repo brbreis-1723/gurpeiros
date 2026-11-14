@@ -166,13 +166,13 @@ O domínio só alcança determinado nível quando **ambas as condições forem a
   <tbody>
     <tr>
       <td>NH &lt; 12</td>
-      <td>-</td>
+      <td>1 pto</td>
       <td><strong>Aprendiz</strong></td>
       <td>Nível 0</td>
     </tr>
     <tr>
       <td>NH 12–14</td>
-      <td>1 pto</td>      
+      <td>2 ptos</td>      
       <td><strong>Iniciante</strong></td>
       <td>Nível 1</td>
     </tr>
@@ -205,7 +205,35 @@ O domínio só alcança determinado nível quando **ambas as condições forem a
 
 Cada domínio possui cinco níveis de conhecimento. Quanto maior o nível, mais profundo é o entendimento do mago sobre aquele domínio e mais poderosos são os efeitos que ele pode produzir. Inicialmente, o mago é capaz apenas de perceber o elemento de seu domínio. Com o aprimoramento, aprende a controlá-lo e realizar pequenas alterações, até alcançar a capacidade de transformá-lo ou mesmo criá-lo do zero. 
 
- Enquanto estiver sob a alcunha de aprendiz, um mago não é capaz de realizar mágicas sem o apoio de um mago mais experiente ou, na ausência dele, do uso de um grimório. Ou seja, o mago somente poderá conjurar magias por conta própria, sem auxilio externo, quando alcançar no mínimo NH 12 no domínio. 
+ Enquanto estiver sob a alcunha de aprendiz, um mago não é capaz de realizar mágicas sem o apoio de um mago mais experiente ou, na ausência dele, do uso de um grimório. Ou seja, o mago somente poderá conjurar magias por conta própria, sem auxilio externo, quando alcançar no mínimo NH 12 no domínio.
+
+!!! warning "Exceção: **Truques**"
+    **Truques** são manifestações elementares e limitadas da magia, que permitem até mesmo um aprendiz produzir pequenos efeitos físicos reais relacionados ao seu Domínio. Seus efeitos são simples, de pequena escala e utilidade restrita, normalmente inofensivos. Não requerem o uso de grimórios ou o auxílio de outros magos.
+    
+    Contudo, não concedem as capacidades formais de percepção, influência, manipulação, transformação ou domínio próprias dos níveis superiores. 
+    
+    Os truques constituem uma categoria independente e exclusiva, não sendo distribuídos pelos níveis de conhecimento. Não apenas os aprendizes, mas qualquer mago - independente do nível de conhecimento no domínio - podem operar truques.
+    
+    A classificação de um efeito como truque depende da natureza da capacidade empregada, de sua escala e de suas limitações, e não apenas da ausência de dano ou da simplicidade aparente do resultado.
+
+    Exemplos de truques: 
+    
+    - criar uma pequena porção de um elemento (cubos de gelo, pitada de sal, porção de area nas mãos); 
+    - aquecer ou esfriar uma bebida em uma caneca; 
+    - acender uma vela, candelabro (ou tocha); 
+    - produzir uma brisa ou corrente de ar por um instante suficiente para refrescar o rosto ou movimentar um objeto muito leve;
+    - apagar a chama de uma vela etc; 
+    - conceder uma pequena vantagem circunstancial na próxima ação do personagem (algo equivalente a uma perk). 
+
+    Considerações importantes:
+
+    - Truques não tem custo em energia, fadiga ou tensão
+    - Requerem apenas um componente mágico, seja ele verbal, gestual ou material
+    - O tempo de conjuração é fixo: 1 turno.
+   
+    Devido ao seu caráter simples, um truque não pode ter penalidades aplicadas a ele, assim não faz sentido serem aprendidos como técnicas. No entanto, o GM pode permitir que sejam registrados no grimorio, como técnicas "pré-definidas" relacionadas ao dominio, com custo zero. Na pratica, isso representa o conhecimento baseado no próprio domínio sem necessidade de estudo adicional.
+
+
 
 **Magos que alcançam o quinto e mais elevado nível de conhecimento atingem o domínio pleno de seu campo. Seus conhecimentos permitem realizar feitos extraordinários, levando a magia ao limite de suas possibilidades dentro daquele Domínio. Aos olhos de um leigo eles podem ser considerados heróis, ou até mesmo, lendas vivas...**.
 
