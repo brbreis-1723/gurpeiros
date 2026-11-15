@@ -66,7 +66,7 @@ function visualizarGrimorio() {
             <tr>
                 <td><strong>${escaparHTML(magia.nome || "Sem Nome")}</strong></td>
                 <td>${escaparHTML(magia.dominio || "—")}</td>
-                <td>${magia.nivel || 1} (${escaparHTML(magia.nivel_nome || "—")})</td>
+                <td>${magia.nivel !== undefined && magia.nivel !== null ? magia.nivel : 1} (${escaparHTML(magia.nivel_nome || "—")})</td>
                 <td>${escaparHTML(magia.categoria || "—")}</td>
                 <td style="text-align: center;">${calcularPMMinimo(magia)}</td>
                 <td style="text-align: center;">${magia.penalidade}</td>
